@@ -36,7 +36,7 @@ for removed in (
 
 assets = set(re.findall(r"(?:src|href)=\"(assets/[^\"]+)\"", html))
 assets.update(re.findall(r"url\(['\"]?(assets/[^'\")]+)", html))
-assert len(assets) == 14, f"Expected 14 local font/photo assets, found {len(assets)}"
+assert len(assets) == 15, f"Expected 15 local font/photo assets, found {len(assets)}"
 for asset in assets:
     assert (PUBLIC / asset).is_file(), asset
 with tempfile.TemporaryDirectory() as tmp:
@@ -87,4 +87,4 @@ with sync_playwright() as p:
     reduced.close()
     browser.close()
 
-print("PASS: 14 assets, inline JS, 12 animation photos, 4 square gallery crops at phone/tablet/desktop, reduced motion")
+print("PASS: 15 assets, inline JS, 12 animation photos, 4 square gallery crops at phone/tablet/desktop, reduced motion")
