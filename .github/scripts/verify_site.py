@@ -1,4 +1,7 @@
 from pathlib import Path
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+from threading import Thread
+import functools
 import os
 import re
 import subprocess
@@ -9,6 +12,10 @@ ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public"
 HTML_PATH = PUBLIC / "index.html"
 html = HTML_PATH.read_text(encoding="utf-8")
+style_match = re.search(r"<style>(.*?)</style>", html, re.S)
+assert style_match is not None, "Missing inline stylesheet"
+css = style_match.group(1)
+assert css == (PUBLIC / "stili-completi.css").read_text(encoding="utf-8")
 assert "../assets/" not in html
 assert html.count('class="scene-card"') == 12
 assert html.count('class="project reveal"') == 4
@@ -31,14 +38,20 @@ for removed in (
     "02 — Il mio sguardo",
     "03 — Il prossimo capitolo",
     "Italia · ovunque vi porti la storia",
+    "@font-face",
+    "DM Sans",
+    "Michroma",
+    "Gloock",
+    "Libre Baskerville",
+    "scroll-progress",
 ):
     assert removed not in html, removed
 
-assets = set(re.findall(r"(?:src|href)=\"(assets/[^\"]+)\"", html))
-assets.update(re.findall(r"url\(['\"]?(assets/[^'\")]+)", html))
-assert len(assets) == 16, f"Expected 16 local font/photo assets, found {len(assets)}"
-assert "assets/fonts/italiana-regular.ttf" in assets
-assert (PUBLIC / "assets/fonts/italiana-OFL.txt").is_file()
+assets = set(re.findall(r'(?:src|href)="(assets/[^\"]+)"', html))
+assets.update({"assets/fonts/italiana-regular.ttf", "assets/fonts/space-grotesk.ttf"})
+assert len(assets) == 15, f"Expected 15 unique local font/loader/photo assets, found {len(assets)}"
+for license_file in ("italiana-OFL.txt", "space-grotesk-OFL.txt"):
+    assert (PUBLIC / "assets/fonts" / license_file).is_file()
 for asset in assets:
     assert (PUBLIC / asset).is_file(), asset
 with tempfile.TemporaryDirectory() as tmp:
@@ -47,27 +60,67 @@ with tempfile.TemporaryDirectory() as tmp:
     assert scripts
     inline.write_text("\n".join(scripts), encoding="utf-8")
     subprocess.run(["node", "--check", str(inline)], check=True)
+subprocess.run(["node", "--check", str(PUBLIC / "assets/fonts/load-fonts.js")], check=True)
 
+
+def check_typography(page):
+    page.evaluate("window.typographyReady")
+    page.evaluate("document.fonts.ready")
+    fonts = page.evaluate("[...document.fonts].map(f => ({family:f.family,status:f.status}))")
+    assert len(fonts) == 2 and all(f["status"] == "loaded" for f in fonts), fonts
+    assert {f["family"].strip("'\"") for f in fonts} == {"Italiana", "Space Grotesk"}, fonts
+    style = page.locator(".hero h1").evaluate("""e => {
+        const s=getComputedStyle(e);
+        return {font:s.fontFamily,weight:s.fontWeight,blend:s.mixBlendMode,
+            stroke:parseFloat(s.webkitTextStrokeWidth),size:parseFloat(s.fontSize),
+            spacing:parseFloat(s.letterSpacing)};
+    }""")
+    assert "Italiana" in style["font"] and style["weight"] == "400" and style["blend"] == "normal", style
+    assert abs(style["stroke"] / style["size"] - .016) < .00001, style
+    assert abs(style["spacing"] / style["size"] - .015) < .00001, style
+    for selectors, family, weight in (
+        (".intro h2,.about h2,.contact h2,.section-head h2", "Italiana", "400"),
+        ("body,p,.nav,.nav a,.nav .brand,.cta,.hero-note,.eyebrow,button,input,textarea,select", "Space Grotesk", "300"),
+    ):
+        styles = page.locator(selectors).evaluate_all(
+            "es => es.map(e => { const s=getComputedStyle(e); return {font:s.fontFamily,weight:s.fontWeight}; })"
+        )
+        assert styles and all(family in s["font"] and s["weight"] == weight for s in styles), styles
+    assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
+
+
+viewports = ((390, 844), (1440, 900), (844, 390), (320, 568), (700, 900), (701, 900), (1920, 1080))
 with sync_playwright() as p:
     options: dict[str, object] = {"headless": True}
     if os.environ.get("BROWSER_PATH"):
         options["executable_path"] = os.environ["BROWSER_PATH"]
     browser = p.chromium.launch(**options)
-    for width, height in ((390, 844), (1440, 900), (844, 390)):
-        page = browser.new_page(viewport={"width": width, "height": height})
+    for width, height in viewports:
+        page = browser.new_page(viewport={"width": width, "height": height}, offline=True)
         errors = []
         page.on("pageerror", lambda error: errors.append(str(error)))
         page.goto(HTML_PATH.as_uri())
-        page.wait_for_timeout(500)
-        page.evaluate("document.fonts.ready")
-        assert page.evaluate("document.fonts.check('400 42px Italiana')")
-        style = page.locator(".hero h1").evaluate(
-            "e => { const s=getComputedStyle(e); return {font:s.fontFamily,blend:s.mixBlendMode,stroke:parseFloat(s.webkitTextStrokeWidth)}; }"
-        )
-        assert "Italiana" in style["font"] and style["blend"] == "normal", style
-        assert style["stroke"] >= 1.2, style
+        check_typography(page)
+        page.wait_for_timeout(2100)
         assert page.locator(".scene-card").count() == 12
+        assert page.locator(".portrait").evaluate("e => e.complete && e.naturalWidth > 0")
+        gaps = page.evaluate("""() => {
+            const photo=document.querySelector('.portrait').getBoundingClientRect();
+            const caption=document.querySelector('.hero-meta').getBoundingClientRect();
+            const cue=document.querySelector('.hero-note').getBoundingClientRect();
+            return {photoCaption:caption.top-photo.bottom,captionCue:cue.top-caption.bottom};
+        }""")
+        assert gaps["photoCaption"] >= 6 and gaps["captionCue"] >= 12, (width, gaps)
+        if os.environ.get("VERIFY_SCREENSHOT_DIR"):
+            destination = Path(os.environ["VERIFY_SCREENSHOT_DIR"])
+            destination.mkdir(parents=True, exist_ok=True)
+            page.screenshot(path=str(destination / f"hero-{width}.png"))
         page.add_style_tag(content="html{scroll-behavior:auto!important}")
+        boundary = page.evaluate("scrollY+document.querySelector('.intro').getBoundingClientRect().top-innerHeight")
+        for delta, expected in ((-5, "1"), (5, "0"), (100, "0"), (-20, "1")):
+            page.evaluate("y => scrollTo(0,y)", boundary + delta)
+            page.wait_for_timeout(250)
+            assert page.locator(".hero-note").evaluate("e => getComputedStyle(e).opacity") == expected
         hero_height = page.locator(".hero").evaluate("e => e.offsetHeight")
         intro_inset = page.evaluate("document.querySelector('.statement').getBoundingClientRect().top-document.querySelector('.intro').getBoundingClientRect().top")
         assert intro_inset <= 96, (width, intro_inset)
@@ -83,16 +136,14 @@ with sync_playwright() as p:
                 return {photos, text:r.top<innerHeight&&r.bottom>0, textBottom:r.bottom};
             }""")
             assert handoff["textBottom"] <= 0 or handoff["photos"] or handoff["text"], (width, step, handoff)
-        page.evaluate("document.documentElement.style.scrollBehavior='auto'; window.scrollTo(0, document.querySelector('.works').offsetTop)")
+        page.evaluate("window.scrollTo(0, document.querySelector('.works').offsetTop)")
         page.wait_for_timeout(700)
         frames = page.locator(".project .frame").evaluate_all(
-            "els => els.map(e => { const r=e.getBoundingClientRect(); return {x:r.x,y:r.y,w:r.width,h:r.height,ratio:r.width/r.height}; })"
+            "es => es.map(e => { const r=e.getBoundingClientRect(); return {x:r.x,y:r.y,w:r.width,h:r.height,ratio:r.width/r.height}; })"
         )
         assert len(frames) == 4
-        for frame in frames:
-            assert abs(frame["ratio"] - 1) < 0.01, (width, frame)
-        columns = 1 if width <= 700 else 2
-        if columns == 2:
+        assert all(abs(frame["ratio"] - 1) < .01 for frame in frames), (width, frames)
+        if width > 700:
             assert abs(frames[0]["x"] - frames[2]["x"]) < 1
             assert abs(frames[1]["x"] - frames[3]["x"]) < 1
             assert abs(frames[0]["y"] - frames[1]["y"]) < 1
@@ -100,16 +151,51 @@ with sync_playwright() as p:
         else:
             assert all(abs(frame["x"] - frames[0]["x"]) < 1 for frame in frames)
             assert frames[0]["y"] < frames[1]["y"] < frames[2]["y"] < frames[3]["y"]
-        assert page.locator(".project img").evaluate_all("es => es.every(e => e.complete && e.naturalWidth > 0)")
+        page.evaluate("[...document.images].forEach(i => i.loading='eager')")
+        page.wait_for_function("[...document.images].every(i => i.complete && i.naturalWidth > 0)")
         assert page.locator(".caption").count() == 0
         assert not errors, errors
         page.close()
 
-    reduced = browser.new_page(viewport={"width": 390, "height": 844}, reduced_motion="reduce")
-    reduced.goto(HTML_PATH.as_uri())
-    assert reduced.locator(".scene-card").count() == 12
-    assert reduced.locator(".scene-card").first.evaluate("e => getComputedStyle(e).display === 'none'")
-    reduced.close()
-    browser.close()
+        reduced = browser.new_page(viewport={"width": width, "height": height}, reduced_motion="reduce", offline=True)
+        reduced_errors = []
+        reduced.on("pageerror", lambda error: reduced_errors.append(str(error)))
+        reduced.goto(HTML_PATH.as_uri())
+        check_typography(reduced)
+        assert reduced.locator(".scene-card").count() == 12
+        assert reduced.locator(".scene-card").first.evaluate("e => getComputedStyle(e).display === 'none'")
+        assert not reduced_errors, reduced_errors
+        reduced.close()
 
-print("PASS: 16 assets, Italiana wordmark, fixed color, continuous photo/text handoff, inline JS, 12 animation photos, 4 square gallery crops at phone/tablet/desktop, reduced motion")
+    # Model the repository subpath on Pages, not just file:// previews.
+    class PagesHandler(SimpleHTTPRequestHandler):
+        def do_GET(self):
+            if not self.path.startswith("/nicola-capasso-demo/"):
+                self.send_error(404)
+                return
+            self.path = self.path[len("/nicola-capasso-demo"):]
+            super().do_GET()
+
+        def log_message(self, format, *args):
+            pass
+
+    server = ThreadingHTTPServer(("127.0.0.1", 0), functools.partial(PagesHandler, directory=str(PUBLIC)))
+    thread = Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+    try:
+        web = browser.new_page(viewport={"width": 390, "height": 844})
+        web_errors = []
+        web.on("pageerror", lambda error: web_errors.append(str(error)))
+        response = web.goto(f"http://127.0.0.1:{server.server_port}/nicola-capasso-demo/")
+        assert response.status == 200
+        check_typography(web)
+        assert web.locator(".portrait").evaluate("e => e.complete && e.naturalWidth > 0")
+        assert not web_errors, web_errors
+        web.close()
+    finally:
+        server.shutdown()
+        server.server_close()
+        thread.join()
+        browser.close()
+
+print("PASS: 15 unique assets; two loaded local fonts; normalized name typography at 7 viewports; title/UI weights; continuous photo/text handoff; cue spacing and arrow exit/reverse; 12 animation photos; 4 square gallery crops; reduced motion; Pages subpath HTTP; JS syntax")

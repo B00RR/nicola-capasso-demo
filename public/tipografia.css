@@ -1,0 +1,64 @@
+:root {
+  --font-titoli: 'Italiana', Georgia, serif;
+  --font-ui: 'Space Grotesk', Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+.nav,
+.nav .brand,
+.cta,
+.hero-meta,
+.hero-note,
+.scroll,
+.eyebrow,
+.caption,
+.caption b,
+.commissioned,
+.footer,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-ui);
+  font-weight: 300;
+}
+
+.hero h1,
+.intro h2,
+.about h2,
+.contact h2,
+.section-head h2 {
+  font-family: var(--font-titoli);
+  font-weight: 400;
+  font-style: normal;
+  font-synthesis: none;
+}
+
+.intro h2,
+.about h2,
+.contact h2,
+.section-head h2 {
+  line-height: 1.12;
+  letter-spacing: -.015em;
+}
+
+.nav,
+.cta,
+.eyebrow,
+.hero-note,
+.footer {
+  letter-spacing: .1em;
+}
+
+/* Nome: stesso tracking e stesso ispessimento relativo su ogni schermo. */
+.hero h1 {
+  letter-spacing: .015em;
+  -webkit-text-stroke: .016em currentColor;
+}
