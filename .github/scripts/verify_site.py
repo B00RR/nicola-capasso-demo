@@ -36,7 +36,9 @@ for removed in (
 
 assets = set(re.findall(r"(?:src|href)=\"(assets/[^\"]+)\"", html))
 assets.update(re.findall(r"url\(['\"]?(assets/[^'\")]+)", html))
-assert len(assets) == 15, f"Expected 15 local font/photo assets, found {len(assets)}"
+assert len(assets) == 16, f"Expected 16 local font/photo assets, found {len(assets)}"
+assert "assets/fonts/italiana-regular.ttf" in assets
+assert (PUBLIC / "assets/fonts/italiana-OFL.txt").is_file()
 for asset in assets:
     assert (PUBLIC / asset).is_file(), asset
 with tempfile.TemporaryDirectory() as tmp:
@@ -57,7 +59,30 @@ with sync_playwright() as p:
         page.on("pageerror", lambda error: errors.append(str(error)))
         page.goto(HTML_PATH.as_uri())
         page.wait_for_timeout(500)
+        page.evaluate("document.fonts.ready")
+        assert page.evaluate("document.fonts.check('400 42px Italiana')")
+        style = page.locator(".hero h1").evaluate(
+            "e => { const s=getComputedStyle(e); return {font:s.fontFamily,blend:s.mixBlendMode,stroke:parseFloat(s.webkitTextStrokeWidth)}; }"
+        )
+        assert "Italiana" in style["font"] and style["blend"] == "normal", style
+        assert style["stroke"] >= 1.2, style
         assert page.locator(".scene-card").count() == 12
+        page.add_style_tag(content="html{scroll-behavior:auto!important}")
+        hero_height = page.locator(".hero").evaluate("e => e.offsetHeight")
+        intro_inset = page.evaluate("document.querySelector('.statement').getBoundingClientRect().top-document.querySelector('.intro').getBoundingClientRect().top")
+        assert intro_inset <= 96, (width, intro_inset)
+        for step in range(27):
+            page.evaluate("y => window.scrollTo(0,y)", hero_height-height*1.3+step*height*.05)
+            page.wait_for_timeout(50)
+            handoff = page.evaluate("""() => {
+                const r=document.querySelector('.statement').getBoundingClientRect();
+                const photos=[...document.querySelectorAll('.scene-card')].some(e=>{
+                    const b=e.getBoundingClientRect();
+                    return Number(getComputedStyle(e).opacity)>.05 && b.bottom>0 && b.top<innerHeight;
+                });
+                return {photos, text:r.top<innerHeight&&r.bottom>0, textBottom:r.bottom};
+            }""")
+            assert handoff["textBottom"] <= 0 or handoff["photos"] or handoff["text"], (width, step, handoff)
         page.evaluate("document.documentElement.style.scrollBehavior='auto'; window.scrollTo(0, document.querySelector('.works').offsetTop)")
         page.wait_for_timeout(700)
         frames = page.locator(".project .frame").evaluate_all(
@@ -87,4 +112,4 @@ with sync_playwright() as p:
     reduced.close()
     browser.close()
 
-print("PASS: 15 assets, inline JS, 12 animation photos, 4 square gallery crops at phone/tablet/desktop, reduced motion")
+print("PASS: 16 assets, Italiana wordmark, fixed color, continuous photo/text handoff, inline JS, 12 animation photos, 4 square gallery crops at phone/tablet/desktop, reduced motion")
