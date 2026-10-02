@@ -4,19 +4,28 @@ Prototipo editoriale di presentazione per Nicola Capasso.
 
 ## Stato attuale approvato
 
-La pagina principale è `public/index.html`.
-
 Anteprima pubblica: https://b00rr.github.io/nicola-capasso-demo/
 
-- Italiana Regular 400 per il nome e i titoli editoriali.
-- Space Grotesk Light 300 per testo e interfaccia.
-- Solo il nome ha un lieve ispessimento grafico, proporzionale alla dimensione del carattere su desktop e mobile.
-- Fotografie animate a colori, passaggio compatto al manifesto, guida senza barra di avanzamento e freccia che scompare all'ingresso del secondo blocco.
-- Font locali caricati tramite FontFace API, senza dichiarazioni CSS `@font-face` e senza richieste a servizi di font esterni.
+- Homepage `public/index.html` con 10 fotografie collegate alle rispettive storie e collegamento «Tutte le storie» dopo la griglia.
+- Portfolio `public/portfolio.html` e 10 pagine dedicate, da `storia-01.html` a `storia-10.html`.
+- Galleria essenziale: fotografie cliccabili senza didascalie, barre strumenti o intestazioni aggiuntive.
+- Ritorni testuali a homepage e Portfolio; storia successiva solo testo, con ciclo dall’ultima alla prima; ingrandimento delle fotografie.
+- Italiana Regular 400 per nome, titoli e collegamenti editoriali; Space Grotesk Light 300 per paragrafi e interfaccia. Font locali e licenze inclusi.
+- Paragrafi a 16px, titoli responsive, spaziature riviste e a capo naturali su mobile.
+- Testi dedicati al matrimonio e all’amore della coppia, con le ultime correzioni editoriali della fonte locale.
+- Le 12 fotografie dell’animazione iniziale sono a colori e senza ombre esterne. Movimento e transizione all’introduzione conservati.
+- Su mobile la dimensione del nome è proporzionata alla fotografia come su desktop; fotografia e composizione desktop invariate.
+- Footer provvisorio e note di prototipo non presenti nelle pagine.
+
+Le fotografie e le raccolte sono ancora segnaposto: non attestano dieci servizi fotografici distinti. Questa pubblicazione aggiorna il prototipo GitHub Pages, non il sito WordPress attivo su Aruba.
 
 Dettagli e fonte locale: [docs/STATO-ATTUALE.md](docs/STATO-ATTUALE.md).
 
-## Verifica
+## Verifica e pubblicazione
+
+Le modifiche visive sono state verificate durante il lavoro sulla fonte locale. Per questa sincronizzazione su `main`, espressamente autorizzata dall’utente, non sono stati rilanciati i test locali. Il workflow già esistente continua a verificare e pubblicare `public/` su GitHub Pages; le aspettative relative alla griglia e ai collegamenti sono aggiornate alla versione attuale.
+
+Per eseguire successivamente la verifica del repository:
 
 ```sh
 python -m pip install playwright==1.55.0
@@ -24,6 +33,4 @@ python -m playwright install chromium
 python .github/scripts/verify_site.py
 ```
 
-Per usare un browser Chromium già installato, impostare `BROWSER_PATH` al percorso dell'eseguibile. La verifica copre sette viewport, movimento ridotto, font e pesi effettivamente caricati, proporzioni del nome, transizione fotografica, guida, immagini e pubblicazione sotto il percorso GitHub Pages del repository.
-
-Le PR devono superare la verifica prima del merge. Il workflow pubblica `public/` su GitHub Pages soltanto da `main`; il sito WordPress su Aruba non viene modificato.
+Per un browser Chromium già installato è possibile impostare `BROWSER_PATH` al percorso dell’eseguibile.

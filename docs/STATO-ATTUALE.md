@@ -2,34 +2,45 @@
 
 ## Fonte approvata
 
-La versione corrente locale si trova nella cartella `Prototipi Nicola Capasso/13 - Stato attuale tipografia omogenea/sito/index.html`.
+La copia locale selezionata è `Prototipi Nicola Capasso/16 - Stato attuale portfolio e storie/sito/`.
 
-`public/index.html` riproduce questa fonte: l'unica differenza nell'HTML è l'adattamento dei percorsi `../assets/` a `assets/` per la pubblicazione. Il loader dei font risolve i file rispetto al proprio URL, così funziona sia come anteprima locale sia sotto il percorso del repository su GitHub Pages.
+Tutte le 12 pagine HTML sono importate in `public/`: l’unica modifica al contenuto è l’adattamento dei percorsi `../assets/` a `assets/`. Le fotografie, i font e il loader vengono copiati dalla stessa fonte. Il CSS completo della homepage viene esportato dal suo stile inline, senza alterarne le regole.
 
-In locale rimangono solo la versione corrente (cartella 13) e il backup immediatamente precedente (`12 - Prova nome leggermente più marcato/sito/index.html`). I vecchi prototipi e confronti sono stati rimossi dalla cartella di lavoro. Il progetto WordPress, con piani e riferimento congelato, è stato conservato separatamente nella cartella `Progetto WordPress Nicola Capasso` sul Desktop; non viene sostituito automaticamente dal prototipo attuale.
+Le versioni precedenti, i confronti grafici, le verifiche locali e i materiali di lavoro della brochure non vengono pubblicati. Il progetto WordPress e il suo riferimento congelato restano separati.
 
-## Tipografia
+## Pagine e navigazione
 
-- Nome e titoli di sezione: Italiana, peso reale 400.
-- Testo e UI: Space Grotesk, peso reale 300.
-- Nome leggermente più marcato tramite `-webkit-text-stroke: .016em currentColor`; non è un peso Bold ufficiale di Italiana.
-- Tracking del nome: `.015em` sia su desktop sia su mobile.
-- Nessun minimo fisso in pixel per lo stroke: il rapporto tra spessore aggiunto e dimensione del carattere resta uguale su tutti gli schermi.
-- Dimensioni responsive e fotografia conservate: omogeneità del disegno tipografico non significa identica composizione o identico ingombro rispetto al ritratto su telefono e PC.
-- Solo il nome riceve l'ispessimento; i titoli editoriali rimangono Regular senza stroke.
+- Homepage con 10 immagini collegate alle rispettive storie.
+- Portfolio essenziale e 10 pagine storia con galleria e ingrandimento.
+- Collegamento «Tutte le storie» dopo la griglia completa.
+- «Torna alla homepage» in Portfolio e nelle storie; due ritorni al Portfolio in ogni storia.
+- «La prossima storia» senza miniatura o titolo aggiuntivo, con ritorno dalla decima alla prima.
+- Nessun ripristino di toolbar, didascalie, separatori, footer provvisorio o note di prototipo.
 
-Il font viene caricato da due file locali attraverso `assets/fonts/load-fonts.js`, con le licenze OFL incluse. Questo caricamento richiede JavaScript, come le animazioni del prototipo. Non sono necessari servizi esterni di font.
+Le fotografie e le raccolte rimangono segnaposto. Le pagine non costituiscono un inventario verificato di dieci servizi matrimoniali.
 
-Le regole tipografiche sono esportate in `public/tipografia.css`; il CSS completo è esportato in `public/stili-completi.css` e verificato uguale al CSS inline della pagina.
+## Tipografia e proporzioni
 
-## Esperienza conservata
+Italiana Regular 400 per nome, titoli e collegamenti editoriali; Space Grotesk Light 300 per il testo. Il nome conserva stroke `.016em` e tracking `.015em`: non viene simulato un peso Bold ufficiale del font.
 
-Fotografie animate a colori, nome scuro fisso senza inversione cromatica, transizione compatta al manifesto, guida visibile e senza barra di avanzamento. La scritta della guida sfuma con nome e ritratto; la freccia rimane nella sequenza e scompare quando entra il secondo blocco, ricomparendo scorrendo indietro. Rimangono invariati contenuti e ritagli delle fotografie.
+I paragrafi delle storie e della sezione personale sono a 16px, con interlinea 1.75. Titoli e distanze sono responsive. I ritorni a capo editoriali restano su desktop e vengono lasciati fluire naturalmente su mobile.
 
-## Verifiche di rilascio
+Solo su mobile, la dimensione del nome iniziale è `calc(var(--portrait-height)*.17)`: il rapporto tra larghezza del nome e fotografia è circa 1.63, come nel desktop di riferimento. La fotografia non viene ridimensionata o riposizionata da questa correzione.
 
-La suite controlla i viewport 320×568, 390×844, 700×900, 701×900, 844×390, 1440×900 e 1920×1080, anche con movimento ridotto. Include font effettivamente caricati, pesi, tracking/stroke normalizzati, assenza di overflow, separazione tra ritratto/frase/guida, uscita e ritorno della freccia, continuità foto/testo, immagini e galleria, sintassi JavaScript e caricamento via HTTP sotto il percorso GitHub Pages.
+## Fotografie e testi
+
+Le 12 immagini dell’animazione sono a colori e senza `box-shadow`; l’immagine centrale conserva il proprio trattamento. Movimento, sequenza, guida e transizione fotografica sono quelli della fonte locale approvata.
+
+L’introduzione è: «Due mani unite, la luce di uno sguardo, l’amore che rende ogni istante soltanto vostro.»
+
+Le storie parlano del matrimonio e dell’amore della coppia, non della proposta o delle fasi prematrimoniali. Sono incluse anche le correzioni puntuali successive: eliminazione del riferimento alle mani nella prima storia e in «La vostra promessa», e sostituzione della frase «con il cuore vicino al cuore».
+
+## Verifiche già eseguite in locale
+
+Durante il lavoro sono state controllate tutte le 12 pagine su desktop e mobile, comprese larghezze fino a 320px, schermi orizzontali e movimento ridotto. Sono stati verificati leggibilità, spaziature, overflow, immagini, navigazione e comportamento delle gallerie. Le modifiche successive al nome e alle ombre sono state confrontate con la versione precedente, preservando geometria della fotografia e animazione.
+
+Questa sincronizzazione non rilancia tali test locali, secondo la richiesta dell’utente. Controlla invece la corrispondenza dei file importati con la fonte e la presenza della revisione su `main`. Il workflow GitHub Pages esistente viene mantenuto; le sue aspettative obsolete (quattro fotografie e vecchio font delle CTA) sono aggiornate al prototipo corrente.
 
 Pubblicazione: https://b00rr.github.io/nicola-capasso-demo/
 
-Questa pubblicazione riguarda il prototipo GitHub Pages, non il sito WordPress attivo su Aruba.
+Il sito WordPress attivo su Aruba non viene modificato.

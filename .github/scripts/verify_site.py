@@ -18,7 +18,7 @@ css = style_match.group(1)
 assert css == (PUBLIC / "stili-completi.css").read_text(encoding="utf-8")
 assert "../assets/" not in html
 assert html.count('class="scene-card"') == 12
-assert html.count('class="project reveal"') == 4
+assert html.count('class="project reveal"') == 10
 assert "Storie, non pose." in html
 assert 'class="caption"' not in html
 for removed in (
@@ -79,8 +79,8 @@ def check_typography(page):
     assert abs(style["stroke"] / style["size"] - .016) < .00001, style
     assert abs(style["spacing"] / style["size"] - .015) < .00001, style
     for selectors, family, weight in (
-        (".intro h2,.about h2,.contact h2,.section-head h2", "Italiana", "400"),
-        ("body,p,.nav,.nav a,.nav .brand,.cta,.hero-note,.eyebrow,button,input,textarea,select", "Space Grotesk", "300"),
+        (".intro h2,.about h2,.contact h2,.section-head h2,.luxury-link", "Italiana", "400"),
+        ("body,p,.nav,.nav a,.nav .brand,.hero-note,.eyebrow,button,input,textarea,select", "Space Grotesk", "300"),
     ):
         styles = page.locator(selectors).evaluate_all(
             "es => es.map(e => { const s=getComputedStyle(e); return {font:s.fontFamily,weight:s.fontWeight}; })"
@@ -141,16 +141,18 @@ with sync_playwright() as p:
         frames = page.locator(".project .frame").evaluate_all(
             "es => es.map(e => { const r=e.getBoundingClientRect(); return {x:r.x,y:r.y,w:r.width,h:r.height,ratio:r.width/r.height}; })"
         )
-        assert len(frames) == 4
+        assert len(frames) == 10
         assert all(abs(frame["ratio"] - 1) < .01 for frame in frames), (width, frames)
         if width > 700:
-            assert abs(frames[0]["x"] - frames[2]["x"]) < 1
-            assert abs(frames[1]["x"] - frames[3]["x"]) < 1
-            assert abs(frames[0]["y"] - frames[1]["y"]) < 1
-            assert abs(frames[2]["y"] - frames[3]["y"]) < 1
+            for i in range(0, len(frames), 2):
+                assert abs(frames[i]["x"] - frames[0]["x"]) < 1
+                assert abs(frames[i + 1]["x"] - frames[1]["x"]) < 1
+                assert abs(frames[i]["y"] - frames[i + 1]["y"]) < 1
+                if i:
+                    assert frames[i]["y"] > frames[i - 2]["y"]
         else:
             assert all(abs(frame["x"] - frames[0]["x"]) < 1 for frame in frames)
-            assert frames[0]["y"] < frames[1]["y"] < frames[2]["y"] < frames[3]["y"]
+            assert all(a["y"] < b["y"] for a, b in zip(frames, frames[1:]))
         page.evaluate("[...document.images].forEach(i => i.loading='eager')")
         page.wait_for_function("[...document.images].every(i => i.complete && i.naturalWidth > 0)")
         assert page.locator(".caption").count() == 0
@@ -198,4 +200,4 @@ with sync_playwright() as p:
         thread.join()
         browser.close()
 
-print("PASS: 15 unique assets; two loaded local fonts; normalized name typography at 7 viewports; title/UI weights; continuous photo/text handoff; cue spacing and arrow exit/reverse; 12 animation photos; 4 square gallery crops; reduced motion; Pages subpath HTTP; JS syntax")
+print("PASS: 15 unique assets; two loaded local fonts; normalized name typography at 7 viewports; title/UI/editorial-link weights; continuous photo/text handoff; cue spacing and arrow exit/reverse; 12 animation photos; 10 square gallery crops; reduced motion; Pages subpath HTTP; JS syntax")
