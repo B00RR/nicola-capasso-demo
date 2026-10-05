@@ -19,10 +19,15 @@ css = style_match.group(1)
 assert css + "\n" + (PUBLIC / "mobile.css").read_text(encoding="utf-8") + "\n\n" + (PUBLIC / "azioni.css").read_text(encoding="utf-8") == (PUBLIC / "stili-completi.css").read_text(encoding="utf-8")
 for page_path in PUBLIC.glob("*.html"):
     page_html = page_path.read_text(encoding="utf-8")
-    assert '<link rel="stylesheet" href="mobile.css">' in page_html
-    assert '<link rel="stylesheet" href="azioni.css">' in page_html
+    if page_path.name != "404.html":
+        assert '<link rel="stylesheet" href="mobile.css">' in page_html
+        assert '<link rel="stylesheet" href="azioni.css">' in page_html
+    else:
+        assert 'href="/nicola-capasso-demo/index.html"' in page_html
+        assert '<base' not in page_html
+        assert '<meta name="robots" content="noindex,follow">' in page_html
     assert "../assets/" not in page_html
-assert len(list(PUBLIC.glob("*.html"))) == 12
+assert len(list(PUBLIC.glob("*.html"))) == 13
 assert "../assets/" not in html
 assert html.count('class="scene-card"') == 12
 assert html.count('class="project reveal"') == 10
@@ -213,4 +218,5 @@ with sync_playwright() as p:
         browser.close()
 
 subprocess.run([sys.executable, str(ROOT / ".github/scripts/verify_public_pages.py")], check=True)
+subprocess.run([sys.executable, str(ROOT / ".github/scripts/verify_404.py")], check=True)
 print("PASS: 15 unique assets; two loaded local fonts; normalized name typography at 7 viewports; title/UI/editorial-link weights; continuous photo/text handoff; cue spacing and arrow exit/reverse; 12 animation photos; 10 square gallery crops; reduced motion; Pages subpath HTTP; JS syntax")

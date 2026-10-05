@@ -1,5 +1,13 @@
 # Stato attuale del prototipo
 
+## 05/10 17:34 — Pagina 404 approvata
+
+La 404 «Fuori inquadratura.» è ora parte dello stato attuale approvato. Il numero 404 è davanti alla fotografia, senza spostamenti o cambiamenti di dimensione; nome in alto, motto, etichetta e didascalia sono rimossi. Restano il titolo, il testo esplicativo e le azioni Hompage/Portfolio con riempimento fluido. Fonte: `16 - Stato attuale portfolio e storie/sito/404.html`, verificata prima/dopo su 13 configurazioni; nessuna differenza di geometria dei contenuti rimasti.
+
+Il pacchetto comprende 13 pagine e 34 file nel manifesto. I 33 file precedenti restano identici. Nella sola 404 pubblicata si adattano i percorsi delle immagini/font e delle due azioni al prefisso assoluto `/nicola-capasso-demo/` per funzionare su URL inesistenti a qualsiasi profondità, anche senza JavaScript. Non si aggiunge un elemento base: il collegamento `#contenuto` deve restare nella pagina di errore corrente. Nessuna modifica al design approvato o al CSS della homepage.
+
+Pubblicazione autorizzata tramite una nuova PR; verifiche del pacchetto, CI e deploy sullo SHA effettivo. I test precedenti di homepage, Portfolio e dieci storie rimangono attivi, affiancati da verifiche dedicate della risposta HTTP 404 e dei relativi collegamenti. L'approvazione riguarda il prototipo GitHub Pages, non attivazione o modifica del tema WordPress/Aruba.
+
 ## Aggiornamento approvato 05/10/2026
 
 La sincronizzazione include tutte le modifiche offline approvate fino ai pulsanti del diario delle 15:48: raccordo temporale 85 ms, geometria stabile mobile e fascia riservata alla guida; nome/foto da progress .01 e ritratto da .02; movimento .19–.34, rotazione .24–.38 e passaggio immediato all'introduzione alla griglia completa .38, senza scroll automatico.
