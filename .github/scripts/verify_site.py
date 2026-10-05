@@ -5,6 +5,7 @@ import functools
 import os
 import re
 import subprocess
+import sys
 import tempfile
 from playwright.sync_api import sync_playwright
 
@@ -15,7 +16,13 @@ html = HTML_PATH.read_text(encoding="utf-8")
 style_match = re.search(r"<style>(.*?)</style>", html, re.S)
 assert style_match is not None, "Missing inline stylesheet"
 css = style_match.group(1)
-assert css == (PUBLIC / "stili-completi.css").read_text(encoding="utf-8")
+assert css + "\n" + (PUBLIC / "mobile.css").read_text(encoding="utf-8") + "\n\n" + (PUBLIC / "azioni.css").read_text(encoding="utf-8") == (PUBLIC / "stili-completi.css").read_text(encoding="utf-8")
+for page_path in PUBLIC.glob("*.html"):
+    page_html = page_path.read_text(encoding="utf-8")
+    assert '<link rel="stylesheet" href="mobile.css">' in page_html
+    assert '<link rel="stylesheet" href="azioni.css">' in page_html
+    assert "../assets/" not in page_html
+assert len(list(PUBLIC.glob("*.html"))) == 12
 assert "../assets/" not in html
 assert html.count('class="scene-card"') == 12
 assert html.count('class="project reveal"') == 10
@@ -80,7 +87,7 @@ def check_typography(page):
     assert abs(style["spacing"] / style["size"] - .015) < .00001, style
     for selectors, family, weight in (
         (".intro h2,.about h2,.contact h2,.section-head h2,.luxury-link", "Italiana", "400"),
-        ("body,p,.nav,.nav a,.nav .brand,.hero-note,.eyebrow,button,input,textarea,select", "Space Grotesk", "300"),
+        ("body,p,.nav,.nav a,.nav .brand,.hero-note,.eyebrow,button,input,textarea,select", "Space Grotesk", "400" if page.evaluate("matchMedia('(max-width:700px), (max-width:1000px) and (pointer:coarse)').matches") else "300"),
     ):
         styles = page.locator(selectors).evaluate_all(
             "es => es.map(e => { const s=getComputedStyle(e); return {font:s.fontFamily,weight:s.fontWeight}; })"
@@ -119,8 +126,13 @@ with sync_playwright() as p:
         boundary = page.evaluate("scrollY+document.querySelector('.intro').getBoundingClientRect().top-innerHeight")
         for delta, expected in ((-5, "1"), (5, "0"), (100, "0"), (-20, "1")):
             page.evaluate("y => scrollTo(0,y)", boundary + delta)
-            page.wait_for_timeout(250)
-            assert page.locator(".hero-note").evaluate("e => getComputedStyle(e).opacity") == expected
+            page.wait_for_function(
+                "expected => frameId === 0 && Math.abs(displayProgress-progressAt(scrollY))*geometry.range < .1 && getComputedStyle(heroNote).opacity === expected",
+                arg=expected,
+                timeout=5000,
+            )
+            actual_opacity = page.locator(".hero-note").evaluate("e => getComputedStyle(e).opacity")
+            assert actual_opacity == expected, (width, height, delta, boundary, actual_opacity, page.evaluate("({scrollY, introTop:document.querySelector('.intro').getBoundingClientRect().top, height:innerHeight, idle:frameId===0, displayProgress})"))
         hero_height = page.locator(".hero").evaluate("e => e.offsetHeight")
         intro_inset = page.evaluate("document.querySelector('.statement').getBoundingClientRect().top-document.querySelector('.intro').getBoundingClientRect().top")
         assert intro_inset <= 96, (width, intro_inset)
@@ -200,4 +212,5 @@ with sync_playwright() as p:
         thread.join()
         browser.close()
 
+subprocess.run([sys.executable, str(ROOT / ".github/scripts/verify_public_pages.py")], check=True)
 print("PASS: 15 unique assets; two loaded local fonts; normalized name typography at 7 viewports; title/UI/editorial-link weights; continuous photo/text handoff; cue spacing and arrow exit/reverse; 12 animation photos; 10 square gallery crops; reduced motion; Pages subpath HTTP; JS syntax")

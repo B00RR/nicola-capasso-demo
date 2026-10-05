@@ -1,0 +1,100 @@
+/* Leggibilita mobile condivisa: nessuna modifica alla tipografia desktop o al wordmark. */
+@media (max-width: 700px), (max-width: 1000px) and (pointer: coarse) {
+  body {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  p, .hero-note, .scroll { font-weight: 400; }
+
+  .intro h2,
+  .section-head h2,
+  .about h2,
+  .contact h2,
+  .story-heading h1,
+  .story-copy h2,
+  .portfolio-a h1,
+  .portfolio-a h2 {
+    -webkit-text-stroke: .18px currentColor;
+    text-wrap: balance;
+  }
+
+  #intro .statement {
+    font-size: clamp(32px, 8.8vw, 38px);
+    line-height: 1.22;
+  }
+  #intro .word {
+    /* Il testo deve essere leggibile appena entra, anche durante uno scroll lento. */
+    opacity: 1 !important;
+    color: #191916;
+    transition: none;
+  }
+
+  .hero-meta { font-size: 12px; }
+  .hero-meta p { font-size: 12px; line-height: 1.4; }
+  .about p,
+  .story-a .story-copy p {
+    color: #41413c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+
+  .portfolio-a .portfolio-contact-link,
+  #storie .portfolio-link,
+  .contact .cta { min-height: 44px; }
+
+  .lightbox-count { font-size: 14px; line-height: 1.4; }
+  .lightbox-close {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  .lightbox-step { min-width: 44px; min-height: 44px; }
+  .lightbox-content { padding: 65px 54px; }
+
+  /* Due azioni affiancate, con aree di tocco distinte anche a 320px. */
+  .story-a .story-top-nav,
+  .story-a .story-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 16px;
+  }
+  .story-a .story-top-nav > a,
+  .story-a .story-nav > a {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    min-height: 64px;
+    max-width: 100%;
+    padding: 8px 0;
+    font-family: 'Italiana', Georgia, serif;
+    font-size: clamp(20px, 5.8vw, 25px);
+    font-weight: 400;
+    line-height: 1.25;
+    -webkit-text-stroke: .22px currentColor;
+    white-space: normal;
+    text-wrap: balance;
+  }
+  .story-a .story-top-nav > a:first-child,
+  .story-a .story-nav > a:first-child {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .story-a .story-top-nav > a:last-child,
+  .story-a .story-nav .next {
+    justify-content: flex-end;
+    align-self: stretch;
+    text-align: right;
+  }
+  .story-a .story-nav .next-label {
+    max-width: 100%;
+    font-size: clamp(20px, 5.8vw, 25px);
+    line-height: 1.25;
+    text-align: right;
+    text-wrap: balance;
+  }
+}
