@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="noindex,follow">
+  <title>Pagina non trovata — Nicola Capasso</title>
+  <meta name="description" content="Questa pagina non è disponibile. Tornate alla homepage di Nicola Capasso o scoprite le storie del Portfolio.">
+  <style>
+    @font-face{font-family:Italiana;src:url('/nicola-capasso-demo/assets/fonts/italiana-regular.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+    @font-face{font-family:'Space Grotesk';src:url('/nicola-capasso-demo/assets/fonts/space-grotesk.ttf') format('truetype');font-style:normal;font-weight:300 700;font-display:swap}
+    :root{color-scheme:light;--ink:#191916;--muted:#62625d;--paper:#fff}
+    *,*::before,*::after{box-sizing:border-box}
+    html{background:var(--paper)}
+    body{margin:0;background:var(--paper);color:var(--ink);font:300 16px/1.75 'Space Grotesk',Arial,sans-serif;font-synthesis:none;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible{outline:2px solid var(--ink);outline-offset:6px}
+    .skip{position:fixed;z-index:3;left:20px;top:16px;padding:10px 18px;background:var(--ink);color:var(--paper);transform:translateY(-160%)}
+    .skip:focus{transform:none}
+    .shell{width:88%;max-width:1440px;margin-inline:auto}
+    .masthead{padding-block:34px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:30px}
+    .masthead::before{content:"";display:block;height:1.2em}
+    .error-layout{min-height:calc(100svh - 96px);display:grid;grid-template-columns:1fr 1.08fr;align-items:center;gap:7%;padding-block:34px 70px}
+    .copy{position:relative;z-index:1;max-width:540px;animation:arrive .8s .08s both}
+    .eyebrow{height:1.75em;margin:0 0 26px;font-size:12px}
+    h1{margin:0;font:400 clamp(62px,6.7vw,100px)/1.02 Italiana,Georgia,serif;letter-spacing:-.025em;-webkit-text-stroke:.18px currentColor}
+    h1 span{display:block}
+    .explanation{margin:30px 0 0;max-width:32ch;color:var(--muted);font-size:16px;line-height:1.75;text-wrap:pretty}
+    .explanation span{display:block}
+    .actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin-top:36px}
+    /* Same restrained border and fluid fill as the site's approved actions. */
+    .error-action{display:inline-flex;position:relative;isolation:isolate;align-items:center;justify-content:center;overflow:hidden;min-width:0;max-width:100%;min-height:58px;padding:13px 24px;border:1px solid #4f4f49;border-radius:2px;background:var(--paper);color:var(--ink);font:400 28px/1.2 Italiana,Georgia,serif;letter-spacing:-.015em;-webkit-text-stroke:.18px currentColor;text-align:center;transition:color .25s .12s,border-color .2s}
+    .error-action::before,.error-action::after{content:"";display:block;position:absolute;left:50%;top:100%;width:140%;height:180%;border-radius:50%;background:rgba(25,25,22,.06);transform:translateX(-50%) scaleY(1) scaleX(1.25);z-index:-1;transition:all .5s .1s cubic-bezier(.55,0,.1,1)}
+    .error-action::after{left:55%;top:180%;width:160%;height:190%;background:var(--ink);transform:translateX(-50%) scaleY(1) scaleX(1.45)}
+    .error-action:is(:hover,:focus-visible,:active){color:var(--paper);border:1px solid var(--ink)}
+    .error-action:is(:hover,:focus-visible,:active)::before{top:-35%;background:var(--ink);transform:translateX(-50%) scaleY(1.3) scaleX(.8)}
+    .error-action:is(:hover,:focus-visible,:active)::after{top:-45%;background:var(--ink);transform:translateX(-50%) scaleY(1.3) scaleX(.8)}
+    .photographic-note{margin:0;position:relative;width:100%;max-width:600px;justify-self:end;padding-top:106px;padding-bottom:32px;animation:arrive 1s .16s both}
+    .error-number{position:absolute;z-index:2;pointer-events:none;inset:-34px 0 auto;font:400 clamp(210px,24vw,350px)/1 Italiana,Georgia,serif;letter-spacing:-.065em;text-align:center;user-select:none}
+    .photograph{position:relative;width:64%;margin:0 auto;aspect-ratio:2/3;overflow:hidden;background:#f3f3f1}
+    .photograph img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+    .caption-space{position:relative;margin:19px auto 0;width:64%;font-size:11px;line-height:1.6;container-type:inline-size}
+    .caption-space::before{content:"";display:block;height:1.6em}
+    @container(max-width:240px){.caption-space::before{height:3.2em}}
+    @keyframes arrive{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    @media(min-width:701px) and (min-height:501px){.photograph{width:min(64%,calc((100svh - 400px)*2/3));min-width:220px}.caption-space{width:min(64%,calc((100svh - 400px)*2/3));min-width:220px}}
+    @media(min-width:1800px){.error-layout{gap:10%}.photographic-note{max-width:620px}}
+    @media(max-width:1100px) and (min-width:701px){.error-layout{gap:5%;padding-bottom:48px}h1{font-size:clamp(52px,6.6vw,74px)}.photographic-note{padding-top:76px}.error-number{font-size:25vw;top:-20px}.error-action{font-size:25px;padding-inline:18px}.actions{gap:12px}}
+    @media(max-width:700px){
+      body{font-weight:400}
+      .masthead{padding-block:24px 14px;font-size:26px}
+      .error-layout{min-height:0;grid-template-columns:minmax(0,1fr);gap:36px;padding-block:18px 48px}
+      .photographic-note{grid-row:1;justify-self:center;max-width:370px;padding-top:62px;padding-bottom:0}
+      .error-number{top:-12px;font-size:clamp(160px,51vw,200px)}
+      .photograph{width:47%;aspect-ratio:2/3}
+      .caption-space{display:none}
+      .copy{max-width:100%;text-align:center}
+      .eyebrow{font-size:11px;margin-bottom:18px}
+      h1{font-size:clamp(44px,12.7vw,68px);line-height:1.04}
+      .explanation{margin:22px auto 0;max-width:31ch}
+      .actions{justify-content:center;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:28px}
+      .error-action{width:100%;min-height:58px;font-size:25px;padding:12px 10px}
+    }
+    @media(max-height:500px) and (min-width:701px){
+      .masthead{padding-block:20px 12px}.error-layout{min-height:0;padding-block:22px 36px;gap:6%}
+      h1{font-size:52px}.eyebrow{margin-bottom:16px}.explanation{margin-top:20px}.actions{margin-top:24px}
+      .photographic-note{max-width:330px;padding-top:60px;padding-bottom:0}.error-number{font-size:190px;top:-20px}
+      .photograph{width:52%}.caption-space{width:52%;font-size:10px}
+    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+  <div class="shell">
+    <div class="masthead" aria-hidden="true"></div>
+    <main class="error-layout" id="contenuto" tabindex="-1" aria-label="Errore 404">
+      <div class="copy">
+        <div class="eyebrow" aria-hidden="true"></div>
+        <h1><span>Fuori</span><span>inquadratura.</span></h1>
+        <p class="explanation"><span>La pagina che cercate non è qui.</span>Ma ci sono ancora tante storie da scoprire.</p>
+        <nav class="actions" aria-label="Ritrovate la vostra strada">
+          <a class="error-action" href="/nicola-capasso-demo/index.html">Hompage</a>
+          <a class="error-action" href="/nicola-capasso-demo/portfolio.html">Portfolio</a>
+        </nav>
+      </div>
+      <figure class="photographic-note">
+        <div class="error-number" aria-hidden="true">404</div>
+        <div class="photograph"><img src="/nicola-capasso-demo/assets/optimized/6.jpg" width="1600" height="2400" alt="Due sposi si tengono per mano in un chiostro luminoso." fetchpriority="high" decoding="async"></div>
+        <div class="caption-space" aria-hidden="true"></div>
+      </figure>
+    </main>
+  </div>
+</body>
+</html>

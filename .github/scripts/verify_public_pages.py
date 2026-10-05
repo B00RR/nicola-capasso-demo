@@ -14,11 +14,17 @@ manifest = json.loads((ROOT / "docs/MANIFEST-PUBBLICAZIONE.json").read_text(enco
 for name, expected in manifest["files"].items():
     assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == expected, name
 pages = sorted(PUBLIC.glob("*.html"))
-assert len(pages) == 12
+assert len(pages) == 13
+assert manifest["htmlPages"] == len(pages)
+regular_pages = [file for file in pages if file.name != "404.html"]
+assert len(regular_pages) == 12
 with tempfile.TemporaryDirectory() as tmp:
     for file in pages:
         html = file.read_text(encoding="utf-8")
         for ref in re.findall(r'(?:src|href)="([^\"]+)"', html):
+            if file.name == "404.html" and ref.startswith("/nicola-capasso-demo/"):
+                assert (PUBLIC / ref.removeprefix("/nicola-capasso-demo/")).is_file(), ref
+                continue  # These root-relative URLs are exercised by verify_404.py.
             if not ref.startswith(("#", "mailto:", "https:", "http:")):
                 assert (PUBLIC / ref.split("#")[0]).is_file(), (file.name, ref)
         scripts = re.findall(r"<script(?:\s[^>]*)?>(.*?)</script>", html, re.S)
@@ -45,7 +51,7 @@ with sync_playwright() as p:
         page = context.new_page()
         errors = []
         page.on("pageerror", lambda error: errors.append(str(error)))
-        for file in pages:
+        for file in regular_pages:
             page.goto(file.as_uri())
             page.evaluate("window.typographyReady")
             page.evaluate("document.fonts.ready")
@@ -100,4 +106,4 @@ with sync_playwright() as p:
         context.close()
     browser.close()
 assert records == 48 and fills == 132 and interactions == 10
-print(f"PASS: source manifest {len(manifest['files'])} files; all 12 pages; {records} page/viewport checks; {fills} filled states; {interactions} story viewer/navigation interactions; all inline JS syntax and local references")
+print(f"PASS: source manifest {len(manifest['files'])} files; 13 pages syntax/references, 12 regular pages plus dedicated HTTP 404 verification; {records} page/viewport checks; {fills} filled states; {interactions} story viewer/navigation interactions")

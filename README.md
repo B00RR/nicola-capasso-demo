@@ -10,6 +10,7 @@ Aggiornamento approvato 05/10/2026: apertura fotografica anticipata, raccordo 85
 
 - Homepage `public/index.html` con 10 fotografie collegate alle rispettive storie e collegamento «Tutte le storie» dopo la griglia.
 - Portfolio `public/portfolio.html` e 10 pagine dedicate, da `storia-01.html` a `storia-10.html`.
+- Pagina 404 approvata `public/404.html`: «Fuori inquadratura.», numero davanti alla fotografia e collegamenti Hompage/Portfolio. Nessun nome, motto, etichetta aggiuntiva o didascalia. I percorsi assoluti del progetto mantengono font, foto e collegamenti funzionanti anche su URL inesistenti annidati e senza JavaScript; il salto al contenuto resta nella 404 corrente.
 - Galleria essenziale: fotografie cliccabili senza didascalie, barre strumenti o intestazioni aggiuntive.
 - Ritorni testuali a homepage e Portfolio; storia successiva solo testo, con ciclo dall’ultima alla prima; ingrandimento delle fotografie.
 - Italiana Regular 400 per nome, titoli e collegamenti editoriali; Space Grotesk 300 desktop / 400 mobile per paragrafi e interfaccia. Font locali e licenze inclusi.
@@ -25,7 +26,7 @@ Dettagli e fonte locale: [docs/STATO-ATTUALE.md](docs/STATO-ATTUALE.md).
 
 ## Verifica e pubblicazione
 
-Le modifiche visive sono state verificate sulla fonte locale, poi il pacchetto importato viene verificato prima del push diretto su `main` espressamente autorizzato dall'utente. Il workflow esistente resta attivo, con aspettative aggiornate per CSS condivisi e peso mobile. `docs/MANIFEST-PUBBLICAZIONE.json` registra gli hash dei 33 file importati, comprese le 12 pagine. Anteprime rifiutate e backup restano locali. Verifiche Chromium/Edge, non Safari/iPhone reale. Nessuna build TypeScript è prevista per questo repository statico.
+Le modifiche visive sono verificate sulla fonte locale e sul pacchetto importato. La nuova 404 viene pubblicata tramite branch dedicato e PR, con verifiche verdi prima del merge; il precedente push diretto era autorizzato solo per quella sincronizzazione. Il workflow esistente resta attivo. `docs/MANIFEST-PUBBLICAZIONE.json` registra gli hash dei 34 file importati, comprese le 13 pagine. Restano tutte le verifiche delle 12 pagine precedenti, più test specifici HTTP 404 su percorsi annidati, font/foto, tastiera, riempimento, navigazione e JavaScript disabilitato. Anteprime rifiutate e backup restano locali. Verifiche Chromium/Edge, non Safari/iPhone reale. Nessuna build TypeScript è prevista per questo repository statico.
 
 Per eseguire successivamente la verifica del repository:
 
