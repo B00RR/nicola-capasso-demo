@@ -1,5 +1,13 @@
 # Stato attuale del prototipo
 
+## Contatti approvati — 06/10/2026
+
+Lorenzo approva la pagina Contatti con tre fotografie su semicurva verticale desktop e una sola fotografia orizzontale su mobile (NCF05273.jpg, originale estratto dal portfolio di Nicola; nessun nome inventato esposto). Solo Hompage nella navigazione. CTA homepage e Portfolio collegate alla pagina.
+
+Fonte offline promossa: `Prototipi Nicola Capasso/20 - Contatti approvati/sito/index.html`. Anteprime precedenti conservate. Pubblicazione diretta su main esplicitamente autorizzata. Manifesto: 39 file, 14 pagine. Nessuna modifica WordPress/Aruba o editor.
+
+GitHub Pages è solo una preview statica: PHP non pubblicato, nessuna email reale, nessun POST verso endpoint inesistenti e nessun finto successo. Il backend locale con trasporto catturato resta disponibile nella copia offline; WordPress reale, privacy e invio email richiedono integrazione/approvazione separate. Test locali già esercitati: 28/28 integrazione Edge+PHP, suite Ada 95/95 (WP solo stub). CI del sito e verifica dedicata Contatti restano attive.
+
 ## 06/10 — Pulsanti mobile approvati da Lorenzo
 
 Promossa la correzione di Iris: pulsanti più compatti su homepage, Portfolio, dieci storie e 404. Conservati Italiana, bordo e riempimento fluido, etichette e destinazioni. Area touch almeno 44px, viewer e desktop invariati. Nuova fonte locale durevole: `Prototipi Nicola Capasso/17 - Pulsanti mobile approvati/sito/`; precedente versione 16 conservata.

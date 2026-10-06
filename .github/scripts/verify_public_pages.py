@@ -14,9 +14,9 @@ manifest = json.loads((ROOT / "docs/MANIFEST-PUBBLICAZIONE.json").read_text(enco
 for name, expected in manifest["files"].items():
     assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == expected, name
 pages = sorted(PUBLIC.glob("*.html"))
-assert len(pages) == 13
+assert len(pages) == 14
 assert manifest["htmlPages"] == len(pages)
-regular_pages = [file for file in pages if file.name != "404.html"]
+regular_pages = [file for file in pages if file.name not in ("404.html", "contatti.html")]  # Contact form has its dedicated checks.
 assert len(regular_pages) == 12
 with tempfile.TemporaryDirectory() as tmp:
     for file in pages:
@@ -106,4 +106,4 @@ with sync_playwright() as p:
         context.close()
     browser.close()
 assert records == 48 and fills == 132 and interactions == 10
-print(f"PASS: source manifest {len(manifest['files'])} files; 13 pages syntax/references, 12 regular pages plus dedicated HTTP 404 verification; {records} page/viewport checks; {fills} filled states; {interactions} story viewer/navigation interactions")
+print(f"PASS: source manifest {len(manifest['files'])} files; 14 pages syntax/references, 12 existing pages plus dedicated contact and HTTP 404 verification; {records} page/viewport checks; {fills} filled states; {interactions} story viewer/navigation interactions")

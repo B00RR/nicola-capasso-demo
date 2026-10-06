@@ -24,6 +24,7 @@ jobs:
       - run: pip install playwright==1.55.0
       - run: python -m playwright install --with-deps chromium
       - run: python .github/scripts/verify_site.py
+      - run: python .github/scripts/verify_contact.py
       - if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:

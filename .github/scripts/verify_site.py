@@ -30,7 +30,7 @@ for page_path in PUBLIC.glob("*.html"):
         assert '<base' not in page_html
         assert '<meta name="robots" content="noindex,follow">' in page_html
     assert "../assets/" not in page_html
-assert len(list(PUBLIC.glob("*.html"))) == 13
+assert len(list(PUBLIC.glob("*.html"))) == 14
 assert "../assets/" not in html
 assert html.count('class="scene-card"') == 12
 assert html.count('class="project reveal"') == 10

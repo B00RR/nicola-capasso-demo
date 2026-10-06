@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="Contatti di Nicola Capasso, fotografo di matrimoni: scrivete la data, il luogo e il vostro racconto."><title>Contatti — Nicola Capasso · Prototipo</title><script src="assets/fonts/load-fonts.js"></script><style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:#191916;font:300 14px/1.65 'Space Grotesk',Arial,sans-serif;font-synthesis:none;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{display:block;width:100%}h1,h2,h3{font-family:'Italiana',Georgia,serif;font-weight:400;margin:0;letter-spacing:-.015em;line-height:1.08}p{margin:0}a:focus-visible,button:focus-visible{outline:2px solid #191916;outline-offset:5px}.wrap{width:88%;max-width:1600px;margin:auto}
+.contatti-nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 16px;margin-top:24px}
+.contatti-intro{padding:56px 0 44px}
+.contatti-intro h1{font-size:clamp(48px,7vw,100px);line-height:1.12;text-wrap:balance}
+.contatti-guida{margin-top:22px;max-width:560px;color:#62625d;font-size:16px;line-height:1.75}
+.contatti-modulo{max-width:720px;padding-bottom:130px}
+.contatti-form{display:grid;gap:22px;margin-top:6px}
+.contatti-azioni{margin-top:2px}
+.contatti-esito{margin-top:4px}
+@media(max-width:700px){.contatti-intro{padding:36px 0 30px}.contatti-intro h1{font-size:clamp(44px,12vw,60px)}.contatti-modulo{padding-bottom:80px}.contatti-form{gap:18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+</style><link rel="stylesheet" href="mobile.css"><link rel="stylesheet" href="azioni.css"><link rel="stylesheet" href="azioni-mobile-fix.css"><link rel="stylesheet" href="contatti.css"><link rel="stylesheet" href="contatti-foto.css"></head>
+<body class="contatti-a">
+<main class="wrap">
+<nav class="contatti-nav" aria-label="Ritorna alla pagina principale"><a href="index.html">Hompage</a></nav>
+<div class="contatti-layout">
+<section class="contatti-intro">
+<h1>Contatti</h1>
+<p class="contatti-guida">Raccontatemi il vostro matrimonio: la data, il luogo e le fotografie che desiderate. Vi risponderò personalmente.</p>
+</section>
+<section class="contatti-modulo">
+<form class="contatti-form" id="contatti-form" data-endpoint="/api/contact" novalidate>
+
+<div class="contatti-riepilogo" id="contatti-riepilogo" role="alert" tabindex="-1" hidden></div>
+
+<div class="contatti-campo">
+<label for="contatti-names">Nome e cognome</label>
+<input id="contatti-names" name="names" type="text" required aria-required="true" autocomplete="name" maxlength="120" aria-describedby="errore-names">
+<p class="contatti-errore" id="errore-names" hidden></p>
+</div>
+
+<div class="contatti-campo">
+<label for="contatti-email">Email</label>
+<input id="contatti-email" name="email" type="email" required aria-required="true" autocomplete="email" inputmode="email" maxlength="254" aria-describedby="errore-email">
+<p class="contatti-errore" id="errore-email" hidden></p>
+</div>
+
+<div class="contatti-campo">
+<label for="contatti-phone">Telefono <span class="contatti-facoltativo">(facoltativo)</span></label>
+<input id="contatti-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" aria-describedby="errore-phone">
+<p class="contatti-errore" id="errore-phone" hidden></p>
+</div>
+
+<div class="contatti-campo">
+<label for="contatti-weddingDate">Data del matrimonio <span class="contatti-facoltativo">(facoltativo)</span></label>
+<input id="contatti-weddingDate" name="weddingDate" type="date" autocomplete="off" aria-describedby="errore-weddingDate">
+<p class="contatti-errore" id="errore-weddingDate" hidden></p>
+</div>
+
+<div class="contatti-campo">
+<label for="contatti-location">Luogo del matrimonio <span class="contatti-facoltativo">(facoltativo)</span></label>
+<input id="contatti-location" name="location" type="text" autocomplete="address-level2" maxlength="160" aria-describedby="errore-location">
+<p class="contatti-errore" id="errore-location" hidden></p>
+</div>
+
+<div class="contatti-campo">
+<label for="contatti-message">Il vostro messaggio</label>
+<textarea id="contatti-message" name="message" required aria-required="true" autocomplete="off" maxlength="5000" aria-describedby="errore-message"></textarea>
+<p class="contatti-errore" id="errore-message" hidden></p>
+</div>
+
+<div class="contatti-esca" aria-hidden="true">
+<label for="contatti-website">Sito web</label>
+<input id="contatti-website" name="website" type="text" tabindex="-1" autocomplete="off">
+</div>
+
+<div class="contatti-azioni">
+<button class="contatti-submit" type="submit"><span class="contatti-submit-label">Invia la richiesta</span></button>
+</div>
+
+<p class="contatti-esito" id="contatti-esito" role="status" aria-live="polite" hidden></p>
+
+<p class="contatti-nota">I dati che inviate servono solo a rispondere alla vostra richiesta: nessuna newsletter, nessun consenso marketing. <b>Informativa privacy: da confermare prima della pubblicazione</b> — segnaposto, nessun testo legale o URL inventato.</p>
+
+</form>
+</section>
+<div class="contatti-fotografie" aria-label="Fotografie di matrimonio di Nicola Capasso">
+<figure class="foto-mobile"><img src="assets/optimized/contatti-mobile-bacio.jpg" alt="Un bacio degli sposi nella luce calda del giorno" width="1920" height="1280"></figure>
+<figure class="foto-arco foto-arco-uno"><img src="assets/optimized/6.jpg" alt="Gli sposi camminano mano nella mano sotto un porticato" width="800" height="1200"></figure>
+<figure class="foto-arco foto-arco-due"><img src="assets/optimized/NCF03602-scaled.jpg" alt="Un bacio degli sposi nella luce del giorno" width="800" height="1200"></figure>
+<figure class="foto-arco foto-arco-tre"><img src="assets/optimized/NCF00205.jpg" alt="Il bouquet e le mani degli sposi" width="800" height="1200"></figure>
+</div>
+</div>
+</main>
+<script>
+(() => {
+  const form = document.getElementById('contatti-form');
+  if (!form) return;
+  const esito = document.getElementById('contatti-esito');
+  const riepilogo = document.getElementById('contatti-riepilogo');
+  const submit = form.querySelector('.contatti-submit');
+  const etichetta = form.querySelector('.contatti-submit-label');
+  // Trasporto: vuoto = nessun endpoint collegato, quindi solo invio di prova locale.
+  // Contratto concordato con Ada (card t_86c5a9da, CONTRATTO.md v1): POST application/json
+  // con {names,email,message,phone,weddingDate,location,website}, limite body 16384 byte;
+  // risposta {ok,code,message,fieldErrors?} con codice HTTP autorevole e successo solo con ok===true.
+  // Flusso token: GET <endpoint>/token e header X-NC-Contact-Token (nell'adapter WP resta il nonce nativo).
+  // Quando l'endpoint locale è pronto basta scrivere qui il suo indirizzo.
+  const ENDPOINT = ['127.0.0.1', 'localhost'].includes(location.hostname) ? (form.dataset.endpoint || '').trim() : '';
+  const TOKEN_URL = /\/contact$/.test(ENDPOINT) ? ENDPOINT + '/token' : '';
+  let token = null;
+  if (TOKEN_URL) {
+    fetch(TOKEN_URL, { method: 'GET', headers: { 'Accept': 'application/json' } })
+      .then(rispostaToken => rispostaToken.ok ? rispostaToken.json() : null)
+      .then(corpoToken => { if (corpoToken && typeof corpoToken.token === 'string') token = corpoToken.token; })
+      .catch(() => { token = null; });
+  }
+
+  const emailValida = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const telefonoValido = /^[0-9+().\-\s]{6,30}$/;
+  const attesa = ms => new Promise(risolvi => setTimeout(risolvi, ms));
+  const DATI_CONSERVATI = ' Nessun dato è andato perso: i campi restano compilati e potete riprovare. In alternativa scrivete a info@nicolacapasso.photo.';
+  let inviando = false;
+
+  const campi = [
+    { nome: 'names', etichetta: 'Nome e cognome', valida: v => {
+        if (!v.trim()) return 'Indicate il vostro nome e cognome.';
+        if (/[\r\n]/.test(v)) return 'Il nome non può contenere a capo.';
+        if (v.trim().length < 2) return 'Il nome è troppo breve.';
+        return null; } },
+    { nome: 'email', etichetta: 'Email', valida: v => {
+        if (!v.trim()) return 'Indicate un indirizzo email per la risposta.';
+        if (/[\r\n]/.test(v)) return 'L’indirizzo email non può contenere a capo.';
+        if (!emailValida.test(v.trim())) return 'L’indirizzo email non sembra completo: controllate la chiocciola e il dominio.';
+        return null; } },
+    { nome: 'phone', etichetta: 'Telefono', valida: v => {
+        if (!v.trim()) return null;
+        if (!telefonoValido.test(v.trim())) return 'Il telefono può contenere solo numeri, spazi e i segni + ( ) - .';
+        return null; } },
+    { nome: 'weddingDate', etichetta: 'Data del matrimonio', valida: v => {
+        if (!v.trim()) return null;
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(v.trim())) return 'Indicate la data nel formato giorno/mese/anno.';
+        if (isNaN(new Date(v.trim() + 'T00:00:00').getTime())) return 'La data indicata non è valida.';
+        return null; } },
+    { nome: 'location', etichetta: 'Luogo del matrimonio', valida: v => {
+        if (!v.trim()) return null;
+        if (/[\r\n]/.test(v)) return 'Il luogo non può contenere a capo.';
+        return null; } },
+    { nome: 'message', etichetta: 'Il vostro messaggio', valida: v => {
+        if (!v.trim()) return 'Scrivete il vostro messaggio.';
+        // Soglia allineata al server (minimo 1 carattere): requisito "campo obbligatorio",
+        // non una lunghezza minima non approvata. Messaggi brevissimi sono accettati.
+        return null; } }
+  ];
+
+  const nodoErrore = nome => document.getElementById('errore-' + nome);
+
+  function scriviErrore(nome, messaggio) {
+    const campo = form.elements[nome];
+    const nodo = nodoErrore(nome);
+    if (!campo || !nodo) return;
+    if (messaggio) {
+      nodo.textContent = messaggio;
+      nodo.hidden = false;
+      campo.setAttribute('aria-invalid', 'true');
+    } else {
+      nodo.textContent = '';
+      nodo.hidden = true;
+      campo.removeAttribute('aria-invalid');
+    }
+  }
+
+  // Errori per campo provenienti dall'endpoint (422 invalid).
+  function scriviErroriDaServer(erroriServer) {
+    const elenco = [];
+    campi.forEach(c => {
+      const testo = erroriServer && erroriServer[c.nome] ? String(erroriServer[c.nome]).trim() : '';
+      if (testo) elenco.push({ nome: c.nome, etichetta: c.etichetta, messaggio: testo });
+      scriviErrore(c.nome, testo || null);
+    });
+    return elenco;
+  }
+
+  function mostraRiepilogo(errori) {
+    riepilogo.innerHTML = '';
+    const titolo = document.createElement('p');
+    titolo.textContent = errori.length === 1
+      ? 'Un campo da correggere prima dell’invio.'
+      : errori.length + ' campi da correggere prima dell’invio.';
+    const lista = document.createElement('ul');
+    errori.forEach(e => {
+      const voce = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = '#contatti-' + e.nome;
+      link.textContent = e.etichetta + ': ' + e.messaggio;
+      voce.append(link);
+      lista.append(voce);
+    });
+    riepilogo.append(titolo, lista);
+    riepilogo.hidden = false;
+    riepilogo.focus();
+  }
+
+  function nascondiRiepilogo() {
+    riepilogo.hidden = true;
+    riepilogo.innerHTML = '';
+  }
+
+  function mostraEsito(stato, testo) {
+    esito.dataset.stato = stato;
+    esito.textContent = testo;
+    esito.hidden = false;
+  }
+
+  function nascondiEsito() {
+    esito.hidden = true;
+    esito.textContent = '';
+    delete esito.dataset.stato;
+  }
+
+  form.addEventListener('input', evento => {
+    const campo = evento.target;
+    if (!campo.name) return;
+    const definizione = campi.find(c => c.nome === campo.name);
+    if (!definizione || campo.getAttribute('aria-invalid') !== 'true') return;
+    if (!definizione.valida(campo.value)) scriviErrore(campo.name, null);
+  });
+
+  form.addEventListener('submit', async evento => {
+    evento.preventDefault();
+    if (inviando) return;
+
+    const errori = campi
+      .map(c => ({ nome: c.nome, etichetta: c.etichetta, messaggio: c.valida(form.elements[c.nome].value) }))
+      .filter(c => c.messaggio);
+
+    campi.forEach(c => scriviErrore(c.nome, (errori.find(e => e.nome === c.nome) || {}).messaggio || null));
+
+    if (errori.length) {
+      nascondiEsito();
+      mostraRiepilogo(errori);
+      form.elements[errori[0].nome].focus();
+      return;
+    }
+
+    nascondiRiepilogo();
+    const dati = {
+      names: form.elements.names.value.trim(),
+      email: form.elements.email.value.trim(),
+      message: form.elements.message.value.trim(),
+      phone: form.elements.phone.value.trim(),
+      weddingDate: form.elements.weddingDate.value.trim(),
+      location: form.elements.location.value.trim(),
+      website: form.elements.website.value.trim()
+    };
+
+    inviando = true;
+    submit.disabled = true;
+    submit.setAttribute('aria-busy', 'true');
+    etichetta.textContent = 'Invio in corso…';
+    mostraEsito('attesa', 'Invio in corso…');
+
+    try {
+      if (!ENDPOINT) {
+        // Nessun trasporto collegato: nessuna richiesta parte, nessuna email è inviata.
+        await attesa(700);
+        if (dati.website) {
+          mostraEsito('antispam', 'Invio sospeso dal controllo antispam: il campo «Sito web» risulta compilato. Nulla è stato trasmesso e i dati restano nel modulo.');
+        } else {
+          mostraEsito('locale', 'Invio di prova locale: la richiesta non è stata spedita. Il collegamento al server non è ancora attivo, quindi nulla è stato consegnato a Nicola né a info@nicolacapasso.photo. I dati restano nel modulo.');
+        }
+        return;
+      }
+
+      let risposta;
+      let corpoRichiesta;
+      try {
+        corpoRichiesta = JSON.stringify(dati);
+      } catch (erroreSerializzazione) {
+        mostraEsito('errore', 'Invio non riuscito: i dati non sono stati preparati.' + DATI_CONSERVATI);
+        return;
+      }
+      if (new TextEncoder().encode(corpoRichiesta).length > 16384) {
+        mostraEsito('errore', 'Il messaggio è troppo lungo per essere inviato: accorciatelo di qualche riga.' + DATI_CONSERVATI);
+        return;
+      }
+      const intestazioni = { 'Content-Type': 'application/json', 'Accept': 'application/json' };
+      if (token) intestazioni['X-NC-Contact-Token'] = token;
+      try {
+        risposta = await fetch(ENDPOINT, {
+          method: 'POST',
+          headers: intestazioni,
+          body: corpoRichiesta
+        });
+      } catch (erroreRete) {
+        mostraEsito('errore', 'Invio non riuscito: il server non ha risposto.' + DATI_CONSERVATI);
+        return;
+      }
+
+      let corpo = null;
+      try { corpo = await risposta.json(); } catch (erroreLettura) { corpo = null; }
+      // Schema canonico dell'endpoint (CONTRATTO.md v2 di Ada): {ok,status,message,errors?,retryAfter?}.
+      // Si accettano per retrocompatibilità anche i nomi code/fieldErrors.
+      const codice = corpo
+        ? String(corpo.status || corpo.code || '')
+        : '';
+      const messaggio = corpo && typeof corpo.message === 'string' && corpo.message.trim() ? corpo.message.trim() : '';
+
+      if (risposta.ok && corpo && corpo.ok === true && (!codice || codice === 'sent')) {
+        // Unico esito positivo: i campi si azzerano solo qui.
+        form.reset();
+        campi.forEach(c => scriviErrore(c.nome, null));
+        mostraEsito('ok', ['127.0.0.1', 'localhost'].includes(location.hostname) ? 'Prova locale registrata correttamente. Nessuna email reale è stata inviata.' : (messaggio || 'Richiesta inviata.'));
+      } else if (codice === 'invalid' || codice === 'invalid_input' || risposta.status === 422) {
+        const elenco = scriviErroriDaServer(corpo && (corpo.errors || corpo.fieldErrors));
+        if (elenco.length) {
+          mostraRiepilogo(elenco);
+          form.elements[elenco[0].nome].focus();
+        }
+        mostraEsito('errore', messaggio || 'Alcuni campi non sono stati accettati: correggeteli e riprovate.' + DATI_CONSERVATI);
+      } else if (codice === 'rejected' || risposta.status === 400) {
+        mostraEsito('antispam', messaggio || 'Invio rifiutato dal controllo antispam.' + DATI_CONSERVATI);
+      } else if (codice === 'rate_limited' || risposta.status === 429) {
+        const dopo = corpo && Number(corpo.retryAfter) > 0 ? Number(corpo.retryAfter) : 0;
+        mostraEsito('errore', messaggio || (dopo > 0
+          ? 'Troppi invii in poco tempo: riprovate tra ' + dopo + ' secondi.' + DATI_CONSERVATI
+          : 'Troppi invii in poco tempo: riprovate fra qualche minuto.' + DATI_CONSERVATI));
+      } else if (codice === 'payload_too_large' || risposta.status === 413) {
+        mostraEsito('errore', messaggio || 'Il messaggio è troppo lungo per essere inviato.' + DATI_CONSERVATI);
+      } else if (codice === 'forbidden_origin' || codice === 'forbidden_token' || codice === 'forbidden' || risposta.status === 403) {
+        mostraEsito('errore', messaggio || 'Invio non autorizzato da questa pagina.' + DATI_CONSERVATI);
+      } else if (codice === 'transport_error' || codice === 'transport_failed' || risposta.status === 502) {
+        // Il trasporto NON ha accettato il messaggio: nessun finto successo, dati conservati.
+        mostraEsito('errore', messaggio || 'Invio non riuscito: il server non ha potuto consegnare il messaggio.' + DATI_CONSERVATI);
+      } else {
+        mostraEsito('errore', messaggio || 'Invio non riuscito (codice ' + (codice || risposta.status) + ').' + DATI_CONSERVATI);
+      }
+    } finally {
+      inviando = false;
+      submit.disabled = false;
+      submit.removeAttribute('aria-busy');
+      etichetta.textContent = 'Invia la richiesta';
+    }
+  });
+})();
+</script>
+</body></html>

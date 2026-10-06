@@ -1,0 +1,22 @@
+.contatti-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:7%;align-items:start}
+.contatti-intro{grid-column:1;grid-row:1}
+.contatti-modulo{grid-column:1;grid-row:2;min-width:0}
+.contatti-fotografie{grid-column:2;grid-row:1 / span 2;position:relative;margin-top:60px;width:100%;aspect-ratio:.6;isolation:isolate}
+.foto-arco{position:absolute;margin:0;width:42%;aspect-ratio:4/5;background:#f5f3ef}
+.foto-arco img{width:100%;height:100%;object-fit:cover}
+.foto-arco-uno{left:14%;top:2%;transform:rotate(-5deg)}
+.foto-arco-due{left:48%;top:35%;transform:none}
+.foto-arco-tre{left:14%;top:68%;transform:rotate(5deg)}
+.foto-arco-uno img{object-position:50% 60%}
+.foto-arco-due img{object-position:50% 43%}
+.foto-arco-tre img{object-position:50% 45%}
+.foto-mobile{display:none;margin:0}
+@media(max-width:900px){
+.contatti-layout{display:flex;flex-direction:column}
+.contatti-intro{order:1;padding-bottom:22px}
+.contatti-fotografie{order:2;margin:0 0 28px;width:100%;max-width:none;aspect-ratio:auto}
+.foto-arco{display:none}
+.foto-mobile{display:block;width:100%;aspect-ratio:8/5;overflow:hidden}
+.foto-mobile img{width:100%;height:100%;object-fit:cover;object-position:55% 45%}
+.contatti-modulo{order:3;width:100%}
+}

@@ -1,13 +1,13 @@
 {
-  "source": "C:\\Users\\loren\\OneDrive\\Desktop\\Prototipi Nicola Capasso\\17 - Pulsanti mobile approvati",
+  "source": "C:\\Users\\loren\\OneDrive\\Desktop\\Prototipi Nicola Capasso\\20 - Contatti approvati",
   "importedAt": "2026-10-05T15:55:27.152983+02:00",
-  "adaptation": "Assets flattened; 404 URLs project-root relative; full CSS export synchronized including azioni-mobile-fix.css",
-  "htmlPages": 13,
+  "adaptation": "Assets flattened; 404 URLs project-root relative; LF publication normalization; PHP enabled only on loopback, static Pages never submits.",
+  "htmlPages": 14,
   "files": {
     "public/azioni.css": "e1170776f50f2e139eb09629f7178e582247f82e320a35821d61ca08717fb8cb",
-    "public/index.html": "5095bd24b279afc9440b6372c005837f99c844e6cfcad38591043b6e5b5f5b56",
+    "public/index.html": "0e8138302b11d01c1dcf077457f063d1ae5cdbe4cb43547b87f510cc6deacb96",
     "public/mobile.css": "0d308fc76aeca325b3e66e66f86105a991b0daf42d59338ca9d3e838d32bca4f",
-    "public/portfolio.html": "251af5ca96bb622fbb65e783f5ab549cd6737732c4734efad8b5a288171730d5",
+    "public/portfolio.html": "6101fb24730b4cf8f8723001878cc643eddb776dbfa74624def79f9e07068cf7",
     "public/stili-completi.css": "e8b6d6bfbc77007233157e98b30c32656b048bffed0ca0c699f63f219c9cdbff",
     "public/storia-01.html": "6af25eec66d0bb0341bc842736e07e66d4ba2c530004676de0e1541f86376acc",
     "public/storia-02.html": "aed995e48dd1a9399265dd98a3b02d8ff83ce00ae1a8222bc7e8cc6a1bdbfc5a",
@@ -38,9 +38,13 @@
     "public/assets/optimized/NCF09664.jpg": "57ea53e13da582b0a1fc374cc8bcfa59d10dd285f6cb21ddd0c9f3e9c6952eca",
     "public/assets/optimized/PIE00746_1.jpg": "edaa308f2b2ad3a15c4123577994fe191e3b13fa182ffa15b7037de92a946030",
     "public/404.html": "732bdcfab9dac89bf1f7f2b434deedfac590f97ff60fce0bbe7a5d1ba98e66df",
-    "public/azioni-mobile-fix.css": "61146d8b449b58d0dacd97ea4f2c216ff0928724f6f7b966579bd77a8b823978"
+    "public/azioni-mobile-fix.css": "61146d8b449b58d0dacd97ea4f2c216ff0928724f6f7b966579bd77a8b823978",
+    "public/contatti.html": "ce1aff1e13ab8d28764fcd33593db6ccdcb6f8a60c0a5ab798eef2779f07f9aa",
+    "public/contatti.css": "7f017547f97190231f8845a3ebb9d9a5a0f005aa10b38c026210aa78684bac84",
+    "public/contatti-foto.css": "2c3e94b1d2187dd9ac8ecd90482c7a17a136ec4a30cdbf48bba3704593962295",
+    "public/assets/optimized/contatti-mobile-bacio.jpg": "77adbe4cf30e7cd228cf33f9d70066175899b04f0b797a0ff3b6d3fc2c1b78f9"
   },
-  "updatedAt": "2026-10-06T10:24:05.549598+02:00",
+  "updatedAt": "2026-10-06T12:12:26.672661+02:00",
   "pageAdaptations": {
     "public/404.html": "Root-relative /nicola-capasso-demo/ URLs for assets and homepage/portfolio links; no base element, so #contenuto stays on the requested error URL; otherwise byte-identical to approved local source"
   }

@@ -1,0 +1,133 @@
+/* ANTEPRIMA LOCALE — task Kanban nc-wordpress t_d44f254e (06/10).
+   Pagina Contatti: campi e azioni coerenti con lo stile approvato del sito.
+   Lo stile dei pulsanti riprende letteralmente azioni.css / azioni-mobile-fix.css
+   (bordo sottile, riempimento fluido) ristretto alla sola pagina contatti:
+   nessun foglio condiviso modificato, nessuna ombra, nessuna pillola.
+   Non pubblicato: nessuna modifica a WordPress/Aruba, GitHub Pages o sorgenti. */
+
+/* ---------------------------------------------------------------
+   1) RITORNI DI PAGINA (Hompage / Portfolio): stessa famiglia
+      della navigazione approvata, dimensioni di navigazione.
+   --------------------------------------------------------------- */
+body.contatti-a .contatti-nav > a{
+  display:inline-flex;position:relative;isolation:isolate;align-items:center;justify-content:center;
+  box-sizing:border-box;max-width:100%;min-width:0;min-height:52px;padding:12px 22px;
+  border:1px solid #4f4f49;border-radius:2px;background:#fff;color:#191916;
+  font:400 28px/1.2 'Italiana',Georgia,serif;font-synthesis:none;letter-spacing:-.015em;
+  -webkit-text-stroke:.18px currentColor;text-transform:none;text-decoration:none;
+  text-align:center;white-space:normal;text-wrap:balance;box-shadow:none;gap:0;
+  overflow:hidden;outline-offset:5px;transition:color .25s .12s,border-color .2s;
+}
+body.contatti-a .contatti-nav > a:focus-visible{outline:2px solid #191916;}
+body.contatti-a .contatti-nav > a:before{
+  content:"";display:block;position:absolute;left:50%;top:100%;width:140%;height:180%;border-radius:50%;
+  background:rgba(25,25,22,.06);transform:translateX(-50%) scaleY(1) scaleX(1.25);z-index:-1;
+  transition:all .5s .1s cubic-bezier(.55,0,.1,1);
+}
+body.contatti-a .contatti-nav > a:after{
+  content:"";display:block;position:absolute;left:55%;top:180%;width:160%;height:190%;border-radius:50%;
+  background:#191916;transform:translateX(-50%) scaleY(1) scaleX(1.45);z-index:-1;
+  transition:all .5s .1s cubic-bezier(.55,0,.1,1);
+}
+body.contatti-a .contatti-nav > a:is(:hover,:focus-visible,:active){color:#fff;border:1px solid #191916;background:#fff;}
+body.contatti-a .contatti-nav > a:is(:hover,:focus-visible,:active):before{top:-35%;background:#191916;transform:translateX(-50%) scaleY(1.3) scaleX(.8);}
+body.contatti-a .contatti-nav > a:is(:hover,:focus-visible,:active):after{top:-45%;background:#191916;transform:translateX(-50%) scaleY(1.3) scaleX(.8);}
+
+/* ---------------------------------------------------------------
+   2) AZIONE PRINCIPALE DEL MODULO (invia la richiesta):
+      stesse dimensioni delle azioni di contatto approvate.
+   --------------------------------------------------------------- */
+body.contatti-a .contatti-submit{
+  display:inline-flex;position:relative;isolation:isolate;align-items:center;justify-content:center;
+  box-sizing:border-box;max-width:100%;min-width:0;min-height:62px;padding:15px 28px;
+  border:1px solid #4f4f49;border-radius:2px;background:#fff;color:#191916;
+  font:400 32px/1.2 'Italiana',Georgia,serif;font-synthesis:none;letter-spacing:-.015em;
+  -webkit-text-stroke:.18px currentColor;text-transform:none;text-decoration:none;
+  text-align:center;white-space:normal;text-wrap:balance;box-shadow:none;gap:0;
+  overflow:hidden;outline-offset:5px;transition:color .25s .12s,border-color .2s;
+}
+body.contatti-a .contatti-submit:focus-visible{outline:2px solid #191916;}
+body.contatti-a .contatti-submit:before{
+  content:"";display:block;position:absolute;left:50%;top:100%;width:140%;height:180%;border-radius:50%;
+  background:rgba(25,25,22,.06);transform:translateX(-50%) scaleY(1) scaleX(1.25);z-index:-1;
+  transition:all .5s .1s cubic-bezier(.55,0,.1,1);
+}
+body.contatti-a .contatti-submit:after{
+  content:"";display:block;position:absolute;left:55%;top:180%;width:160%;height:190%;border-radius:50%;
+  background:#191916;transform:translateX(-50%) scaleY(1) scaleX(1.45);z-index:-1;
+  transition:all .5s .1s cubic-bezier(.55,0,.1,1);
+}
+body.contatti-a .contatti-submit:is(:hover,:focus-visible):not([disabled]){color:#fff;border:1px solid #191916;background:#fff;}
+body.contatti-a .contatti-submit:is(:hover,:focus-visible):not([disabled]):before{top:-35%;background:#191916;transform:translateX(-50%) scaleY(1.3) scaleX(.8);}
+body.contatti-a .contatti-submit:is(:hover,:focus-visible):not([disabled]):after{top:-45%;background:#191916;transform:translateX(-50%) scaleY(1.3) scaleX(.8);}
+body.contatti-a .contatti-submit[disabled]{cursor:default;border-color:#8a8a83;color:#62625d;}
+body.contatti-a .contatti-submit:active{border-color:#191916;}
+
+/* ---------------------------------------------------------------
+   3) CAMPI: bordo sottile, fondo bianco, testo leggibile 16px,
+      etichetta reale sopra il campo. Nessuna ombra.
+   --------------------------------------------------------------- */
+body.contatti-a .contatti-campo{display:grid;gap:8px;}
+body.contatti-a .contatti-campo > label{
+  font:400 11px/1.4 'Space Grotesk',Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#62625d;
+}
+body.contatti-a .contatti-facoltativo{text-transform:none;letter-spacing:.02em;color:#8a8a83;font-size:12px;}
+body.contatti-a .contatti-campo input,
+body.contatti-a .contatti-campo textarea{
+  width:100%;min-height:48px;padding:12px 14px;box-sizing:border-box;
+  border:1px solid #8a8a83;border-radius:2px;background:#fff;color:#191916;
+  font:400 16px/1.5 'Space Grotesk',Arial,sans-serif;font-synthesis:none;
+  -webkit-font-smoothing:antialiased;box-shadow:none;
+}
+body.contatti-a .contatti-campo textarea{min-height:170px;resize:vertical;}
+body.contatti-a .contatti-campo input:hover,body.contatti-a .contatti-campo textarea:hover{border-color:#5f5f59;}
+body.contatti-a .contatti-campo input:focus-visible,body.contatti-a .contatti-campo textarea:focus-visible{
+  outline:2px solid #191916;outline-offset:2px;border-color:#191916;
+}
+body.contatti-a .contatti-campo input[aria-invalid="true"],body.contatti-a .contatti-campo textarea[aria-invalid="true"]{
+  border-color:#8c2b1e;border-width:1px;
+}
+body.contatti-a .contatti-errore{margin:0;color:#8c2b1e;font:400 14px/1.5 'Space Grotesk',Arial,sans-serif;}
+
+/* Riepilogo errori ed esito: superficie bianca con bordo sottile. */
+body.contatti-a .contatti-riepilogo{
+  border:1px solid #8c2b1e;border-radius:2px;padding:14px 16px;color:#8c2b1e;
+  font:400 15px/1.6 'Space Grotesk',Arial,sans-serif;
+}
+body.contatti-a .contatti-riepilogo:focus-visible{outline:2px solid #191916;outline-offset:3px;}
+body.contatti-a .contatti-riepilogo ul{margin:8px 0 0;padding-left:20px;}
+body.contatti-a .contatti-esito{
+  border:1px solid #4f4f49;border-radius:2px;padding:16px 18px;
+  font:400 16px/1.65 'Space Grotesk',Arial,sans-serif;color:#191916;
+}
+body.contatti-a .contatti-esito[data-stato="errore"]{border-color:#8c2b1e;color:#8c2b1e;}
+body.contatti-a .contatti-esito[hidden]{display:none;}
+body.contatti-a .contatti-nota{
+  font:400 13px/1.6 'Space Grotesk',Arial,sans-serif;color:#62625d;max-width:62ch;
+}
+body.contatti-a .contatti-nota b{font-weight:400;color:#191916;}
+
+/* Campo esca (honeypot): fuori dallo schermo, non raggiungibile da tastiera. */
+body.contatti-a .contatti-esca{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+
+/* ---------------------------------------------------------------
+   4) MOBILE / TOUCH: stesse misure approvate, aree di tocco >= 44px.
+   --------------------------------------------------------------- */
+@media (max-width: 700px), (max-width: 1000px) and (pointer: coarse){
+  body.contatti-a .contatti-nav > a{
+    min-height:44px;padding:9px 14px;font-size:clamp(15px,4.3vw,17px);line-height:1.25;
+  }
+  body.contatti-a .contatti-submit{
+    width:100%;min-height:46px;padding:11px 16px;font-size:clamp(16px,4.7vw,19px);line-height:1.25;
+  }
+  body.contatti-a .contatti-campo input,body.contatti-a .contatti-campo textarea{
+    min-height:48px;padding:12px 13px;font-size:16px;
+  }
+  body.contatti-a .contatti-campo textarea{min-height:150px;}
+}
+
+@media (prefers-reduced-motion: reduce){
+  body.contatti-a .contatti-nav > a,body.contatti-a .contatti-submit{transition:none!important;}
+  body.contatti-a .contatti-nav > a:before,body.contatti-a .contatti-nav > a:after,
+  body.contatti-a .contatti-submit:before,body.contatti-a .contatti-submit:after{transition:none!important;}
+}
