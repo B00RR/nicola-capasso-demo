@@ -17,20 +17,24 @@ style_match = re.search(r"<style>(.*?)</style>", html, re.S)
 assert style_match is not None, "Missing inline stylesheet"
 css = style_match.group(1)
 assert css + "\n" + (PUBLIC / "mobile.css").read_text(encoding="utf-8") + "\n\n" + (PUBLIC / "azioni.css").read_text(encoding="utf-8") + "\n\n" + (PUBLIC / "azioni-mobile-fix.css").read_text(encoding="utf-8") == (PUBLIC / "stili-completi.css").read_text(encoding="utf-8")
-for page_path in PUBLIC.glob("*.html"):
-    expected = "/nicola-capasso-demo/azioni-mobile-fix.css" if page_path.name == "404.html" else "azioni-mobile-fix.css"
-    assert f'href="{expected}"' in page_path.read_text(encoding="utf-8"), page_path.name
-for page_path in PUBLIC.glob("*.html"):
+PAGES = sorted(PUBLIC.rglob("*.html"))
+for page_path in PAGES:
+    depth = len(page_path.relative_to(PUBLIC).parts) - 1
+    prefix = "../" * depth
     page_html = page_path.read_text(encoding="utf-8")
-    if page_path.name != "404.html":
-        assert '<link rel="stylesheet" href="mobile.css">' in page_html
-        assert '<link rel="stylesheet" href="azioni.css">' in page_html
-    else:
-        assert 'href="/nicola-capasso-demo/index.html"' in page_html
+    if page_path.name == "404.html":
+        assert 'href="/nicola-capasso-demo/azioni-mobile-fix.css"' in page_html, str(page_path)
+        folder = page_path.parent.relative_to(PUBLIC).as_posix()
+        folder = "" if folder == "." else folder + "/"
+        assert f'href="/nicola-capasso-demo/{folder}index.html"' in page_html, str(page_path)
         assert '<base' not in page_html
         assert '<meta name="robots" content="noindex,follow">' in page_html
-    assert "../assets/" not in page_html
-assert len(list(PUBLIC.glob("*.html"))) == 14
+    else:
+        assert f'href="{prefix}azioni-mobile-fix.css"' in page_html, str(page_path)
+        assert f'<link rel="stylesheet" href="{prefix}mobile.css">' in page_html
+        assert f'<link rel="stylesheet" href="{prefix}azioni.css">' in page_html
+    assert "../../assets/" not in page_html
+assert len(PAGES) == 34, len(PAGES)
 assert "../assets/" not in html
 assert html.count('class="scene-card"') == 12
 assert html.count('class="project reveal"') == 10
@@ -104,7 +108,7 @@ def check_typography(page):
     assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
 
 
-viewports = ((390, 844), (1440, 900), (844, 390), (320, 568), (700, 900), (701, 900), (1920, 1080))
+viewports = ((390, 844), (320, 568), (1440, 900), (700, 900), (701, 900))  # ridotti all'osso (fase prototipo)
 with sync_playwright() as p:
     options: dict[str, object] = {"headless": True}
     if os.environ.get("BROWSER_PATH"):

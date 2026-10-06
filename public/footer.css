@@ -72,6 +72,15 @@
   color:var(--footer-muted);
   text-align:right;
 }
+/* Link legali nella fascia del footer. Spostati qui da legale.css: la fascia esiste su tutte
+   le pagine, quindi il suo stile deve viaggiare con footer.css (prima i link restavano un
+   elenco puntato verticale su ogni pagina che non caricava legale.css).
+   Desktop: una riga sola. Sotto i 521px: seconda riga, per non comprimere le icone. */
+.footer-legal{list-style:none;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:4px 14px;margin:0;padding:0}
+.footer-legal a{display:inline-flex;align-items:center;min-height:44px;color:var(--footer-muted,#63635d);font-size:12px;letter-spacing:.04em;text-decoration:none}
+.footer-legal a:hover{color:var(--footer-ink,#191916)}
+@media(min-width:521px){.footer-legal{order:2}}
+/* Regole mobile dei link legali: raccolte nel blocco @media(max-width:520px) in fondo al file. */
 @media(min-width:521px){
   /* Allinea il bordo visivo dell'icona al margine del contenuto (il box di tocco resta 44×44). */
   .site-footer{padding:16px 6vw 18px}
@@ -79,9 +88,15 @@
 }
 @media(max-width:520px){
   .site-footer{padding:8px 5vw 10px}
-  .footer-band{gap:4px 12px}
-  .footer-copy{font-size:11px;letter-spacing:.04em}
+  /* Mobile (richiesta Lorenzo 06/10): la fascia va a capo, i link legali restano su una riga
+     accanto alle icone e il copyright scende sotto di loro, su una riga sola e un po' piu'
+     piccolo. Solo mobile: da 521px in su la fascia resta su una riga sola. */
+  .footer-band{flex-wrap:wrap;gap:2px 12px}
+  .footer-social{order:1}
+  .footer-legal{order:2;flex-basis:auto;justify-content:flex-end;gap:2px 14px}
+  .footer-copy{order:3;flex-basis:100%;font-size:10px;letter-spacing:.03em;text-align:right;white-space:nowrap}
 }
 @media(prefers-reduced-motion:reduce){
   .footer-social-link{transition:none}
 }
+/* I link legali sono definiti sopra; nessun duplicato qui. */

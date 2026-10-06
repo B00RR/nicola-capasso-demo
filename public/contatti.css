@@ -6,7 +6,7 @@
    Non pubblicato: nessuna modifica a WordPress/Aruba, GitHub Pages o sorgenti. */
 
 /* ---------------------------------------------------------------
-   1) RITORNI DI PAGINA (Hompage / Portfolio): stessa famiglia
+   1) RITORNI DI PAGINA (Homepage / Portfolio): stessa famiglia
       della navigazione approvata, dimensioni di navigazione.
    --------------------------------------------------------------- */
 body.contatti-a .contatti-nav > a{
@@ -131,3 +131,6 @@ body.contatti-a .contatti-esca{position:absolute;left:-9999px;top:auto;width:1px
   body.contatti-a .contatti-nav > a:before,body.contatti-a .contatti-nav > a:after,
   body.contatti-a .contatti-submit:before,body.contatti-a .contatti-submit:after{transition:none!important;}
 }
+/* Link legale nella nota del modulo: sottolineato, leggibile, area di tocco adeguata. */
+body.contatti-a .contatti-nota a{color:#191916;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+body.contatti-a .contatti-nota a:hover{text-decoration-thickness:2px}

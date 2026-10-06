@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="Contatti di Nicola Capasso, fotografo di matrimoni: scrivete la data, il luogo e il vostro racconto."><title>Contatti — Nicola Capasso · Prototipo</title><script src="assets/fonts/load-fonts.js"></script><style>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="Contact Nicola Capasso, wedding photographer: send the date, the location and your story."><title>Contact — Nicola Capasso</title><script src="../assets/fonts/load-fonts.js"></script><style>
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:#191916;font:300 14px/1.65 'Space Grotesk',Arial,sans-serif;font-synthesis:none;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{display:block;width:100%}h1,h2,h3{font-family:'Italiana',Georgia,serif;font-weight:400;margin:0;letter-spacing:-.015em;line-height:1.08}p{margin:0}a:focus-visible,button:focus-visible{outline:2px solid #191916;outline-offset:5px}.wrap{width:88%;max-width:1600px;margin:auto}
 .contatti-nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 16px;margin-top:24px}
 .contatti-intro{padding:56px 0 44px}
@@ -11,16 +11,16 @@
 .contatti-esito{margin-top:4px}
 @media(max-width:700px){.contatti-intro{padding:36px 0 30px}.contatti-intro h1{font-size:clamp(44px,12vw,60px)}.contatti-modulo{padding-bottom:80px}.contatti-form{gap:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
-</style><link rel="stylesheet" href="mobile.css"><link rel="stylesheet" href="azioni.css"><link rel="stylesheet" href="azioni-mobile-fix.css">
-<link rel="stylesheet" href="footer.css">
-<link rel="stylesheet" href="contatti.css"><link rel="stylesheet" href="contatti-foto.css"><link rel="alternate" hreflang="it" href="contatti.html"><link rel="alternate" hreflang="en" href="en/contatti.html"><link rel="alternate" hreflang="x-default" href="contatti.html"></head>
+</style><link rel="stylesheet" href="../mobile.css"><link rel="stylesheet" href="../azioni.css"><link rel="stylesheet" href="../azioni-mobile-fix.css">
+<link rel="stylesheet" href="../footer.css">
+<link rel="stylesheet" href="../contatti.css"><link rel="stylesheet" href="../contatti-foto.css"><link rel="alternate" hreflang="it" href="../contatti.html"><link rel="alternate" hreflang="en" href="contatti.html"><link rel="alternate" hreflang="x-default" href="../contatti.html"></head>
 <body class="contatti-a">
 <main class="wrap">
-<nav class="contatti-nav" aria-label="Ritorna alla pagina principale"><a href="index.html">Homepage</a></nav>
+<nav class="contatti-nav" aria-label="Back to the main page"><a href="index.html">Homepage</a></nav>
 <div class="contatti-layout">
 <section class="contatti-intro">
-<h1>Contatti</h1>
-<p class="contatti-guida">Raccontatemi il vostro matrimonio: la data, il luogo e le fotografie che desiderate. Vi risponderò personalmente.</p>
+<h1>Contact</h1>
+<p class="contatti-guida">Tell me about your wedding: the date, the place and the photographs you would like. I will reply personally.</p>
 </section>
 <section class="contatti-modulo">
 <form class="contatti-form" id="contatti-form" data-endpoint="/api/contact" novalidate>
@@ -28,7 +28,7 @@
 <div class="contatti-riepilogo" id="contatti-riepilogo" role="alert" tabindex="-1" hidden></div>
 
 <div class="contatti-campo">
-<label for="contatti-names">Nome e cognome</label>
+<label for="contatti-names">Full name</label>
 <input id="contatti-names" name="names" type="text" required aria-required="true" autocomplete="name" maxlength="120" aria-describedby="errore-names">
 <p class="contatti-errore" id="errore-names" hidden></p>
 </div>
@@ -40,53 +40,53 @@
 </div>
 
 <div class="contatti-campo">
-<label for="contatti-phone">Telefono <span class="contatti-facoltativo">(facoltativo)</span></label>
+<label for="contatti-phone">Phone <span class="contatti-facoltativo">(optional)</span></label>
 <input id="contatti-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" aria-describedby="errore-phone">
 <p class="contatti-errore" id="errore-phone" hidden></p>
 </div>
 
 <div class="contatti-campo">
-<label for="contatti-weddingDate">Data del matrimonio <span class="contatti-facoltativo">(facoltativo)</span></label>
+<label for="contatti-weddingDate">Wedding date <span class="contatti-facoltativo">(optional)</span></label>
 <input id="contatti-weddingDate" name="weddingDate" type="date" autocomplete="off" aria-describedby="errore-weddingDate">
 <p class="contatti-errore" id="errore-weddingDate" hidden></p>
 </div>
 
 <div class="contatti-campo">
-<label for="contatti-location">Luogo del matrimonio <span class="contatti-facoltativo">(facoltativo)</span></label>
+<label for="contatti-location">Wedding location <span class="contatti-facoltativo">(optional)</span></label>
 <input id="contatti-location" name="location" type="text" autocomplete="address-level2" maxlength="160" aria-describedby="errore-location">
 <p class="contatti-errore" id="errore-location" hidden></p>
 </div>
 
 <div class="contatti-campo">
-<label for="contatti-message">Il vostro messaggio</label>
+<label for="contatti-message">Your message</label>
 <textarea id="contatti-message" name="message" required aria-required="true" autocomplete="off" maxlength="5000" aria-describedby="errore-message"></textarea>
 <p class="contatti-errore" id="errore-message" hidden></p>
 </div>
 
 <div class="contatti-esca" aria-hidden="true">
-<label for="contatti-website">Sito web</label>
+<label for="contatti-website">Website</label>
 <input id="contatti-website" name="website" type="text" tabindex="-1" autocomplete="off">
 </div>
 
 <div class="contatti-azioni">
-<button class="contatti-submit" type="submit"><span class="contatti-submit-label">Invia la richiesta</span></button>
+<button class="contatti-submit" type="submit"><span class="contatti-submit-label">Send enquiry</span></button>
 </div>
 
 <p class="contatti-esito" id="contatti-esito" role="status" aria-live="polite" hidden></p>
 
-<p class="contatti-nota">I dati che inviate servono solo a rispondere alla vostra richiesta: nessuna newsletter, nessun consenso marketing. <b>Informativa privacy (bozza non pubblicabile):</b> <a href="privacy.html">leggi l’informativa</a> &mdash; da validare prima della pubblicazione.</p>
+<p class="contatti-nota">The data you send is used only to answer your enquiry: no newsletter, no marketing consent. <b>Privacy notice (draft, not publishable):</b> <a href="privacy.html">read the notice</a> &mdash; to be validated before publication.</p>
 
 </form>
 </section>
-<div class="contatti-fotografie" aria-label="Fotografie di matrimonio di Nicola Capasso">
-<figure class="foto-mobile"><img src="assets/optimized/contatti-mobile-bacio.jpg" alt="Un bacio degli sposi nella luce calda del giorno" width="1920" height="1280"></figure>
-<figure class="foto-arco foto-arco-uno"><img src="assets/optimized/6.jpg" alt="Gli sposi camminano mano nella mano sotto un porticato" width="800" height="1200"></figure>
-<figure class="foto-arco foto-arco-due"><img src="assets/optimized/NCF03602-scaled.jpg" alt="Un bacio degli sposi nella luce del giorno" width="800" height="1200"></figure>
-<figure class="foto-arco foto-arco-tre"><img src="assets/optimized/NCF00205.jpg" alt="Il bouquet e le mani degli sposi" width="800" height="1200"></figure>
+<div class="contatti-fotografie" aria-label="Wedding photography by Nicola Capasso">
+<figure class="foto-mobile"><img src="../assets/optimized/contatti-mobile-bacio.jpg" alt="Un bacio degli sposi nella luce calda del giorno" data-nc-en-alt="mancante" width="1920" height="1280"></figure>
+<figure class="foto-arco foto-arco-uno"><img src="../assets/optimized/6.jpg" alt="Gli sposi camminano mano nella mano sotto un porticato" data-nc-en-alt="mancante" width="800" height="1200"></figure>
+<figure class="foto-arco foto-arco-due"><img src="../assets/optimized/NCF03602-scaled.jpg" alt="Un bacio degli sposi nella luce del giorno" data-nc-en-alt="mancante" width="800" height="1200"></figure>
+<figure class="foto-arco foto-arco-tre"><img src="../assets/optimized/NCF00205.jpg" alt="Il bouquet e le mani degli sposi" data-nc-en-alt="mancante" width="800" height="1200"></figure>
 </div>
 </div>
 </main>
-<footer class="site-footer" data-nc-footer><div class="footer-band"><ul class="footer-social" aria-label="Profili social di Nicola Capasso"><li><a class="footer-social-link" href="https://instagram.com/nicolacapassofoto" rel="noopener me" target="_blank" aria-label="Instagram di Nicola Capasso (si apre in una nuova scheda)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.3" y="3.3" width="17.4" height="17.4" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle class="solid" cx="17.05" cy="6.95" r="1.05"/></svg></a></li><li><a class="footer-social-link" href="https://wa.me/393398563098" rel="noopener" target="_blank" aria-label="WhatsApp di Nicola Capasso (si apre in una nuova scheda)"><svg class="wa" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="solid" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a></li></ul><ul class="footer-legal"><li><a href="privacy.html">Privacy</a></li><li><a href="cookies.html">Cookie</a></li><li><a href="termini.html">Termini</a></li></ul><p class="footer-copy">&copy; 2026 Nicola Capasso</p></div></footer>
+<footer class="site-footer" data-nc-footer><div class="footer-band"><ul class="footer-social" aria-label="Nicola Capasso&#39;s social profiles"><li><a class="footer-social-link" href="https://instagram.com/nicolacapassofoto" rel="noopener me" target="_blank" aria-label="Nicola Capasso on Instagram (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.3" y="3.3" width="17.4" height="17.4" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle class="solid" cx="17.05" cy="6.95" r="1.05"/></svg></a></li><li><a class="footer-social-link" href="https://wa.me/393398563098" rel="noopener" target="_blank" aria-label="WhatsApp of Nicola Capasso (opens in a new tab)"><svg class="wa" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="solid" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a></li></ul><ul class="footer-legal"><li><a href="privacy.html">Privacy</a></li><li><a href="cookies.html">Cookies</a></li><li><a href="terms.html">Terms</a></li></ul><p class="footer-copy">&copy; 2026 Nicola Capasso</p></div></footer>
 <script>
 (() => {
   const form = document.getElementById('contatti-form');

@@ -106,7 +106,7 @@ try:
                     assert not metrics["motion"]
                 actions = page.locator(".error-action")
                 assert actions.count() == 2
-                for i, (label, target) in enumerate((("Hompage", "index.html"), ("Portfolio", "portfolio.html"))):
+                for i, (label, target) in enumerate((("Homepage", "index.html"), ("Portfolio", "portfolio.html"))):
                     assert actions.nth(i).inner_text() == label
                     assert actions.nth(i).evaluate("e=>e.href") == base + PREFIX + target
                     box = actions.nth(i).bounding_box()
@@ -125,7 +125,7 @@ try:
             assert page.evaluate("document.activeElement.id") == "contenuto"
             page.keyboard.press("Tab")
             ready(page)
-            assert page.evaluate("document.activeElement.textContent") == "Hompage"
+            assert page.evaluate("document.activeElement.textContent") == "Homepage"
             assert page.evaluate("document.activeElement.matches(':focus-visible')")
             assert page.evaluate("getComputedStyle(document.activeElement).color") == "rgb(255, 255, 255)"
             assert page.evaluate("parseFloat(getComputedStyle(document.activeElement,':after').top)<0")

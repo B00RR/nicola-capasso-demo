@@ -1,5 +1,39 @@
 # Stato attuale del prototipo
 
+## 06/10/2026 — Versione offline pronta (non pubblicata)
+
+Copia di pubblicazione `nc-contact-publish` (clone di `B00RR/nicola-capasso-demo`, branch `main`, nulla in push): **34 pagine HTML**, manifesto 68 file.
+
+- **Pagine legali** IT (Privacy, Cookie, Termini) ed EN (Privacy, Cookies, Terms): bozza non indicizzabile (`noindex, nofollow`), banner di bozza e marcatore «da confermare» su P.IVA/CF/sede, dati che il cliente non ha ancora fornito. Solo dati reali e verificabili, nessuna clausola inventata.
+- **Numero del titolare rimosso** dalle 6 pagine legali su indicazione di Lorenzo (06/10): resta il solo recapito `info@nicolacapasso.photo`. Invariata la voce «telefono (facoltativo)» tra i dati raccolti dal modulo, che riguarda il telefono del cliente.
+- **Versione inglese completa**: 17 pagine in `en/`, `lang="en"`, hreflang reciproci IT/EN + `x-default`.
+- **Footer**: link legali orizzontali su desktop, su riga dedicata sotto 521 px; presente su 32 pagine, assente dalle 2 pagine 404 (come approvato).
+- Corretto il refuso **«Hompage» → «Homepage»** (0 occorrenze pubblicate).
+- Corretti i percorsi dei **font nelle due pagine 404**, ora assoluti `/nicola-capasso-demo/assets/fonts/...`.
+- **Verifiche reali sulla copia locale (tutte PASS)**: controllo statico su 34 pagine (manifest, riferimenti risolti, sintassi JS, lingua/hreflang, legali senza numero del titolare, footer), footer, contatti, sito. Suite **ridotta all'osso** per questa fase: la matrice pesante con browser resta per lo stage WordPress.
+
+### Aggiornamento pagine legali — 06/10/2026 (sera)
+
+Su indicazione di Lorenzo sono stati **rimossi tutti i 22 riquadri di lavoro** dalle 6 pagine legali (IT+EN)
+e applicate le sue risposte: titolare «Nicola Capasso, fotografo freelance»; ultimo aggiornamento
+«ottobre 2026»; fornitori indicati come **Aruba S.p.A. (Italia)** per hosting e posta, con nomina ex art. 28
+prevista dalle condizioni contrattuali Aruba; conservazione dei dati del modulo **12 mesi**.
+
+**Omesse** (su richiesta, non confermate): liberatorie/immagini, acconto e saldo, tempi di consegna,
+annullamento e forza maggiore, recesso del consumatore, ADR. I Termini restano quindi con titolare, oggetto,
+diritti d'autore e legge applicabile.
+
+Verificato sul sito live con browser reale: **0 cookie**, nessun Analytics/Pixel/Matomo, hosting e posta
+Aruba, server in Italia. Unica eccezione ai domini esterni: il sito WordPress attuale carica i font da Google
+Fonts, mentre il prototipo nuovo ha i font locali (0 richieste esterne).
+
+Dettaglio delle voci e stato: `docs/VOCI-APERTE-LEGALI.md`. Il banner «Bozza non pubblicabile» è stato
+**rimosso** il 06/10 su richiesta di Lorenzo, insieme ai commenti e alle regole CSS ormai inutili; le pagine
+restano `noindex, nofollow` finché non vengono pubblicate sul sito vero.
+
+Stato pubblicazione: **commit e push non eseguiti**, in attesa dell'autorizzazione di Lorenzo. Online resta il commit `a4c0e62`: senza pagine legali, senza versione inglese e con footer privo dei link legali. Nessuna modifica al sito live WordPress/Aruba, all'editor o al riferimento congelato.
+
+
 ## Footer definitivo — 06/10/2026
 
 Voce di chiusura aggiunta alle 13 pagine pubblicate (homepage, Portfolio, dieci storie, Contatti); la 404 resta senza footer, come approvato. La prima proposta di footer era stata rifiutata; questa versione nasce dal rifacimento richiesto e dalle correzioni finali.

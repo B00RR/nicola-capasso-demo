@@ -9,9 +9,9 @@
 @media (max-width: 700px), (max-width: 1000px) and (pointer: coarse) {
 
   /* ---------------------------------------------------------------
-     1) COPPIE DI NAVIGAZIONE — storie (Portfolio/Hompage in alto,
-        Portfolio/Prossima Storia in basso), Portfolio (Hompage),
-        404 (Hompage/Portfolio).
+     1) COPPIE DI NAVIGAZIONE — storie (Portfolio/Homepage in alto,
+        Portfolio/Prossima Storia in basso), Portfolio (Homepage),
+        404 (Homepage/Portfolio).
         Prima: griglia 2x1fr + a{width:100%} => due rettangoli larghi
         quanto il contenitore, alti 58-64px con testo 25-29px.
         Ora: riquadri dimensionati sul contenuto, affiancati.
@@ -57,7 +57,7 @@
     line-height: 1.25;
   }
 
-  /* 404: coppia Hompage/Portfolio, stesso ingombro della navigazione. */
+  /* 404: coppia Homepage/Portfolio, stesso ingombro della navigazione. */
   body .error-layout .actions {
     display: flex;
     flex-wrap: wrap;
