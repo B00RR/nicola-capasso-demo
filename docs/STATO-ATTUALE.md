@@ -1,5 +1,13 @@
 # Stato attuale del prototipo
 
+## 06/10 — Pulsanti mobile approvati da Lorenzo
+
+Promossa la correzione di Iris: pulsanti più compatti su homepage, Portfolio, dieci storie e 404. Conservati Italiana, bordo e riempimento fluido, etichette e destinazioni. Area touch almeno 44px, viewer e desktop invariati. Nuova fonte locale durevole: `Prototipi Nicola Capasso/17 - Pulsanti mobile approvati/sito/`; precedente versione 16 conservata.
+
+Push diretto su `main` autorizzato esplicitamente nel gruppo. Manifesto aggiornato a 35 file e 13 pagine; `azioni-mobile-fix.css` collegato anche alla 404 con URL assoluto di progetto, export CSS completo sincronizzato. Suite reale del coordinatore superata in Edge: 48 controlli pagina/viewport, 132 stati riempiti, viewer/navigazione delle dieci storie, 15 verifiche HTTP 404 e 12 navigazioni anche senza JavaScript, animazione e tipografia su sette viewport. CI e deploy vengono verificati sul commit pubblicato; il push da solo non certifica il deploy. QA indipendente di Vera non dichiarata conclusa.
+
+Nessuna modifica WordPress/Aruba, editor, riferimento congelato o brochure. Foto e raccolte restano segnaposto; Safari/iPhone reale non verificato.
+
 ## 05/10 17:34 — Pagina 404 approvata
 
 La 404 «Fuori inquadratura.» è ora parte dello stato attuale approvato. Il numero 404 è davanti alla fotografia, senza spostamenti o cambiamenti di dimensione; nome in alto, motto, etichetta e didascalia sono rimossi. Restano il titolo, il testo esplicativo e le azioni Hompage/Portfolio con riempimento fluido. Fonte: `16 - Stato attuale portfolio e storie/sito/404.html`, verificata prima/dopo su 13 configurazioni; nessuna differenza di geometria dei contenuti rimasti.

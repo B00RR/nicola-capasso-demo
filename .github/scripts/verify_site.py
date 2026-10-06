@@ -16,7 +16,10 @@ html = HTML_PATH.read_text(encoding="utf-8")
 style_match = re.search(r"<style>(.*?)</style>", html, re.S)
 assert style_match is not None, "Missing inline stylesheet"
 css = style_match.group(1)
-assert css + "\n" + (PUBLIC / "mobile.css").read_text(encoding="utf-8") + "\n\n" + (PUBLIC / "azioni.css").read_text(encoding="utf-8") == (PUBLIC / "stili-completi.css").read_text(encoding="utf-8")
+assert css + "\n" + (PUBLIC / "mobile.css").read_text(encoding="utf-8") + "\n\n" + (PUBLIC / "azioni.css").read_text(encoding="utf-8") + "\n\n" + (PUBLIC / "azioni-mobile-fix.css").read_text(encoding="utf-8") == (PUBLIC / "stili-completi.css").read_text(encoding="utf-8")
+for page_path in PUBLIC.glob("*.html"):
+    expected = "/nicola-capasso-demo/azioni-mobile-fix.css" if page_path.name == "404.html" else "azioni-mobile-fix.css"
+    assert f'href="{expected}"' in page_path.read_text(encoding="utf-8"), page_path.name
 for page_path in PUBLIC.glob("*.html"):
     page_html = page_path.read_text(encoding="utf-8")
     if page_path.name != "404.html":
