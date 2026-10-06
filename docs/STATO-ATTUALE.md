@@ -1,5 +1,17 @@
 # Stato attuale del prototipo
 
+## Footer definitivo — 06/10/2026
+
+Voce di chiusura aggiunta alle 13 pagine pubblicate (homepage, Portfolio, dieci storie, Contatti); la 404 resta senza footer, come approvato. La prima proposta di footer era stata rifiutata; questa versione nasce dal rifacimento richiesto e dalle correzioni finali.
+
+Composizione, una sola fascia orizzontale su tutte le larghezze: icone social Instagram e WhatsApp a sinistra, copyright «© 2026 Nicola Capasso» a destra. Rimossi dal markup, non solo visivamente, email, voci di navigazione (Hompage/Portfolio/Contatti), nome grande, sottotitolo e slogan, Facebook, dati fiscali e link legali non confermati. Nessun segnaposto, nessun `href="#"`, nessuna voce disabilitata.
+
+Icone: SVG locali monocromatici, nessuna immagine e nessuna risorsa di rete; il marchio WhatsApp ufficiale è ridotto a 14 px per pareggiare la dimensione ottica dell'icona Instagram (21 px), con spaziatura di 12 px e allineamento al margine del contenuto da 521 px in su. Ogni link ha area di tocco 44×44 px, `aria-label` esplicita con avviso di nuova scheda e `:focus-visible` visibile.
+
+Verifiche reali su copia isolata: 70 casi di Iris (14 pagine × 5 viewport), 20 casi della QA indipendente di Vera sul rifacimento, 6 casi del coordinatore su homepage/Portfolio/Contatti in desktop 1440×900 e mobile 390×844 — 0 difetti: fascia su una riga anche a 320 px, nessun overflow orizzontale, 0 errori JavaScript, 0 richieste esterne, contrasto icone ≈11:1 e copyright ≈6:1. Manifesto: 47 file.
+
+Non integrato nel tema WordPress reale: `wp/footer.php` è solo lintato e il collegamento al tema resta da autorizzare. Nessuna modifica a WordPress/Aruba, al sito live, all'editor o al riferimento congelato.
+
 ## Contatti approvati — 06/10/2026
 
 Lorenzo approva la pagina Contatti con tre fotografie su semicurva verticale desktop e una sola fotografia orizzontale su mobile (NCF05273.jpg, originale estratto dal portfolio di Nicola; nessun nome inventato esposto). Solo Hompage nella navigazione. CTA homepage e Portfolio collegate alla pagina.

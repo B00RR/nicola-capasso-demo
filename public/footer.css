@@ -1,0 +1,87 @@
+/* Footer condiviso — rifacimento orizzontale (card t_b14eb94f).
+   Unica fascia compatta: solo icone social Instagram/WhatsApp + copyright discreto.
+   Nessuna mail, nessuna navigazione, nessun nome/marchio grande, nessuno slogan.
+   Bianco/antracite, Italiana + Space Grotesk. Nessuna dipendenza da JavaScript. */
+:root{
+  --footer-ink:#191916;
+  --footer-muted:#63635d;
+  --footer-line:#e6e6e1;
+  --font-ui:'Space Grotesk',Arial,sans-serif;
+}
+.site-footer{
+  background:#fff;
+  color:var(--footer-ink);
+  border-top:1px solid var(--footer-line);
+  padding:14px 6vw 16px;
+  font-family:var(--font-ui);
+  font-weight:300;
+  font-size:12px;
+  line-height:1.4;
+  font-synthesis:none;
+  -webkit-font-smoothing:antialiased;
+}
+.footer-band{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:nowrap;
+  gap:4px 20px;
+  max-width:1600px;
+  margin:0 auto;
+}
+.footer-social{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.footer-social-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  color:#3c3c36;
+  text-decoration:none;
+  border-radius:50%;
+  transition:color .2s ease;
+}
+.footer-social-link svg{
+  width:21px;
+  height:21px;
+  display:block;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.footer-social-link svg .solid{fill:currentColor;stroke:none}
+/* Marchio ufficiale WhatsApp: disegno a tutta area, ridotto per pareggiare la dimensione ottica
+   dell'icona Instagram (quadrato con margine interno nel proprio riquadro). */
+.footer-social-link svg.wa{width:14px;height:14px}
+.footer-social-link:hover{color:var(--footer-ink)}
+.site-footer a:focus-visible{outline:2px solid var(--footer-ink);outline-offset:2px;border-radius:50%}
+.footer-copy{
+  margin:0;
+  min-width:0;
+  font-size:12px;
+  letter-spacing:.06em;
+  color:var(--footer-muted);
+  text-align:right;
+}
+@media(min-width:521px){
+  /* Allinea il bordo visivo dell'icona al margine del contenuto (il box di tocco resta 44×44). */
+  .site-footer{padding:16px 6vw 18px}
+  .footer-social{margin-left:-11px}
+}
+@media(max-width:520px){
+  .site-footer{padding:8px 5vw 10px}
+  .footer-band{gap:4px 12px}
+  .footer-copy{font-size:11px;letter-spacing:.04em}
+}
+@media(prefers-reduced-motion:reduce){
+  .footer-social-link{transition:none}
+}
