@@ -37,6 +37,17 @@ for page_path in PAGES:
 assert len(PAGES) == 34, len(PAGES)
 assert "../assets/" not in html
 assert html.count('class="scene-card"') == 12
+# Verifica le foto selezionate e i punti focali IT/EN senza alterare animazioni.
+import json
+selection=json.loads((ROOT / "docs/ANIMAZIONE-FOTO.json").read_text(encoding="utf-8"))["photos"]
+assert len(selection)==12 and len({p["path"] for p in selection})==12
+for rel,prefix in [("index.html",""),("en/index.html","../")]:
+    tags=re.findall(r'<img class="scene-card"[^>]*>', (PUBLIC/rel).read_text(encoding="utf-8"))
+    assert len(tags)==12
+    for tag,photo in zip(tags,selection):
+        assert 'src="'+prefix+photo["path"]+'"' in tag
+        assert 'object-position:'+photo["focal_desktop"] in tag
+
 assert html.count('class="project reveal"') == 10
 assert "Storie, non pose." not in html
 assert "Clicca una foto e scopri la storia" in html
@@ -72,7 +83,7 @@ for removed in (
 
 assets = set(re.findall(r'(?:src|href)="(assets/[^\"]+)"', html))
 assets.update({"assets/fonts/italiana-regular.ttf", "assets/fonts/space-grotesk.ttf"})
-assert len(assets) == 22, f"Expected 22 unique local font/loader/photo assets, found {len(assets)}"
+assert len(assets) == 24, f"Expected 24 unique local font/loader/photo assets, found {len(assets)}"
 for license_file in ("italiana-OFL.txt", "space-grotesk-OFL.txt"):
     assert (PUBLIC / "assets/fonts" / license_file).is_file()
 for asset in assets:
@@ -232,4 +243,4 @@ with sync_playwright() as p:
 
 subprocess.run([sys.executable, str(ROOT / ".github/scripts/verify_public_pages.py")], check=True)
 subprocess.run([sys.executable, str(ROOT / ".github/scripts/verify_404.py")], check=True)
-print("PASS: 22 unique assets; two loaded local fonts; normalized name typography at 7 viewports; title/UI/editorial-link weights; continuous photo/text handoff; cue spacing and arrow exit/reverse; 12 animation photos; 10 square gallery crops; reduced motion; Pages subpath HTTP; JS syntax")
+print("PASS: 24 unique assets; two loaded local fonts; normalized name typography at 7 viewports; title/UI/editorial-link weights; continuous photo/text handoff; cue spacing and arrow exit/reverse; 12 animation photos; 10 square gallery crops; reduced motion; Pages subpath HTTP; JS syntax")

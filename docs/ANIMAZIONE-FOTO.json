@@ -1,0 +1,101 @@
+{
+  "seed": 308258195557696856,
+  "photos": [
+    {
+      "number": 1,
+      "folder": "anna-etienne",
+      "path": "assets/stories/anna-etienne/NCF04804.jpg",
+      "preview_sha256": "d7c38903036f8c2dbb5487b94d37b5810675702a078af0b512ebcd0842b602c8",
+      "focal_desktop": "65% 50%",
+      "focal_mobile": "65% 50%"
+    },
+    {
+      "number": 2,
+      "folder": "giulia-thomas",
+      "path": "assets/stories/giulia-thomas/NCF07141-scaled.jpg",
+      "preview_sha256": "2f6814f78ef9ffffc3e56c0a0cfc979eb88e7dabadc69b28d18a5524ec42b7ba",
+      "focal_desktop": "50% 50%",
+      "focal_mobile": "50% 50%"
+    },
+    {
+      "number": 3,
+      "folder": "sofia-marco",
+      "path": "assets/stories/sofia-marco/NCF03968-scaled.jpg",
+      "preview_sha256": "83948166825a5290a29df8105cb72293334ffa779b5c315a7f5c08aa34d18b9b",
+      "focal_desktop": "50% 75%",
+      "focal_mobile": "50% 75%"
+    },
+    {
+      "number": 4,
+      "folder": "lucia-david",
+      "path": "assets/stories/lucia-david/PIE01031-scaled.jpg",
+      "preview_sha256": "1172b4030c9857286c95d3c1244f204311fe1ac6810fa5e9a0ff66da430c6aaa",
+      "focal_desktop": "50% 45%",
+      "focal_mobile": "50% 45%"
+    },
+    {
+      "number": 5,
+      "folder": "anna-etienne",
+      "path": "assets/stories/anna-etienne/NCF03561-scaled.jpg",
+      "preview_sha256": "2999a1eee87402455d995983cb470ad41c943bc424119238c870eb89994021c9",
+      "focal_desktop": "50% 85%",
+      "focal_mobile": "50% 85%"
+    },
+    {
+      "number": 6,
+      "folder": "giulia-thomas",
+      "path": "assets/stories/giulia-thomas/NCF04765-scaled.jpg",
+      "preview_sha256": "af220593d8fd35f6503cd3c0110cc893d4d9cfecd1850111799781dd508c07e6",
+      "focal_desktop": "50% 50%",
+      "focal_mobile": "50% 50%"
+    },
+    {
+      "number": 7,
+      "folder": "camilla-oliver",
+      "path": "assets/stories/camilla-oliver/NCF01486-scaled.jpg",
+      "preview_sha256": "f901e5fbfa032f6f1eac697422ddc5073b95ce47458c4333be690771b2fe50a7",
+      "focal_desktop": "50% 60%",
+      "focal_mobile": "50% 60%"
+    },
+    {
+      "number": 8,
+      "folder": "francesca-james",
+      "path": "assets/stories/francesca-james/NCF09587_1_1-scaled.jpg",
+      "preview_sha256": "ff9ed7e778c7d459cc35f9bb44f3bd70f319c3c3058d651a4a75417e6e713201",
+      "focal_desktop": "50% 55%",
+      "focal_mobile": "50% 55%"
+    },
+    {
+      "number": 9,
+      "folder": "camilla-oliver",
+      "path": "assets/stories/camilla-oliver/NCF01371-1-scaled.jpg",
+      "preview_sha256": "04719617e89ff7305026caeb94b83c56ad5d03f80a6e1bf81877e6a0281652fb",
+      "focal_desktop": "50% 50%",
+      "focal_mobile": "50% 50%"
+    },
+    {
+      "number": 10,
+      "folder": "francesca-james",
+      "path": "assets/stories/francesca-james/NCF00667_1-scaled.jpg",
+      "preview_sha256": "1460c75ecf0e2b640acc572e816b5829af1debd99848cd93e6dcdb2f92576e6d",
+      "focal_desktop": "50% 78%",
+      "focal_mobile": "50% 78%"
+    },
+    {
+      "number": 11,
+      "folder": "elena-noah",
+      "path": "assets/stories/elena-noah/NCF03161-scaled.jpg",
+      "preview_sha256": "e5d86ae971c3b42162be360fc1cd38ecc83f8a0ac4a3d11f09ceb8da02ae03f0",
+      "focal_desktop": "50% 75%",
+      "focal_mobile": "50% 75%"
+    },
+    {
+      "number": 12,
+      "folder": "sofia-marco",
+      "path": "assets/stories/sofia-marco/NCF03624-scaled.jpg",
+      "preview_sha256": "870b6d79f012b7281358d1870c4c6f98ca6077e4699cc1e5d24349329fd74cb9",
+      "focal_desktop": "50% 55%",
+      "focal_mobile": "50% 55%"
+    }
+  ]
+}

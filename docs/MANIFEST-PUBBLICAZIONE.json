@@ -1,5 +1,5 @@
 {
-  "source": "C:\\Users\\loren\\OneDrive\\Desktop\\Prototipi Nicola Capasso\\23 - Sette storie reali IT EN",
+  "source": "C:\\Users\\loren\\OneDrive\\Desktop\\Prototipi Nicola Capasso\\24 - Foto animazione dalle storie",
   "importedAt": "2026-10-05T15:55:27.152983+02:00",
   "adaptation": "Asset flattened; 404 URLs project-root relative; LF publication normalization; pagine legali IT/EN (bozza non indicizzabile) e versione inglese incluse; PHP enabled only on loopback, static Pages never submits.",
   "htmlPages": 34,
@@ -37,7 +37,7 @@
     "public/en/404.html": "99eba64960f8b612314acd4ba80e8458ee4878607bec0703632e4f486e959f6f",
     "public/en/contatti.html": "7b0a06f3376e77a179d2b3b60dff22baeb9160351f9fdedf37a189747bf7f50c",
     "public/en/cookies.html": "5a043abb61c47c349b8d86b3717bc17b34d6bdcf115de998c6d566df1b3fdd4a",
-    "public/en/index.html": "c052c1cf740792e80521f0240d5a6edf3acda959e18d31bf2b852547365e7129",
+    "public/en/index.html": "5f83ce33038ad1e5363fcbb92bf5ee5a21265c17cc9aa1d9813d245e5ac8365b",
     "public/en/portfolio.html": "287683b8aecd7611cb075c9adad9423d7fbb676ba838e95cfb7c8888f87c526a",
     "public/en/privacy.html": "61aab92bd7713a86405ce1d1c22302ef56470cf6435ea640b58fc710c76114fd",
     "public/en/storia-01.html": "48c9b9425d536d9c6090aeefe1d47edcfdb2ef18d722ac09447011f6cd1e61f6",
@@ -52,7 +52,7 @@
     "public/en/storia-10.html": "0e0f152d478e1656179ea35abdfb85b7e49cb2582295f91832fcf3afd929249b",
     "public/en/terms.html": "33f42a8d08f4a32ab31845fd52a5e91d1867f4daddbea0d27feeddcddf162e95",
     "public/footer.css": "5689afcce6907edb720ca1a4e2a4a0ed59085deba8d9ae04ceb4670cda40be45",
-    "public/index.html": "6807d138b9a07de195f42a39e8e56238ea589cae8c73baba820b4b2bff92dca2",
+    "public/index.html": "5795a0ed6f078a9d576e46530e0ee25f5a1ff2b0d2aed1ce9dc0f2a6dbbc3df5",
     "public/legale.css": "5f9b258bbb3cb92ebc0bd9250755462c09f25a82dd65a1c8da1db0c1387f4ce0",
     "public/mobile.css": "794dca4b06ec4defb322f9f2a7f24bd4133dbe6f7bae31135a472001f18aeca8",
     "public/portfolio.css": "33c07a1dc529a0593fb867b7063f72d1b43673b390f0b327affb86ceb7758eb7",
@@ -327,7 +327,7 @@
     "public/assets/stories/sofia-marco/PIE03327_1-scaled.jpg": "8ef969d3861001dc8732efbd7eb1d91022765e807906c27ed2b157737bc348de",
     "public/assets/stories/sofia-marco/PIE03389_1-scaled.jpg": "e17c1e208f63993eafe88bdc5ac2a598f5e4ea1c1473998a632e380dc477d3d0"
   },
-  "updatedAt": "2026-10-07T15:35:51.577482+02:00",
+  "updatedAt": "2026-10-07T15:55:00.671575+02:00",
   "pageAdaptations": {
     "public/404.html": "Root-relative /nicola-capasso-demo/ URLs for assets and homepage/portfolio links; no base element, so #contenuto stays on the requested error URL; otherwise byte-identical to approved local source"
   },
