@@ -41,6 +41,8 @@ assert html.count('class="project reveal"') == 10
 assert "Storie, non pose." not in html
 assert "Clicca una foto e scopri la storia" in html
 assert "Il vostro giorno, attraverso i miei scatti." in html
+assert '<h2 class="statement">Il vostro giorno diventa memoria, uno scatto alla volta.</h2>' in html
+assert '<h2 class="statement">Your day becomes a memory, one photograph at a time.</h2>' in (PUBLIC / "en/index.html").read_text(encoding="utf-8")
 assert 'class="caption"' not in html
 for removed in (
     "Fotografia di matrimonio — Italia",

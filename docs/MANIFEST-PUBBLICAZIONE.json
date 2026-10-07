@@ -1,5 +1,5 @@
 {
-  "source": "C:\\Users\\loren\\OneDrive\\Desktop\\Prototipi Nicola Capasso\\21 - Testi IT EN e invito storie approvati",
+  "source": "C:\\Users\\loren\\OneDrive\\Desktop\\Prototipi Nicola Capasso\\22 - Frase homepage giorno e memoria",
   "importedAt": "2026-10-05T15:55:27.152983+02:00",
   "adaptation": "Asset flattened; 404 URLs project-root relative; LF publication normalization; pagine legali IT/EN (bozza non indicizzabile) e versione inglese incluse; PHP enabled only on loopback, static Pages never submits.",
   "htmlPages": 34,
@@ -37,7 +37,7 @@
     "public/en/404.html": "99eba64960f8b612314acd4ba80e8458ee4878607bec0703632e4f486e959f6f",
     "public/en/contatti.html": "7b0a06f3376e77a179d2b3b60dff22baeb9160351f9fdedf37a189747bf7f50c",
     "public/en/cookies.html": "5a043abb61c47c349b8d86b3717bc17b34d6bdcf115de998c6d566df1b3fdd4a",
-    "public/en/index.html": "3787cc55194f3a69234354daa8b839a01d2daad397160001b00932c0378c7cdf",
+    "public/en/index.html": "c286e2cae2dbc0117cc56e943443f24dda2f42c845a4c019c2c6512afc0cf69f",
     "public/en/portfolio.html": "523304b15e404d0025165b3852b1394341171cb6298ded252fcfe829efec4ae1",
     "public/en/privacy.html": "61aab92bd7713a86405ce1d1c22302ef56470cf6435ea640b58fc710c76114fd",
     "public/en/storia-01.html": "c03fc001027e8f955d29d70a4e3a66b6946ebeff8c565fcb4727ceb789d1b897",
@@ -52,7 +52,7 @@
     "public/en/storia-10.html": "a89dea9afbc45acc38b1dffc36f5afd0ef5d177eb221531a2a8e1794cbc6ebf6",
     "public/en/terms.html": "33f42a8d08f4a32ab31845fd52a5e91d1867f4daddbea0d27feeddcddf162e95",
     "public/footer.css": "5689afcce6907edb720ca1a4e2a4a0ed59085deba8d9ae04ceb4670cda40be45",
-    "public/index.html": "353b91c796b3b1b11547b6dac6ee5f18e54c92d463f59daa8c1642e26abf8117",
+    "public/index.html": "61718b2ec14d5724898eafc0d5077e15b7d7e5995e7b7cbf035bbc84ffc0027d",
     "public/legale.css": "5f9b258bbb3cb92ebc0bd9250755462c09f25a82dd65a1c8da1db0c1387f4ce0",
     "public/mobile.css": "794dca4b06ec4defb322f9f2a7f24bd4133dbe6f7bae31135a472001f18aeca8",
     "public/portfolio.css": "33c07a1dc529a0593fb867b7063f72d1b43673b390f0b327affb86ceb7758eb7",
@@ -73,7 +73,7 @@
     "public/termini.html": "ec6fbe5a3c4511f73463ef73d61fa774eb77e0e0a3c5c6b333a794b7259bd052",
     "public/tipografia.css": "ffd85be5103b448be3295e2503261d1d5a6a6b786fedf660522092631e736f2c"
   },
-  "updatedAt": "2026-10-07T14:01:53.676719+02:00",
+  "updatedAt": "2026-10-07T14:56:04.473923+02:00",
   "pageAdaptations": {
     "public/404.html": "Root-relative /nicola-capasso-demo/ URLs for assets and homepage/portfolio links; no base element, so #contenuto stays on the requested error URL; otherwise byte-identical to approved local source"
   },

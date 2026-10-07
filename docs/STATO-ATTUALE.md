@@ -1,5 +1,12 @@
 # Stato attuale del prototipo
 
+## Frase homepage selezionata — aggiornamento successivo
+
+IT: «Il vostro giorno diventa memoria, uno scatto alla volta.»
+EN: «Your day becomes a memory, one photograph at a time.»
+Unica modifica visibile alle due homepage; layout, foto, animazioni e invito invariati. Fonte locale: `22 - Frase homepage giorno e memoria/sito`. Aggiornamento locale e GitHub esplicitamente richiesto da Lorenzo.
+
+
 ## Testi IT/EN e invito storie — pubblicazione autorizzata
 
 Lorenzo ha richiesto l'aggiornamento dello stato attuale e il push diretto su main della demo. Fonte durevole: `21 - Testi IT EN e invito storie approvati/sito` sotto `Desktop/Prototipi Nicola Capasso`.
