@@ -28,6 +28,7 @@ jobs:
       - run: python .github/scripts/verify_footer.py
       - run: python .github/scripts/verify_stories.py
       - run: python .github/scripts/verify_about_cta.py
+      - run: python .github/scripts/verify_audit_fixes.py
       - if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
