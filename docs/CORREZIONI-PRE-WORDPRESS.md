@@ -1,4 +1,6 @@
-# Correzioni pre-WordPress — locale, non pubblicato
+# Correzioni pre-WordPress — report delle verifiche locali
+
+Questo report descrive lo stato al termine delle verifiche locali, prima dell'autorizzazione alla pubblicazione. Pubblicazione successivamente autorizzata tramite PR https://github.com/B00RR/nicola-capasso-demo/pull/5 ; stato di merge e deploy da verificare separatamente, non deducibile da questo report storico.
 
 Base: `B00RR/nicola-capasso-demo`, `bae4b394481f44d616aff4f35162bf60103d7265`.
 Branch isolato: `fix/pre-wordpress-audit`. Nessuna modifica al tema WordPress online; squadra e conversione restano ferme. Nessun push o nuovo deploy.
