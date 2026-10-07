@@ -1,5 +1,17 @@
 # Stato attuale del prototipo
 
+## Testi IT/EN e invito storie — pubblicazione autorizzata
+
+Lorenzo ha richiesto l'aggiornamento dello stato attuale e il push diretto su main della demo. Fonte durevole: `21 - Testi IT EN e invito storie approvati/sito` sotto `Desktop/Prototipi Nicola Capasso`.
+
+- Testi italiani scelti applicati a homepage, Portfolio, Contatti, dieci storie e 404; inglese allineato, inclusi alt e messaggi locali del modulo.
+- Rimosso il titolo sopra la griglia homepage, spaziatura ridotta e invito testuale IT/EN promosso: scompare quando la prima foto mobile o le prime due desktop sono interamente visibili e ricompare risalendo.
+- Titoli/kicker delle storie precedenti conservati: le nuove proposte non sono approvate. Nessun fatto fotografico inventato.
+- 34 pagine; manifesto 68 file. Verifiche sito, riferimenti, sintassi JS, 404 HTTP, Contatti e footer PASS prima del push. Le nuove aspettative di testo e il peso tipografico specifico dell'invito sono verificati senza eliminare gli altri controlli.
+- Solo demo statica GitHub Pages; nessun cambiamento su WordPress/Aruba/editor e nessuna email reale. Leo resta fermato.
+
+Le sezioni sotto sono lo storico precedente, non lo stato editoriale corrente.
+
 ## 06/10/2026 — Versione offline pronta (non pubblicata)
 
 Copia di pubblicazione `nc-contact-publish` (clone di `B00RR/nicola-capasso-demo`, branch `main`, nulla in push): **34 pagine HTML**, manifesto 68 file.

@@ -38,7 +38,9 @@ assert len(PAGES) == 34, len(PAGES)
 assert "../assets/" not in html
 assert html.count('class="scene-card"') == 12
 assert html.count('class="project reveal"') == 10
-assert "Storie, non pose." in html
+assert "Storie, non pose." not in html
+assert "Clicca una foto e scopri la storia" in html
+assert "Il vostro giorno, attraverso i miei scatti." in html
 assert 'class="caption"' not in html
 for removed in (
     "Fotografia di matrimonio — Italia",
@@ -99,12 +101,14 @@ def check_typography(page):
     assert abs(style["spacing"] / style["size"] - .015) < .00001, style
     for selectors, family, weight in (
         (".intro h2,.about h2,.contact h2,.section-head h2,.luxury-link", "Italiana", "400"),
-        ("body,p,.nav,.nav a,.nav .brand,.hero-note,.eyebrow,button,input,textarea,select", "Space Grotesk", "400" if page.evaluate("matchMedia('(max-width:700px), (max-width:1000px) and (pointer:coarse)').matches") else "300"),
+        ("body,p:not(.gallery-invite),.nav,.nav a,.nav .brand,.hero-note,.eyebrow,button,input,textarea,select", "Space Grotesk", "400" if page.evaluate("matchMedia('(max-width:700px), (max-width:1000px) and (pointer:coarse)').matches") else "300"),
     ):
         styles = page.locator(selectors).evaluate_all(
             "es => es.map(e => { const s=getComputedStyle(e); return {font:s.fontFamily,weight:s.fontWeight}; })"
         )
         assert styles and all(family in s["font"] and s["weight"] == weight for s in styles), styles
+    invite = page.locator('.gallery-invite').evaluate("e=>({font:getComputedStyle(e).fontFamily,weight:getComputedStyle(e).fontWeight})")
+    assert 'Space Grotesk' in invite['font'] and invite['weight'] == '400', invite
     assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
 
 

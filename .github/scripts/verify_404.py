@@ -84,7 +84,7 @@ try:
                 ready(page)
                 assert page.locator('meta[name="robots"]').get_attribute("content") == "noindex,follow"
                 assert page.locator("h1").inner_text() == "Fuori\ninquadratura."
-                assert page.locator(".explanation").inner_text() == "La pagina che cercate non è qui.\nMa ci sono ancora tante storie da scoprire."
+                assert page.locator(".explanation").inner_text() == "La pagina che cercate non è qui.\nTornate alla Homepage o sfogliate il Portfolio."
                 text = page.locator("body").inner_text().lower()
                 for removed in ("fotografie, emozioni, ricordi.", "le storie belle trovano sempre una strada.", "errore 404 · pagina non trovata", "nicola capasso"):
                     assert removed not in text

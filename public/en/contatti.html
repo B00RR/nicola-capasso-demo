@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="Contact Nicola Capasso, wedding photographer: send the date, the location and your story."><title>Contact — Nicola Capasso</title><script src="../assets/fonts/load-fonts.js"></script><style>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="Contact Nicola Capasso, wedding photographer: send the date, the location and your story."><title>Contact — Nicola Capasso · Prototype</title><script src="../assets/fonts/load-fonts.js"></script><style>
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:#191916;font:300 14px/1.65 'Space Grotesk',Arial,sans-serif;font-synthesis:none;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{display:block;width:100%}h1,h2,h3{font-family:'Italiana',Georgia,serif;font-weight:400;margin:0;letter-spacing:-.015em;line-height:1.08}p{margin:0}a:focus-visible,button:focus-visible{outline:2px solid #191916;outline-offset:5px}.wrap{width:88%;max-width:1600px;margin:auto}
 .contatti-nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 16px;margin-top:24px}
 .contatti-intro{padding:56px 0 44px}
@@ -20,7 +20,7 @@
 <div class="contatti-layout">
 <section class="contatti-intro">
 <h1>Contact</h1>
-<p class="contatti-guida">Tell me about your wedding: the date, the place and the photographs you would like. I will reply personally.</p>
+<p class="contatti-guida">Tell me about your wedding: the date, the place and the photographs you would like. I reply personally.</p>
 </section>
 <section class="contatti-modulo">
 <form class="contatti-form" id="contatti-form" data-endpoint="/api/contact" novalidate>
@@ -69,7 +69,7 @@
 </div>
 
 <div class="contatti-azioni">
-<button class="contatti-submit" type="submit"><span class="contatti-submit-label">Send enquiry</span></button>
+<button class="contatti-submit" type="submit"><span class="contatti-submit-label">Request information</span></button>
 </div>
 
 <p class="contatti-esito" id="contatti-esito" role="status" aria-live="polite" hidden></p>
@@ -79,10 +79,10 @@
 </form>
 </section>
 <div class="contatti-fotografie" aria-label="Wedding photography by Nicola Capasso">
-<figure class="foto-mobile"><img src="../assets/optimized/contatti-mobile-bacio.jpg" alt="Un bacio degli sposi nella luce calda del giorno" data-nc-en-alt="mancante" width="1920" height="1280"></figure>
-<figure class="foto-arco foto-arco-uno"><img src="../assets/optimized/6.jpg" alt="Gli sposi camminano mano nella mano sotto un porticato" data-nc-en-alt="mancante" width="800" height="1200"></figure>
-<figure class="foto-arco foto-arco-due"><img src="../assets/optimized/NCF03602-scaled.jpg" alt="Un bacio degli sposi nella luce del giorno" data-nc-en-alt="mancante" width="800" height="1200"></figure>
-<figure class="foto-arco foto-arco-tre"><img src="../assets/optimized/NCF00205.jpg" alt="Il bouquet e le mani degli sposi" data-nc-en-alt="mancante" width="800" height="1200"></figure>
+<figure class="foto-mobile"><img src="../assets/optimized/contatti-mobile-bacio.jpg" alt="A kiss between the newlyweds in the warm daylight" data-nc-en-alt="mancante" width="1920" height="1280"></figure>
+<figure class="foto-arco foto-arco-uno"><img src="../assets/optimized/6.jpg" alt="The newlyweds walking hand in hand under an arcade" data-nc-en-alt="mancante" width="800" height="1200"></figure>
+<figure class="foto-arco foto-arco-due"><img src="../assets/optimized/NCF03602-scaled.jpg" alt="A kiss between the newlyweds in daylight" data-nc-en-alt="mancante" width="800" height="1200"></figure>
+<figure class="foto-arco foto-arco-tre"><img src="../assets/optimized/NCF00205.jpg" alt="The bouquet and the newlyweds’ hands" data-nc-en-alt="mancante" width="800" height="1200"></figure>
 </div>
 </div>
 </main>
@@ -114,35 +114,35 @@
   const emailValida = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
   const telefonoValido = /^[0-9+().\-\s]{6,30}$/;
   const attesa = ms => new Promise(risolvi => setTimeout(risolvi, ms));
-  const DATI_CONSERVATI = ' Nessun dato è andato perso: i campi restano compilati e potete riprovare. In alternativa scrivete a info@nicolacapasso.photo.';
+  const DATI_CONSERVATI = ' No data has been lost: your entries remain in the form and you can try again. Alternatively, email info@nicolacapasso.photo.';
   let inviando = false;
 
   const campi = [
-    { nome: 'names', etichetta: 'Nome e cognome', valida: v => {
-        if (!v.trim()) return 'Indicate il vostro nome e cognome.';
-        if (/[\r\n]/.test(v)) return 'Il nome non può contenere a capo.';
-        if (v.trim().length < 2) return 'Il nome è troppo breve.';
+    { nome: 'names', etichetta: 'Full name', valida: v => {
+        if (!v.trim()) return 'Please enter your full name.';
+        if (/[\r\n]/.test(v)) return 'The name cannot contain line breaks.';
+        if (v.trim().length < 2) return 'The name is too short.';
         return null; } },
     { nome: 'email', etichetta: 'Email', valida: v => {
-        if (!v.trim()) return 'Indicate un indirizzo email per la risposta.';
-        if (/[\r\n]/.test(v)) return 'L’indirizzo email non può contenere a capo.';
-        if (!emailValida.test(v.trim())) return 'L’indirizzo email non sembra completo: controllate la chiocciola e il dominio.';
+        if (!v.trim()) return 'Please enter an email address we can reply to.';
+        if (/[\r\n]/.test(v)) return 'The email address cannot contain line breaks.';
+        if (!emailValida.test(v.trim())) return 'The email address looks incomplete: check the @ symbol and the domain.';
         return null; } },
-    { nome: 'phone', etichetta: 'Telefono', valida: v => {
+    { nome: 'phone', etichetta: 'Phone', valida: v => {
         if (!v.trim()) return null;
-        if (!telefonoValido.test(v.trim())) return 'Il telefono può contenere solo numeri, spazi e i segni + ( ) - .';
+        if (!telefonoValido.test(v.trim())) return 'The phone number may contain only digits, spaces and the symbols + ( ) - .';
         return null; } },
-    { nome: 'weddingDate', etichetta: 'Data del matrimonio', valida: v => {
+    { nome: 'weddingDate', etichetta: 'Wedding date', valida: v => {
         if (!v.trim()) return null;
-        if (!/^\d{4}-\d{2}-\d{2}$/.test(v.trim())) return 'Indicate la data nel formato giorno/mese/anno.';
-        if (isNaN(new Date(v.trim() + 'T00:00:00').getTime())) return 'La data indicata non è valida.';
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(v.trim())) return 'Please enter the date in day/month/year format.';
+        if (isNaN(new Date(v.trim() + 'T00:00:00').getTime())) return 'The date entered is not valid.';
         return null; } },
-    { nome: 'location', etichetta: 'Luogo del matrimonio', valida: v => {
+    { nome: 'location', etichetta: 'Wedding location', valida: v => {
         if (!v.trim()) return null;
-        if (/[\r\n]/.test(v)) return 'Il luogo non può contenere a capo.';
+        if (/[\r\n]/.test(v)) return 'The location cannot contain line breaks.';
         return null; } },
-    { nome: 'message', etichetta: 'Il vostro messaggio', valida: v => {
-        if (!v.trim()) return 'Scrivete il vostro messaggio.';
+    { nome: 'message', etichetta: 'Your message', valida: v => {
+        if (!v.trim()) return 'Please write your message.';
         // Soglia allineata al server (minimo 1 carattere): requisito "campo obbligatorio",
         // non una lunghezza minima non approvata. Messaggi brevissimi sono accettati.
         return null; } }
@@ -180,8 +180,8 @@
     riepilogo.innerHTML = '';
     const titolo = document.createElement('p');
     titolo.textContent = errori.length === 1
-      ? 'Un campo da correggere prima dell’invio.'
-      : errori.length + ' campi da correggere prima dell’invio.';
+      ? 'One field needs correcting before submission.'
+      : errori.length + ' fields need correcting before submission.';
     const lista = document.createElement('ul');
     errori.forEach(e => {
       const voce = document.createElement('li');
@@ -252,17 +252,17 @@
     inviando = true;
     submit.disabled = true;
     submit.setAttribute('aria-busy', 'true');
-    etichetta.textContent = 'Invio in corso…';
-    mostraEsito('attesa', 'Invio in corso…');
+    etichetta.textContent = 'Sending…';
+    mostraEsito('attesa', 'Sending…');
 
     try {
       if (!ENDPOINT) {
         // Nessun trasporto collegato: nessuna richiesta parte, nessuna email è inviata.
         await attesa(700);
         if (dati.website) {
-          mostraEsito('antispam', 'Invio sospeso dal controllo antispam: il campo «Sito web» risulta compilato. Nulla è stato trasmesso e i dati restano nel modulo.');
+          mostraEsito('antispam', 'Submission paused by the anti-spam check: the “Website” field is filled in. Nothing has been transmitted and your details remain in the form.');
         } else {
-          mostraEsito('locale', 'Invio di prova locale: la richiesta non è stata spedita. Il collegamento al server non è ancora attivo, quindi nulla è stato consegnato a Nicola né a info@nicolacapasso.photo. I dati restano nel modulo.');
+          mostraEsito('locale', 'Local test submission: the request was not sent. The server connection is not active yet, so nothing has been delivered to Nicola or to info@nicolacapasso.photo. Your details remain in the form.');
         }
         return;
       }
@@ -272,11 +272,11 @@
       try {
         corpoRichiesta = JSON.stringify(dati);
       } catch (erroreSerializzazione) {
-        mostraEsito('errore', 'Invio non riuscito: i dati non sono stati preparati.' + DATI_CONSERVATI);
+        mostraEsito('errore', 'Submission failed: the data could not be prepared.' + DATI_CONSERVATI);
         return;
       }
       if (new TextEncoder().encode(corpoRichiesta).length > 16384) {
-        mostraEsito('errore', 'Il messaggio è troppo lungo per essere inviato: accorciatelo di qualche riga.' + DATI_CONSERVATI);
+        mostraEsito('errore', 'The message is too long to send: please shorten it by a few lines.' + DATI_CONSERVATI);
         return;
       }
       const intestazioni = { 'Content-Type': 'application/json', 'Accept': 'application/json' };
@@ -288,7 +288,7 @@
           body: corpoRichiesta
         });
       } catch (erroreRete) {
-        mostraEsito('errore', 'Invio non riuscito: il server non ha risposto.' + DATI_CONSERVATI);
+        mostraEsito('errore', 'Submission failed: the server did not respond.' + DATI_CONSERVATI);
         return;
       }
 
@@ -305,36 +305,36 @@
         // Unico esito positivo: i campi si azzerano solo qui.
         form.reset();
         campi.forEach(c => scriviErrore(c.nome, null));
-        mostraEsito('ok', ['127.0.0.1', 'localhost'].includes(location.hostname) ? 'Prova locale registrata correttamente. Nessuna email reale è stata inviata.' : (messaggio || 'Richiesta inviata.'));
+        mostraEsito('ok', ['127.0.0.1', 'localhost'].includes(location.hostname) ? 'Local test recorded successfully. No real email was sent.' : (messaggio || 'Enquiry sent.'));
       } else if (codice === 'invalid' || codice === 'invalid_input' || risposta.status === 422) {
         const elenco = scriviErroriDaServer(corpo && (corpo.errors || corpo.fieldErrors));
         if (elenco.length) {
           mostraRiepilogo(elenco);
           form.elements[elenco[0].nome].focus();
         }
-        mostraEsito('errore', messaggio || 'Alcuni campi non sono stati accettati: correggeteli e riprovate.' + DATI_CONSERVATI);
+        mostraEsito('errore', messaggio || 'Some fields were not accepted: correct them and try again.' + DATI_CONSERVATI);
       } else if (codice === 'rejected' || risposta.status === 400) {
-        mostraEsito('antispam', messaggio || 'Invio rifiutato dal controllo antispam.' + DATI_CONSERVATI);
+        mostraEsito('antispam', messaggio || 'Submission rejected by the anti-spam check.' + DATI_CONSERVATI);
       } else if (codice === 'rate_limited' || risposta.status === 429) {
         const dopo = corpo && Number(corpo.retryAfter) > 0 ? Number(corpo.retryAfter) : 0;
         mostraEsito('errore', messaggio || (dopo > 0
-          ? 'Troppi invii in poco tempo: riprovate tra ' + dopo + ' secondi.' + DATI_CONSERVATI
-          : 'Troppi invii in poco tempo: riprovate fra qualche minuto.' + DATI_CONSERVATI));
+          ? 'Too many submissions in a short time: try again in ' + dopo + ' seconds.' + DATI_CONSERVATI
+          : 'Too many submissions in a short time: try again in a few minutes.' + DATI_CONSERVATI));
       } else if (codice === 'payload_too_large' || risposta.status === 413) {
-        mostraEsito('errore', messaggio || 'Il messaggio è troppo lungo per essere inviato.' + DATI_CONSERVATI);
+        mostraEsito('errore', messaggio || 'The message is too long to send.' + DATI_CONSERVATI);
       } else if (codice === 'forbidden_origin' || codice === 'forbidden_token' || codice === 'forbidden' || risposta.status === 403) {
-        mostraEsito('errore', messaggio || 'Invio non autorizzato da questa pagina.' + DATI_CONSERVATI);
+        mostraEsito('errore', messaggio || 'Submission not authorised from this page.' + DATI_CONSERVATI);
       } else if (codice === 'transport_error' || codice === 'transport_failed' || risposta.status === 502) {
         // Il trasporto NON ha accettato il messaggio: nessun finto successo, dati conservati.
-        mostraEsito('errore', messaggio || 'Invio non riuscito: il server non ha potuto consegnare il messaggio.' + DATI_CONSERVATI);
+        mostraEsito('errore', messaggio || 'Submission failed: the server could not deliver the message.' + DATI_CONSERVATI);
       } else {
-        mostraEsito('errore', messaggio || 'Invio non riuscito (codice ' + (codice || risposta.status) + ').' + DATI_CONSERVATI);
+        mostraEsito('errore', messaggio || 'Submission failed (code ' + (codice || risposta.status) + ').' + DATI_CONSERVATI);
       }
     } finally {
       inviando = false;
       submit.disabled = false;
       submit.removeAttribute('aria-busy');
-      etichetta.textContent = 'Invia la richiesta';
+      etichetta.textContent = 'Request information';
     }
   });
 })();
