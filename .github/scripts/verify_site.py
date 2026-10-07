@@ -51,7 +51,7 @@ for removed in (
     "Uno sguardo sul vostro giorno",
     "Fotografie sincere, nate dalla luce e dalle persone",
     "Presenza",
-    "Intimità",
+    "<h2>Intimità</h2>",  # Il vecchio heading generico, non il titolo approvato «Intimità sul Mediterraneo».
     "Emozione",
     "Memoria",
     "Un giorno da ricordare",
@@ -72,7 +72,7 @@ for removed in (
 
 assets = set(re.findall(r'(?:src|href)="(assets/[^\"]+)"', html))
 assets.update({"assets/fonts/italiana-regular.ttf", "assets/fonts/space-grotesk.ttf"})
-assert len(assets) == 15, f"Expected 15 unique local font/loader/photo assets, found {len(assets)}"
+assert len(assets) == 22, f"Expected 22 unique local font/loader/photo assets, found {len(assets)}"
 for license_file in ("italiana-OFL.txt", "space-grotesk-OFL.txt"):
     assert (PUBLIC / "assets/fonts" / license_file).is_file()
 for asset in assets:
@@ -232,4 +232,4 @@ with sync_playwright() as p:
 
 subprocess.run([sys.executable, str(ROOT / ".github/scripts/verify_public_pages.py")], check=True)
 subprocess.run([sys.executable, str(ROOT / ".github/scripts/verify_404.py")], check=True)
-print("PASS: 15 unique assets; two loaded local fonts; normalized name typography at 7 viewports; title/UI/editorial-link weights; continuous photo/text handoff; cue spacing and arrow exit/reverse; 12 animation photos; 10 square gallery crops; reduced motion; Pages subpath HTTP; JS syntax")
+print("PASS: 22 unique assets; two loaded local fonts; normalized name typography at 7 viewports; title/UI/editorial-link weights; continuous photo/text handoff; cue spacing and arrow exit/reverse; 12 animation photos; 10 square gallery crops; reduced motion; Pages subpath HTTP; JS syntax")

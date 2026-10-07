@@ -1,0 +1,1095 @@
+[
+  {
+    "number": 1,
+    "folder": "anna-etienne",
+    "title_it": "Promesse senza tempo",
+    "title_en": "Timeless Vows",
+    "count": 46,
+    "cover": "NCF05273.jpg",
+    "cover_position": "50% 48%",
+    "photos": [
+      {
+        "path": "assets/stories/anna-etienne/NCF03946-scaled.jpg",
+        "sha256": "781931c230d06deb7233444933b1626896ac184e83420ee28fb38afe5ad3b50f"
+      },
+      {
+        "path": "assets/stories/anna-etienne/DSC06319-scaled.jpg",
+        "sha256": "0343a18280ec6ed488c5fbdfdd3d452daa73617de53401a2ec272cb5de094eca"
+      },
+      {
+        "path": "assets/stories/anna-etienne/DSC06506.jpg",
+        "sha256": "80325e02ac9b3399836a000b80b71968ec34b87dbedb52e6d60998a4c266e1fd"
+      },
+      {
+        "path": "assets/stories/anna-etienne/DSC06558-scaled.jpg",
+        "sha256": "6c33e47df9f6f97fc9ead62775deecd1c1cae9ac3f0df3ed52e790cfb3c43f7d"
+      },
+      {
+        "path": "assets/stories/anna-etienne/DSC07022.jpg",
+        "sha256": "d618e0d43934faa5bfc2185d55a4a495a02857108c4ba90ebf2fd1948c9aa4cc"
+      },
+      {
+        "path": "assets/stories/anna-etienne/DSC07086.jpg",
+        "sha256": "dc1cc697d331ed32c285672f7c5f55113141823d1978314ebf72a43d33b64cf7"
+      },
+      {
+        "path": "assets/stories/anna-etienne/DSC07202.jpg",
+        "sha256": "5051a1bdc7e02a21ebefc74624b86596fe07589a071c2f9b7da39fde53ab169d"
+      },
+      {
+        "path": "assets/stories/anna-etienne/DSC07500-scaled.jpg",
+        "sha256": "1a4112a886085005fb66731bd59e71e00432c9f83540108d98c882cba8864e2b"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF03119.jpg",
+        "sha256": "c6c9461cec2c4c1c773f619b158999b600d5a264d1fa07aa18c3173348a5953c"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF03232-scaled.jpg",
+        "sha256": "20afdc3464364bbaf7382c27521f71aec0006d5b2e403a6c75ff391f6fb045df"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF03305.jpg",
+        "sha256": "b3be3ff23807a6c447ce35db212c7690a81ddfb732429abd485ca6f84fadcc4b"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF03358-scaled.jpg",
+        "sha256": "851e6259a68722361eca554f68963a960f469aa2b51c0434eec8a8dae699c7df"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF03374.jpg",
+        "sha256": "2c61d7209b2a1aa55ff92f7e7e301839e2aadd66af4755f53b016ef9c8f90678"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF03507-scaled.jpg",
+        "sha256": "ce2715655a4e8092cfa2ec505d6954ba680be44790df24040e424c1a392c8eef"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF03561-scaled.jpg",
+        "sha256": "2999a1eee87402455d995983cb470ad41c943bc424119238c870eb89994021c9"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF03580-scaled.jpg",
+        "sha256": "ca0c531f734d9f7f1befbcbbe0b34f5b79728b079c332f2657791eb1aa8f6a9b"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF03620-scaled.jpg",
+        "sha256": "ef60866349df12e08a332420b4288d39e3c162304b7536a74ac7a064c166e8a4"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF03664.jpg",
+        "sha256": "f8be80c5481fec3b57965c199844f641aea914dfc8fbc32edc62f3b0ed1266a8"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF03836-scaled.jpg",
+        "sha256": "2b8a89fb2d9335d2afeb0c21e173379fd7f7f2708e708fca7e273318b8547a34"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF04258-scaled.jpg",
+        "sha256": "26848f117013aa0a1fcbf009d7296da514eaaf71641652ca6ed7770c62225271"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF04418.jpg",
+        "sha256": "ec88fdbf0acf217b4bad591ad6badc7a025314e0301f2b0209e37b1c8a10417e"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF04445-scaled.jpg",
+        "sha256": "f4d7953da8ea11cc96f95d8f30d5b29849dfe90d5f55f70aa35feab88a01fb21"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF04557.jpg",
+        "sha256": "5d1de309ee2b89decc2544e67a9711be0bdf834b86e3c90b058548c1a90116ee"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF04566-scaled.jpg",
+        "sha256": "f225fe67574420607ccea23acbb329051be13344d648e346989474dfcc670e2b"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF04579-scaled.jpg",
+        "sha256": "6dd921e031b5a64d6ae75920872414bf61a37fc290086b26c88c878b7f7b7e5f"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF04782.jpg",
+        "sha256": "21d75fd44f2b371976b6315dc61ec4278bef584c3dd8c027bcf029ba17f7989a"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF04804.jpg",
+        "sha256": "d7c38903036f8c2dbb5487b94d37b5810675702a078af0b512ebcd0842b602c8"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF04838.jpg",
+        "sha256": "593ee641b68e5c22b58e6325e5c4ce68ed1c4ff31ab860f187fd0cc4ef967789"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF05050-scaled.jpg",
+        "sha256": "78310e1da05663dc7f141aa177f2e30cb5fb1052ef824a4e0d32976ff6c4e022"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF05187.jpg",
+        "sha256": "df878e659e18cc623ed2067cebdead4f6e8067c3a91aaee2282a788acaf5b9c5"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF05232-scaled.jpg",
+        "sha256": "d38b4a7c0e23c4d566f301193d30af63dfdc3d9d363b0f34246be71de7dbb903"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF05273.jpg",
+        "sha256": "5403cba5ebcf02c96f3eddcc127e2a135fc353571a8321b854ab9e28c48bb165"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF05369-scaled.jpg",
+        "sha256": "517621973592a0df6400149970a70cd306536fcbceaa96740f38ec9582ca12c4"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF05642.jpg",
+        "sha256": "9cfa5fcb0e48b9791a79e2627b190ad8a2a5d4e8c272017f99bc327ecaf65f59"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF05912.jpg",
+        "sha256": "09f216485dac13ec2e8d1a27fa8dd7e43bec71173a7ec8a04e9b6e5b996fa262"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF05974-scaled.jpg",
+        "sha256": "4d288fd7f412f72920bc0592c3e59b0c5cfe8f919ca56879ae98dcdac498f2fc"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF06083.jpg",
+        "sha256": "aa1256561862e2dc5a070f76c2ecc9eed5514cbdd985f43b2b4e3193058dbf6d"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF06094-scaled.jpg",
+        "sha256": "e37caddb254e8be2592f7865c4faa1d5818e48fefc35c1c55269e8a751cf3304"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF06147.jpg",
+        "sha256": "4bc75166e2fa11a38413e6fb86d16fd0cf2d74d9801d34299c2da5a76d6c6e52"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF06164-scaled.jpg",
+        "sha256": "6dc19b7cc5230521d01218b30e970994b2009bf949726bda3b8dbe79888cb399"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF06303.jpg",
+        "sha256": "f1f6b0ff8b542fc33c08896dfeaf5a7f0c19c9605a166b66af83edb33e597842"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF06347.jpg",
+        "sha256": "19613afb7ffe398684418476eedcbc1697aea58107831196ee102fe976738810"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF06491-scaled.jpg",
+        "sha256": "f10c2d5230aaead89149e8825ca276fec05f6b2dfbeaee29d45a4a27c3ca5968"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF06708.jpg",
+        "sha256": "112fd9e14d81c388ae1746fbb781777e9eb31854c5de9535978e812e87e52e25"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF06724-scaled.jpg",
+        "sha256": "46ad433d09da710b6a49b73f85fe7026f534ee3c6f388673ffe882e7332baa24"
+      },
+      {
+        "path": "assets/stories/anna-etienne/NCF06774-scaled.jpg",
+        "sha256": "2ea6b62490528ea29d4b7025409010ec464b6ae7f019f8dd39a1f402d0053c53"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "folder": "camilla-oliver",
+    "title_it": "Intimità sul Mediterraneo",
+    "title_en": "Mediterranean Intimacy",
+    "count": 18,
+    "cover": "NCF03578.jpg",
+    "cover_position": "50% 48%",
+    "photos": [
+      {
+        "path": "assets/stories/camilla-oliver/NCF03837-scaled.jpg",
+        "sha256": "70e279dacf5334edb1077323d14a2f32a87c26bcf106d81bdbd44d06d4f33ee7"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF00826-scaled.jpg",
+        "sha256": "7da03a5452a527bcade16e7bc5e2bf97378c1168aeadd084ad8a2389225ec6a9"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF00966-scaled.jpg",
+        "sha256": "23dcbc7ea2e4caab66bf3ca114e26a54496fc3c5e32e7f630eaf1e5cab3a13db"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF01058-scaled.jpg",
+        "sha256": "72ecd26d9fbdf65f2dbd8329addb75990e7f468e7dc229992dde628d9ed3480e"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF01124-scaled.jpg",
+        "sha256": "4c500b4846b0c236cedb3b40e74fdf61d66021023e2ce13796bb28706760aa81"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF01182-scaled.jpg",
+        "sha256": "be0f3f67c47b74309585613cd41be03a9a984eabf50bce3350fb480005d177d9"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF01223-scaled.jpg",
+        "sha256": "3e0d3409af036208178a72b8a854975f9e8ae460e06132c73e514b2bfe2f3ff1"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF01343.jpg",
+        "sha256": "5a83be468356a5565ddf31cfce2cf1425099c1103307bbe6ee0354d3584f62b8"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF01371-1-scaled.jpg",
+        "sha256": "04719617e89ff7305026caeb94b83c56ad5d03f80a6e1bf81877e6a0281652fb"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF01486-scaled.jpg",
+        "sha256": "f901e5fbfa032f6f1eac697422ddc5073b95ce47458c4333be690771b2fe50a7"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF01813-scaled.jpg",
+        "sha256": "03a7041cb66da8fe9648b7cc1c6a0f1cfcdf1cfd1a0ff84c6fbba0094c3e01d7"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF02163-scaled.jpg",
+        "sha256": "33824c7f816bd8927101310232c8a9fed84e26958bd86f86b72a392b6da8a13a"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF02288-scaled.jpg",
+        "sha256": "de985ec4517467d9a7aee7f1f9fd5b940e3e236237f5d233c0d6b42407300456"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF02676-scaled.jpg",
+        "sha256": "23aa6bf3926b51fbe97247b6e692dd5920e29b5a190d4ce35e95aa7c153fe81c"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF02706.jpg",
+        "sha256": "e87059ee1cbe586b6c6fcb14686b8966d84578d3108e955f952ea3f5c39326f5"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF03262.jpg",
+        "sha256": "a05c4eaa68aa0a32312761cc2f6682908b1431a79e4bcefc82644e7670582f9a"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF03578.jpg",
+        "sha256": "0fd13b77e4d42e4a432ac5170e8ac0ef93db15d680208fa059d2b79b62b08033"
+      },
+      {
+        "path": "assets/stories/camilla-oliver/NCF03714-scaled.jpg",
+        "sha256": "844e02a4b99c20bb45e20aec375c809cc2e4bfc33c215eb19b781c8895895200"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "folder": "elena-noah",
+    "title_it": "Un sì sopra il mare",
+    "title_en": "Vows Above the Sea",
+    "count": 54,
+    "cover": "NCF04302-scaled.jpg",
+    "cover_position": "50% 60%",
+    "photos": [
+      {
+        "path": "assets/stories/elena-noah/NCF03602-scaled.jpg",
+        "sha256": "da36592b2891f0ea5b0958b02b02e232cc687a2bb5b81190113049fbb0c4be31"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF02785-1-scaled.jpg",
+        "sha256": "75a3f55faf33533bcc51d0be814eb9090792871c19c0b05c8ef310ac9cc0b22d"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF02810-scaled.jpg",
+        "sha256": "b9984ea53c7bfe558ae13f8990677fecad0b46fec88366fa68f85708fcd03412"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF02869-scaled.jpg",
+        "sha256": "7a013265d1c8c343f683112ce7a4ac6e6d489e9b7b56bb419003b228efba64d8"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF02917-scaled.jpg",
+        "sha256": "c04fa62eaef00852340a4054ca2c7527e97a1da6df9fb39cfbbb8d6e6a34fdde"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03059-scaled.jpg",
+        "sha256": "d001077f6ff273fa5315a45ae4944e93533537f5b40ab9d8bf97ca71c171ab4b"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03104-scaled.jpg",
+        "sha256": "4eb34ef5c76a335259aefe2c890ba43e01a877d3118e33839478e3434d5033d6"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03157-scaled.jpg",
+        "sha256": "bace36b6209c784d6b7d114c02cf576b121456433c604c0399b8677e0cceab0a"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03161-scaled.jpg",
+        "sha256": "e5d86ae971c3b42162be360fc1cd38ecc83f8a0ac4a3d11f09ceb8da02ae03f0"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03271-scaled.jpg",
+        "sha256": "eb830aedeb6a08d874f434d151b31eddad9030d7b7c761a695f430ac9394c837"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03363-scaled.jpg",
+        "sha256": "aa83aace604b1fe0d126b838a628be8d028cf4e4739ceb323ba8b55b19bffb4f"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03366-scaled.jpg",
+        "sha256": "b29fb8014df331071ec8f74ed19cdf61c6d6a4f67046d17fd3cf91fed199bce1"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03393-scaled.jpg",
+        "sha256": "6a4f3f0bcd70fdab19c5805357706bdb2e4201646e23bb43fc0a8025d6cf625a"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03413-scaled.jpg",
+        "sha256": "606faac5bc15c080e656c3e9b69cffe9b594a9d94003781787355a1bf5086518"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03545-scaled.jpg",
+        "sha256": "935927153e785568401d368b6fd9620d90959df626ba72c8e5f0eb494afc2be1"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03655-scaled.jpg",
+        "sha256": "5b94c82e6c6a09eec58acb83265c0d7e7634a08242b37b88fbdec111649bc5bd"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03672-scaled.jpg",
+        "sha256": "d0c2029d03f55f6e896ec10a87a9784079cbc439773ced7c763647e67e958d44"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03687-scaled.jpg",
+        "sha256": "d1604fc89effd69cc279a212e8a145568a6775d22001c6e2c90fc77052d488c2"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03696-scaled.jpg",
+        "sha256": "8075e3011d69596a5d8864f0ae46d99bf86b6cf13032db28ff6250f53a62be07"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03701-scaled.jpg",
+        "sha256": "bc40e1c59e900d39857e58b8c89ea4e55fa6e8ef881c5859f8738792f950eca8"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03730-scaled.jpg",
+        "sha256": "e2303d825b11f76eab9dd50981bc41fd37bd87270d005b392c08cab027d48195"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03761-scaled.jpg",
+        "sha256": "ef8db3c9e2c6fc6cc453fd59191b5657126c7528955789b6a57025c6287d5503"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03779-scaled.jpg",
+        "sha256": "787ae7ce04d9aeaf0a33a6d60ad1f2358fe342d7fe4da36fb8429bb586397178"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03809-scaled.jpg",
+        "sha256": "373483e6ee9d6fccd00b90c1d78cf2f6d93d8ea2a7d5fb9bfb87fd359dd837ba"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03823-scaled.jpg",
+        "sha256": "5e1a9b84a6f4cd335797626ef66369e1139fb8ff5cb13c11d65402c573e86244"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03834-scaled.jpg",
+        "sha256": "a8c7c225f6e76d41e83495e8b26a0e99dd19faec4130b312d2b224283a33c381"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03835-scaled.jpg",
+        "sha256": "0e4464faa89e6eede86fe2e2452b85e94163965c9adaae89c4851a0c16351833"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03891-scaled.jpg",
+        "sha256": "a3ecda627fbedcd3b9dd369234c7e6abc812aba157ad8fa844e8352c117f07a1"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03928-scaled.jpg",
+        "sha256": "44db7c32866271507dc009bed3bac89d1283d74bd21d1733f8221d3c929f3323"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03949-scaled.jpg",
+        "sha256": "d80c0c565cce1c605643a84d6c991974a0d6c3d3a5362dd8338b29892b517520"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF03996-scaled.jpg",
+        "sha256": "d6b4e5a30ce280f098017c540cc4047b249c2c7b45d72de8e5175cf7ef2aa6c3"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04057-scaled.jpg",
+        "sha256": "5e3204af3d5e9042ff2aa893fd68f2a43d7d4b709758a2cc14e1dc72f085cbda"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04066-scaled.jpg",
+        "sha256": "b969f3e1305119669f90d4a1b4a94f393fbd7a6084c8f1410dabcac1ccc9c384"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04079-scaled.jpg",
+        "sha256": "1f62d0d152eaacf7f633f0a6f2fda83bbce3542323753f0127314f0be22f9fd4"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04092-scaled.jpg",
+        "sha256": "6360fd31b99b0b53cc698579ed37851e9ed73358cba872eabc29f4aec4567356"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04110-scaled.jpg",
+        "sha256": "48eb1ec7a965dfc4ca1f8e9d61906b1f16d1d710fe7cf1dce96e75b3386a8f99"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04159-scaled.jpg",
+        "sha256": "4bf76c364ed2b13bc2c88a92c4cb5473f9c00c4dddbfdc1592b8b3dc8d7fc2ea"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04207-scaled.jpg",
+        "sha256": "9e688ae13ce9633bfbb5c372ceceb70b5ed297f217497faca14cd08abc91c1c3"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04257-scaled.jpg",
+        "sha256": "059d2bc624f03f6eababf5a983fa81192aab17f63b575dd533743618ccd78daf"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04270-scaled.jpg",
+        "sha256": "61a049b52a9d16a2b7773d4a10144755f95bb311e5862ddcff1d8d53f32ed3e4"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04302-scaled.jpg",
+        "sha256": "609d26f0af899e641bd2dbe3bce2d957eae47c3a49a829d869736011745c735c"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04356-scaled.jpg",
+        "sha256": "225e7619171f416ef7e4732cc181e30e2e2ef7565d168ca8a76fa249ca4dcb9b"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04382-scaled.jpg",
+        "sha256": "d2cde6b552c1a6b6a86b7ac69f7dcc9ee9c6bda7f8e5d603369a87646884bbe2"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF04438-scaled.jpg",
+        "sha256": "75c42232851a05ab07d04ee10527bebb9771e5a96d42eaaa9f1efe3aadb81c4c"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF05875-scaled.jpg",
+        "sha256": "957641d804fa64d6ba0bd00080d8d447d005cc2d6fde208e21a545b93bcca333"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF05884-scaled.jpg",
+        "sha256": "55d88c41abca85f0e187eb44d193175beac5d905a4d3cbbdfab10f08dfe722d9"
+      },
+      {
+        "path": "assets/stories/elena-noah/NCF06261-scaled.jpg",
+        "sha256": "2a8c91295c9efd9aa8cae87bbc898630caf337d9eab36d9718628d68394b0c02"
+      },
+      {
+        "path": "assets/stories/elena-noah/PIE02148-scaled.jpg",
+        "sha256": "211026e9cbaa68278e63c0953dffbce392791f50ca72c0fa3ae4c9ce03aa882c"
+      },
+      {
+        "path": "assets/stories/elena-noah/PIE02185-scaled.jpg",
+        "sha256": "9e661508410106855495d09f35271145d1a695ced2203086057393914bea620e"
+      },
+      {
+        "path": "assets/stories/elena-noah/PIE02333-scaled.jpg",
+        "sha256": "09c3c2226ad4874327f810677c49e20d9e0d61261fe0dbdc2c3184740c1045a0"
+      },
+      {
+        "path": "assets/stories/elena-noah/PIE02353-scaled.jpg",
+        "sha256": "6af48f967a84c0031ba8241223ee6a635ba174cd6d7be00ceee8b45ddef21c26"
+      },
+      {
+        "path": "assets/stories/elena-noah/PIE02394-scaled.jpg",
+        "sha256": "7b54362b5ab8c546a01ca2ea1b4d05fbe714abd59e9b731606840c8652c36fa9"
+      },
+      {
+        "path": "assets/stories/elena-noah/PIE02446-scaled.jpg",
+        "sha256": "2e7f2382644bddacfa01cd3730d2c9777768ce8870e46b8929113e5ab706372f"
+      },
+      {
+        "path": "assets/stories/elena-noah/PIE02495-scaled.jpg",
+        "sha256": "691b23820f3b57dbbc282f9c751d7adaf4126df8ec5be553810626a46e954cde"
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "folder": "francesca-james",
+    "title_it": "Una storia ad Amalfi",
+    "title_en": "An Amalfi Story",
+    "count": 25,
+    "cover": "NCF00386_1-scaled.jpg",
+    "cover_position": "50% 60%",
+    "photos": [
+      {
+        "path": "assets/stories/francesca-james/NCF00067_1-scaled.jpg",
+        "sha256": "a18613f1ac6709bdb40cad6dd30a67b38fcefdad4200e6363dccb9fd0ed0a873"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF00123_1-scaled.jpg",
+        "sha256": "7de9231e56304c406a7896d3e70e5ec63e540a91517e7b2dc809a9a1368f3637"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF00219_1-scaled.jpg",
+        "sha256": "55474146421fccb1e2be72c5b762e03a07077dbd987148fe09e8914ba417ff46"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF00386_1-scaled.jpg",
+        "sha256": "9645056c3778bee0e7f3c8dd9cbfe754b86d7f35d89c6b5513ebd1a89b52392f"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF00553_1-scaled.jpg",
+        "sha256": "d58dd732efbcc719bbcefbc0d0801ffd548cd4267bcf52c2b1ee3567ca5bb418"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF00558_1-scaled.jpg",
+        "sha256": "f1cc997cbdc8bf41fabeb0c9a91503ad591af19f45f580b09db0ca30f6d7a613"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF00667_1-scaled.jpg",
+        "sha256": "1460c75ecf0e2b640acc572e816b5829af1debd99848cd93e6dcdb2f92576e6d"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF00720_1-scaled.jpg",
+        "sha256": "c299c3dc97a86c07c676f449403983c11f4f8e5627d369a6150c57e72cb38247"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF00964-scaled.jpg",
+        "sha256": "25e9479158bea9266f4d99eba9efbfa1122ffb7e85df488a06879d941c024aa7"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF01221-scaled.jpg",
+        "sha256": "90467e80b20561302d0bc918c92aed8c64c1db7438c0ee699515a88e2bc93af6"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF01321-scaled.jpg",
+        "sha256": "f47c036e76b95fec116522f3fb671704f3ce79473442b4c88aa256e39ef4b4c2"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF01349-scaled.jpg",
+        "sha256": "342b76c06a625201806251ef92d6f9fa4957506953ae068a8e1d793882f1d52a"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF01371-scaled.jpg",
+        "sha256": "ff5e29047f0b5b045b8cfdfc42a50cd6f2d1392e099ed7450f225622d6c3d60f"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF01480-scaled.jpg",
+        "sha256": "f8c0822353f580d594fbd4baf463368fec7f693798d6d6f3bb7fbe3dd987bd73"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF01499-scaled.jpg",
+        "sha256": "032d36000bfffc7cb943263792329787e7b0c26324816f760057c7d5b92ce1d4"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF01570-scaled.jpg",
+        "sha256": "cf16664eb4e122881fe50bef693c0c5d14c4688cefd13fe6a9a93e0e502d07e2"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF08387-scaled.jpg",
+        "sha256": "360148f99e89bb6472d140630f775264d939ef242d1a626d2168f7d64d2757c9"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF09199-scaled.jpg",
+        "sha256": "e041543f04f4bfb60b7049bd4be59bbdd20ae7ae705236cf38f1759cdff60bcd"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF09240-scaled.jpg",
+        "sha256": "ba11321bcf44aa94c62b9f51d812589b673ecbf8f1681b307ff17e109e1fc613"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF09540_1-scaled.jpg",
+        "sha256": "0fa691056cade839f04ccc4f5a52768076b47158e8e48ccdfd7632148a582ec8"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF09587_1_1-scaled.jpg",
+        "sha256": "ff9ed7e778c7d459cc35f9bb44f3bd70f319c3c3058d651a4a75417e6e713201"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF09627_1-scaled.jpg",
+        "sha256": "e1cd4ac47685b9a0670f988cb0ad494a45fbae7751939a212eaf5043f2813c5a"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF09681_1-scaled.jpg",
+        "sha256": "8ce9baddf74386720321ec62255506d03e5bc5192af6bf269dbbf4b4c2015343"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF09712_1_1-scaled.jpg",
+        "sha256": "8f0e2d595b8bf842124b9e977eb3c32a39bb0588b6beaa7e5b274a828d18a26f"
+      },
+      {
+        "path": "assets/stories/francesca-james/NCF09762_1-scaled.jpg",
+        "sha256": "a572606a81bdc3238f6c136a4aeceae700971961c52369fa29d30679aa56974c"
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "folder": "giulia-thomas",
+    "title_it": "Eleganza in rosso",
+    "title_en": "Elegance in Red",
+    "count": 33,
+    "cover": "NCF06958_1-scaled.jpg",
+    "cover_position": "50% 60%",
+    "photos": [
+      {
+        "path": "assets/stories/giulia-thomas/NCF05653-scaled.jpg",
+        "sha256": "e5437eb7c3a041588d23d15a764a61284c854d037ed4a168c128e53f182a94bf"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF04765-scaled.jpg",
+        "sha256": "af220593d8fd35f6503cd3c0110cc893d4d9cfecd1850111799781dd508c07e6"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF04845-scaled.jpg",
+        "sha256": "e5bc8423f0e7a132083179c46adfa479d169bd12bc95e855ffd14f01743c473b"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF04968-scaled.jpg",
+        "sha256": "61183f4c47dbcb1cb3c25664479666e07de8b4427f766be5a3f9d2518fc83b90"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05064-scaled.jpg",
+        "sha256": "9e71e2594adda30104fcf9a34b86fa0e89eea87e04a8612a38f68c41020f4e2a"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05123-scaled.jpg",
+        "sha256": "7259cbbd5ff14a8a83c586a4753f72397ab31e15c17e0d1ff48db2cca887f3df"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05162.jpg",
+        "sha256": "e64855a617c71e055a1ffbe56bc29e7a309721de7ff4a811944660cbcacd2fd1"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05531-scaled.jpg",
+        "sha256": "a5619e3c78129690152d4da7b8f0cdcd452127165d272eeb932010dd13d4979e"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05565-scaled.jpg",
+        "sha256": "abf92efc3d091c726620685f84b3d37ece3daec17121efb4f9bd7cb90b176b87"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05602-scaled.jpg",
+        "sha256": "e128f28901c045cc4825294ebd67287b6a35638a3c4418c699ec08b878f055ed"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05623-scaled.jpg",
+        "sha256": "80084a767e8222c453710269c3465a401fdeea54dc4ace534d9f84b2b3d529b0"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05644-scaled.jpg",
+        "sha256": "60050ea9b3bfb790e195141ac1ee84e3076cff9e9401ed3b5a476353527a40a5"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05648-scaled.jpg",
+        "sha256": "93eb658cde7e9d97c77ec6044eb8aaec46b524fb78ed3190900474a4dd2b8b84"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05896-scaled.jpg",
+        "sha256": "c1d276c03c6e6b2901d504d93e824b19d842002e5a9e5ff414cfda98b377e1b8"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05936-scaled.jpg",
+        "sha256": "73f73cb8e16b123af17369807fd257c51c8816dcb12dc3d42d70d7161314bd62"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF05963-scaled.jpg",
+        "sha256": "a0ccf591c401c142d28d6a0d0bd96f6a0071997a958806a64e53c382c7205741"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF06077-scaled.jpg",
+        "sha256": "5664aafc98b2db4c7f984cd859275ac1a13788208285ba2bff46892c4ef92e7f"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF06094-1-scaled.jpg",
+        "sha256": "c3f4f64c9ce50a3582f5d901f649f5957e964622c65950dbadaf81d74c6334e2"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF06162-scaled.jpg",
+        "sha256": "1d2e254fde529e2a623bd5c8b2c7e71fd0087aabbc1bb2194b6df42af5e32059"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF06264-scaled.jpg",
+        "sha256": "fda98da971af4f247f25d07ca59f93353b79e78b1192a9073378932d9184586c"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF06313-scaled.jpg",
+        "sha256": "aea227e518c839fafca120ad88e24cfb38f9ebe2e0bf5c765965b63bb1133175"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF06530_1-scaled.jpg",
+        "sha256": "8230041b5524aceaf7c603c5115d6b1bd74305bbc9a0561def644642dae2ecd1"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF06657-scaled.jpg",
+        "sha256": "decf11fd23350082677b51ce983256c5d0e4f3d2d39a75e632e205661b626573"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF06732_1-scaled.jpg",
+        "sha256": "ac0b9148f5f05d9bacc959c3dd1934d1b627abeb2cbcea178d7e0eb6ea370913"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF06807_1-scaled.jpg",
+        "sha256": "bd0e965593eb5e7077f1c661149877a8e06665b43f02ab30e87bc92a43a83e96"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF06827-copia_1-scaled.jpg",
+        "sha256": "92c211cc4875cb3a872d6ba40bc13bd5d84d3d5097176f26296857bf93e5c17a"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF06958_1-scaled.jpg",
+        "sha256": "5645abd9126c115b57c6c6faa970b1ef3c0964726a48e99297ee772a8e9fa978"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF07141-scaled.jpg",
+        "sha256": "2f6814f78ef9ffffc3e56c0a0cfc979eb88e7dabadc69b28d18a5524ec42b7ba"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF07159-scaled.jpg",
+        "sha256": "67a7ca64eec55c47964ae91229e6c983508ec6d166b0f7df21bd3a1ec4fbeea5"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF07298-scaled.jpg",
+        "sha256": "4240d8193c81ce8a66beab2f70c25cc090d61bd2272d141dacee057370cde203"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF07467-scaled.jpg",
+        "sha256": "82060b77a611077c03d2ef742186fef05816ba5f661baa0265fb7402328046b1"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF07885-scaled.jpg",
+        "sha256": "3df885f899d24843674774e8c2cc82fd82b068cf005093fafc24522bed0e145d"
+      },
+      {
+        "path": "assets/stories/giulia-thomas/NCF07906-scaled.jpg",
+        "sha256": "15a57f90644becd5b5b19b2027407998174532a33f600459a9181ffdfa0e7218"
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "folder": "lucia-david",
+    "title_it": "Un giorno di dolce vita",
+    "title_en": "A Taste of La Dolce Vita",
+    "count": 35,
+    "cover": "8-scaled.jpg",
+    "cover_position": "50% 60%",
+    "photos": [
+      {
+        "path": "assets/stories/lucia-david/DJI_0048_1-scaled.jpg",
+        "sha256": "6fe045602ed841dbcc68601fa88e30b842271e581fda0df84203a2c508a45c04"
+      },
+      {
+        "path": "assets/stories/lucia-david/PIE01031-scaled.jpg",
+        "sha256": "1172b4030c9857286c95d3c1244f204311fe1ac6810fa5e9a0ff66da430c6aaa"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF00213-scaled.jpg",
+        "sha256": "089db4345561ba239e3baeb635654e406e3403708aaae99a041f0ef33e43fb5e"
+      },
+      {
+        "path": "assets/stories/lucia-david/PIE00898_1-scaled.jpg",
+        "sha256": "607e0504a7fdac37b4d2f1695d0861d30762aa0e7a870b2ce2189d1427ed2bbf"
+      },
+      {
+        "path": "assets/stories/lucia-david/PIE00746_1-scaled.jpg",
+        "sha256": "0376c83233307ec8c50f4a6d510e9939c997759acd792809f86f441ea95c6a79"
+      },
+      {
+        "path": "assets/stories/lucia-david/PIE00648-scaled.jpg",
+        "sha256": "b2884af7ae0614668e27c74fc5aa1b39c84f3ce82970470a87b6b81acb978837"
+      },
+      {
+        "path": "assets/stories/lucia-david/PIE00145-scaled.jpg",
+        "sha256": "7e3ea8057e38eea57a1866a07bf16346fea2132232f679c933c32dd33547ae21"
+      },
+      {
+        "path": "assets/stories/lucia-david/PIE00099_1-scaled.jpg",
+        "sha256": "de179cd2782620083f1faec5d4594c87d3f0580d69bc14f4af6c636441cb250f"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF09894-scaled.jpg",
+        "sha256": "fab45c1964e4291b4ecdf52294095d72da0155e7b4e33192ab7a29e5d33da2cf"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF09839-scaled.jpg",
+        "sha256": "e0e643a6a88b127bc6d4591b41ab5032152b63dbd4b37d83b182f0489450370c"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF09800-scaled.jpg",
+        "sha256": "7d8b8540cdd7018f7d15efcbb1c7d0d0f9b0e884fbf161e75b77bf643410fd76"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF09057-scaled.jpg",
+        "sha256": "f01654a5e5b14700139e93faa7e413acdc23ef51502799ee73cf52b912d0095a"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF08942-scaled.jpg",
+        "sha256": "ea427750a08197eb5c44f83bcf3f4a5c05bdb124fde18d4c7eb3d6eaf3857193"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF05234-scaled.jpg",
+        "sha256": "c46584778954325aee8b5db2a5ebc5c88bf0e106a4a3cbc1d8c0a60c9cc1a043"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF01971-scaled.jpg",
+        "sha256": "8b0c414768ca6ff1c5135cf6ae7766cf3318dc63da070b44abdeae4f9803a9fe"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF01706_1-scaled.jpg",
+        "sha256": "3e404d2c65d9c649f20bb8b36606e5a8489992eb4be7771b1c9e0fb4fc6d0673"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF00448-scaled.jpg",
+        "sha256": "4268e4bf65bcd5bb926bc423abd246fc23b8bd206819d8b19a7cd00e11fa91fa"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF00419-scaled.jpg",
+        "sha256": "820b0cbabf8b5e2b32cc80665162c04270879b8a034cab95d3c048cf554073eb"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF00395-scaled.jpg",
+        "sha256": "5d4c5084914a0ff20210081838054327d2acd339af44d534aa5fc88d8565ea44"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF00303-scaled.jpg",
+        "sha256": "e8e2ee1254bd9633d04a6620cf14e78f3e476402e0db6239104ba8dd6fe7917b"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF00205-scaled.jpg",
+        "sha256": "deca920a76f0339c20844a657fa8e18b501eb404ae7052f3eb16328a58b339a7"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF00188-scaled.jpg",
+        "sha256": "ae4735403ed579b47050148f139a7bfd8b90ccf6f8f03c39097c827bc2a40f35"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF00182-scaled.jpg",
+        "sha256": "cdecf523c639cb8472ea55291e3189f94db8da9409f5725643ae3b6958807471"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF00159-scaled.jpg",
+        "sha256": "52abb59024b0e42295a8dad377d4600b1a55638ce6b91d4e1f53da01dd0b9af1"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF00094-scaled.jpg",
+        "sha256": "7ca70c5374db1026e4d0b061a7844ac6391c2c55b8777b5dadbbb61a197d8113"
+      },
+      {
+        "path": "assets/stories/lucia-david/NCF00033-scaled.jpg",
+        "sha256": "1eb64b122f146b434d98b1e4a4210b4c842e1b9ed2f23f632c0aaf47f897bbd1"
+      },
+      {
+        "path": "assets/stories/lucia-david/9-scaled.jpg",
+        "sha256": "d12f3f225a37a8af107c2d03021403283e6ba20c00c2d82d748c87cc3f6a4553"
+      },
+      {
+        "path": "assets/stories/lucia-david/8-scaled.jpg",
+        "sha256": "258aa7c7fb937dd5ee0fb5f8a6c407a97a2169177b03ee79c23a9585937e8108"
+      },
+      {
+        "path": "assets/stories/lucia-david/7-scaled.jpg",
+        "sha256": "31301a87dd0251550b2770baf5b49d47497ef91603ffdc3b8a5396d6f9bb05d9"
+      },
+      {
+        "path": "assets/stories/lucia-david/6-scaled.jpg",
+        "sha256": "5c47c27441cf8a71fdf9e09f86ceb150c348259920f7bda624340fb4f913d0e0"
+      },
+      {
+        "path": "assets/stories/lucia-david/5-scaled.jpg",
+        "sha256": "9a9b90004e784db994c9403bba503528445739c067016884193d7dafa67dca9c"
+      },
+      {
+        "path": "assets/stories/lucia-david/4-scaled.jpg",
+        "sha256": "c7c0517b8592b7f46f65056272c47ccaeff2a045deb8eb673420a0683eab3441"
+      },
+      {
+        "path": "assets/stories/lucia-david/3-scaled.jpg",
+        "sha256": "195b9e4c02cef4ea52b540734dee64df8ae390df189e4512599efa0192f6a100"
+      },
+      {
+        "path": "assets/stories/lucia-david/2-scaled.jpg",
+        "sha256": "655e2bc554ce36d89ded66134e65d94911fc326069f5af27d7fd4b5434b9393c"
+      },
+      {
+        "path": "assets/stories/lucia-david/1-scaled.jpg",
+        "sha256": "1621ed7acb4eedb63d8fb60d01521415299c6ea69ae4a6113ea4b6049cd88aa1"
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "folder": "sofia-marco",
+    "title_it": "La bellezza di essere insieme",
+    "title_en": "The Beauty of Being Together",
+    "count": 43,
+    "cover": "NCF05072-scaled.jpg",
+    "cover_position": "50% 60%",
+    "photos": [
+      {
+        "path": "assets/stories/sofia-marco/DSC07004_1-scaled.jpg",
+        "sha256": "917c8abbe21a4ba202b5377b763bb8bae2d243ae13c6c94db0e1f723728cf6f4"
+      },
+      {
+        "path": "assets/stories/sofia-marco/DSC07244_1_1-scaled.jpg",
+        "sha256": "38b50ea883de24e076458a789d0087c46b6a8ed84488bb972b101aa2c1cdd78f"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF02871_1_1-scaled.jpg",
+        "sha256": "45207a56daac3b72cedbbc95fee9ee1750ce770fd083519b2c61cdeb0a0b00d8"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03105_1_1-scaled.jpg",
+        "sha256": "ff7e8fd5268b2d82a80e56ca4eba46772d852cba496a9966d14013a934ddac24"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03134_1_1.jpg",
+        "sha256": "41da2edc471e5520d5357ce9fdab417d5b20c10044242240768c213e8784178f"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03160-scaled.jpg",
+        "sha256": "7fd36eca54e99806217e90f130c0472876dfdd2c485174ed6c04ae55a7d9af9b"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03234-scaled.jpg",
+        "sha256": "dc446ed1d46d9aa4864e3ffffaea76b2dcb2fefb66fbffc6ca70339530dc8e4f"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03249-scaled.jpg",
+        "sha256": "853fb8034d5685c861910794a2cd1ff7943f6da5de6756b46aa969bb8128af53"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03269-scaled.jpg",
+        "sha256": "f09ce2c05e706f8543f88cf6ec3ffe2d819802043ce533c16aee32c06712a4b1"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03388-scaled.jpg",
+        "sha256": "03b0ce8217a968ac91374dbebead12af47913c8b134960834d9a1021430280bd"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03436-scaled.jpg",
+        "sha256": "2439d3c69a2fedf13d911b0e3ba082cda7c29a5d737df2a5b3cd4cf5a3b27940"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03614-scaled.jpg",
+        "sha256": "b5df6204f49e62e17f0dedc80adc4050fe268e329f905f8ce66f6ea84ed4e7e3"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03624-scaled.jpg",
+        "sha256": "870b6d79f012b7281358d1870c4c6f98ca6077e4699cc1e5d24349329fd74cb9"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03685-scaled.jpg",
+        "sha256": "6e910a64fe6d47f619812836012f0db801eb72a92e3d1db2707a7cb55b7aab4a"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03690-scaled.jpg",
+        "sha256": "3e05ef35b6cb526e21ff825439d131e491c3e80620689a8fd7d3ab9199f893ed"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03709-scaled.jpg",
+        "sha256": "c8906d6f99a38af409c6ed7faba99ed6096f5b6719fca6bae6dfc59015362b64"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03769-scaled.jpg",
+        "sha256": "95c12a4dce3f7f00a6329ddcc0574261f694a22b4e14e5be9132fa3eb08ed85b"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03792-scaled.jpg",
+        "sha256": "1cce11930e7f47bc430aa0b8ba9d6f0b639a1e87bbf3094219b3b19a2822aad3"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03897-scaled.jpg",
+        "sha256": "93aa3c36bcc6c3ceb4338115eea31deed1f3fbc4ffa4dbf109a02ba9e378555b"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF03968-scaled.jpg",
+        "sha256": "83948166825a5290a29df8105cb72293334ffa779b5c315a7f5c08aa34d18b9b"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04022-scaled.jpg",
+        "sha256": "99c29829ef62a3ac8e777bac4a5c372c9d650ff0f9843c389b1e2fde45d779ca"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04067-scaled.jpg",
+        "sha256": "054aa5a292af9c1d47b58705fa7bfbf10f6487d29ab19e7c29826c511268fb58"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04133-scaled.jpg",
+        "sha256": "f16880f1b2b3a4dc2fdcb6cc5ebafd1f6926237c5be69947e2c409f78bd5b8c9"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04207-1-scaled.jpg",
+        "sha256": "25213d2924047b3b44e5a264c478c87cbdff55dba326e89fbef157d72a823512"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04329-scaled.jpg",
+        "sha256": "383b3abb6953d7f4bf4bb9e67d370ed00c5496bab18e5360d90ede076572f1f6"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04343-scaled.jpg",
+        "sha256": "5feafd6d5dc6f86ab2f81874ca17875b2716733fc6237239bd91e81636f8a490"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04364-scaled.jpg",
+        "sha256": "15213e1d3a650dbe90de816cf1725bc5af97ffa60e2885416aba93b43181792f"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04421-scaled.jpg",
+        "sha256": "fa1d0223b070bddccb9b1b2c1d72796124450dd3a19252a770db67c789e3efb7"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04432-scaled.jpg",
+        "sha256": "49119befc376860e0e4d7316b4d3a8155a37b64badef0e19a7d2d0523082157a"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04538-scaled.jpg",
+        "sha256": "1f44487b899d061a8828137c6463bc88d7e0839a01a7747a8d7ba146185c854b"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04556-scaled.jpg",
+        "sha256": "d797e457920ec47c2ed85f59dcd2513205914a1e60b984e34a894d1cf9747960"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04565-scaled.jpg",
+        "sha256": "82298cf28e4e4c29e3113ebffa6cd9c00708fa66188d2ea10c45e733db886765"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04660-scaled.jpg",
+        "sha256": "402030919855e6689fa455588782cb2b967619a2434ecfe0429a0912d31dddeb"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04732-scaled.jpg",
+        "sha256": "434e4febc0949dc9e250fd681cb487a077ae669db63ebff89629aba1d5ac8918"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04806-scaled.jpg",
+        "sha256": "14bcd307e68bc21604eb5ae20a7b9b7fe63ac6c4d0d1c3c177e0119db6f3516c"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF04887-scaled.jpg",
+        "sha256": "7064791ae5207e4884ec8424c1056040e47ed5c88a3e50c5d3f7c3515cf1c524"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF05012-scaled.jpg",
+        "sha256": "b7fb43294d2fb58a621efc7c217dca2de88efde92ac2f285525b86b32f55f7c5"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF05072-scaled.jpg",
+        "sha256": "3dcb0766d953fe72429223717f486746f36659658e877409c0fe60d87b652f4a"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF05112-scaled.jpg",
+        "sha256": "a2493caab4685aeea640324cf4afaf7578cf6125f26ebb4f35ce3359dfa9743e"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF05125-scaled.jpg",
+        "sha256": "c24d1add8a1f6b20f1ede60b3faafc53094bc66f30e4703d3539a8d99ccc233d"
+      },
+      {
+        "path": "assets/stories/sofia-marco/NCF05208-scaled.jpg",
+        "sha256": "5354fee29f09d8e49754bf37e28a55cd124bf76735b9ffb9ab136c8995181244"
+      },
+      {
+        "path": "assets/stories/sofia-marco/PIE03327_1-scaled.jpg",
+        "sha256": "8ef969d3861001dc8732efbd7eb1d91022765e807906c27ed2b157737bc348de"
+      },
+      {
+        "path": "assets/stories/sofia-marco/PIE03389_1-scaled.jpg",
+        "sha256": "e17c1e208f63993eafe88bdc5ac2a598f5e4ea1c1473998a632e380dc477d3d0"
+      }
+    ]
+  }
+]

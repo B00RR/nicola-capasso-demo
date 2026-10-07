@@ -1,5 +1,10 @@
 # Stato attuale del prototipo
 
+## Sette storie reali — pubblicazione autorizzata
+
+Fonte durevole: `23 - Sette storie reali IT EN/sito`. Titoli esatti forniti da Lorenzo e 254 fotografie dalle sette cartelle locali, riprodotte in IT/EN; nuove copertine in homepage/Portfolio. Dalle storie 08–10 rimosse tutte le foto, comprese le copertine nelle griglie. Le tre pagine e i testi restano, con riquadri senza foto. Originali fotografici conservati, CSS/JS/animazioni invariati. Nessuna modifica WordPress/Aruba/editor. La richiesta «pusha su github» autorizza la promozione della prova corrente, non nuove revisioni dei testi.
+
+
 ## Frase homepage selezionata — aggiornamento successivo
 
 IT: «Il vostro giorno diventa memoria, uno scatto alla volta.»
