@@ -1,0 +1,262 @@
+{
+  "animation": [
+    {
+      "source": "assets/stories/anna-etienne/NCF04804.jpg",
+      "source_bytes": 257603,
+      "variants": [
+        {
+          "path": "assets/animation/01-384.webp",
+          "width": 384,
+          "bytes": 27400
+        },
+        {
+          "path": "assets/animation/01-768.webp",
+          "width": 768,
+          "bytes": 74026
+        },
+        {
+          "path": "assets/animation/01-1152.webp",
+          "width": 1152,
+          "bytes": 132136
+        }
+      ]
+    },
+    {
+      "source": "assets/stories/giulia-thomas/NCF07141-scaled.jpg",
+      "source_bytes": 246435,
+      "variants": [
+        {
+          "path": "assets/animation/02-384.webp",
+          "width": 384,
+          "bytes": 40000
+        },
+        {
+          "path": "assets/animation/02-768.webp",
+          "width": 768,
+          "bytes": 104068
+        },
+        {
+          "path": "assets/animation/02-1152.webp",
+          "width": 1152,
+          "bytes": 180480
+        }
+      ]
+    },
+    {
+      "source": "assets/stories/sofia-marco/NCF03968-scaled.jpg",
+      "source_bytes": 486980,
+      "variants": [
+        {
+          "path": "assets/animation/03-384.webp",
+          "width": 384,
+          "bytes": 81994
+        },
+        {
+          "path": "assets/animation/03-768.webp",
+          "width": 768,
+          "bytes": 252624
+        },
+        {
+          "path": "assets/animation/03-1152.webp",
+          "width": 1152,
+          "bytes": 453708
+        }
+      ]
+    },
+    {
+      "source": "assets/stories/lucia-david/PIE01031-scaled.jpg",
+      "source_bytes": 234335,
+      "variants": [
+        {
+          "path": "assets/animation/04-384.webp",
+          "width": 384,
+          "bytes": 39824
+        },
+        {
+          "path": "assets/animation/04-768.webp",
+          "width": 768,
+          "bytes": 92848
+        },
+        {
+          "path": "assets/animation/04-1152.webp",
+          "width": 1152,
+          "bytes": 162524
+        }
+      ]
+    },
+    {
+      "source": "assets/stories/anna-etienne/NCF03561-scaled.jpg",
+      "source_bytes": 196147,
+      "variants": [
+        {
+          "path": "assets/animation/05-384.webp",
+          "width": 384,
+          "bytes": 29220
+        },
+        {
+          "path": "assets/animation/05-768.webp",
+          "width": 768,
+          "bytes": 79958
+        },
+        {
+          "path": "assets/animation/05-1152.webp",
+          "width": 1152,
+          "bytes": 137862
+        }
+      ]
+    },
+    {
+      "source": "assets/stories/giulia-thomas/NCF04765-scaled.jpg",
+      "source_bytes": 496133,
+      "variants": [
+        {
+          "path": "assets/animation/06-384.webp",
+          "width": 384,
+          "bytes": 89600
+        },
+        {
+          "path": "assets/animation/06-768.webp",
+          "width": 768,
+          "bytes": 253532
+        },
+        {
+          "path": "assets/animation/06-1152.webp",
+          "width": 1152,
+          "bytes": 468802
+        }
+      ]
+    },
+    {
+      "source": "assets/stories/camilla-oliver/NCF01486-scaled.jpg",
+      "source_bytes": 320844,
+      "variants": [
+        {
+          "path": "assets/animation/07-384.webp",
+          "width": 384,
+          "bytes": 53676
+        },
+        {
+          "path": "assets/animation/07-768.webp",
+          "width": 768,
+          "bytes": 150268
+        },
+        {
+          "path": "assets/animation/07-1152.webp",
+          "width": 1152,
+          "bytes": 260270
+        }
+      ]
+    },
+    {
+      "source": "assets/stories/francesca-james/NCF09587_1_1-scaled.jpg",
+      "source_bytes": 245195,
+      "variants": [
+        {
+          "path": "assets/animation/08-384.webp",
+          "width": 384,
+          "bytes": 39904
+        },
+        {
+          "path": "assets/animation/08-768.webp",
+          "width": 768,
+          "bytes": 105642
+        },
+        {
+          "path": "assets/animation/08-1152.webp",
+          "width": 1152,
+          "bytes": 185936
+        }
+      ]
+    },
+    {
+      "source": "assets/stories/camilla-oliver/NCF01371-1-scaled.jpg",
+      "source_bytes": 303263,
+      "variants": [
+        {
+          "path": "assets/animation/09-384.webp",
+          "width": 384,
+          "bytes": 47820
+        },
+        {
+          "path": "assets/animation/09-768.webp",
+          "width": 768,
+          "bytes": 126500
+        },
+        {
+          "path": "assets/animation/09-1152.webp",
+          "width": 1152,
+          "bytes": 220718
+        }
+      ]
+    },
+    {
+      "source": "assets/stories/francesca-james/NCF00667_1-scaled.jpg",
+      "source_bytes": 419284,
+      "variants": [
+        {
+          "path": "assets/animation/10-384.webp",
+          "width": 384,
+          "bytes": 59256
+        },
+        {
+          "path": "assets/animation/10-768.webp",
+          "width": 768,
+          "bytes": 203886
+        },
+        {
+          "path": "assets/animation/10-1152.webp",
+          "width": 1152,
+          "bytes": 384082
+        }
+      ]
+    },
+    {
+      "source": "assets/stories/elena-noah/NCF03161-scaled.jpg",
+      "source_bytes": 455198,
+      "variants": [
+        {
+          "path": "assets/animation/11-384.webp",
+          "width": 384,
+          "bytes": 67578
+        },
+        {
+          "path": "assets/animation/11-768.webp",
+          "width": 768,
+          "bytes": 210082
+        },
+        {
+          "path": "assets/animation/11-1152.webp",
+          "width": 1152,
+          "bytes": 405346
+        }
+      ]
+    },
+    {
+      "source": "assets/stories/sofia-marco/NCF03624-scaled.jpg",
+      "source_bytes": 311196,
+      "variants": [
+        {
+          "path": "assets/animation/12-384.webp",
+          "width": 384,
+          "bytes": 54324
+        },
+        {
+          "path": "assets/animation/12-768.webp",
+          "width": 768,
+          "bytes": 152818
+        },
+        {
+          "path": "assets/animation/12-1152.webp",
+          "width": 1152,
+          "bytes": 261790
+        }
+      ]
+    }
+  ],
+  "original_animation_bytes": 3972613,
+  "responsive_384_bytes": 630596,
+  "responsive_1152_bytes": 3253654,
+  "extracted_inline_css_bytes": 213264,
+  "shared_css_bytes": 19755,
+  "shared_css_saving_bytes": 193509
+}

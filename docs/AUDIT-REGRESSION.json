@@ -1,0 +1,252 @@
+[
+  {
+    "language": "it",
+    "javascript": true,
+    "contents_visible": true,
+    "local_fonts_loaded": [
+      "Italiana",
+      "Space Grotesk"
+    ],
+    "anonymous_story_links": 0
+  },
+  {
+    "language": "it",
+    "javascript": false,
+    "contents_visible": true,
+    "local_fonts_loaded": [
+      "Italiana",
+      "Space Grotesk"
+    ],
+    "anonymous_story_links": 0
+  },
+  {
+    "language": "it",
+    "width": 390,
+    "delayed_image_before": {
+      "height": 491.4375,
+      "ctaY": 6282.765625
+    },
+    "delayed_image_after": {
+      "height": 491.4375,
+      "ctaY": 6282.765625
+    }
+  },
+  {
+    "language": "it",
+    "width": 1440,
+    "delayed_image_before": {
+      "height": 620,
+      "ctaY": 5699.515625
+    },
+    "delayed_image_after": {
+      "height": 620,
+      "ctaY": 5699.515625
+    }
+  },
+  {
+    "language": "en/",
+    "javascript": true,
+    "contents_visible": true,
+    "local_fonts_loaded": [
+      "Italiana",
+      "Space Grotesk"
+    ],
+    "anonymous_story_links": 0
+  },
+  {
+    "language": "en/",
+    "javascript": false,
+    "contents_visible": true,
+    "local_fonts_loaded": [
+      "Italiana",
+      "Space Grotesk"
+    ],
+    "anonymous_story_links": 0
+  },
+  {
+    "language": "en/",
+    "width": 390,
+    "delayed_image_before": {
+      "height": 491.4375,
+      "ctaY": 6239.078125
+    },
+    "delayed_image_after": {
+      "height": 491.4375,
+      "ctaY": 6239.078125
+    }
+  },
+  {
+    "language": "en/",
+    "width": 1440,
+    "delayed_image_before": {
+      "height": 620,
+      "ctaY": 5566.40625
+    },
+    "delayed_image_after": {
+      "height": 620,
+      "ctaY": 5566.40625
+    }
+  },
+  {
+    "dpr": 1,
+    "selected_animation_bytes": 630596,
+    "sources": [
+      {
+        "source": "assets/stories/anna-etienne/NCF04804.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/01-384.webp"
+      },
+      {
+        "source": "assets/stories/giulia-thomas/NCF07141-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/02-384.webp"
+      },
+      {
+        "source": "assets/stories/sofia-marco/NCF03968-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/03-384.webp"
+      },
+      {
+        "source": "assets/stories/lucia-david/PIE01031-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/04-384.webp"
+      },
+      {
+        "source": "assets/stories/anna-etienne/NCF03561-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/05-384.webp"
+      },
+      {
+        "source": "assets/stories/giulia-thomas/NCF04765-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/06-384.webp"
+      },
+      {
+        "source": "assets/stories/camilla-oliver/NCF01486-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/07-384.webp"
+      },
+      {
+        "source": "assets/stories/francesca-james/NCF09587_1_1-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/08-384.webp"
+      },
+      {
+        "source": "assets/stories/camilla-oliver/NCF01371-1-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/09-384.webp"
+      },
+      {
+        "source": "assets/stories/francesca-james/NCF00667_1-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/10-384.webp"
+      },
+      {
+        "source": "assets/stories/elena-noah/NCF03161-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/11-384.webp"
+      },
+      {
+        "source": "assets/stories/sofia-marco/NCF03624-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/12-384.webp"
+      }
+    ]
+  },
+  {
+    "dpr": 2,
+    "selected_animation_bytes": 1806252,
+    "sources": [
+      {
+        "source": "assets/stories/anna-etienne/NCF04804.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/01-768.webp"
+      },
+      {
+        "source": "assets/stories/giulia-thomas/NCF07141-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/02-768.webp"
+      },
+      {
+        "source": "assets/stories/sofia-marco/NCF03968-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/03-768.webp"
+      },
+      {
+        "source": "assets/stories/lucia-david/PIE01031-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/04-768.webp"
+      },
+      {
+        "source": "assets/stories/anna-etienne/NCF03561-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/05-768.webp"
+      },
+      {
+        "source": "assets/stories/giulia-thomas/NCF04765-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/06-768.webp"
+      },
+      {
+        "source": "assets/stories/camilla-oliver/NCF01486-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/07-768.webp"
+      },
+      {
+        "source": "assets/stories/francesca-james/NCF09587_1_1-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/08-768.webp"
+      },
+      {
+        "source": "assets/stories/camilla-oliver/NCF01371-1-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/09-768.webp"
+      },
+      {
+        "source": "assets/stories/francesca-james/NCF00667_1-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/10-768.webp"
+      },
+      {
+        "source": "assets/stories/elena-noah/NCF03161-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/11-768.webp"
+      },
+      {
+        "source": "assets/stories/sofia-marco/NCF03624-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/12-768.webp"
+      }
+    ]
+  },
+  {
+    "dpr": 3,
+    "selected_animation_bytes": 1864362,
+    "sources": [
+      {
+        "source": "assets/stories/anna-etienne/NCF04804.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/01-1152.webp"
+      },
+      {
+        "source": "assets/stories/giulia-thomas/NCF07141-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/02-768.webp"
+      },
+      {
+        "source": "assets/stories/sofia-marco/NCF03968-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/03-768.webp"
+      },
+      {
+        "source": "assets/stories/lucia-david/PIE01031-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/04-768.webp"
+      },
+      {
+        "source": "assets/stories/anna-etienne/NCF03561-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/05-768.webp"
+      },
+      {
+        "source": "assets/stories/giulia-thomas/NCF04765-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/06-768.webp"
+      },
+      {
+        "source": "assets/stories/camilla-oliver/NCF01486-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/07-768.webp"
+      },
+      {
+        "source": "assets/stories/francesca-james/NCF09587_1_1-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/08-768.webp"
+      },
+      {
+        "source": "assets/stories/camilla-oliver/NCF01371-1-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/09-768.webp"
+      },
+      {
+        "source": "assets/stories/francesca-james/NCF00667_1-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/10-768.webp"
+      },
+      {
+        "source": "assets/stories/elena-noah/NCF03161-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/11-768.webp"
+      },
+      {
+        "source": "assets/stories/sofia-marco/NCF03624-scaled.jpg",
+        "selected": "/nicola-capasso-demo/assets/animation/12-768.webp"
+      }
+    ]
+  }
+]
