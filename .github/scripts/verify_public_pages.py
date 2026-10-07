@@ -39,7 +39,8 @@ with tempfile.TemporaryDirectory() as tmp:
             if ref.startswith("http"):
                 assert ref in SOCIAL, (rel, ref)
                 continue
-            target = PUBLIC / ref.removeprefix(BASE) if ref.startswith(BASE) else (page.parent / ref.split("#")[0])
+            asset_ref = ref.split("#")[0].split("?")[0]
+            target = PUBLIC / asset_ref.removeprefix(BASE) if asset_ref.startswith(BASE) else (page.parent / asset_ref)
             assert target.is_file(), (rel, ref)
         assert "Hompage" not in html, f"refuso Hompage in {rel}"
         assert "../../assets/" not in html, rel

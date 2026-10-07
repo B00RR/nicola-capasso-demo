@@ -1,3 +1,7 @@
+## Blocco sguardo e CTA approvati
+
+Rimosso il blocco finale di contatto della homepage; CTA conservata nella sezione sguardo con stile condiviso (bordo, font, riempimento). Solo su mobile titolo, paragrafi e CTA centrati rispetto alla foto. IT/EN sincronizzati. Fonte: 26 - Blocco sguardo e CTA approvati/sito. Pubblicazione autorizzata da Lorenzo; WordPress/Aruba intatti.
+
 # Stato attuale del prototipo
 
 ## Foto dell’animazione aggiornate

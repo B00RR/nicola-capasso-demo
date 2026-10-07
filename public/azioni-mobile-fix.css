@@ -83,7 +83,7 @@
         Riduzione proporzionata: restano leggermente piu' grandi della
         navigazione, ma non occupano piu' 28-29px di testo.
      --------------------------------------------------------------- */
-  body .contact .cta.luxury-link,
+  body :is(.contact,.about) .cta.luxury-link,
   body.portfolio-a .portfolio-contact-link {
     width: auto;
     max-width: 100%;
@@ -92,6 +92,19 @@
     font-size: clamp(16px, 4.7vw, 19px);
     line-height: 1.25;
   }
+  /* Solo mobile: titolo e paragrafi centrati con la fotografia. */
+  body .about > div { text-align: center; }
+  body .about h2, body .about p { margin-inline: auto; }
+
+  /* Solo mobile: CTA centrata rispetto alla colonna di testo. */
+  body .about .cta.luxury-link {
+    display: flex;
+    width: fit-content;
+    margin-inline: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   body #storie .portfolio-link.luxury-link {
     width: auto;
     max-width: 100%;

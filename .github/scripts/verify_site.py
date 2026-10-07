@@ -30,9 +30,9 @@ for page_path in PAGES:
         assert '<base' not in page_html
         assert '<meta name="robots" content="noindex,follow">' in page_html
     else:
-        assert f'href="{prefix}azioni-mobile-fix.css"' in page_html, str(page_path)
+        assert f'href="{prefix}azioni-mobile-fix.css{"?v=cta5" if page_path.name == "index.html" else ""}"' in page_html, str(page_path)
         assert f'<link rel="stylesheet" href="{prefix}mobile.css">' in page_html
-        assert f'<link rel="stylesheet" href="{prefix}azioni.css">' in page_html
+        assert f'<link rel="stylesheet" href="{prefix}azioni.css{"?v=cta3" if page_path.name == "index.html" else ""}">' in page_html
     assert "../../assets/" not in page_html
 assert len(PAGES) == 34, len(PAGES)
 assert "../assets/" not in html
