@@ -365,7 +365,9 @@
     "public/assets/fonts/fonts.css": "53a74377f2dd3bbefd22a0c58428078b904d3da3d344b0901801bee75213bc8a",
     "public/styles/contact.css": "169887de298ad28fbec4ed8ab6c2424c7a1ce6a740daf5a6e978bdae550498db",
     "public/styles/portfolio.css": "8a7f05119be9f642a352404f85f0aa58a01cec369f6fe671062172401b0ba05e",
-    "public/styles/stories.css": "2aa7b852ebf1440db6c735e307ab7d465be6c24be07f01d152625b63b46eda30"
+    "public/styles/stories.css": "2aa7b852ebf1440db6c735e307ab7d465be6c24be07f01d152625b63b46eda30",
+    "public/anteprima-testi/en/index.htm": "53fbfa8b5cf87cb48c3a646e0b9febddc0a931ee6b551136f9445d4cccdeb791",
+    "public/anteprima-testi/index.htm": "cba4767a70955d829cd557c54bc96720a13329ab510296a1c5ad10ee7af5e9ec"
   },
   "updatedAt": "2026-10-07T18:34:43.732628+02:00",
   "pageAdaptations": {
