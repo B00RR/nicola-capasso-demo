@@ -1,3 +1,7 @@
+## Anteprima biografia — revisione foto IT/EN
+
+Solo `/anteprima-testi/`: ritratto Nicola dalla brochure in «Chi sono», coppia con ombrellino in «Come lavoro», mani/anelli/bouquet in «Il mio stile». Foto a sinistra/destra/sinistra su desktop; foto prima del testo su mobile. Testi revisionati e CTA unica invariati. Originale fotografico conservato; copia web senza EXIF. Home approvata e tutti i file pubblici fuori anteprima invariati. Verifica diretta del solo autore, non QA indipendente. La migrazione WordPress resta ferma (t_69c5d624); nessuna modifica Aruba/live/editor né nuova approvazione del tema.
+
 ## Blocco sguardo e CTA approvati
 
 Rimosso il blocco finale di contatto della homepage; CTA conservata nella sezione sguardo con stile condiviso (bordo, font, riempimento). Solo su mobile titolo, paragrafi e CTA centrati rispetto alla foto. IT/EN sincronizzati. Fonte: 26 - Blocco sguardo e CTA approvati/sito. Pubblicazione autorizzata da Lorenzo; WordPress/Aruba intatti.
