@@ -24,7 +24,8 @@
         "assets/stories/matrimonio-01/18.jpg",
         "assets/stories/matrimonio-01/19.jpg",
         "assets/stories/matrimonio-01/20.jpg"
-      ]
+      ],
+      "cover_source": "Instagram nicolacapassofoto 07/10/2026 (post DeL_-BgubC4)"
     },
     {
       "number": 2,
@@ -403,9 +404,9 @@
       "number": 11,
       "folder": "matrimonio-01",
       "path": "assets/stories/matrimonio-01/12.jpg",
-      "source": "MATRIMONIO 1/1 (12).jpg",
+      "source": "Instagram nicolacapassofoto 07/10/2026 (post DeL_-BgubC4)",
       "screenshot_index": 11,
-      "preview_sha256": "8aa5508f8fa350217499b6a0c6cb76dda6511b9b295be2fc710b9162bbdcb923",
+      "preview_sha256": "b0fbeb7b12b325828d24531b583f7575ed6fefcf90859e92fd285f1853c05f11",
       "focal_desktop": "50% 40%",
       "focal_mobile": "50% 40%",
       "variants": [
@@ -462,9 +463,9 @@
     "assets/animation/scelta-10-1152.webp": "b7ae3c94989cc918eb6ac1fbe210a4bcabc365521f8130978104714f95d38b0b",
     "assets/animation/scelta-10-384.webp": "ba0ee4bc8619ce8af6867b47ce1bb9bf9ed6a19ef41faf07e1283ef9328db5d2",
     "assets/animation/scelta-10-768.webp": "be4a3aeb379930c8f0ff92c51756d5d2b6325cbeafee98a55bdf910a1acb41bc",
-    "assets/animation/scelta-11-1152.webp": "88bffc8593a02969cca81608d0ea061bd8bc4ef5ffb691f464c0568425c8ba3f",
-    "assets/animation/scelta-11-384.webp": "021e1f6a84cf418a69f31ecf14ac8610de732f53ae5952a767ca0c4d5ed82622",
-    "assets/animation/scelta-11-768.webp": "436957a49895608b8280a4544540c9dc517916ed976e069733a5787ffe146f58",
+    "assets/animation/scelta-11-1152.webp": "6dfbbc73ba9415485e2df46343ffdca302ee7715d8d1b862d9f9eae7fa93ff9c",
+    "assets/animation/scelta-11-384.webp": "296027ef6aa519bce9dd4888b9748db834dd0ca7fb990911f6c27e8e68bdc41e",
+    "assets/animation/scelta-11-768.webp": "3a548233712ea90e8c9508ac3e8a9676f33ce9a16132c8b03be0911f690f6b4b",
     "assets/animation/scelta-12-1152.webp": "ccff43b66ed8ee428474de77e2041dcb79aa8e3beebc72ef32fbfb3baac23ba8",
     "assets/animation/scelta-12-384.webp": "1d13f975daf556315f5f406b3346c32a3a8a89e3136e2af5ce378680daa4ded3",
     "assets/animation/scelta-12-768.webp": "77d6e063a9c97fed1aa5a5d1a5cfb2cc900c70e5846abb946c60d8611bc05a2f",
@@ -480,7 +481,7 @@
     "assets/stories/matrimonio-01/09.jpg": "052d6f06307686ed55922914520c75a712f52028bf42d695927d3ca511319876",
     "assets/stories/matrimonio-01/10.jpg": "a9067f879a12e521d1b6fa54f91ab28ecb5b954ee1bc6678b3518f9ef51c1e25",
     "assets/stories/matrimonio-01/11.jpg": "c5dceb50933ecfcdf3201ed110eb83245c620550e8990cd30084af088628d44c",
-    "assets/stories/matrimonio-01/12.jpg": "8aa5508f8fa350217499b6a0c6cb76dda6511b9b295be2fc710b9162bbdcb923",
+    "assets/stories/matrimonio-01/12.jpg": "b0fbeb7b12b325828d24531b583f7575ed6fefcf90859e92fd285f1853c05f11",
     "assets/stories/matrimonio-01/13.jpg": "572137c51027bbae8cf11aed6b2588142f66764096f4d9dd218c97ac96ab1d9a",
     "assets/stories/matrimonio-01/14.jpg": "1a04f464155e7f4ca50d3ac39629a97d248ee69091c61269f23568f716dcff59",
     "assets/stories/matrimonio-01/15.jpg": "b4ca739d6f3cc590db4885e1cdb0adaac4370f07d2f003832ea171378b233e8d",
@@ -659,5 +660,5 @@
     "assets/stories/matrimonio-10/copertina.jpg": "dda47ef91943c81064ed3c0e658c6be82995c035c589e840c4c89a2bcad4da46"
   },
   "gallery_order": "numeric filenames; wedding09 five non-editorial filenames follow numbered photographs, approved by Lorenzo",
-  "source": "client supplied selection; original files unchanged"
+  "source": "client supplied selection; original files unchanged; photograph 12 of story 01 replaced by the client-published Instagram original of 07/10/2026"
 }
