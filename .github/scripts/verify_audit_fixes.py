@@ -24,18 +24,18 @@ try:
      assert page.locator(selector).evaluate('e=>getComputedStyle(e).opacity')=='1'
     fonts=page.evaluate('[...document.fonts].filter(f=>f.status==="loaded").map(f=>f.family.replace(/[\x22\x27]/g,""))');assert set(fonts)=={'Italiana','Space Grotesk'},fonts
     for n in (8,9,10):
-     link=page.locator(f'a.project[href="storia-{n:02}.html"]');assert link.get_attribute('aria-label');assert link.locator('img').count()==0
+     link=page.locator(f'a.project[href="storia-{n:02}.html"]');assert link.get_attribute('aria-label');assert link.locator('img').count()==1
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
     records.append({'language':prefix or 'it','javascript':enabled,'contents_visible':True,'local_fonts_loaded':fonts,'anonymous_story_links':0});page.close()
    for width in (390,1440):
-    routes=[];page=browser.new_page(viewport={'width':width,'height':900},reduced_motion='reduce');page.route('**/assets/optimized/NCF00205.jpg',lambda r:routes.append(r));page.goto(url+prefix+'index.html',wait_until='domcontentloaded');page.evaluate('document.fonts.ready');page.evaluate('scrollTo(0,document.body.scrollHeight)')
+    routes=[];page=browser.new_page(viewport={'width':width,'height':900},reduced_motion='reduce');page.route('**/assets/optimized/nicola-IMG_5586.jpg',lambda r:routes.append(r));page.goto(url+prefix+'index.html',wait_until='domcontentloaded');page.evaluate('document.fonts.ready');page.evaluate('scrollTo(0,document.body.scrollHeight)')
     for _ in range(60):
      if routes:break
      page.wait_for_timeout(50)
     assert routes
     expression='e=>({height:e.querySelector("img").getBoundingClientRect().height,ctaY:e.querySelector(".cta").getBoundingClientRect().top+scrollY})'
     before=page.locator('#sguardo').evaluate(expression);assert before['height']>0
-    routes[0].fulfill(status=200,content_type='image/jpeg',body=(PUBLIC/'assets/optimized/NCF00205.jpg').read_bytes());page.wait_for_function('document.querySelector("#sguardo img").naturalWidth>0');page.wait_for_timeout(100);after=page.locator('#sguardo').evaluate(expression)
+    routes[0].fulfill(status=200,content_type='image/jpeg',body=(PUBLIC/'assets/optimized/nicola-IMG_5586.jpg').read_bytes());page.wait_for_function('document.querySelector("#sguardo img").naturalWidth>0');page.wait_for_timeout(100);after=page.locator('#sguardo').evaluate(expression)
     assert abs(before['height']-after['height'])<.1,(before,after);assert abs(before['ctaY']-after['ctaY'])<.1,(before,after)
     records.append({'language':prefix or 'it','width':width,'delayed_image_before':before,'delayed_image_after':after});page.close()
   # The main script fails before initializing reveal: readable fallback must remain.
@@ -48,5 +48,5 @@ finally:
  server.shutdown();server.server_close()
 if os.environ.get('AUDIT_RESULTS'):
  Path(os.environ['AUDIT_RESULTS']).write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
-print('PASS: IT/EN no-JS contents and fonts; accessible empty story links; delayed about image stable at390/1440; script-error fallback; responsive selection DPR1/2/3')
+print('PASS: IT/EN no-JS contents and fonts; accessible illustrated story links; delayed about image stable at390/1440; script-error fallback; responsive selection DPR1/2/3')
 print(json.dumps([r for r in records if 'selected_animation_bytes' in r],ensure_ascii=False,indent=2))

@@ -23,6 +23,7 @@ jobs:
           python-version: '3.12'
       - run: pip install playwright==1.55.0
       - run: python -m playwright install --with-deps chromium
+      - run: python .github/scripts/verify_photo_selection.py
       - run: python .github/scripts/verify_site.py
       - run: python .github/scripts/verify_contact.py
       - run: python .github/scripts/verify_footer.py

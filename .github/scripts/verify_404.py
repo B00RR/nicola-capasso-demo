@@ -15,7 +15,7 @@ PREFIX = "/nicola-capasso-demo/"
 HTML = (PUBLIC / "404.html").read_bytes()
 assert b'<base' not in HTML
 assert b'href="/nicola-capasso-demo/index.html"' in HTML
-assert b'src="/nicola-capasso-demo/assets/optimized/6.jpg"' in HTML
+assert b'src="/nicola-capasso-demo/assets/stories/matrimonio-01/09.jpg"' in HTML
 assert b'<meta name="robots" content="noindex,follow">' in HTML
 assert b"../assets/" not in HTML
 
@@ -99,7 +99,7 @@ try:
                 })""")
                 assert len(metrics["fonts"]) == 2 and all(f["status"] == "loaded" for f in metrics["fonts"])
                 assert metrics["image"] == 1600
-                assert metrics["imageUrl"] == base + PREFIX + "assets/optimized/6.jpg"
+                assert metrics["imageUrl"] == base + PREFIX + "assets/stories/matrimonio-01/09.jpg"
                 assert not metrics["overflow"] and metrics["front"] == "2"
                 assert metrics["color"] == "rgb(25, 25, 22)"
                 if reduced:
