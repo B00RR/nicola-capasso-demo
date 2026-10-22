@@ -1,5 +1,5 @@
 {
-  "source": "C:/Users/loren/OneDrive/Desktop/Progetto WordPress Nicola Capasso/consegne/correzioni-pre-wordpress",
+  "source": "C:/Users/loren/dev/nc-demo-photo-order/repo/public",
   "importedAt": "2026-10-05T15:55:27.152983+02:00",
   "adaptation": "Asset flattened; 404 URLs project-root relative; LF publication normalization; pagine legali IT/EN (bozza non indicizzabile) e versione inglese incluse; PHP enabled only on loopback, static Pages never submits.",
   "htmlPages": 34,
@@ -7,8 +7,8 @@
     "public/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "public/404.html": "5fdc84b8440bfa977c43d59bed7e823d6a1381019972e12088969e4bb4611b06",
     "public/anteprima-testi/assets/nicola-capasso.jpg": "4fdb8d2ec390c5677991eb906f8358de6b4534ab504811bac4d283f565445b39",
-    "public/anteprima-testi/en/index.htm": "3725e900585ad229b1cdb7bce249dedcc61e41fe276a765b4b8bd09ad49bb596",
-    "public/anteprima-testi/index.htm": "3b9abf7d8ef82d0566772936284e4b0a64c9d131a3fd69b6a67ff8d5c4d7ebf4",
+    "public/anteprima-testi/en/index.htm": "4c9d2554fa4895bc6f93ea31132ff172a7962b10d202440de2ba531d1ef918b9",
+    "public/anteprima-testi/index.htm": "16860b20876581a38e5d7a96134ada887f426e2aa0ce0247cdf5d4bb81a3d329",
     "public/assets/animation/scelta-01-1152.webp": "3b4185fd8bd406724b36d2e56429aa02e4fb4cbf5d7c62baf9fb277696df8dc5",
     "public/assets/animation/scelta-01-384.webp": "a6ecf697bc112d7cfa79155c6963251f201d4372740cb14d6dcf7ba5e69b935d",
     "public/assets/animation/scelta-01-768.webp": "4df1b6c066f1a38c21f4856f0e8e44b807264fb7b4c2a8b2cf6688d7fd699ac8",
@@ -253,7 +253,7 @@
     "public/en/404.html": "bcef2a81dbc69bd6ad825de5e7d14bf53c6477da54bd9c4d9a9680c70935ab0d",
     "public/en/contatti.html": "1c886da43f79feb24a46a27855f7cb67f61bf48bbfcc301a6e9cc353eb866716",
     "public/en/cookies.html": "650afb74903062cdea2b125ad576ea19e2a2de791da001a1f3928d583a419d52",
-    "public/en/index.html": "3819882e69dd0c71d4fca3a7076c981668b91b63a9f048416892a8572d734ce9",
+    "public/en/index.html": "ea60273bdbbf1621ee5af3aeef3b9c2cab15e539efd27d116a7340998c49bbf5",
     "public/en/portfolio.html": "4a1fcdce3a20a45ca0f51c0e1a95f11fd2b2c8f804a3fc523f51ae8d3c880b1b",
     "public/en/privacy.html": "9994c49c076026b630016890ac6a918fe17686d280f972fc64126a15029e8d5f",
     "public/en/storia-01.html": "7965bc716aa43d762b03ce8150679365bc81e816af82bcb2442c74186c91b374",
@@ -268,7 +268,7 @@
     "public/en/storia-10.html": "a3cce201429deae4119122b927d0936ec5f82fb6709abb3f9d6b657afca04c93",
     "public/en/terms.html": "022a2a3f79800755f0efed59a4f3c77385496dd5b2a67ef7a3ae7ffd2b235583",
     "public/footer.css": "5689afcce6907edb720ca1a4e2a4a0ed59085deba8d9ae04ceb4670cda40be45",
-    "public/index.html": "d6ceec25acf370fd31fd3b69ad9561666ab12a43b5c93637178e592689a0f625",
+    "public/index.html": "de453c3b85e1f2445c54b91c9be0bd761c5347b098595becdf1cf0d8878f657f",
     "public/legale.css": "5f9b258bbb3cb92ebc0bd9250755462c09f25a82dd65a1c8da1db0c1387f4ce0",
     "public/mobile.css": "794dca4b06ec4defb322f9f2a7f24bd4133dbe6f7bae31135a472001f18aeca8",
     "public/portfolio.css": "33c07a1dc529a0593fb867b7063f72d1b43673b390f0b327affb86ceb7758eb7",
@@ -292,10 +292,10 @@
     "public/termini.html": "8fb42d8598e68bed0969910e2ddea8c7f1566b9d2344e8298fbc97d6f6a5e06f",
     "public/tipografia.css": "ffd85be5103b448be3295e2503261d1d5a6a6b786fedf660522092631e736f2c"
   },
-  "updatedAt": "2026-10-21T22:16:30.107251+02:00",
+  "updatedAt": "2026-10-22T19:56:46.818049+02:00",
   "pageAdaptations": {
     "public/404.html": "Root-relative /nicola-capasso-demo/ URLs for assets and homepage/portfolio links; no base element, so #contenuto stays on the requested error URL; otherwise byte-identical to approved local source"
   },
-  "note": "06/10: pagine legali ripulite — rimossi banner «Bozza non pubblicabile», marcatori di lavoro e commenti; CSS legale senza regole morte. 21/10: fotografia definitiva — 10 matrimoni, 187 foto in ordine numerico, 10 copertine centrate, 12 scelte di animazione dalla fonte; foto fuori selezione rimosse dal set pubblicato. 21/10: fotografia 12 della storia 01 sostituita con l'originale Instagram del brindisi (post 07/10/2026), su richiesta del cliente.",
-  "revision": "feat/foto-definitiva-brino-matrimonio-01"
+  "note": "06/10: pagine legali ripulite — rimossi banner «Bozza non pubblicabile», marcatori di lavoro e commenti; CSS legale senza regole morte. 21/10: fotografia definitiva — 10 matrimoni, 187 foto in ordine numerico, 10 copertine centrate, 12 scelte di animazione dalla fonte; foto fuori selezione rimosse dal set pubblicato. 21/10: fotografia 12 della storia 01 sostituita con l'originale Instagram del brindisi (post 07/10/2026), su richiesta del cliente. 22/10: solo disposizione animazione; scambi 1-4, 3-5, 7-10, 8-5. Foto, ritagli, gallerie e codice invariati.",
+  "revision": "fix/ordine-foto-animazione"
 }
