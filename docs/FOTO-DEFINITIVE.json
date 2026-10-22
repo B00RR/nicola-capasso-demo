@@ -130,7 +130,7 @@
     },
     {
       "number": 7,
-      "cover": "assets/stories/matrimonio-07/12.jpg",
+      "cover": "assets/stories/matrimonio-07/06.jpg",
       "photos": [
         "assets/stories/matrimonio-07/01.jpg",
         "assets/stories/matrimonio-07/02.jpg",
@@ -152,7 +152,8 @@
         "assets/stories/matrimonio-07/18.jpg",
         "assets/stories/matrimonio-07/19.jpg",
         "assets/stories/matrimonio-07/20.jpg"
-      ]
+      ],
+      "cover_source": "MATRIMONIO 7/1 (6).JPG"
     },
     {
       "number": 8,
