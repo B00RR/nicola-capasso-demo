@@ -25,7 +25,7 @@
         "assets/stories/matrimonio-01/19.jpg",
         "assets/stories/matrimonio-01/20.jpg"
       ],
-      "cover_source": "Instagram nicolacapassofoto 07/10/2026 (post DeL_-BgubC4)"
+      "cover_source": "MATRIMONIO 1/foto copertina/foto copertina.jpg"
     },
     {
       "number": 2,
@@ -402,8 +402,8 @@
     },
     {
       "number": 11,
-      "folder": "matrimonio-01",
-      "path": "assets/stories/matrimonio-01/12.jpg",
+      "folder": "animation-only",
+      "path": "assets/animation/scelta-11-fallback.jpg",
       "source": "Instagram nicolacapassofoto 07/10/2026 (post DeL_-BgubC4)",
       "screenshot_index": 11,
       "preview_sha256": "b0fbeb7b12b325828d24531b583f7575ed6fefcf90859e92fd285f1853c05f11",
@@ -466,6 +466,7 @@
     "assets/animation/scelta-11-1152.webp": "6dfbbc73ba9415485e2df46343ffdca302ee7715d8d1b862d9f9eae7fa93ff9c",
     "assets/animation/scelta-11-384.webp": "296027ef6aa519bce9dd4888b9748db834dd0ca7fb990911f6c27e8e68bdc41e",
     "assets/animation/scelta-11-768.webp": "3a548233712ea90e8c9508ac3e8a9676f33ce9a16132c8b03be0911f690f6b4b",
+    "assets/animation/scelta-11-fallback.jpg": "b0fbeb7b12b325828d24531b583f7575ed6fefcf90859e92fd285f1853c05f11",
     "assets/animation/scelta-12-1152.webp": "ccff43b66ed8ee428474de77e2041dcb79aa8e3beebc72ef32fbfb3baac23ba8",
     "assets/animation/scelta-12-384.webp": "1d13f975daf556315f5f406b3346c32a3a8a89e3136e2af5ce378680daa4ded3",
     "assets/animation/scelta-12-768.webp": "77d6e063a9c97fed1aa5a5d1a5cfb2cc900c70e5846abb946c60d8611bc05a2f",
@@ -481,7 +482,7 @@
     "assets/stories/matrimonio-01/09.jpg": "052d6f06307686ed55922914520c75a712f52028bf42d695927d3ca511319876",
     "assets/stories/matrimonio-01/10.jpg": "a9067f879a12e521d1b6fa54f91ab28ecb5b954ee1bc6678b3518f9ef51c1e25",
     "assets/stories/matrimonio-01/11.jpg": "c5dceb50933ecfcdf3201ed110eb83245c620550e8990cd30084af088628d44c",
-    "assets/stories/matrimonio-01/12.jpg": "b0fbeb7b12b325828d24531b583f7575ed6fefcf90859e92fd285f1853c05f11",
+    "assets/stories/matrimonio-01/12.jpg": "8aa5508f8fa350217499b6a0c6cb76dda6511b9b295be2fc710b9162bbdcb923",
     "assets/stories/matrimonio-01/13.jpg": "572137c51027bbae8cf11aed6b2588142f66764096f4d9dd218c97ac96ab1d9a",
     "assets/stories/matrimonio-01/14.jpg": "1a04f464155e7f4ca50d3ac39629a97d248ee69091c61269f23568f716dcff59",
     "assets/stories/matrimonio-01/15.jpg": "b4ca739d6f3cc590db4885e1cdb0adaac4370f07d2f003832ea171378b233e8d",
