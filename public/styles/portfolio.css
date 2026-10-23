@@ -30,3 +30,6 @@
 
 /* Su mobile i titoli seguono la larghezza disponibile, senza a capo forzati. */
 @media(max-width:700px){.desktop-break{display:none}}
+
+/* Portfolio desktop: sottotitolo sotto il titolo, senza cambiare il layout touch. */
+@media(min-width:701px) and (pointer:fine){body.portfolio-a .intro{display:block}body.portfolio-a .intro p{margin-top:20px}}
