@@ -113,8 +113,8 @@ def check_typography(page):
     assert abs(style["stroke"] / style["size"] - .016) < .00001, style
     assert abs(style["spacing"] / style["size"] - .015) < .00001, style
     for selectors, family, weight in (
-        (".intro h2,.about h2,.contact h2,.section-head h2,.luxury-link", "Italiana", "400"),
-        ("body,p:not(.gallery-invite),.nav,.nav a,.nav .brand,.hero-note,.eyebrow,button,input,textarea,select", "Space Grotesk", "400" if page.evaluate("matchMedia('(max-width:700px), (max-width:1000px) and (pointer:coarse)').matches") else "300"),
+        (".intro h2,.about h2,.about-lead,.contact h2,.section-head h2,.luxury-link", "Italiana", "400"),
+        ("body,p:not(.gallery-invite):not(.about-lead),.nav,.nav a,.nav .brand,.hero-note,.eyebrow,button,input,textarea,select", "Space Grotesk", "400" if page.evaluate("matchMedia('(max-width:700px), (max-width:1000px) and (pointer:coarse)').matches") else "300"),
     ):
         styles = page.locator(selectors).evaluate_all(
             "es => es.map(e => { const s=getComputedStyle(e); return {font:s.fontFamily,weight:s.fontWeight}; })"
