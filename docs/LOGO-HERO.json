@@ -1,0 +1,20 @@
+{
+  "path": "assets/branding/nicola-capasso-logo.png",
+  "sha256": "1a0bb4933bfa9014939dd64c9ac9975412ba890ad20f8df9ffe316bd0019c559",
+  "size": [
+    979,
+    250
+  ],
+  "original_sha256": "188e57d87932919918bf0371906ef0eab2cbce8659d03b160dfd7fb1874b21be",
+  "original_size": [
+    1563,
+    1563
+  ],
+  "trim_bbox": [
+    251,
+    652,
+    1230,
+    902
+  ],
+  "placement": "Above the opening photograph, never superimposed; GitHub demo trial only"
+}
