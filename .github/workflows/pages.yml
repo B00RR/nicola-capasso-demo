@@ -12,7 +12,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   verify:
-    runs-on: ubuntu-latest
+    # Playwright 1.55 supports 24.04, not the newer ubuntu-latest.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -23,6 +24,7 @@ jobs:
           python-version: '3.12'
       - run: pip install playwright==1.55.0
       - run: python -m playwright install --with-deps chromium
+      - run: python .github/scripts/verify_finale_copy.py
       - run: python .github/scripts/verify_photo_selection.py
       - run: python .github/scripts/verify_site.py
       - run: python .github/scripts/verify_contact.py

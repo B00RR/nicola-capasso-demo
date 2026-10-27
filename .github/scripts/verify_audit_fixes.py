@@ -4,7 +4,7 @@ from threading import Thread
 from urllib.parse import urlsplit,unquote
 import json,os,sys
 from typing import Any
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright,expect
 ROOT=Path(__file__).resolve().parents[2];PUBLIC=ROOT/'public'
 class Handler(SimpleHTTPRequestHandler):
  def translate_path(self,path):return str(PUBLIC/unquote(urlsplit(path).path).removeprefix('/nicola-capasso-demo/').lstrip('/'))
@@ -19,9 +19,11 @@ try:
   browser=pw.chromium.launch(**opts)
   for prefix in ('','en/'):
    for enabled in (True,False):
-    page=browser.new_page(java_script_enabled=enabled,viewport={'width':390,'height':844});page.goto(url+prefix+'index.html');page.evaluate('document.fonts.ready');page.locator('#sguardo').scroll_into_view_if_needed();page.wait_for_timeout(1100)
-    for selector in ('#sguardo > div','#sguardo > img'):
-     assert page.locator(selector).evaluate('e=>getComputedStyle(e).opacity')=='1'
+    page=browser.new_page(java_script_enabled=enabled,viewport={'width':390,'height':844});page.goto(url+prefix+'index.html');page.evaluate('document.fonts.ready')
+    # Long copy spans multiple screens: reveal each element in its own viewport.
+    for selector in ('#sguardo > img','#sguardo > div','#sguardo .about-experience'):
+     page.locator(selector).scroll_into_view_if_needed()
+     expect(page.locator(selector)).to_have_css('opacity','1')
     fonts=page.evaluate('[...document.fonts].filter(f=>f.status==="loaded").map(f=>f.family.replace(/[\x22\x27]/g,""))');assert set(fonts)=={'Italiana','Space Grotesk'},fonts
     for n in (8,9,10):
      link=page.locator(f'a.project[href="storia-{n:02}.html"]');assert link.get_attribute('aria-label');assert link.locator('img').count()==1
