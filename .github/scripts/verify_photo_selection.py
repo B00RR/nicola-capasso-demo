@@ -17,7 +17,9 @@ d=json.loads(manifest.read_text(encoding='utf-8'))
 assert len(d['stories'])==10
 assert sum(len(s['photos']) for s in d['stories'])==187
 assert len(d['animation'])==12
-allowed=set(d['assets'])
+branding=json.loads((ROOT/'docs/LOGO-HERO.json').read_text(encoding='utf-8'))
+assert sha(PUBLIC/branding['path'])==branding['sha256']
+allowed=set(d['assets'])|{branding['path']}
 assert all((PUBLIC/p).is_file() and sha(PUBLIC/p)==h for p,h in d['assets'].items())
 assert {p.relative_to(PUBLIC).as_posix() for p in (PUBLIC/'assets').rglob('*') if p.is_file() and p.suffix.lower() in {'.jpg','.jpeg','.webp','.png'}}==allowed
 for prefix in ('','en/'):

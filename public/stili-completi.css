@@ -39,10 +39,10 @@ a:focus-visible{outline:2px solid #191916;outline-offset:6px}
 
 
 /* Spazio dedicato alla frase e alla guida: mai sovrapposti alla foto. */
-.hero-stage{--portrait-height:min(88svh,680px,calc(100svh - 144px));--portrait-top:min(50svh,calc(100svh - 128px - var(--portrait-height)/2))}
+.hero-stage{--portrait-height:min(88svh,680px,calc(100svh - 220px));--portrait-top:min(50svh,calc(100svh - 128px - var(--portrait-height)/2))}
 .hero .portrait{top:var(--portrait-top);height:var(--portrait-height);max-height:var(--portrait-height);transform:translate(-50%,-50%) scale(1)}
 .hero-meta{top:calc(var(--portrait-top) + var(--portrait-height)/2 + 12px);bottom:auto;font-size:12px;line-height:1.2}.hero-meta p{margin:0}
-@media(max-width:700px){.hero-stage{--portrait-height:min(85vw,72svh,calc(100svh - 144px))}.hero-meta{font-size:10px}}
+@media(max-width:700px){.hero-stage{--portrait-height:min(85vw,72svh,calc(100svh - 220px))}.hero-meta{font-size:10px}}
 
 /* Sistema tipografico: due famiglie, titoli classici e UI geometrica leggera. */
 :root {
@@ -137,6 +137,11 @@ select {
 .about .about-experience .about-lead{max-width:30ch;margin:0 auto 20px;font:400 clamp(24px,3vw,32px)/1.3 var(--font-titoli);color:#191916}
 .about .about-experience p:not(.about-lead){max-width:60ch;margin:0 auto 28px}
 @media(max-width:700px){#sguardo{row-gap:40px}}
+
+/* Il logo ha una fascia bianca propria sopra la foto, anche su finestre basse. */
+.hero-stage{--hero-logo-height:min(80px,calc(var(--portrait-top) - var(--portrait-height)/2 - 28px))}
+.hero h1{position:absolute;inset-inline:0;top:calc(var(--portrait-top) - var(--portrait-height)/2 - var(--hero-logo-height) - 16px);width:100%;margin:0}
+.hero .hero-logo{display:block;width:auto;height:var(--hero-logo-height);max-width:76vw;margin:0 auto;object-fit:contain}
 
 /* Leggibilita mobile condivisa: nessuna modifica alla tipografia desktop o al wordmark. */
 @media (max-width: 700px), (max-width: 1000px) and (pointer: coarse) {
