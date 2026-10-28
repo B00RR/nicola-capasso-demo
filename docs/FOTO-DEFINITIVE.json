@@ -664,5 +664,10 @@
     "assets/stories/matrimonio-10/copertina.jpg": "dda47ef91943c81064ed3c0e658c6be82995c035c589e840c4c89a2bcad4da46"
   },
   "gallery_order": "numeric filenames; wedding09 five non-editorial filenames follow numbered photographs, approved by Lorenzo",
-  "source": "client supplied selection; original files unchanged; photograph 12 of story 01 replaced by the client-published Instagram original of 07/10/2026"
+  "source": "client supplied selection; original files unchanged; photograph 12 of story 01 replaced by the client-published Instagram original of 07/10/2026",
+  "hero": {
+    "path": "assets/stories/matrimonio-01/12.jpg",
+    "source": "MATRIMONIO 1/1 (12).jpg",
+    "filter": "none"
+  }
 }

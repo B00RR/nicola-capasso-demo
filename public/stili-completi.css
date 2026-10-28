@@ -7,7 +7,7 @@ body{background:#fff;color:#191916}
 .hero-stage{background:#fff}
 /* Titolo a colore fisso, senza inversione sulla fotografia. */
 .hero h1{color:#191916;mix-blend-mode:normal}
-.hero .portrait{filter:grayscale(100%)}
+.hero .portrait{filter:none}
 .hero-note,.caption,.commissioned{color:#62625d}
 .scroll i{background:#62625d}
 .eyebrow,.about .eyebrow,.section-head .eyebrow{color:#62625d}
