@@ -5,8 +5,8 @@
     "title_it": "Promesse senza tempo",
     "title_en": "Timeless Vows",
     "count": 20,
-    "cover": "12.jpg",
-    "cover_path": "assets/stories/matrimonio-01/12.jpg",
+    "cover": "16.jpg",
+    "cover_path": "assets/stories/matrimonio-01/16.jpg",
     "cover_position": "50% 48%",
     "photos": [
       {
@@ -110,7 +110,9 @@
         "source": "MATRIMONIO 1/1 (20).jpg"
       }
     ],
-    "cover_source": "MATRIMONIO 1/foto copertina/foto copertina.jpg"
+    "cover_source": "MATRIMONIO 1/1 (16).jpg",
+    "cover_selection_note": "Selezione esplicita Lorenzo: foto16/20 mostrata nello screenshot; riusare il JPEG dell’album, mai lo screenshot.",
+    "original_cover_source": "MATRIMONIO 1/foto copertina/foto copertina.jpg"
   },
   {
     "number": 2,

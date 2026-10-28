@@ -2,7 +2,7 @@
   "stories": [
     {
       "number": 1,
-      "cover": "assets/stories/matrimonio-01/12.jpg",
+      "cover": "assets/stories/matrimonio-01/16.jpg",
       "photos": [
         "assets/stories/matrimonio-01/01.jpg",
         "assets/stories/matrimonio-01/02.jpg",
@@ -25,7 +25,9 @@
         "assets/stories/matrimonio-01/19.jpg",
         "assets/stories/matrimonio-01/20.jpg"
       ],
-      "cover_source": "MATRIMONIO 1/foto copertina/foto copertina.jpg"
+      "cover_source": "MATRIMONIO 1/1 (16).jpg",
+      "original_cover_source": "MATRIMONIO 1/foto copertina/foto copertina.jpg",
+      "cover_selection_note": "Selezione esplicita Lorenzo: foto16/20 mostrata nello screenshot; riusare il JPEG dell’album, mai lo screenshot."
     },
     {
       "number": 2,
