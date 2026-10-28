@@ -8,16 +8,16 @@ const pages=walk(PUBLIC).filter(p=>/\.html?$/.test(p)).map(p=>path.relative(PUBL
 
 const types={'.html':'text/html','.htm':'text/html','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png','.webp':'image/webp','.ttf':'font/ttf','.woff2':'font/woff2'};
 const server=http.createServer((req,res)=>{let p;try{let u=decodeURIComponent(new URL(req.url,'http://localhost').pathname);u=u.replace(/^\/nicola-capasso-demo\//,'/');p=path.resolve(PUBLIC,'.'+u);if(p!==PUBLIC&&!p.startsWith(PUBLIC+path.sep))throw Error('outside fixture');if(fs.statSync(p).isDirectory())p=path.join(p,'index.html');const data=fs.readFileSync(p);res.writeHead(200,{'Content-Type':types[path.extname(p)]||'application/octet-stream','Cache-Control':'no-store'});res.end(data);}catch{res.writeHead(404);res.end('not found');}});
-const rows=[],failures=[],slots=new Set(),visited=new Set();let browser;
+const rows=[],failures=[],slots=new Set(),visited=new Set(),sources=new Set();let browser;
 for(const file of pages)for(const ref of fs.readFileSync(path.join(PUBLIC,file),'utf8').matchAll(/href="([^"]*styles\/(?:portfolio|stories)\.css[^"]*)"/g))if(!ref[1].endsWith('?v=foto-originali1'))failures.push({page:file,issue:'Photo stylesheet cache version missing'});
 async function ready(page,file,viewport){
-  const broken=await page.evaluate(async()=>{
+  await page.evaluate(()=>[...document.images].forEach(i=>{i.loading='eager'}));
+  await page.waitForFunction(()=>[...document.images].filter(i=>i.getAttribute('src')).every(i=>i.complete&&i.naturalWidth>0));
+  const loaded=await page.evaluate(async()=>{
     await window.typographyReady;await document.fonts.ready;
-    return (await Promise.all([...document.images].filter(i=>i.getAttribute('src')).map(async i=>{
-      i.loading='eager';try{await i.decode();return null;}catch{return i.getAttribute('src');}
-    }))).filter(Boolean);
+    return [...document.images].filter(i=>i.getAttribute('src')).map(i=>i.currentSrc);
   });
-  for(const src of broken)failures.push({page:file,viewport,src,issue:'Image failed to decode'});
+  for(const src of loaded)sources.add(src);
   await page.waitForFunction(()=>typeof frameId==='undefined'||frameId===0);
 }
 async function inspect(page,file,viewport,state){
@@ -44,7 +44,7 @@ async function inspect(page,file,viewport,state){
 if(state==='hover'){const before=rows.findLast(r=>r.page===file&&r.viewport===viewport&&r.state==='base');for(const i of result)if(JSON.stringify(i.transforms)!==JSON.stringify(before.photos[i.index].transforms))i.bad.push('hover changes photo/ancestor transform');}
 const r={page:file,viewport,state,photos:result};rows.push(r);fs.appendFileSync(log,JSON.stringify(r)+'\n');for(const i of result){slots.add(file+'|'+viewport+'|'+i.index+'|'+i.src);for(const issue of i.bad)failures.push({page:file,viewport,state,src:i.src,issue});}return result;}
 (async()=>{await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const local='http://127.0.0.1:'+server.address().port+'/nicola-capasso-demo/',remote=process.argv[4],base=remote||local;
-try{browser=await chromium.launch({headless:true,...(process.platform==='win32'?{channel:'msedge'}:{})});
+try{browser=await chromium.launch({headless:true});
 for(const [width,height] of [[1440,900],[390,844]]){const context=await browser.newContext({viewport:{width,height},locale:'it-IT',isMobile:width<700,hasTouch:width<700});
 for(const file of pages){const p=await context.newPage();p.on('pageerror',e=>failures.push({page:file,viewport:width,issue:'JS '+e.message}));const url=new URL(file,base);if(remote)url.searchParams.set('audit','photo-fidelity');await p.goto(url.href,{waitUntil:'domcontentloaded'});await ready(p,file,width);visited.add(file+'|'+width);await inspect(p,file,width,'base');
 const cdp=await context.newCDPSession(p);await cdp.send('DOM.enable');await cdp.send('CSS.enable');const dom=await cdp.send('DOM.getDocument');const {nodeIds}=await cdp.send('DOM.querySelectorAll',{nodeId:dom.root.nodeId,selector:'img:not(.hero-logo),*:has(img:not(.hero-logo))'});for(let n=0;n<nodeIds.length;n+=50)await Promise.all(nodeIds.slice(n,n+50).map(nodeId=>cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:['hover']})));await p.waitForTimeout(100);await inspect(p,file,width,'hover');await cdp.detach();
@@ -63,5 +63,9 @@ const opener=p.locator('.album .photo-button').first();if(await opener.count()){
   await p.keyboard.press('Escape');await p.waitForFunction(()=>!document.querySelector('dialog').open&&document.body.style.overflow==='');assert.ok(await opener.evaluate(e=>e===document.activeElement),'Viewer focus restoration');
 }
 await p.close();}await context.close();}
-assert.equal(visited.size,pages.length*2);const report={pages:pages.length,pageViewportCases:visited.size,photoSlots:slots.size,snapshots:rows.length,failures:failures.length,issues:failures};fs.writeFileSync(path.join(OUT,'summary.json'),JSON.stringify(report,null,2));console.log(JSON.stringify({...report,issues:failures.slice(0,12)}));assert.equal(failures.length,0,'Photographs have CSS/JS effects; see measurements.jsonl');
+// Decode every resource one at a time, outside the album's pinned-bitmap budget.
+const decoder=await browser.newPage();await decoder.setContent('<img alt="">');
+for(const src of sources){try{await decoder.locator('img').evaluate((i,url)=>{i.src=url;return i.decode()},src)}catch(e){failures.push({src,issue:'Image failed to decode: '+e.message})}}
+await decoder.close();
+assert.equal(visited.size,pages.length*2);const report={pages:pages.length,pageViewportCases:visited.size,photoSlots:slots.size,snapshots:rows.length,decodedResources:sources.size,failures:failures.length,issues:failures};fs.writeFileSync(path.join(OUT,'summary.json'),JSON.stringify(report,null,2));console.log(JSON.stringify({...report,issues:failures.slice(0,12)}));assert.equal(failures.length,0,'Photographs have CSS/JS effects; see measurements.jsonl');
 }finally{if(browser)await browser.close();server.closeAllConnections();await new Promise(resolve=>server.close(resolve));}})().catch(e=>{console.error(e);process.exitCode=1;});
