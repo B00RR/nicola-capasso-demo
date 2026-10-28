@@ -103,6 +103,7 @@ def check_typography(page):
     fonts = page.evaluate("[...document.fonts].map(f => ({family:f.family,status:f.status}))")
     assert len(fonts) == 2 and all(f["status"] == "loaded" for f in fonts), fonts
     assert {f["family"].strip("'\"") for f in fonts} == {"Italiana", "Space Grotesk"}, fonts
+    assert page.locator(".hero .portrait").evaluate("e => getComputedStyle(e).filter") == "none", "Hero photograph must remain in original colour"
     style = page.locator(".hero h1").evaluate("""e => {
         const s=getComputedStyle(e);
         return {font:s.fontFamily,weight:s.fontWeight,blend:s.mixBlendMode,

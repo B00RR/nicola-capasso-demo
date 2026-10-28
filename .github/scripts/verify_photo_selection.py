@@ -37,6 +37,8 @@ for prefix in ('','en/'):
    block=re.search(r'<a\b[^>]*href="storia-'+f'{s["number"]:02d}'+r'.html"[^>]*>.*?</a>',text,re.S)
    assert block and ('../' if prefix else '')+s['cover'] in block[0]
  home=(PUBLIC/prefix/'index.html').read_text(encoding='utf-8')
+ opening=[i for i in imgs(home) if i.get('class')=='portrait']
+ assert len(opening)==1 and opening[0]['src']==('../' if prefix else '')+d['hero']['path'],('Hero photograph mismatch',prefix)
  scene=[i for i in imgs(home) if i.get('class')=='scene-card']
  assert [i['src'] for i in scene]==[('../' if prefix else '')+p['path'] for p in d['animation']]
  assert ('../' if prefix else '')+d['portrait'] in re.search(r'<section class="about".*?</section>',home,re.S)[0]
