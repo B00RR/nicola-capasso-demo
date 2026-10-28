@@ -1,20 +1,40 @@
 {
-  "path": "assets/branding/nicola-capasso-logo.png",
-  "sha256": "1a0bb4933bfa9014939dd64c9ac9975412ba890ad20f8df9ffe316bd0019c559",
+  "path": "assets/branding/nicola-capasso-logo.svg",
+  "sha256": "db00ef238a24ddc96a1cdbf55b29ab35744a199722386ad203182d06185c6bac",
   "size": [
     979,
     250
   ],
-  "original_sha256": "188e57d87932919918bf0371906ef0eab2cbce8659d03b160dfd7fb1874b21be",
-  "original_size": [
-    1563,
-    1563
+  "viewBox": [
+    32,
+    32,
+    3916,
+    1000
   ],
-  "trim_bbox": [
-    251,
-    652,
-    1230,
-    902
-  ],
-  "placement": "Above the opening photograph, never superimposed; GitHub demo trial only"
+  "format": "svg",
+  "approved_vector_sha256": "8cba9ec66bc006fcec15ea828c28740b48d3373458a21bca22112e8f3936c240",
+  "approved_hd_png_sha256": "273b56356e11649b26479cc5ad4cc54b567c37f20ac375e5fb09d97970d521e1",
+  "approval": "Lorenzo: ok allora sostituiamolo ovunque",
+  "derivation": "Only transparent safety margin trimmed; approved paths unchanged",
+  "previous_logo": {
+    "path": "assets/branding/nicola-capasso-logo.png",
+    "sha256": "1a0bb4933bfa9014939dd64c9ac9975412ba890ad20f8df9ffe316bd0019c559",
+    "size": [
+      979,
+      250
+    ],
+    "original_sha256": "188e57d87932919918bf0371906ef0eab2cbce8659d03b160dfd7fb1874b21be",
+    "original_size": [
+      1563,
+      1563
+    ],
+    "trim_bbox": [
+      251,
+      652,
+      1230,
+      902
+    ],
+    "placement": "Above the opening photograph, never superimposed; GitHub demo trial only"
+  },
+  "placement": "Above the opening photograph, never superimposed"
 }
