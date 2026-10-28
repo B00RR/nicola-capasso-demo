@@ -1,3 +1,9 @@
+## 28/10 22:24 — Fotografie fedeli ai file originali, demo IT/EN
+
+Correzione autorizzata sull’intera demo GitHub: rimossi filtri fotografici, opacità intermedie, zoom hover e dissolvenze dei contenitori fotografici, comprese le due anteprime storiche HTM. Le scene usano visibilità binaria; traiettorie, rotazioni, dimensioni, crop, ordine, testi, logo e collegamenti restano quelli della base `26628cc`. I reveal dei soli testi restano attivi. Fonte durevole: `C:/Users/loren/Dev/nc-demo-foto-originali/repo/public`.
+
+Verifica diretta del coordinatore, non QA indipendente: 36 pagine / 72 casi desktop-mobile, 328 snapshot con scroll reale/inverso, movimento ridotto e viewer; regressione RED sulla base, GREEN senza violazioni sulla correzione. Confrontate 1152 pose identiche delle carte; tutti i 238 asset (227 file fotografici inclusi) byte-identici. CSS export e manifest sincronizzati; controlli CI esistenti conservati e affiancati da una guardia fotografica senza nuove dipendenze. Pubblicazione autorizzata tramite nuova PR, CI e deploy; esito finale registrato sulla card `t_7d8001ef` dopo verifica online. WordPress/Aruba, tema PHP/editor, brochure e originali esterni fuori perimetro. Safari/iPhone fisico e schermo calibrato non provati.
+
 ## Anteprima biografia — revisione foto IT/EN
 
 Solo `/anteprima-testi/`: ritratto Nicola dalla brochure in «Chi sono», coppia con ombrellino in «Come lavoro», mani/anelli/bouquet in «Il mio stile». Foto a sinistra/destra/sinistra su desktop; foto prima del testo su mobile. Testi revisionati e CTA unica invariati. Originale fotografico conservato; copia web senza EXIF. Home approvata e tutti i file pubblici fuori anteprima invariati. Verifica diretta del solo autore, non QA indipendente. La migrazione WordPress resta ferma (t_69c5d624); nessuna modifica Aruba/live/editor né nuova approvazione del tema.
