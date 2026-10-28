@@ -26,6 +26,8 @@ for prefix in ('','en/'):
  for story in d['stories']:
   text=(PUBLIC/prefix/f'storia-{story["number"]:02d}.html').read_text(encoding='utf-8')
   assert '<dialog ' in text and 'class="lightbox-content"' in text,('Missing photo viewer',story['number'])
+  cover=[i for i in imgs(text) if i.get('class')=='story-cover']
+  assert len(cover)==1 and cover[0]['src']==('../' if prefix else '')+story['cover'],('Story cover mismatch',prefix,story['number'])
   album=re.search(r'<div class="album">(.*?)</div>',text,re.S)
   assert album,story['number']
   assert [i['src'] for i in imgs(album[1])]==[('../' if prefix else '')+p for p in story['photos']]
