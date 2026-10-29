@@ -1,0 +1,15 @@
+{
+  "reference_commit": "26628cc89038bed4aa5ce9f2a34690f3dec3c307",
+  "purpose": "Preserve approved animation/reveal/hover/404 behavior; ignore only photo filters and fixed .86 base",
+  "hashes": {
+    "index.html": "84f4789c6e266e292817716867c5967aa46ba89c940653edf77f3e996dd82b64",
+    "en/index.html": "6cf2339b6854b62e1b8ad6a1bc006dbd7227cfbc5d08822a303886c2f5084a9f",
+    "anteprima-testi/index.htm": "f5c75328fd250542de2dbdfc22b69264e83204d7eb3c8483648fefa885ae45cc",
+    "anteprima-testi/en/index.htm": "aaa39b1abc83fdffe58b82bf62c157ebb11c38bddb74a5fa09111c2bc4e6536f",
+    "404.html": "f4c01f01919f1a51ef49621acb9469c77a02118813b50d80789b6ede68cec200",
+    "en/404.html": "f4c01f01919f1a51ef49621acb9469c77a02118813b50d80789b6ede68cec200",
+    "styles/portfolio.css": "f9f8c65c3100e5d9e3970b7daa33b64b1de08c16366c07e2484f4e125f343c0e",
+    "styles/stories.css": "2aa7b852ebf1440db6c735e307ab7d465be6c24be07f01d152625b63b46eda30",
+    "stili-completi.css": "b45b4d75bfa0a004f2e123e879b49050911fb02a0d42bdafba3c4b8de5e10973"
+  }
+}

@@ -1,4 +1,14 @@
-## 28/10 22:24 — Fotografie fedeli ai file originali, demo IT/EN
+## Stato corrente — ripristino selettivo delle transizioni dopo PR18
+
+Lorenzo ha precisato che la richiesta sulle foto riguarda filtri e alterazioni cromatiche, non le animazioni del sito. La rimozione di fade/reveal/hover/animazione404 nella PR18 era quindi fuori perimetro; la voce storica seguente è superata su questi punti.
+
+Ripristinati CSS e JavaScript del vero commit precedente26628cc89038bed4aa5ce9f2a34690f3dec3c307, mantenendo soltanto la rimozione dei filtri fotografici e della velatura FISSA86%. Tornano le dissolvenze originali delle carte e della prima foto, i reveal dei contenitori con immagini, gli hoverzoom e l’ingresso404. Nessun reset o riscrittura della cronologia: correzione tramite nuovo branch/PR. Cache dei CSS Portfolio/Storie aggiornata a?v=foto-originali2 su22richiami.
+
+Confronto di regressione su9superfici CSS/JS con fixture estratte dal commit26628cc: ammesse solo le differenze dei filtri e del fattore base86→100%, non del comportamento di transizione. Test RED reale sulla PR18 troppo estesa, poi GREEN con36pagine/72casi desktop-mobile,328snapshot,202risorse decodificate e0violazioni. Il controllo distingue fade autorizzati da opacità fisse, e conserva le verifiche colore, viewer, sorgenti e decode. File fotografici/font/logo, src/alt, testi, ordine e collegamenti intatti; exportCSS e manifest allineati.
+
+Fonte di questa correzione: C:/Users/loren/Dev/nc-demo-ripristino-transizioni/repo/public; card t_6b6b4be1, default inline, nessun nuovo worker o dipendenza. Pubblicazione subordinata a CI verde della PR e del main; verifiche online registrate nel rapporto esterno della card dopo deploy. Nessuna applicazione al temaPHP, WordPresslive o brochure; nessuna prova su iPhone fisico o QA indipendente.
+
+## Storico28/10 22:24 — PR18, successivamente corretta nel perimetro
 
 Correzione autorizzata sull’intera demo GitHub: rimossi filtri fotografici, opacità intermedie, zoom hover e dissolvenze dei contenitori fotografici, comprese le due anteprime storiche HTM. Le scene usano visibilità binaria; traiettorie, rotazioni, dimensioni, crop, ordine, testi, logo e collegamenti restano quelli della base `26628cc`. I reveal dei soli testi restano attivi. Fonte durevole: `C:/Users/loren/Dev/nc-demo-foto-originali/repo/public`.
 

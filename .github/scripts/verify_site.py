@@ -173,7 +173,7 @@ with sync_playwright() as p:
                 const r=document.querySelector('.statement').getBoundingClientRect();
                 const photos=[...document.querySelectorAll('.scene-card')].some(e=>{
                     const b=e.getBoundingClientRect();
-                    return getComputedStyle(e).visibility==='visible' && b.bottom>0 && b.top<innerHeight;
+                    return Number(getComputedStyle(e).opacity)>.05 && b.bottom>0 && b.top<innerHeight;
                 });
                 return {photos, text:r.top<innerHeight&&r.bottom>0, textBottom:r.bottom};
             }""")
