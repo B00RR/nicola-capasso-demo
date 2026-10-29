@@ -1,6 +1,6 @@
 {
   "path": "assets/branding/nicola-capasso-logo.svg",
-  "sha256": "db00ef238a24ddc96a1cdbf55b29ab35744a199722386ad203182d06185c6bac",
+  "sha256": "ea2ce64b9799d21924d79eec845d7ec8f12e2c559d48ac286e6af0ded78237d4",
   "size": [
     979,
     250
@@ -12,29 +12,51 @@
     1000
   ],
   "format": "svg",
-  "approved_vector_sha256": "8cba9ec66bc006fcec15ea828c28740b48d3373458a21bca22112e8f3936c240",
-  "approved_hd_png_sha256": "273b56356e11649b26479cc5ad4cc54b567c37f20ac375e5fb09d97970d521e1",
-  "approval": "Lorenzo: ok allora sostituiamolo ovunque",
-  "derivation": "Only transparent safety margin trimmed; approved paths unchanged",
+  "approved_vector_sha256": "ea2ce64b9799d21924d79eec845d7ec8f12e2c559d48ac286e6af0ded78237d4",
+  "approved_hd_png_sha256": "e4939797bfd43a081cdc1a1ac979fa96562a9cd3b387056080ef592e64aa8178",
+  "approval": "Lorenzo: Ok pusha su github e modifica ove presente, poi mandami anche le brochure con il nuovo logo",
+  "derivation": "Approved existing 11 signature paths unchanged; only restored-line path added",
   "previous_logo": {
-    "path": "assets/branding/nicola-capasso-logo.png",
-    "sha256": "1a0bb4933bfa9014939dd64c9ac9975412ba890ad20f8df9ffe316bd0019c559",
+    "path": "assets/branding/nicola-capasso-logo.svg",
+    "sha256": "db00ef238a24ddc96a1cdbf55b29ab35744a199722386ad203182d06185c6bac",
     "size": [
       979,
       250
     ],
-    "original_sha256": "188e57d87932919918bf0371906ef0eab2cbce8659d03b160dfd7fb1874b21be",
-    "original_size": [
-      1563,
-      1563
+    "viewBox": [
+      32,
+      32,
+      3916,
+      1000
     ],
-    "trim_bbox": [
-      251,
-      652,
-      1230,
-      902
-    ],
-    "placement": "Above the opening photograph, never superimposed; GitHub demo trial only"
+    "format": "svg",
+    "approved_vector_sha256": "8cba9ec66bc006fcec15ea828c28740b48d3373458a21bca22112e8f3936c240",
+    "approved_hd_png_sha256": "273b56356e11649b26479cc5ad4cc54b567c37f20ac375e5fb09d97970d521e1",
+    "approval": "Lorenzo: ok allora sostituiamolo ovunque",
+    "derivation": "Only transparent safety margin trimmed; approved paths unchanged",
+    "previous_logo": {
+      "path": "assets/branding/nicola-capasso-logo.png",
+      "sha256": "1a0bb4933bfa9014939dd64c9ac9975412ba890ad20f8df9ffe316bd0019c559",
+      "size": [
+        979,
+        250
+      ],
+      "original_sha256": "188e57d87932919918bf0371906ef0eab2cbce8659d03b160dfd7fb1874b21be",
+      "original_size": [
+        1563,
+        1563
+      ],
+      "trim_bbox": [
+        251,
+        652,
+        1230,
+        902
+      ],
+      "placement": "Above the opening photograph, never superimposed; GitHub demo trial only"
+    },
+    "placement": "Above the opening photograph, never superimposed"
   },
-  "placement": "Above the opening photograph, never superimposed"
+  "placement": "Above the opening photograph, never superimposed",
+  "variant": "Firma attuale con la sola linea originale; FOTO assente",
+  "cache_version": "firma-linea1"
 }
