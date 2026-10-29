@@ -1,15 +1,22 @@
-/* Photo pixels must not be tinted or made translucent by CSS/JS. */
+/* Preserve original photo colour and approved motion; reject fixed veils, not transitions. */
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
 const {chromium}=require(process.argv[2]||'playwright');
 const ROOT=path.resolve(__dirname,'../..'),PUBLIC=path.join(ROOT,'public'),OUT=path.resolve(process.argv[3]||path.join(process.env.TMPDIR||process.env.RUNNER_TEMP||ROOT,'photo-fidelity-proof'));
 fs.mkdirSync(OUT,{recursive:true});const log=path.join(OUT,'measurements.jsonl');fs.writeFileSync(log,'');
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
 const pages=walk(PUBLIC).filter(p=>/\.html?$/.test(p)).map(p=>path.relative(PUBLIC,p).split(path.sep).join('/')).sort();assert.equal(pages.length,36);
+function motionCode(file,text){
+  if(/\.html?$/.test(file))text=[...text.matchAll(/<(style|script)\b[^>]*>([\s\S]*?)<\/\1>/g)].map(m=>m[2]).join('\n');
+  return text.replace(/(?<![\w-])filter:[^;{}]+;?/g,'').replace(/opacity:\.86(?=;|\})/g,'opacity:1')
+    .replace('portrait.style.opacity=String(.86*(1-portraitOut));','portrait.style.opacity=String(1-portraitOut);');
+}
+const motionReference=JSON.parse(fs.readFileSync(path.join(ROOT,'.github/fixtures/photo-motion-reference.json'),'utf8'));
+for(const [file,expected] of Object.entries(motionReference.hashes))assert.equal(require('node:crypto').createHash('sha256').update(motionCode(file,fs.readFileSync(path.join(PUBLIC,file),'utf8'))).digest('hex'),expected,'Motion regression against pre-PR18: '+file);
 
 const types={'.html':'text/html','.htm':'text/html','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png','.webp':'image/webp','.ttf':'font/ttf','.woff2':'font/woff2'};
 const server=http.createServer((req,res)=>{let p;try{let u=decodeURIComponent(new URL(req.url,'http://localhost').pathname);u=u.replace(/^\/nicola-capasso-demo\//,'/');p=path.resolve(PUBLIC,'.'+u);if(p!==PUBLIC&&!p.startsWith(PUBLIC+path.sep))throw Error('outside fixture');if(fs.statSync(p).isDirectory())p=path.join(p,'index.html');const data=fs.readFileSync(p);res.writeHead(200,{'Content-Type':types[path.extname(p)]||'application/octet-stream','Cache-Control':'no-store'});res.end(data);}catch{res.writeHead(404);res.end('not found');}});
 const rows=[],failures=[],slots=new Set(),visited=new Set(),sources=new Set();let browser;
-for(const file of pages)for(const ref of fs.readFileSync(path.join(PUBLIC,file),'utf8').matchAll(/href="([^"]*styles\/(?:portfolio|stories)\.css[^"]*)"/g))if(!ref[1].endsWith('?v=foto-originali1'))failures.push({page:file,issue:'Photo stylesheet cache version missing'});
+for(const file of pages)for(const ref of fs.readFileSync(path.join(PUBLIC,file),'utf8').matchAll(/href="([^"]*styles\/(?:portfolio|stories)\.css[^"]*)"/g))if(!ref[1].endsWith('?v=foto-originali2'))failures.push({page:file,issue:'Photo stylesheet cache version missing'});
 async function ready(page,file,viewport){
   await page.evaluate(()=>[...document.images].forEach(i=>{i.loading='eager'}));
   await page.waitForFunction(()=>[...document.images].filter(i=>i.getAttribute('src')).every(i=>i.complete&&i.naturalWidth>0));
@@ -27,7 +34,15 @@ async function inspect(page,file,viewport,state){
       const s=getComputedStyle(e),name=e.tagName+'.'+e.className;transforms.push(s.transform);
       if(s.filter!=='none')bad.push(name+' filter:'+s.filter);
       if(s.mixBlendMode!=='normal')bad.push(name+' blend:'+s.mixBlendMode);
-      if(Number(s.opacity)!==1)bad.push(name+' opacity:'+s.opacity);
+      if(e===img&&e.matches('.portrait,.scene-card')){
+        const p=displayProgress,expected=e.matches('.portrait')?1-(reduceMotion?0:smooth((p-.02)/.16)):(reduceMotion?0:smooth((p-.01)/.23));
+        if(Math.abs(Number(s.opacity)-expected)>.00001)bad.push(name+' opacity differs from approved fade: '+s.opacity+' expected '+expected);
+      }else if(Number(s.opacity)!==1){
+        const waiting=e.matches('.reveal:not(.in)')&&Number(s.opacity)===0;
+        const target=e.matches('.reveal:not(.in)')?0:1;
+        const fading=e.getAnimations().some(a=>{const k=(a.effect?.getKeyframes?.()||[]).filter(f=>f.opacity!==undefined);return (a.playState==='running'||a.pending)&&k.length&&Number(k.at(-1).opacity)===target;});
+        if(!waiting&&!fading)bad.push(name+' fixed opacity:'+s.opacity);
+      }
       if(s.backdropFilter!=='none')bad.push(name+' backdrop:'+s.backdropFilter);
       if(s.boxShadow!=='none')bad.push(name+' shadow:'+s.boxShadow);
       for(const k of ['::before','::after']){
@@ -41,10 +56,10 @@ async function inspect(page,file,viewport,state){
     return {index,src:img.getAttribute('src'),filter:s.filter,opacity:s.opacity,visibility:s.visibility,
       objectFit:s.objectFit,objectPosition:s.objectPosition,width:s.width,height:s.height,transforms,bad};
   }));
-if(state==='hover'){const before=rows.findLast(r=>r.page===file&&r.viewport===viewport&&r.state==='base');for(const i of result)if(JSON.stringify(i.transforms)!==JSON.stringify(before.photos[i.index].transforms))i.bad.push('hover changes photo/ancestor transform');}
+
 const r={page:file,viewport,state,photos:result};rows.push(r);fs.appendFileSync(log,JSON.stringify(r)+'\n');for(const i of result){slots.add(file+'|'+viewport+'|'+i.index+'|'+i.src);for(const issue of i.bad)failures.push({page:file,viewport,state,src:i.src,issue});}return result;}
 (async()=>{await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const local='http://127.0.0.1:'+server.address().port+'/nicola-capasso-demo/',remote=process.argv[4],base=remote||local;
-try{browser=await chromium.launch({headless:true});
+try{browser=await chromium.launch({headless:true,...(process.platform==='win32'?{channel:'msedge'}:{})});
 for(const [width,height] of [[1440,900],[390,844]]){const context=await browser.newContext({viewport:{width,height},locale:'it-IT',isMobile:width<700,hasTouch:width<700});
 for(const file of pages){const p=await context.newPage();p.on('pageerror',e=>failures.push({page:file,viewport:width,issue:'JS '+e.message}));const url=new URL(file,base);if(remote)url.searchParams.set('audit','photo-fidelity');await p.goto(url.href,{waitUntil:'domcontentloaded'});await ready(p,file,width);visited.add(file+'|'+width);await inspect(p,file,width,'base');
 const cdp=await context.newCDPSession(p);await cdp.send('DOM.enable');await cdp.send('CSS.enable');const dom=await cdp.send('DOM.getDocument');const {nodeIds}=await cdp.send('DOM.querySelectorAll',{nodeId:dom.root.nodeId,selector:'img:not(.hero-logo),*:has(img:not(.hero-logo))'});for(let n=0;n<nodeIds.length;n+=50)await Promise.all(nodeIds.slice(n,n+50).map(nodeId=>cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:['hover']})));await p.waitForTimeout(100);await inspect(p,file,width,'hover');await cdp.detach();
@@ -67,5 +82,5 @@ await p.close();}await context.close();}
 const decoder=await browser.newPage();await decoder.setContent('<img alt="">');
 for(const src of sources){try{await decoder.locator('img').evaluate((i,url)=>{i.src=url;return i.decode()},src)}catch(e){failures.push({src,issue:'Image failed to decode: '+e.message})}}
 await decoder.close();
-assert.equal(visited.size,pages.length*2);const report={pages:pages.length,pageViewportCases:visited.size,photoSlots:slots.size,snapshots:rows.length,decodedResources:sources.size,failures:failures.length,issues:failures};fs.writeFileSync(path.join(OUT,'summary.json'),JSON.stringify(report,null,2));console.log(JSON.stringify({...report,issues:failures.slice(0,12)}));assert.equal(failures.length,0,'Photographs have CSS/JS effects; see measurements.jsonl');
+assert.equal(visited.size,pages.length*2);const report={pages:pages.length,pageViewportCases:visited.size,photoSlots:slots.size,snapshots:rows.length,decodedResources:sources.size,motionReference:motionReference.reference_commit,failures:failures.length,issues:failures};fs.writeFileSync(path.join(OUT,'summary.json'),JSON.stringify(report,null,2));console.log(JSON.stringify({...report,issues:failures.slice(0,12)}));assert.equal(failures.length,0,'Photo colour/fixed-opacity or approved motion regression; see measurements.jsonl');
 }finally{if(browser)await browser.close();server.closeAllConnections();await new Promise(resolve=>server.close(resolve));}})().catch(e=>{console.error(e);process.exitCode=1;});
