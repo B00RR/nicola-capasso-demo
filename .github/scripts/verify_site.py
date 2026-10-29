@@ -81,7 +81,7 @@ for removed in (
 ):
     assert removed not in html, removed
 
-assets = set(re.findall(r'(?:src|href)="(assets/[^\"]+)"', html))
+assets = {ref.split('?')[0] for ref in re.findall(r'(?:src|href)="(assets/[^\"]+)"', html)}
 assets.update({"assets/fonts/italiana-regular.ttf", "assets/fonts/space-grotesk.ttf"})
 assert len(assets) == 23, f"Expected 23 unique local font/loader/photo/logo assets, found {len(assets)}"
 for license_file in ("italiana-OFL.txt", "space-grotesk-OFL.txt"):

@@ -1,5 +1,5 @@
 {
-  "source": "C:\\Users\\loren\\dev\\nc-demo-ripristino-transizioni\\repo\\public",
+  "source": "C:\\Users\\loren\\dev\\nc-logo-linea-applicazione\\repo\\public",
   "importedAt": "2026-10-05T15:55:27.152983+02:00",
   "adaptation": "Asset flattened; 404 URLs project-root relative; LF publication normalization; pagine legali IT/EN (bozza non indicizzabile) e versione inglese incluse; PHP enabled only on loopback, static Pages never submits.",
   "htmlPages": 34,
@@ -253,7 +253,7 @@
     "public/en/404.html": "bcef2a81dbc69bd6ad825de5e7d14bf53c6477da54bd9c4d9a9680c70935ab0d",
     "public/en/contatti.html": "1c886da43f79feb24a46a27855f7cb67f61bf48bbfcc301a6e9cc353eb866716",
     "public/en/cookies.html": "650afb74903062cdea2b125ad576ea19e2a2de791da001a1f3928d583a419d52",
-    "public/en/index.html": "12bdd4069a7d82c0b0d01fcd15eb2c1c8f5b3a5f5f398bc05836b97212d634e4",
+    "public/en/index.html": "9a5c0fc7ac53333aaa1443435bdb85a17f13012b071afddfac7b56d5de61ea5c",
     "public/en/portfolio.html": "463b401bd5af4ca5c97fcc78db47742aaf4fd70da94f9a402d4b8c34e4fe9492",
     "public/en/privacy.html": "9994c49c076026b630016890ac6a918fe17686d280f972fc64126a15029e8d5f",
     "public/en/storia-01.html": "332ca3f246df3d4808038c7e076e78a07dc0b639b5cc512fd5c8901fd72321ea",
@@ -268,7 +268,7 @@
     "public/en/storia-10.html": "e0fbf6bf8f0738e6afcf3b302cb713767583565150e9ca61b08d25c98063c92a",
     "public/en/terms.html": "022a2a3f79800755f0efed59a4f3c77385496dd5b2a67ef7a3ae7ffd2b235583",
     "public/footer.css": "5689afcce6907edb720ca1a4e2a4a0ed59085deba8d9ae04ceb4670cda40be45",
-    "public/index.html": "82c60621041adc096322f19de92f9fdea09d0b0bf176dc1580402a51fb10e857",
+    "public/index.html": "559ba0869b79b82ed17bf7c91a3655d6f0808a48e86e0e009bc091fedf658c28",
     "public/legale.css": "5f9b258bbb3cb92ebc0bd9250755462c09f25a82dd65a1c8da1db0c1387f4ce0",
     "public/mobile.css": "794dca4b06ec4defb322f9f2a7f24bd4133dbe6f7bae31135a472001f18aeca8",
     "public/portfolio.css": "33c07a1dc529a0593fb867b7063f72d1b43673b390f0b327affb86ceb7758eb7",
@@ -294,9 +294,9 @@
     "public/assets/animation/scelta-11-fallback.jpg": "b0fbeb7b12b325828d24531b583f7575ed6fefcf90859e92fd285f1853c05f11",
     "public/viewer.js": "c4ffb657dd1e5c2850d3028e360d7b21006f62c190b30964c831e35d580c9c99",
     "public/viewer.css": "748f05a7ccdb6324eaa38cc317e6a448873e9650f5d78ab275f2617426fb4e4f",
-    "public/assets/branding/nicola-capasso-logo.svg": "db00ef238a24ddc96a1cdbf55b29ab35744a199722386ad203182d06185c6bac"
+    "public/assets/branding/nicola-capasso-logo.svg": "ea2ce64b9799d21924d79eec845d7ec8f12e2c559d48ac286e6af0ded78237d4"
   },
-  "updatedAt": "2026-10-29T09:01:16.084160+01:00",
+  "updatedAt": "2026-10-29T13:37:32.790355+01:00",
   "pageAdaptations": {
     "public/404.html": "Root-relative /nicola-capasso-demo/ URLs for assets and homepage/portfolio links; no base element, so #contenuto stays on the requested error URL; otherwise byte-identical to approved local source"
   },

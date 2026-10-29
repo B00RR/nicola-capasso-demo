@@ -1,4 +1,10 @@
-## Stato corrente — ripristino selettivo delle transizioni dopo PR18
+## Logo con linea approvato — applicazione alla demo GitHub
+
+Lorenzo approva la variante firma+sola linea e autorizza pubblicazione GitHub e aggiornamento delle brochure compilabili IT/EN. Sostituito il solo asset SVG condiviso, con due riferimenti Home versionati?v=firma-linea1: stessi11path firma e dimensioni, aggiunto il path della linea, FOTO assente. CSS/JS, foto, animazioni, testi, crop, layout e altri288file pubblici invariati; manifest e guardia logo allineati. I PDF restano fuori dal repository, aggiornati nelle copie compilabili senza rigenerare da HTML.
+
+Fonte di questa applicazione: C:/Users/loren/Dev/nc-logo-linea-applicazione/repo/public; cardt_f018707c, coordinatore inline. CI PR/main, deploy, verifica online e integrità PDF registrati nel rapporto della card a conclusione. Nessun WordPresslive/temaPHP/editor/Aruba o originale modificato.
+
+## Storico — ripristino selettivo delle transizioni dopo PR18
 
 Lorenzo ha precisato che la richiesta sulle foto riguarda filtri e alterazioni cromatiche, non le animazioni del sito. La rimozione di fade/reveal/hover/animazione404 nella PR18 era quindi fuori perimetro; la voce storica seguente è superata su questi punti.
 
