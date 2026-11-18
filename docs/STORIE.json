@@ -110,7 +110,8 @@
         "source": "AMALFI/PIE00746_1_1.jpg"
       }
     ],
-    "listing_position": "50% 65%"
+    "listing_position": "50% 65%",
+    "home_position": "50% 92%"
   },
   {
     "number": 2,
@@ -258,7 +259,8 @@
         "source": "AMALFI 2/NCF09413_1.jpg"
       }
     ],
-    "listing_position": "50% 78%"
+    "listing_position": "50% 78%",
+    "home_position": "50% 78%"
   },
   {
     "number": 3,
@@ -376,7 +378,8 @@
         "source": "LAKE COMO/NCF09978_1.jpg"
       }
     ],
-    "listing_position": "50% 64%"
+    "listing_position": "50% 64%",
+    "home_position": "50% 64%"
   },
   {
     "number": 4,
@@ -534,7 +537,8 @@
         "source": "POSITANO/NCF09964_1.jpg"
       }
     ],
-    "listing_position": "50% 25%"
+    "listing_position": "50% 25%",
+    "home_position": "50% 42%"
   },
   {
     "number": 5,
@@ -607,7 +611,8 @@
         "source": "SCALA/PIE03398_1.jpg"
       }
     ],
-    "listing_position": "50% 50%"
+    "listing_position": "50% 50%",
+    "home_position": "50% 94%"
   },
   {
     "number": 6,
@@ -710,6 +715,7 @@
         "source": "SCALA 2/NCF08514_1.jpg"
       }
     ],
-    "listing_position": "50% 78%"
+    "listing_position": "50% 78%",
+    "home_position": "50% 97%"
   }
 ]
