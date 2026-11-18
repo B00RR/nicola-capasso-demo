@@ -27,8 +27,12 @@ for en in (False,True):
   for lang,url in [('it',prefix+names[j]),('x-default',prefix+names[j]),('en',('' if en else 'en/')+names[j])]:assert f'hreflang="{lang}" href="{url}"' in s,page
   match=re.search(r'<div class="album">(.*?)</div>',s,re.S);assert match,page
   album=match[1]
-  assert album.count('class="photo-button"')==count==r['count']==len(r['photos'])
-  assert re.findall(r'<img[^>]*src="([^"]+)"',album)==[prefix+p['path'] for p in r['photos']],page
+  paths=re.findall(r'<img[^>]*src="([^"]+)"',album)
+  assert prefix+r['cover_path'] not in paths,(page,'cover repeated in album',r['cover_path'])
+  assert count==r['count']==len(r['photos']) and album.count('class="photo-button"')==count-1
+  label='Enlarge photograph' if en else 'Ingrandisci fotografia'
+  assert re.findall(r'aria-label="([^"]+)"',album)==[f'{label} {i}' for i in range(1,count)],page
+  assert paths==[prefix+p['path'] for p in r['photos'] if p['path']!=r['cover_path']],page
  for page in (folder/'index.html',folder/'portfolio.html',PUBLIC/'anteprima-testi'/('en' if en else '')/'index.htm'):
   preview=page.suffix=='.htm'; pic='/nicola-capasso-demo/' if preview else prefix; links=('/nicola-capasso-demo/'+('en/' if en else '')) if preview else ''
   s=page.read_text(encoding='utf-8');cls='story-card' if page.name=='portfolio.html' else 'project reveal'
