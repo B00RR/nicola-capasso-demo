@@ -16,13 +16,18 @@ def check_albums(browser, base, output):
             for story in stories:
                 route = f'{prefix}storia-{story["number"]:02}.html'
                 page = context.new_page()
+                page.on('requestfailed', lambda r: print('Request failed:', r.url, r.failure, flush=True))
+                page.on('response', lambda r: print('HTTP', r.status, r.url, flush=True) if r.status >= 400 else None)
                 assert page.goto(urljoin(base, route)).ok, route
+                cover = page.locator('img.story-cover')
+                assert cover.count() == 1 and cover.is_visible(), route
+                assert cover.evaluate('async i => {await i.decode(); return i.currentSrc}') == urljoin(base, story['cover_path']), route
                 album = page.locator('.album')
                 data = album.evaluate('''async album => {
                     const buttons = [...album.querySelectorAll('.photo-button')];
                     const images = buttons.map(b => b.querySelector('img'));
-                    images.forEach(i => i.loading = 'eager');
                     for (const image of images) {
+                        image.loading = 'eager';
                         try { await image.decode(); }
                         catch (e) { throw Error(`${image.src}: ${e.message}`); }
                     }
@@ -34,9 +39,6 @@ def check_albums(browser, base, output):
                             image: rect(i), button: rect(buttons[n])}))};
                 }''')
                 photos = data['photos']
-                cover = page.locator('img.story-cover')
-                assert cover.count() == 1 and cover.is_visible(), route
-                assert cover.evaluate('async i => {await i.decode(); return i.currentSrc}') == urljoin(base, story['cover_path']), route
                 assert cover.bounding_box()['y'] + cover.bounding_box()['height'] <= data['album']['top'] + 1, route
                 assert [p['src'] for p in photos] == [urljoin(base, p['path']) for p in story['photos'] if p['path'] != story['cover_path']], route
                 for n, photo in enumerate(photos):

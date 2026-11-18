@@ -10,13 +10,14 @@ PUBLIC=ROOT/'public'
 OUT=ROOT.parent/'viewer-evidence'
 OUT.mkdir(exist_ok=True)
 class Handler(SimpleHTTPRequestHandler):
-    protocol_version='HTTP/1.1'
     def do_GET(self):
         if self.path.startswith('/nicola-capasso-demo/'):
             self.path=self.path.removeprefix('/nicola-capasso-demo')
         super().do_GET()
     def log_message(self,format,*args):pass
-server=ThreadingHTTPServer(('127.0.0.1',0),partial(Handler,directory=str(PUBLIC)))
+class GalleryServer(ThreadingHTTPServer):
+    request_queue_size = 128
+server=GalleryServer(('127.0.0.1',0),partial(Handler,directory=str(PUBLIC)))
 thread=Thread(target=server.serve_forever,daemon=True)
 thread.start()
 records=[]
