@@ -49,7 +49,12 @@ def check_albums(browser, base, output):
                             issues.append('mobile photo spacing')
                     if n and box['top'] < photos[n-1]['button']['bottom'] - 1:
                         issues.append('overlap')
-                    if any(abs(box[k] - data['album'][k]) > 1 for k in ('left', 'right')):
+                    if width == 1440:
+                        if image['height'] > height * .84 + 1:
+                            issues.append('desktop photo exceeds viewport limit')
+                        if abs(box['left'] + box['right'] - data['album']['left'] - data['album']['right']) > 2:
+                            issues.append('desktop photo not centered')
+                    elif any(abs(box[k] - data['album'][k]) > 1 for k in ('left', 'right')):
                         issues.append('row width')
                     if min(image['width'], image['height']) <= 0 or any(abs(image[k] - box[k]) > 1 for k in ('left', 'right', 'top', 'bottom')):
                         issues.append('image bounds')

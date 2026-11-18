@@ -32,5 +32,10 @@
 .story-a main.wrap{padding-bottom:24px}
 @media(max-width:700px){.story-a .story-top-nav{gap:8px}.story-a .story-heading{padding:32px 0 28px}.story-a .story-heading h1{font-size:clamp(44px,12vw,60px)}.story-a .story-copy{margin:48px auto}.story-a .story-copy p{text-align:left}.story-a .story-nav{margin-top:40px;padding:24px 0;gap:20px}}
 
+@media(min-width:1024px) and (pointer:fine){
+  .album .photo-button{justify-self:center;width:fit-content;max-width:100%}
+  .album .photo-button img{width:auto;max-width:100%;max-height:84vh}
+  .story-cover + .album{padding-top:30px}
+}
 /* Su mobile i titoli seguono la larghezza disponibile, senza a capo forzati. */
 @media(max-width:700px){.desktop-break{display:none}}
