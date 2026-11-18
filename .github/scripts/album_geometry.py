@@ -9,7 +9,7 @@ STORIES = Path(__file__).resolve().parents[2] / 'docs/STORIE.json'
 def check_albums(browser, base, output):
     stories = json.loads(STORIES.read_bytes())
     cases, failures = [], []
-    for width, height in [(390, 844), (1440, 900)]:
+    for width, height in [(390, 740), (1440, 900)]:
         context = browser.new_context(viewport={'width': width, 'height': height},
                                       is_mobile=width == 390, has_touch=width == 390)
         for prefix in ['', 'en/']:
@@ -61,9 +61,8 @@ def check_albums(browser, base, output):
                 assert abs(cover_box['height'] - cover_box['width'] * ch / cw) < 1, route
                 assert abs(2*cover_box['x'] + cover_box['width'] - width) < 1, route
                 opener = page.locator('.cover-button')
-                if width == 1440:
-                    for box in (cover_box, opener.bounding_box()):
-                        assert abs(box['width'] - data['album']['width']) < 1, (route, 'desktop cover width', box['width'], data['album']['width'])
+                for box in (cover_box, opener.bounding_box()):
+                    assert abs(box['x'] - data['album']['left']) < 1 and abs(box['width'] - data['album']['width']) < 1, (route, width, 'cover alignment', box, data['album'])
                 act = lambda button: button.tap() if width == 390 else button.click()
                 act(opener)
                 viewer = page.locator('dialog[open] img')
