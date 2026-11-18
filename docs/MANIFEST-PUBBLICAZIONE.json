@@ -1,5 +1,5 @@
 {
-  "source": "C:\\Users\\loren\\OneDrive\\Desktop\\Progetto WordPress Nicola Capasso\\consegne\\demo-home-quadrate\\public",
+  "source": "C:\\Users\\loren\\OneDrive\\Desktop\\Progetto WordPress Nicola Capasso\\consegne\\demo-footer-mobile-una-riga\\public",
   "importedAt": "2026-10-05T15:55:27.152983+02:00",
   "adaptation": "Asset flattened; 404 URLs project-root relative; LF publication normalization; pagine legali IT/EN (bozza non indicizzabile) e versione inglese incluse; PHP enabled only on loopback, static Pages never submits.",
   "htmlPages": 26,
@@ -91,7 +91,7 @@
     "public/en/storia-05.html": "a38c01c53e60a3523daa9556fae0c697aae61bf76a8788930269e258d33beb3e",
     "public/en/storia-06.html": "81199d19eaf43facd5c29fe649e5fb1c6236e43f98c1772474085a14bc8f8649",
     "public/en/terms.html": "022a2a3f79800755f0efed59a4f3c77385496dd5b2a67ef7a3ae7ffd2b235583",
-    "public/footer.css": "ad212719102da84d5bb51d19ebe19414ceee6e1e7e5bab5a1264f2559c3cc377",
+    "public/footer.css": "6120f0945686e4ccc302c3aeb1b182bd08732bf8678f23b904900345d803d87f",
     "public/index.html": "31202e597f46b5f332534876efc162075a8efefae3d77eccd6f4a6c7de1871bb",
     "public/legale.css": "5f9b258bbb3cb92ebc0bd9250755462c09f25a82dd65a1c8da1db0c1387f4ce0",
     "public/mobile.css": "794dca4b06ec4defb322f9f2a7f24bd4133dbe6f7bae31135a472001f18aeca8",
@@ -243,10 +243,10 @@
     "public/assets/stories/scala-2/17.jpg": "3c852d736bdffd9a3eb28c6f56db462b2a26786ce77b9ee8c86a023fc36165b9",
     "public/assets/stories/scala-2/18.jpg": "166fb2d96ff3f67e127d611968a841fc675f24ec1bd19ffda4e96712f5ddb6b5"
   },
-  "updatedAt": "2026-11-18T16:01:31.353934+01:00",
+  "updatedAt": "2026-11-18T16:30:13.313835+01:00",
   "pageAdaptations": {
     "public/404.html": "Root-relative /nicola-capasso-demo/ URLs for assets and homepage/portfolio links; no base element, so #contenuto stays on the requested error URL; otherwise byte-identical to approved local source"
   },
   "note": "06/10: pagine legali ripulite — rimossi banner «Bozza non pubblicabile», marcatori di lavoro e commenti; CSS legale senza regole morte. 21/10: fotografia definitiva — 10 matrimoni, 187 foto in ordine numerico, 10 copertine centrate, 12 scelte di animazione dalla fonte; foto fuori selezione rimosse dal set pubblicato. 21/10: fotografia 12 della storia 01 sostituita con l'originale Instagram del brindisi (post 07/10/2026), su richiesta del cliente. 22/10: solo disposizione animazione; scambi 1-4, 3-5, 7-10, 8-5. Foto, ritagli, gallerie e codice invariati. 22/10: foto12 e copertina storia01 riallineate alle cartelle originali; brindisi separato come solo asset animazione, con bytes/focal/ordine invariati. 22/10: Lorenzo sceglie la foto6/20 come nuova copertina della storia07, in deroga alla precedente copertina della cartella; album, animazione e originali invariati. Viewer approvato: foto senza padding, Chiudi coerente con le azioni approvate e UI temporanea2000ms. Pubblicazione autorizzata da Lorenzo: «Ok va bene pusha su github». Ritocchi locali approvati: labelChiudi/Close senza× e sottotitoloPortfolio sottoH1solodesktopfine; mobile e contenuti invariati. Inclusi nella pubblicazione autorizzata. 27/10: demo per approvazione Nicola — entrambi i testi cliente EN/IT completi; biografia con ritratto attuale, esperienza sotto, unica CTA finale. Tema PHP e logo non aggiornati. Prova autorizzata: firma PNG del cliente sopra la foto di apertura, senza sovrapposizione, IT/EN; solo margini trasparenti rifilati. Foto invariata, spazio verticale adattato nelle finestre basse. Tema PHP e brochure esclusi. Copertina storia01 scelta da Lorenzo: fotografia16/20 originale già in album, Home/Portfolio/apertura IT/EN allineati; album, fotografie e altri usi invariati. Prima foto Home sotto il logo: originale cabriolet12.jpg già in album, a colori senza filtro; solo IT/EN e mirrorCSS, gallerie/copertine/animazione/ritrattoAbout invariati. 18/11: sei nuove storie, 127 foto; animazione e risorse condivise conservate. Album IT/EN in colonna singola, proporzioni naturali. Copertine solo in apertura; 121 foto negli album.",
-  "revision": "Ritagli quadrati approvati delle sole Home IT/EN"
+  "revision": "Footer mobile su una riga con icone social proporzionate"
 }
