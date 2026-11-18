@@ -6,7 +6,7 @@ Prototipo editoriale di presentazione per Nicola Capasso.
 
 Anteprima pubblica: https://b00rr.github.io/nicola-capasso-demo/
 
-Home e Portfolio presentano sei matrimoni: Amalfi, Amalfi, Lake Como, Positano, Scala e Scala. Le gallerie IT/EN contengono 127 fotografie, senza testo narrativo. I due matrimoni di Amalfi e i due di Scala hanno pagine distinte. Ogni copertina proviene dal relativo album. L’apertura animata resta invariata.
+Home e Portfolio presentano sei matrimoni: Amalfi, Amalfi, Lake Como, Positano, Scala e Scala. Le storie presentano 127 fotografie per lingua: sei copertine in apertura e 121 fotografie negli album, senza testo narrativo. I due matrimoni di Amalfi e i due di Scala hanno pagine distinte. Ogni copertina proviene dal relativo album. L’apertura animata resta invariata.
 
 Questa è solo la demo statica: nessun aggiornamento del sito WordPress attivo su Aruba.
 

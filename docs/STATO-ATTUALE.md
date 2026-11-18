@@ -1,6 +1,6 @@
 ## Demo statica: sei storie IT/EN — 18/11/2026
 
-Amalfi (20), Amalfi (27), Lake Como (21), Positano (29), Scala (12), Scala (18). I titoli omonimi aprono matrimoni distinti. Ogni album include la copertina scelta nella propria cartella; i nomi sorgente e l’ordine sono in `STORIE.json`. Nessun testo narrativo nelle storie. Animazione, foto condivise e WordPress non fanno parte della sostituzione.
+Amalfi (20), Amalfi (27), Lake Como (21), Positano (29), Scala (12), Scala (18). I titoli omonimi aprono matrimoni distinti. Ogni conteggio include la copertina ufficiale, visibile soltanto in apertura. Negli album e nel visualizzatore restano rispettivamente 19, 26, 20, 28, 11 e 17 foto. `STORIE.json` conserva l’inventario delle sorgenti; `FOTO-DEFINITIVE.json` elenca separatamente copertina e foto dell’album. Nessun testo narrativo nelle storie. Animazione, foto condivise e WordPress non fanno parte della sostituzione.
 
 ## Storico — Logo con linea approvato — applicazione alla demo GitHub
 

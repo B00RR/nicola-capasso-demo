@@ -34,7 +34,11 @@ def check_albums(browser, base, output):
                             image: rect(i), button: rect(buttons[n])}))};
                 }''')
                 photos = data['photos']
-                assert [p['src'] for p in photos] == [urljoin(base, p['path']) for p in story['photos']], route
+                cover = page.locator('img.story-cover')
+                assert cover.count() == 1 and cover.is_visible(), route
+                assert cover.evaluate('async i => {await i.decode(); return i.currentSrc}') == urljoin(base, story['cover_path']), route
+                assert cover.bounding_box()['y'] + cover.bounding_box()['height'] <= data['album']['top'] + 1, route
+                assert [p['src'] for p in photos] == [urljoin(base, p['path']) for p in story['photos'] if p['path'] != story['cover_path']], route
                 for n, photo in enumerate(photos):
                     box, image = photo['button'], photo['image']
                     nw, nh = photo['natural']
@@ -52,10 +56,13 @@ def check_albums(browser, base, output):
                 opener = album.locator('.photo-button').first
                 opener.click()
                 viewer = page.locator('dialog[open] img')
-                for index in (0, 1):
+                for index, photo in enumerate(photos):
                     if index:
                         page.keyboard.press('ArrowRight')
-                    assert viewer.evaluate('async i => {await i.decode(); return [i.src, getComputedStyle(i).objectFit]}') == [photos[index]['src'], 'contain'], route
+                    number = index + 1
+                    alt = story['title_it'] + (' — Wedding photograph ' if prefix else ' — Fotografia del matrimonio ') + str(number)
+                    assert viewer.evaluate('async i => {await i.decode(); return [i.src, i.alt, getComputedStyle(i).objectFit]}') == [photo['src'], alt, 'contain'], route
+                    assert page.locator('.lightbox-count').inner_text() == f'{number} / {len(photos)}', route
                 page.keyboard.press('Escape')
                 page.wait_for_function("!document.querySelector('dialog').open && document.body.style.overflow === ''")
                 assert opener.evaluate('e => e === document.activeElement'), route

@@ -11,7 +11,6 @@
         "assets/stories/amalfi/04.jpg",
         "assets/stories/amalfi/05.jpg",
         "assets/stories/amalfi/06.jpg",
-        "assets/stories/amalfi/07.jpg",
         "assets/stories/amalfi/08.jpg",
         "assets/stories/amalfi/09.jpg",
         "assets/stories/amalfi/10.jpg",
@@ -33,7 +32,6 @@
       "cover_source": "AMALFI 2/copertina.jpg",
       "photos": [
         "assets/stories/amalfi-2/01.jpg",
-        "assets/stories/amalfi-2/02.jpg",
         "assets/stories/amalfi-2/03.jpg",
         "assets/stories/amalfi-2/04.jpg",
         "assets/stories/amalfi-2/05.jpg",
@@ -67,7 +65,6 @@
       "cover_source": "LAKE COMO/copertina.jpeg",
       "photos": [
         "assets/stories/lake-como/01.jpg",
-        "assets/stories/lake-como/02.jpg",
         "assets/stories/lake-como/03.jpg",
         "assets/stories/lake-como/04.jpg",
         "assets/stories/lake-como/05.jpg",
@@ -96,7 +93,6 @@
       "photos": [
         "assets/stories/positano/01.jpg",
         "assets/stories/positano/02.jpg",
-        "assets/stories/positano/03.jpg",
         "assets/stories/positano/04.jpg",
         "assets/stories/positano/05.jpg",
         "assets/stories/positano/06.jpg",
@@ -130,7 +126,6 @@
       "cover": "assets/stories/scala/01.jpg",
       "cover_source": "SCALA/copertina.jpg",
       "photos": [
-        "assets/stories/scala/01.jpg",
         "assets/stories/scala/02.jpg",
         "assets/stories/scala/03.jpg",
         "assets/stories/scala/04.jpg",
@@ -149,7 +144,6 @@
       "cover": "assets/stories/scala-2/01.jpg",
       "cover_source": "SCALA 2/copertina.jpg",
       "photos": [
-        "assets/stories/scala-2/01.jpg",
         "assets/stories/scala-2/02.jpg",
         "assets/stories/scala-2/03.jpg",
         "assets/stories/scala-2/04.jpg",
