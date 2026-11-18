@@ -18,6 +18,8 @@ def check_albums(browser, base, output):
                 page = context.new_page()
                 assert page.goto(urljoin(base, route)).ok, route
                 album = page.locator('.album')
+                if width == 1440:
+                    assert album.locator('.photo-button').evaluate_all('buttons => buttons.every(b => b.clientWidth > 0 && b.clientHeight > 0)'), (route, 'empty lazy row')
                 data = album.evaluate('''async album => {
                     const buttons = [...album.querySelectorAll('.photo-button')];
                     const images = buttons.map(b => b.querySelector('img'));
