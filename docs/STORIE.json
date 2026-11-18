@@ -5,8 +5,8 @@
     "title_it": "Amalfi",
     "title_en": "Amalfi",
     "count": 20,
-    "cover": "07.jpg",
-    "cover_path": "assets/stories/amalfi/07.jpg",
+    "cover": "17.jpg",
+    "cover_path": "assets/stories/amalfi/17.jpg",
     "cover_position": "50% 50%",
     "photos": [
       {
@@ -109,7 +109,8 @@
         "sha256": "d7fa6e20ac2636719f0d8a78634fee5a2c5b26020613cd05136fa8a88e6a6a52",
         "source": "AMALFI/PIE00746_1_1.jpg"
       }
-    ]
+    ],
+    "listing_position": "50% 65%"
   },
   {
     "number": 2,
@@ -256,7 +257,8 @@
         "sha256": "d9a8b656c0e5e9a456216a87c25cb912defdeff1a7f6f495a4785f176c9cf1c3",
         "source": "AMALFI 2/NCF09413_1.jpg"
       }
-    ]
+    ],
+    "listing_position": "50% 78%"
   },
   {
     "number": 3,
@@ -373,7 +375,8 @@
         "sha256": "cfcba9c9786d7c061295ba62411a6798b8482b4f5b49ebfe25339470c1f8d8d7",
         "source": "LAKE COMO/NCF09978_1.jpg"
       }
-    ]
+    ],
+    "listing_position": "50% 64%"
   },
   {
     "number": 4,
@@ -530,7 +533,8 @@
         "sha256": "4a0a3f9f562d7e85d570be7ec01d37f9e84d3d4b470b41b4f2d0359dc05d6e58",
         "source": "POSITANO/NCF09964_1.jpg"
       }
-    ]
+    ],
+    "listing_position": "50% 25%"
   },
   {
     "number": 5,
@@ -602,7 +606,8 @@
         "sha256": "d37c5afadb93b6c4db0bfeb976411c9bb9d179f529ab43aa681d3e3441ea9649",
         "source": "SCALA/PIE03398_1.jpg"
       }
-    ]
+    ],
+    "listing_position": "50% 50%"
   },
   {
     "number": 6,
@@ -704,6 +709,7 @@
         "sha256": "166fb2d96ff3f67e127d611968a841fc675f24ec1bd19ffda4e96712f5ddb6b5",
         "source": "SCALA 2/NCF08514_1.jpg"
       }
-    ]
+    ],
+    "listing_position": "50% 78%"
   }
 ]

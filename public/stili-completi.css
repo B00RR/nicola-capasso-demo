@@ -139,7 +139,9 @@ select {
 @media(max-width:700px){#sguardo{row-gap:40px}}
 
 /* Il logo ha una fascia bianca propria sopra la foto, anche su finestre basse. */
-.hero-stage{--hero-logo-height:min(80px,calc(var(--portrait-top) - var(--portrait-height)/2 - 28px))}
+.hero-stage{--hero-logo-height:calc(var(--portrait-height)*.18);--portrait-top:max(min(50svh,calc(100svh - 128px - var(--portrait-height)/2)),calc(var(--hero-logo-height) + 20px + var(--portrait-height)/2))}
+@media(min-width:701px){.hero-note{bottom:2px}.hero-note>span.scroll{gap:4px;padding-block:0}}
+@media(max-width:700px){.hero-stage{--original-height:min(85vw,72svh,calc(100svh - 220px));--hero-logo-height:min(80px,calc(76vw * 250 / 979),calc(50svh - var(--original-height)/2 - 28px),calc(100svh - var(--original-height) - 156px));--portrait-height:calc(var(--hero-logo-height)*5.55)}}
 .hero h1{position:absolute;inset-inline:0;top:calc(var(--portrait-top) - var(--portrait-height)/2 - var(--hero-logo-height) - 16px);width:100%;margin:0}
 .hero .hero-logo{display:block;width:auto;height:var(--hero-logo-height);max-width:76vw;margin:0 auto;object-fit:contain}
 

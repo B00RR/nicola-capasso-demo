@@ -16,8 +16,11 @@ for page in not_found:
     text = page.read_text(encoding="utf-8")
     assert "site-footer" not in text and "footer.css" not in text, str(page)
 
-for page in pages:
+previews = sorted(PUBLIC.rglob('*.htm'))
+assert len(previews) == 2
+for page in pages + previews:
     prefix = "../" * (len(page.relative_to(PUBLIC).parts) - 1)
+    if page in previews: prefix = '/nicola-capasso-demo/'
     text = page.read_text(encoding="utf-8")
     assert text.count('class="site-footer"') == 1, str(page)
     assert f'<link rel="stylesheet" href="{prefix}footer.css">' in text, str(page)
@@ -30,7 +33,7 @@ for page in pages:
     hrefs = re.findall(r'href="([^"]+)"', legal)
     assert len(hrefs) == 3, (str(page), hrefs)
     for href in hrefs:
-        assert (page.parent / href).is_file(), (str(page), href)
+        assert ((PUBLIC / href.removeprefix('/nicola-capasso-demo/')) if page in previews else (page.parent / href)).is_file(), (str(page), href)
 assert (PUBLIC / "footer.css").is_file()
 
 SAMPLES = [PUBLIC / "index.html", PUBLIC / "privacy.html", PUBLIC / "en/index.html", PUBLIC / "en/terms.html"]
@@ -40,7 +43,7 @@ with sync_playwright() as p:
         options["executable_path"] = os.environ["BROWSER_PATH"]
     browser = p.chromium.launch(**options)
     for page_path in SAMPLES:
-        for width, height in ((390, 844), (1440, 900)):
+        for width, height in ((320, 568), (360, 740), (390, 844), (768, 1024), (1440, 900)):
             page = browser.new_page(viewport={"width": width, "height": height}, offline=True, reduced_motion="reduce")
             errors = []
             external = []
@@ -57,7 +60,13 @@ with sync_playwright() as p:
                     const social = [...f.querySelectorAll('.footer-social-link')];
                     const legal = [...f.querySelectorAll('.footer-legal a')];
                     const boxes = [...social, ...legal].map(a => a.getBoundingClientRect());
+                    const group=f.querySelector('.footer-social').getBoundingClientRect(), copy=f.querySelector('.footer-copy').getBoundingClientRect(), bandBox=band.getBoundingClientRect();
+                    const overlap=(a,b)=>a.left<b.right && b.left<a.right && a.top<b.bottom && b.top<a.bottom;
                     return {
+                        centered: Math.abs(group.left+group.right-document.documentElement.clientWidth)<1,
+                        left: Math.abs(copy.left-bandBox.left)<1 && getComputedStyle(f.querySelector('.footer-copy')).textAlign==='left',
+                        separate: [copy,...boxes].every((a,i,all)=>all.slice(i+1).every(b=>!overlap(a,b))),
+                        noLine: getComputedStyle(f).borderTopWidth==='0px',
                         footers: document.querySelectorAll('footer.site-footer').length,
                         svgs: f.querySelectorAll('svg').length,
                         imgs: f.querySelectorAll('img').length,
@@ -74,6 +83,7 @@ with sync_playwright() as p:
             )
             label = (str(page_path.relative_to(PUBLIC)), width)
             assert data["footers"] == 1 and data["svgs"] == 2 and data["imgs"] == 0 and data["navs"] == 0, (label, data)
+            assert all(data[k] for k in ("centered","left","separate","noLine")), (label,data)
             assert not data["mailto"] and data["copy"] == "\u00a9 2026 Nicola Capasso", (label, data)
             assert data["social"] == ["https://instagram.com/nicolacapassofoto", "https://wa.me/393398563098"], (label, data)
             assert len(data["legal"]) == 3 and data["legalRows"] == 1, (label, data)

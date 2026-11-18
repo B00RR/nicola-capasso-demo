@@ -4,7 +4,7 @@ import hashlib,json,re
 ROOT=Path(__file__).resolve().parents[2]
 PUBLIC=ROOT/'public'
 rows=json.loads((ROOT/'docs/STORIE.json').read_text(encoding='utf-8'))
-expected=[('AMALFI','Amalfi',20,'copertina.jpg'),('AMALFI 2','Amalfi',27,'copertina.jpg'),('LAKE COMO','Lake Como',21,'copertina.jpeg'),('POSITANO','Positano',29,'coperina.jpg'),('SCALA','Scala',12,'copertina.jpg'),('SCALA 2','Scala',18,'copertina.jpg')]
+expected=[('AMALFI','Amalfi',20,'NCF09664_1.jpg'),('AMALFI 2','Amalfi',27,'copertina.jpg'),('LAKE COMO','Lake Como',21,'copertina.jpeg'),('POSITANO','Positano',29,'coperina.jpg'),('SCALA','Scala',12,'copertina.jpg'),('SCALA 2','Scala',18,'copertina.jpg')]
 assert [r['number'] for r in rows]==list(range(1,7))
 photos=[p for r in rows for p in r['photos']]
 assert len(photos)==len({p['path'] for p in photos})==len({p['sha256'] for p in photos})==127
@@ -27,11 +27,12 @@ for en in (False,True):
   for lang,url in [('it',prefix+names[j]),('x-default',prefix+names[j]),('en',('' if en else 'en/')+names[j])]:assert f'hreflang="{lang}" href="{url}"' in s,page
   match=re.search(r'<div class="album">(.*?)</div>',s,re.S);assert match,page
   album=match[1]
+  assert re.search(r'<button type="button" class="photo-button cover-button"[^>]*><img[^>]*src="'+re.escape(prefix+r['cover_path'])+r'"[^>]*></button>',main),page
   paths=re.findall(r'<img[^>]*src="([^"]+)"',album)
   assert prefix+r['cover_path'] not in paths,(page,'cover repeated in album',r['cover_path'])
   assert count==r['count']==len(r['photos']) and album.count('class="photo-button"')==count-1
   label='Enlarge photograph' if en else 'Ingrandisci fotografia'
-  assert re.findall(r'aria-label="([^"]+)"',album)==[f'{label} {i}' for i in range(1,count)],page
+  assert re.findall(r'aria-label="([^"]+)"',album)==[f'{label} {i}' for i in range(2,count+1)],page
   assert paths==[prefix+p['path'] for p in r['photos'] if p['path']!=r['cover_path']],page
  for page in (folder/'index.html',folder/'portfolio.html',PUBLIC/'anteprima-testi'/('en' if en else '')/'index.htm'):
   preview=page.suffix=='.htm'; pic='/nicola-capasso-demo/' if preview else prefix; links=('/nicola-capasso-demo/'+('en/' if en else '')) if preview else ''
@@ -41,5 +42,6 @@ for en in (False,True):
   for name,r in zip(names,rows):
    match=re.search(r'<a\b[^>]*href="'+re.escape(links+name)+r'"[^>]*>.*?</a>',s,re.S);assert match,(page,name)
    block=match[0]
+   assert "object-position:"+r["listing_position"] in block,(page,name)
    assert f'src="{pic+r["cover_path"]}"' in block and f'aria-label="{r["title_it"]}"' in block,(page,name)
 print('PASS: 6 approved IT/EN titles, 127 ordered photographs, exact covers on six indexes, reciprocal language routes and next-story cycle')
