@@ -2,14 +2,14 @@
   "reference_commit": "26628cc89038bed4aa5ce9f2a34690f3dec3c307",
   "purpose": "Preserve approved animation/reveal/hover/404 behavior; ignore only photo filters and fixed .86 base; stories.css baseline updated only for the single-column album without cropping on hover",
   "hashes": {
-    "index.html": "84f4789c6e266e292817716867c5967aa46ba89c940653edf77f3e996dd82b64",
-    "en/index.html": "6cf2339b6854b62e1b8ad6a1bc006dbd7227cfbc5d08822a303886c2f5084a9f",
+    "index.html": "b77a3a8289306bbecd2864dfe15244565f189155ac7d8f634570d184ef1e7f26",
+    "en/index.html": "f9f26775b3b944251dbe31a8d7760c52c83b741a8d23c0d32ed29a70b1c0f8e6",
     "anteprima-testi/index.htm": "f5c75328fd250542de2dbdfc22b69264e83204d7eb3c8483648fefa885ae45cc",
     "anteprima-testi/en/index.htm": "aaa39b1abc83fdffe58b82bf62c157ebb11c38bddb74a5fa09111c2bc4e6536f",
     "404.html": "f4c01f01919f1a51ef49621acb9469c77a02118813b50d80789b6ede68cec200",
     "en/404.html": "f4c01f01919f1a51ef49621acb9469c77a02118813b50d80789b6ede68cec200",
     "styles/portfolio.css": "f9f8c65c3100e5d9e3970b7daa33b64b1de08c16366c07e2484f4e125f343c0e",
-    "styles/stories.css": "3ac8ce463f60456f55abeffef04a5fec5f35f1ed04983d52c1fa6ba26a13b1ca",
-    "stili-completi.css": "b45b4d75bfa0a004f2e123e879b49050911fb02a0d42bdafba3c4b8de5e10973"
+    "styles/stories.css": "0995e1e675a05757999d47f07fbc5556bd947c0500c1450d5793f10ff82f37ab",
+    "stili-completi.css": "2c670d7af842d2f7ea622738a1a81efa1ac2588841c50f050a3ea17246eac916"
   }
 }

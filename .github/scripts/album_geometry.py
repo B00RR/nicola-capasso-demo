@@ -56,19 +56,35 @@ def check_albums(browser, base, output):
                         issues.append('aspect ratio')
                     if issues:
                         failures.append([route, width, n+1, issues])
-                opener = album.locator('.photo-button').first
-                opener.click()
+                cover_box = cover.bounding_box()
+                cw,ch = cover.evaluate('i => [i.naturalWidth, i.naturalHeight]')
+                assert abs(cover_box['height'] - cover_box['width'] * ch / cw) < 1, route
+                assert abs(2*cover_box['x'] + cover_box['width'] - width) < 1, route
+                opener = page.locator('.cover-button')
+                act = lambda button: button.tap() if width == 390 else button.click()
+                act(opener)
                 viewer = page.locator('dialog[open] img')
+                assert viewer.evaluate('i => i.src') == urljoin(base, story['cover_path']) and viewer.get_attribute('alt') == cover.get_attribute('alt'), route
+                counter = page.locator('.lightbox-count')
+                assert counter.inner_text() == f'1 / {story["count"]}', route
                 for index, photo in enumerate(photos):
-                    if index:
+                    if index == 0:
+                        act(page.locator('dialog .next'))
+                    else:
                         page.keyboard.press('ArrowRight')
-                    number = index + 1
+                    number = index + 2
                     alt = story['title_it'] + (' — Wedding photograph ' if prefix else ' — Fotografia del matrimonio ') + str(number)
                     assert viewer.evaluate('async i => {await i.decode(); return [i.src, i.alt, getComputedStyle(i).objectFit]}') == [photo['src'], alt, 'contain'], route
-                    assert page.locator('.lightbox-count').inner_text() == f'{number} / {len(photos)}', route
+                    assert page.locator('.lightbox-count').inner_text() == f'{number} / {story["count"]}', route
                 page.keyboard.press('Escape')
                 page.wait_for_function("!document.querySelector('dialog').open && document.body.style.overflow === ''")
                 assert opener.evaluate('e => e === document.activeElement'), route
+                internal = album.locator('.photo-button').first
+                act(internal)
+                assert viewer.evaluate('i => i.src') == photos[0]['src'] and counter.inner_text() == f'2 / {story["count"]}', route
+                act(page.locator('.lightbox-close'))
+                page.wait_for_function("!document.querySelector('dialog').open && document.body.style.overflow === ''")
+                assert internal.evaluate('b => b === document.activeElement'), route
                 cases.append(dict(route=route, width=width, viewer=True, **data))
                 page.close()
         context.close()

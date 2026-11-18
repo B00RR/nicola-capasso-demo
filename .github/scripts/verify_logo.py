@@ -34,4 +34,29 @@ for prefix in ['','en/']:
 for page in PUBLIC.rglob('*.html'):
     if page.relative_to(PUBLIC).as_posix() not in ['index.html','en/index.html']:assert 'hero-logo' not in page.read_text(encoding='utf-8'),page
 assert not (PUBLIC/'assets/branding/nicola-capasso-logo.png').exists()
-print('PASS: approved signature plus original line, versioned accessible IT/EN SVG, no raster/font/external resource; existing geometry and photo retained')
+# The transparent SVG box alone cannot tell whether the visible signature is wider.
+import base64,os
+from playwright.sync_api import sync_playwright
+with sync_playwright() as pw:
+    browser=pw.chromium.launch(**({'executable_path':os.environ['BROWSER_PATH']} if os.environ.get('BROWSER_PATH') else {}))
+    page=browser.new_page()
+    ink=page.evaluate('''async src => {
+      const i=new Image();i.src=src;await i.decode();const c=document.createElement('canvas');
+      c.width=i.width;c.height=i.height;const ctx=c.getContext('2d');ctx.drawImage(i,0,0);
+      const px=ctx.getImageData(0,0,c.width,c.height).data;let lo=c.width,hi=-1;
+      for(let n=3;n<px.length;n+=4)if(px[n]>32){const x=(n>>2)%c.width;lo=Math.min(lo,x);hi=Math.max(hi,x)}
+      return (hi-lo+1)/c.width;
+    }''','data:image/svg+xml;base64,'+base64.b64encode(raw).decode())
+    # Measured before the revision: mobile signature width or desktop photo height.
+    for lang in ('','en'):
+        for w,h,baseline in [(320,568,243.19),(360,740,273.59),(390,844,296.39),(768,1024,680),(1280,600,380),(1366,768,548),(1440,900,680)]:
+            page.set_viewport_size(dict(width=w,height=h));page.goto((PUBLIC/lang/'index.html').as_uri())
+            sig,car=page.evaluate('''async () => Promise.all(['.hero-logo','.portrait'].map(async s=>{
+              const i=document.querySelector(s);await i.decode();const r=i.getBoundingClientRect();
+              return [r.x,r.y,r.width,r.height,i.naturalWidth/i.naturalHeight];}))''')
+            visible=min(sig[2],sig[3]*sig[4])*ink
+            assert sig[1]>=0 and sig[1]+sig[3]<=car[1] and abs(car[2]-car[3]*car[4])<1,(lang,w,sig,car)
+            assert all(abs(2*r[0]+r[2]-w)<1 for r in (sig,car)) and 1.01<visible/car[2]<1.10,(lang,w,visible,car)
+            assert abs((visible if w<=700 else car[3])-baseline)<1,(lang,w,baseline)
+    browser.close()
+print('PASS: approved vector signature and car proportions on 14 IT/EN viewports; mobile ink and desktop photograph retain baseline sizes')

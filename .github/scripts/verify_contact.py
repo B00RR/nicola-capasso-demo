@@ -7,6 +7,10 @@ with sync_playwright() as p:
  options={'headless':True}
  if os.environ.get('BROWSER_PATH'):options['executable_path']=os.environ['BROWSER_PATH']
  b=p.chromium.launch(**options)
+ for lang,note in [('', 'I dati che inviate servono solo a rispondere alla vostra richiesta: nessuna newsletter, nessun consenso marketing. Informativa privacy: leggi l’informativa'), ('en','The data you send is used only to answer your enquiry: no newsletter, no marketing consent. Privacy notice: read the notice')]:
+  page=b.new_page();page.goto((PUBLIC/lang/'contatti.html').as_uri());paragraph=page.locator('.contatti-nota')
+  assert paragraph.inner_text()==note and paragraph.locator('a').get_attribute('href')=='privacy.html'
+  paragraph.locator('a').click();assert page.url==(PUBLIC/lang/'privacy.html').as_uri();page.close()
  for w,h in [(320,800),(390,844),(430,932),(844,390),(1440,900)]:
   page=b.new_page(viewport={'width':w,'height':h},offline=True)
   page.goto((PUBLIC/'contatti.html').as_uri());page.evaluate('document.fonts.ready')
