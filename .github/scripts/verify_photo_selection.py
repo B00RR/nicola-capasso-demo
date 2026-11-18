@@ -14,8 +14,8 @@ def imgs(text):
 manifest=ROOT/'docs/FOTO-DEFINITIVE.json'
 assert manifest.is_file(),'Missing approved definitive-photo manifest'
 d=json.loads(manifest.read_text(encoding='utf-8'))
-assert len(d['stories'])==10
-assert sum(len(s['photos']) for s in d['stories'])==187
+assert len(d['stories'])==6
+assert sum(len(s['photos']) for s in d['stories'])==127
 assert len(d['animation'])==12
 branding=json.loads((ROOT/'docs/LOGO-HERO.json').read_text(encoding='utf-8'))
 assert sha(PUBLIC/branding['path'])==branding['sha256']
@@ -50,4 +50,4 @@ for page in list(PUBLIC.rglob('*.html'))+list(PUBLIC.rglob('*.htm')):
   target=(PUBLIC/ref.removeprefix('/nicola-capasso-demo/')) if ref.startswith('/nicola-capasso-demo/') else (page.parent/ref).resolve()
   assert target.is_file(),(page,ref)
   assert target.relative_to(PUBLIC).as_posix() in allowed,(page,ref)
-print('PASS: exact 10 galleries/187 ordered photos, 10 covers, 12 original animation photos, About portrait, complete photo allowlist and bilingual references')
+print('PASS: exact 6 galleries/127 ordered photos, 6 covers, 12 original animation photos, About portrait, complete photo allowlist and bilingual references')

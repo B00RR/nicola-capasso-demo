@@ -28,9 +28,9 @@ def check(ok,label,case):
 def opacity(page):return page.locator('.lightbox-close').evaluate('e=>Number(getComputedStyle(e).opacity)')
 try:
     with sync_playwright() as p:
-        browser=p.chromium.launch(**({'channel':'msedge'} if os.name=='nt' else {}))
+        browser=p.chromium.launch(**({'executable_path':os.environ['BROWSER_PATH']} if os.environ.get('BROWSER_PATH') else {'channel':'msedge'} if os.name=='nt' else {}))
         try:
-            for case,route,mobile,width,height in [('touch','storia-01.html',True,390,844),('desktop','storia-01.html',False,1440,900),('english','en/storia-10.html',True,390,844)]:
+            for case,route,mobile,width,height in [('touch','storia-01.html',True,390,844),('desktop','storia-01.html',False,1440,900),('english','en/storia-06.html',True,390,844)]:
                 context=browser.new_context(viewport={'width':width,'height':height},has_touch=mobile,is_mobile=mobile)
                 page=context.new_page()
                 page.on('pageerror',lambda error:errors.append(str(error)))
