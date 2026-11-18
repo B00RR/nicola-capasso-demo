@@ -16,6 +16,8 @@ def check_albums(browser, base, output):
             for story in stories:
                 route = f'{prefix}storia-{story["number"]:02}.html'
                 page = context.new_page()
+                page.on('requestfailed', lambda r: print('Request failed:', r.url, r.failure, flush=True))
+                page.on('response', lambda r: print('HTTP', r.status, r.url, flush=True) if r.status >= 400 else None)
                 assert page.goto(urljoin(base, route)).ok, route
                 cover = page.locator('img.story-cover')
                 assert cover.count() == 1 and cover.is_visible(), route
