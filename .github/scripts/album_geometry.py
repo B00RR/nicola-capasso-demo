@@ -61,6 +61,9 @@ def check_albums(browser, base, output):
                 assert abs(cover_box['height'] - cover_box['width'] * ch / cw) < 1, route
                 assert abs(2*cover_box['x'] + cover_box['width'] - width) < 1, route
                 opener = page.locator('.cover-button')
+                if width == 1440:
+                    for box in (cover_box, opener.bounding_box()):
+                        assert abs(box['width'] - data['album']['width']) < 1, (route, 'desktop cover width', box['width'], data['album']['width'])
                 act = lambda button: button.tap() if width == 390 else button.click()
                 act(opener)
                 viewer = page.locator('dialog[open] img')
