@@ -35,6 +35,10 @@ jobs:
       - run: python .github/scripts/verify_viewer.py
       - run: python .github/scripts/verify_about_cta.py
       - run: python .github/scripts/verify_audit_fixes.py
+      - name: Add isolated photo comparison and test on-demand loading
+        run: |
+          cp -r preview/prova-qualita public/prova-qualita
+          python .github/scripts/verify_quality_preview.py
       - if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
