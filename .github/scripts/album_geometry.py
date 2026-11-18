@@ -43,10 +43,9 @@ def check_albums(browser, base, output):
                     box, image = photo['button'], photo['image']
                     nw, nh = photo['natural']
                     issues = []
-                    if width == 390:
-                        previous = photos[n-1]['image']['bottom'] if n else cover.evaluate('i => i.getBoundingClientRect().bottom')
-                        if abs(image['top'] - previous - 14) > 1:
-                            issues.append('mobile photo spacing')
+                    previous = photos[n-1]['image']['bottom'] if n else cover.evaluate('i => i.getBoundingClientRect().bottom')
+                    if abs(image['top'] - previous - (14 if width == 390 else 30)) > 1:
+                        issues.append('photo spacing')
                     if n and box['top'] < photos[n-1]['button']['bottom'] - 1:
                         issues.append('overlap')
                     if any(abs(box[k] - data['album'][k]) > 1 for k in ('left', 'right')):
