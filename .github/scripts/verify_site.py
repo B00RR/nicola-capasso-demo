@@ -34,7 +34,7 @@ for page_path in PAGES:
         assert f'<link rel="stylesheet" href="{prefix}mobile.css">' in page_html
         assert f'<link rel="stylesheet" href="{prefix}azioni.css{"?v=cta3" if page_path.name == "index.html" else ""}">' in page_html
     assert "../../assets/" not in page_html
-assert len(PAGES) == 34, len(PAGES)
+assert len(PAGES) == 26, len(PAGES)
 assert "../assets/" not in html
 assert html.count('class="scene-card"') == 12
 # Verifica le foto selezionate e i punti focali IT/EN senza alterare animazioni.
@@ -48,7 +48,7 @@ for rel,prefix in [("index.html",""),("en/index.html","../")]:
         assert 'src="'+prefix+photo["path"]+'"' in tag
         assert 'object-position:'+photo["focal_desktop"] in tag
 
-assert html.count('class="project reveal"') == 10
+assert html.count('class="project reveal"') == 6
 assert "Storie, non pose." not in html
 assert "Clicca una foto e scopri la storia" in html
 assert "Il vostro giorno, attraverso i miei scatti." in html
@@ -83,7 +83,7 @@ for removed in (
 
 assets = {ref.split('?')[0] for ref in re.findall(r'(?:src|href)="(assets/[^\"]+)"', html)}
 assets.update({"assets/fonts/italiana-regular.ttf", "assets/fonts/space-grotesk.ttf"})
-assert len(assets) == 23, f"Expected 23 unique local font/loader/photo/logo assets, found {len(assets)}"
+assert len(assets) == 24, f"Expected 24 unique local font/loader/photo/logo assets, found {len(assets)}"
 for license_file in ("italiana-OFL.txt", "space-grotesk-OFL.txt"):
     assert (PUBLIC / "assets/fonts" / license_file).is_file()
 for asset in assets:
@@ -183,7 +183,7 @@ with sync_playwright() as p:
         frames = page.locator(".project .frame").evaluate_all(
             "es => es.map(e => { const r=e.getBoundingClientRect(); return {x:r.x,y:r.y,w:r.width,h:r.height,ratio:r.width/r.height}; })"
         )
-        assert len(frames) == 10
+        assert len(frames) == 6
         assert all(abs(frame["ratio"] - 1) < .01 for frame in frames), (width, frames)
         if width > 700:
             for i in range(0, len(frames), 2):
@@ -244,4 +244,4 @@ with sync_playwright() as p:
 
 subprocess.run([sys.executable, str(ROOT / ".github/scripts/verify_public_pages.py")], check=True)
 subprocess.run([sys.executable, str(ROOT / ".github/scripts/verify_404.py")], check=True)
-print(f"PASS: {len(assets)} unique assets; two loaded local fonts; normalized name typography at 7 viewports; title/UI/editorial-link weights; continuous photo/text handoff; cue spacing and arrow exit/reverse; 12 animation photos; 10 square gallery crops; reduced motion; Pages subpath HTTP; JS syntax")
+print(f"PASS: {len(assets)} unique assets; two loaded local fonts; normalized name typography at {len(viewports)} viewports; title/UI/editorial-link weights; continuous photo/text handoff; cue spacing and arrow exit/reverse; 12 animation photos; 6 square gallery crops; reduced motion; Pages subpath HTTP; JS syntax")

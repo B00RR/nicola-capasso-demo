@@ -1,4 +1,8 @@
-## Logo con linea approvato — applicazione alla demo GitHub
+## Demo statica: sei storie IT/EN — 18/11/2026
+
+Amalfi (20), Amalfi (27), Lake Como (21), Positano (29), Scala (12), Scala (18). I titoli omonimi aprono matrimoni distinti. Ogni album include la copertina scelta nella propria cartella; i nomi sorgente e l’ordine sono in `STORIE.json`. Nessun testo narrativo nelle storie. Animazione, foto condivise e WordPress non fanno parte della sostituzione.
+
+## Storico — Logo con linea approvato — applicazione alla demo GitHub
 
 Lorenzo approva la variante firma+sola linea e autorizza pubblicazione GitHub e aggiornamento delle brochure compilabili IT/EN. Sostituito il solo asset SVG condiviso, con due riferimenti Home versionati?v=firma-linea1: stessi11path firma e dimensioni, aggiunto il path della linea, FOTO assente. CSS/JS, foto, animazioni, testi, crop, layout e altri288file pubblici invariati; manifest e guardia logo allineati. I PDF restano fuori dal repository, aggiornati nelle copie compilabili senza rigenerare da HTML.
 

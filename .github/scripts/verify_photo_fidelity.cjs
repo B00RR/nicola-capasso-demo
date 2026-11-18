@@ -4,7 +4,7 @@ const {chromium}=require(process.argv[2]||'playwright');
 const ROOT=path.resolve(__dirname,'../..'),PUBLIC=path.join(ROOT,'public'),OUT=path.resolve(process.argv[3]||path.join(process.env.TMPDIR||process.env.RUNNER_TEMP||ROOT,'photo-fidelity-proof'));
 fs.mkdirSync(OUT,{recursive:true});const log=path.join(OUT,'measurements.jsonl');fs.writeFileSync(log,'');
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
-const pages=walk(PUBLIC).filter(p=>/\.html?$/.test(p)).map(p=>path.relative(PUBLIC,p).split(path.sep).join('/')).sort();assert.equal(pages.length,36);
+const pages=walk(PUBLIC).filter(p=>/\.html?$/.test(p)).map(p=>path.relative(PUBLIC,p).split(path.sep).join('/')).sort();assert.equal(pages.length,28);
 function motionCode(file,text){
   if(/\.html?$/.test(file))text=[...text.matchAll(/<(style|script)\b[^>]*>([\s\S]*?)<\/\1>/g)].map(m=>m[2]).join('\n');
   return text.replace(/(?<![\w-])filter:[^;{}]+;?/g,'').replace(/opacity:\.86(?=;|\})/g,'opacity:1')
@@ -59,7 +59,7 @@ async function inspect(page,file,viewport,state){
 
 const r={page:file,viewport,state,photos:result};rows.push(r);fs.appendFileSync(log,JSON.stringify(r)+'\n');for(const i of result){slots.add(file+'|'+viewport+'|'+i.index+'|'+i.src);for(const issue of i.bad)failures.push({page:file,viewport,state,src:i.src,issue});}return result;}
 (async()=>{await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const local='http://127.0.0.1:'+server.address().port+'/nicola-capasso-demo/',remote=process.argv[4],base=remote||local;
-try{browser=await chromium.launch({headless:true,...(process.platform==='win32'?{channel:'msedge'}:{})});
+try{browser=await chromium.launch({headless:true,...(process.env.BROWSER_PATH?{executablePath:process.env.BROWSER_PATH}:process.platform==='win32'?{channel:'msedge'}:{})});
 for(const [width,height] of [[1440,900],[390,844]]){const context=await browser.newContext({viewport:{width,height},locale:'it-IT',isMobile:width<700,hasTouch:width<700});
 for(const file of pages){const p=await context.newPage();p.on('pageerror',e=>failures.push({page:file,viewport:width,issue:'JS '+e.message}));const url=new URL(file,base);if(remote)url.searchParams.set('audit','photo-fidelity');await p.goto(url.href,{waitUntil:'domcontentloaded'});await ready(p,file,width);visited.add(file+'|'+width);await inspect(p,file,width,'base');
 const cdp=await context.newCDPSession(p);await cdp.send('DOM.enable');await cdp.send('CSS.enable');const dom=await cdp.send('DOM.getDocument');const {nodeIds}=await cdp.send('DOM.querySelectorAll',{nodeId:dom.root.nodeId,selector:'img:not(.hero-logo),*:has(img:not(.hero-logo))'});for(let n=0;n<nodeIds.length;n+=50)await Promise.all(nodeIds.slice(n,n+50).map(nodeId=>cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:['hover']})));await p.waitForTimeout(100);await inspect(p,file,width,'hover');await cdp.detach();

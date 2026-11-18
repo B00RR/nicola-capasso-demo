@@ -6,7 +6,8 @@ properties=['fontFamily','fontSize','fontWeight','lineHeight','borderTopWidth','
 expression='e=>Object.fromEntries('+json.dumps(properties)+'.map(k=>[k,getComputedStyle(e)[k]]))'
 with sync_playwright() as pw:
  options={}
- if sys.platform=='win32':options['executable_path']='C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
+ if os.environ.get('BROWSER_PATH'):options['executable_path']=os.environ['BROWSER_PATH']
+ elif sys.platform=='win32':options['executable_path']='C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
  browser=pw.chromium.launch(**options)
  for prefix in ['', 'en/']:
   for width in [390,700,701,1440]:

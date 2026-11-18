@@ -1,1060 +1,708 @@
 [
   {
     "number": 1,
-    "folder": "matrimonio-01",
-    "title_it": "Promesse senza tempo",
-    "title_en": "Timeless Vows",
+    "folder": "AMALFI",
+    "title_it": "Amalfi",
+    "title_en": "Amalfi",
     "count": 20,
-    "cover": "16.jpg",
-    "cover_path": "assets/stories/matrimonio-01/16.jpg",
-    "cover_position": "50% 48%",
-    "photos": [
-      {
-        "path": "assets/stories/matrimonio-01/01.jpg",
-        "sha256": "8e59e767b69ba642554c65cb0c133c7fceb7d83a2ac2094682ee4ed8fd0f29c5",
-        "source": "MATRIMONIO 1/1 (1).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/02.jpg",
-        "sha256": "f06fe3ef0bc83510691a9473359edce854b40f36ee376d8cd75067cc4cafaffe",
-        "source": "MATRIMONIO 1/1 (2).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/03.jpg",
-        "sha256": "29d57ba2c2f8fce8f5bdefc56dd1022c52697c4d5a39ee48eb6013d0fc623ddd",
-        "source": "MATRIMONIO 1/1 (3).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/04.jpg",
-        "sha256": "c171f188369c14ee8e9355fb82f958e7419d9daef4b798ca021862b47571ebe9",
-        "source": "MATRIMONIO 1/1 (4).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/05.jpg",
-        "sha256": "2b6eacf661d3589cf72ade018db36b225763ec5d09419b172de2ed3e6b8c738b",
-        "source": "MATRIMONIO 1/1 (5).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/06.jpg",
-        "sha256": "5f865e31dfd84cfa233b386e716829e2fa82f68d17d238377e8e8e1b7001c635",
-        "source": "MATRIMONIO 1/1 (6).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/07.jpg",
-        "sha256": "f28634459b78ca708f22dfb9522f8d2e78b7530957c89848077d5c0ff453bc76",
-        "source": "MATRIMONIO 1/1 (7).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/08.jpg",
-        "sha256": "28490ca53f5b52e08c993dab9c6b1dee59e77cff88ebfd45b07623b13ad45ad1",
-        "source": "MATRIMONIO 1/1 (8).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/09.jpg",
-        "sha256": "052d6f06307686ed55922914520c75a712f52028bf42d695927d3ca511319876",
-        "source": "MATRIMONIO 1/1 (9).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/10.jpg",
-        "sha256": "a9067f879a12e521d1b6fa54f91ab28ecb5b954ee1bc6678b3518f9ef51c1e25",
-        "source": "MATRIMONIO 1/1 (10).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/11.jpg",
-        "sha256": "c5dceb50933ecfcdf3201ed110eb83245c620550e8990cd30084af088628d44c",
-        "source": "MATRIMONIO 1/1 (11).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/12.jpg",
-        "sha256": "8aa5508f8fa350217499b6a0c6cb76dda6511b9b295be2fc710b9162bbdcb923",
-        "source": "MATRIMONIO 1/1 (12).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/13.jpg",
-        "sha256": "572137c51027bbae8cf11aed6b2588142f66764096f4d9dd218c97ac96ab1d9a",
-        "source": "MATRIMONIO 1/1 (13).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/14.jpg",
-        "sha256": "1a04f464155e7f4ca50d3ac39629a97d248ee69091c61269f23568f716dcff59",
-        "source": "MATRIMONIO 1/1 (14).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/15.jpg",
-        "sha256": "b4ca739d6f3cc590db4885e1cdb0adaac4370f07d2f003832ea171378b233e8d",
-        "source": "MATRIMONIO 1/1 (15).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/16.jpg",
-        "sha256": "5509735816304cfee336a8adfe1427e504ed6b8127d01bdba91a4ad1c4895302",
-        "source": "MATRIMONIO 1/1 (16).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/17.jpg",
-        "sha256": "93f0bb9e5543d85efab39434735cfdf629c34d14319dbbaabd3a035699fc39b7",
-        "source": "MATRIMONIO 1/1 (17).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/18.jpg",
-        "sha256": "985a292e5ad75098ba60979ce4e040c7d0e16d126adf336cd8e395381ddc37d5",
-        "source": "MATRIMONIO 1/1 (18).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/19.jpg",
-        "sha256": "bd47c90a7bc1e746c6a4c27bad48f3e1a815e2e7857a240fd6b584e652f36ca2",
-        "source": "MATRIMONIO 1/1 (19).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-01/20.jpg",
-        "sha256": "1480c9815f0f8335382ad2c5cbd1fc62a329d6b7554ac99fefeff54cef1f598e",
-        "source": "MATRIMONIO 1/1 (20).jpg"
-      }
-    ],
-    "cover_source": "MATRIMONIO 1/1 (16).jpg",
-    "cover_selection_note": "Selezione esplicita Lorenzo: foto16/20 mostrata nello screenshot; riusare il JPEG dell’album, mai lo screenshot.",
-    "original_cover_source": "MATRIMONIO 1/foto copertina/foto copertina.jpg"
-  },
-  {
-    "number": 2,
-    "folder": "matrimonio-02",
-    "title_it": "Intimità sul Mediterraneo",
-    "title_en": "Mediterranean Intimacy",
-    "count": 18,
-    "cover": "15.jpg",
-    "cover_path": "assets/stories/matrimonio-02/15.jpg",
+    "cover": "07.jpg",
+    "cover_path": "assets/stories/amalfi/07.jpg",
     "cover_position": "50% 50%",
     "photos": [
       {
-        "path": "assets/stories/matrimonio-02/01.jpg",
-        "sha256": "ec73eb1ab715d49bcea1995cd2c6bd547d9a79e256bcf0231f146adf061eb3b3",
-        "source": "MATRIMONIO 2/1 (1).jpg"
+        "path": "assets/stories/amalfi/01.jpg",
+        "sha256": "6f916eee70992d3f0adf0df57b9e7b004385b7972006419d5fb0dca65941161e",
+        "source": "AMALFI/1_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/02.jpg",
-        "sha256": "ad8e268db9a183705e35c13358e97f4a093c088a2a4525e75973d16861976de8",
-        "source": "MATRIMONIO 2/1 (2).JPG"
+        "path": "assets/stories/amalfi/02.jpg",
+        "sha256": "b250570a232f8ad78e3e772669704d61ecb7b1b5b7db9d08573b5b0767a48116",
+        "source": "AMALFI/3_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/03.jpg",
-        "sha256": "364936fdaecf44f3c504074a5dab0eb070f7a0361de4b525cd3187a45436c4e3",
-        "source": "MATRIMONIO 2/1 (3).JPG"
+        "path": "assets/stories/amalfi/03.jpg",
+        "sha256": "505d22ad179b3ac3b8325ae389269c241a456d5951c5aa1ff0e3fafcb5b67217",
+        "source": "AMALFI/4_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/04.jpg",
-        "sha256": "4125cecd70434e9cd70def39aca816a00236022bd73f5feb0b29f0244d44425d",
-        "source": "MATRIMONIO 2/1 (4).JPG"
+        "path": "assets/stories/amalfi/04.jpg",
+        "sha256": "86058482a7f0689fa94b1575de009b8e8acb43d27cf8ef8a9b5b5a14658455f8",
+        "source": "AMALFI/5_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/05.jpg",
-        "sha256": "6d4a2bd99795a16e0b85b007cd47f76b858504b9e5ca2252fe617e59b78dcaea",
-        "source": "MATRIMONIO 2/1 (5).JPG"
+        "path": "assets/stories/amalfi/05.jpg",
+        "sha256": "d9e44a33227d67afb7f34d4e7adf3587a5628a54a988cd29d1a8e50136cc3b22",
+        "source": "AMALFI/6_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/06.jpg",
-        "sha256": "b7ee8b66cba4ddb5275532edb1a96c1dcd719f5f40eebe0b7f3b5c84145f5ea7",
-        "source": "MATRIMONIO 2/1 (6).JPG"
+        "path": "assets/stories/amalfi/06.jpg",
+        "sha256": "e5ef1420911a72f112ca124cd08b2482405ace29f7b3dcec3e16fd0c51136113",
+        "source": "AMALFI/7_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/07.jpg",
-        "sha256": "93a7e79ac19516ce5f3098fe51c173d84c3f808567e2ed36d1cb75158cba7e75",
-        "source": "MATRIMONIO 2/1 (7).JPG"
+        "path": "assets/stories/amalfi/07.jpg",
+        "sha256": "29c2eae93d4d634cbdaaa2bb07febbefd70134e75035ecc47886db1a916cd21f",
+        "source": "AMALFI/copertina.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/08.jpg",
-        "sha256": "15c03464daf624e40522e9d8e6c9d0f3f914f4e6879736bec0a62def28f6cf04",
-        "source": "MATRIMONIO 2/1 (8).JPG"
+        "path": "assets/stories/amalfi/08.jpg",
+        "sha256": "2fd919aac2a80046a74d438570cca39e0ac43ff570d726227380e6841fbb612f",
+        "source": "AMALFI/DJI_0048_1_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/09.jpg",
-        "sha256": "2431c42a766d08357af8daeec5c5e35d61ca7caa2e62d257d2aad1b1883bfb3c",
-        "source": "MATRIMONIO 2/1 (9).JPG"
+        "path": "assets/stories/amalfi/09.jpg",
+        "sha256": "8163654cd8312b8e0c3134820cf7fcb0b3e7d4af62425e722d3783f52db7f124",
+        "source": "AMALFI/NCF00094_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/10.jpg",
-        "sha256": "a51f13c32c98442e95ea3781b28415d109a46c81097fa258770e2ddf01822fae",
-        "source": "MATRIMONIO 2/1 (10).JPG"
+        "path": "assets/stories/amalfi/10.jpg",
+        "sha256": "4772819d6b41f1f6b8a7d8c55cd255289adee9e51371f36615997b2a10ab7464",
+        "source": "AMALFI/NCF00159_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/11.jpg",
-        "sha256": "ae204a8c1ff0895a83ffa51921be5fc259296b0a54766332acf24dcabb09a17d",
-        "source": "MATRIMONIO 2/1 (11).JPG"
+        "path": "assets/stories/amalfi/11.jpg",
+        "sha256": "e66e015f005f5840a3893be5f7af11184a1dfc4946c4b3db76ffa7ea6adea13d",
+        "source": "AMALFI/NCF00395_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/12.jpg",
-        "sha256": "83f109a76e98ec9945556ea2cdb7265359c0e073f43d0518ffb624170be3f458",
-        "source": "MATRIMONIO 2/1 (12).JPG"
+        "path": "assets/stories/amalfi/12.jpg",
+        "sha256": "0230a55a90318c1b2d87341dbc1e93c628283ece5f28dd9f66e45698122441e1",
+        "source": "AMALFI/NCF00419_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/13.jpg",
-        "sha256": "edeb3fa18edd8a30c334f6b1109821256973c76cc41469254c789e0f0baa4f5a",
-        "source": "MATRIMONIO 2/1 (13).JPG"
+        "path": "assets/stories/amalfi/13.jpg",
+        "sha256": "963b78286ab9cdb4ce8f474860ff0e7c851f56192bbc500c07d96f1c66b61020",
+        "source": "AMALFI/NCF09057_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/14.jpg",
-        "sha256": "8d0da07d6a5cd27109f5dc499747b87deff45b356fd7896089ce0dfa9f5115f8",
-        "source": "MATRIMONIO 2/1 (14).jpg"
+        "path": "assets/stories/amalfi/14.jpg",
+        "sha256": "bc0ae51f29b7ddfe4b0908f3344e384c0c54de86ece66d9a3ba96a6c39311c30",
+        "source": "AMALFI/NCF09323_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/15.jpg",
-        "sha256": "75ead4fd6c5f26f868f8b8a7859fe0dcb1435db008873b8a19d665e6cb101c28",
-        "source": "MATRIMONIO 2/1 (15).jpg"
+        "path": "assets/stories/amalfi/15.jpg",
+        "sha256": "cc2f14539fe042defe1457771908023f23a7a7fee4150ac94c7fe309232ff433",
+        "source": "AMALFI/NCF09517_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/16.jpg",
-        "sha256": "d14f7fea532ff9552385c9f234bea7d4d590a93034262abc50a9b480bcbc7356",
-        "source": "MATRIMONIO 2/1 (16).jpg"
+        "path": "assets/stories/amalfi/16.jpg",
+        "sha256": "3ca311b830f5a24a8b78baf6222cc9fd63b56ded45f0e15580669b6fccf010e0",
+        "source": "AMALFI/NCF09590_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/17.jpg",
-        "sha256": "38709546cd3191b29225389809e8f2c2685bb09ba9e1e1525595768d77851912",
-        "source": "MATRIMONIO 2/1 (17).jpg"
+        "path": "assets/stories/amalfi/17.jpg",
+        "sha256": "3f9d0b972c75c7e3a696de7863cb33034a4e46ad2afb14f5e43900aba8ea5254",
+        "source": "AMALFI/NCF09664_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-02/18.jpg",
-        "sha256": "f540ce61b6e605bed2e754f361a9d1a8a85d0eda80123fe5636bf9d43884c93d",
-        "source": "MATRIMONIO 2/1 (18).jpg"
+        "path": "assets/stories/amalfi/18.jpg",
+        "sha256": "ba6edbffbd6cc05877baa9af4c4087115a1c6c90007b98381d878295233d37a0",
+        "source": "AMALFI/NCF09669_1.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi/19.jpg",
+        "sha256": "5ff731ec78593da61fc038e353ddf25e6cdd874218c3b0d018e6905fa7a3b537",
+        "source": "AMALFI/PIE00145_1.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi/20.jpg",
+        "sha256": "d7fa6e20ac2636719f0d8a78634fee5a2c5b26020613cd05136fa8a88e6a6a52",
+        "source": "AMALFI/PIE00746_1_1.jpg"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "folder": "AMALFI 2",
+    "title_it": "Amalfi",
+    "title_en": "Amalfi",
+    "count": 27,
+    "cover": "02.jpg",
+    "cover_path": "assets/stories/amalfi-2/02.jpg",
+    "cover_position": "50% 50%",
+    "photos": [
+      {
+        "path": "assets/stories/amalfi-2/01.jpg",
+        "sha256": "355224f540ce933fe48060af4da698b73e125d6acbccff77cf56974395b6053c",
+        "source": "AMALFI 2/1.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/02.jpg",
+        "sha256": "24ea4bcc7bb7352dcf784fff4d227aed8095c07cd1dbe0c883ba6afe9becf8b6",
+        "source": "AMALFI 2/copertina.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/03.jpg",
+        "sha256": "e9dc83990450d365d92e68653bb717e8fe13db50cb85b4f8b79236259d950776",
+        "source": "AMALFI 2/DSC05427.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/04.jpg",
+        "sha256": "5c90ba6f69db1ec295661100461e0355f3f8c79b9afd80ada43c53b644d4811f",
+        "source": "AMALFI 2/NCF03096.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/05.jpg",
+        "sha256": "b401f70b8ea098073f441f6e1a0075881fc6a9f6fa35fd755be93b64ba7b635a",
+        "source": "AMALFI 2/NCF03592_1.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/06.jpg",
+        "sha256": "723e372ee14831edd918bc52709ac7dbddcf72a49ebbdb5ada14406eda9dad05",
+        "source": "AMALFI 2/NCF03660.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/07.jpg",
+        "sha256": "b9a1d46390c17065eea3f455b7aeec8a27affcad78a0f4f08faa1f06e384f54e",
+        "source": "AMALFI 2/NCF06212.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/08.jpg",
+        "sha256": "29403f3b56050e7c96c4ba26877561f1ab52a5e6f68ccaf361881d9b51f1f3de",
+        "source": "AMALFI 2/NCF06235.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/09.jpg",
+        "sha256": "8b9f7f6a7da6ec13e7bfe46aba2c1e09f786ebcb496ed17e1e18374af8bc55d1",
+        "source": "AMALFI 2/NCF06329.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/10.jpg",
+        "sha256": "a6e1b8db2772ffa0fd1bd85a2c64583a6c65f63584c24c7dbe0c02973e59ffc8",
+        "source": "AMALFI 2/NCF06350.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/11.jpg",
+        "sha256": "7dc978a77d0413171eae02528ae8d06205d71928fee19e70f545d538bea39c3c",
+        "source": "AMALFI 2/NCF06829.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/12.jpg",
+        "sha256": "263d4769b82e8e3950063465ac33abfd32fbfcfc9c2036e23aa0d77e6333d801",
+        "source": "AMALFI 2/NCF06861.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/13.jpg",
+        "sha256": "4855b5cb576e50b7dcef4a94817dfbad1226218610426f1e61847bf345123f45",
+        "source": "AMALFI 2/NCF07044.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/14.jpg",
+        "sha256": "434ac33ac06519c2f5187ce74e58c0b014973c01d665d7499dadc20f814b0f84",
+        "source": "AMALFI 2/NCF07627.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/15.jpg",
+        "sha256": "2779e7efc39c1b4fbdafedea8ba9ffaeddd4942ad0eee0a4e55d871f7c664e57",
+        "source": "AMALFI 2/NCF07679.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/16.jpg",
+        "sha256": "9707fcd9dbc89b1982d2f00da523e71f8f785495af0fd2f9f7a4d1ce56d02920",
+        "source": "AMALFI 2/NCF07823.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/17.jpg",
+        "sha256": "175af3338138be813deb403a719a48cf34b2866b1a30d6fd643cdf105206b09f",
+        "source": "AMALFI 2/NCF07899.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/18.jpg",
+        "sha256": "74a1bb7504c7ea422fb04cdd584221c6e02ddf0cc60cf0f2d66aa6c093e06b55",
+        "source": "AMALFI 2/NCF08301.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/19.jpg",
+        "sha256": "094c2b2fe969a478dea8daa57845fdb219a1c5274acaa44aae535c9799a9e51a",
+        "source": "AMALFI 2/NCF08506.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/20.jpg",
+        "sha256": "058e7a51999f6af821d08317435250d4c463af726271599fc190b96361975fee",
+        "source": "AMALFI 2/NCF08558.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/21.jpg",
+        "sha256": "4e48e082e6fdd2f28bcaccf56b215f7f6d2f989201547cd9e812c7eac90651ed",
+        "source": "AMALFI 2/NCF08977_1.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/22.jpg",
+        "sha256": "d8001f6e67bd145c48a3fa9f5e594382c1ac630e6879294c0b7d27322cf2d601",
+        "source": "AMALFI 2/NCF09034_1.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/23.jpg",
+        "sha256": "a3e95d05b84a80824605df503e647ea594910845da736b64eff1bf68bb48883b",
+        "source": "AMALFI 2/NCF09077_1.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/24.jpg",
+        "sha256": "2080eadf08dc1593922647b34e21a4c792949989b45e5b6d7ca322a381b7b9b4",
+        "source": "AMALFI 2/NCF09093_1.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/25.jpg",
+        "sha256": "2625ca2738a3ae8deb6da21305be3eca0d25e534f69d74ebe838a250db70042b",
+        "source": "AMALFI 2/NCF09147_1.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/26.jpg",
+        "sha256": "e60d38bd5fc794bb6272d1208f7743e0b0297170383550d258afa04d08b37a60",
+        "source": "AMALFI 2/NCF09210_1.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-2/27.jpg",
+        "sha256": "d9a8b656c0e5e9a456216a87c25cb912defdeff1a7f6f495a4785f176c9cf1c3",
+        "source": "AMALFI 2/NCF09413_1.jpg"
       }
     ]
   },
   {
     "number": 3,
-    "folder": "matrimonio-03",
-    "title_it": "Un sì sopra il mare",
-    "title_en": "Vows Above the Sea",
-    "count": 14,
-    "cover": "08.jpg",
-    "cover_path": "assets/stories/matrimonio-03/08.jpg",
-    "cover_position": "50% 88%",
+    "folder": "LAKE COMO",
+    "title_it": "Lake Como",
+    "title_en": "Lake Como",
+    "count": 21,
+    "cover": "02.jpg",
+    "cover_path": "assets/stories/lake-como/02.jpg",
+    "cover_position": "50% 50%",
     "photos": [
       {
-        "path": "assets/stories/matrimonio-03/01.jpg",
-        "sha256": "e83cf53996b0c6cfd49ab8dc09febc4eca849a61eaabf9e82bc61c348244ecb8",
-        "source": "MATRIMONIO 3/1 (1).jpg"
+        "path": "assets/stories/lake-como/01.jpg",
+        "sha256": "853b8fedcf1e8812e077a016c0988fc2e331ad22bd1527c4aceb07a32237476f",
+        "source": "LAKE COMO/2_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-03/02.jpg",
-        "sha256": "147ebd037bb75b2c4bb1b85e807bb4bc10c73c9ef86d1ba16f40f898f33bd336",
-        "source": "MATRIMONIO 3/1 (2).jpg"
+        "path": "assets/stories/lake-como/02.jpg",
+        "sha256": "998ee98c18eb57e5d12c2ab3542121374322438f8fc2d216694f0603d04a4d7b",
+        "source": "LAKE COMO/copertina.jpeg"
       },
       {
-        "path": "assets/stories/matrimonio-03/03.jpg",
-        "sha256": "1564ec86ebb4284b09556f17df4fdba2fee46053942a66c6075dcb51f1e822e3",
-        "source": "MATRIMONIO 3/1 (3).jpg"
+        "path": "assets/stories/lake-como/03.jpg",
+        "sha256": "ff9a0dbd2862d3f8c94b00bbf9796b54cbd312623f4918b0e7439bb95a3baff1",
+        "source": "LAKE COMO/DSC00141_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-03/04.jpg",
-        "sha256": "e6ecb16982259bd25ba2cd8fea327db51bac0b643d6f85fc7faad4df37de2a97",
-        "source": "MATRIMONIO 3/1 (4).jpg"
+        "path": "assets/stories/lake-como/04.jpg",
+        "sha256": "eef1dae429ba16f543e9582d32ce63d721eafe8db9147a4b9fa2edde731fe6a2",
+        "source": "LAKE COMO/DSC00168_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-03/05.jpg",
-        "sha256": "386e0bf8209070f2b07e3d03299f39a6425a9b5bc16d3a6c1b8a2c16267d0c83",
-        "source": "MATRIMONIO 3/1 (5).jpg"
+        "path": "assets/stories/lake-como/05.jpg",
+        "sha256": "d6b94b8c1dba5fe0b7940df4f1a2741362681acf332e2dec7a85d5b556be9d17",
+        "source": "LAKE COMO/DSC00171_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-03/06.jpg",
-        "sha256": "665fb6e98aa79e4844b8f2447b89de5f90e1596a325da247981aaa4d811a2d64",
-        "source": "MATRIMONIO 3/1 (6).jpg"
+        "path": "assets/stories/lake-como/06.jpg",
+        "sha256": "7dccd03a061eacc285f8cd90a9d0d3004f7e56229e75ed8a26a0f424032730d3",
+        "source": "LAKE COMO/DSC00337_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-03/07.jpg",
-        "sha256": "34e73c47f6a2be33989bec7ba7bdb5d44181ef3702b150aa4d2e8962ffd2d26f",
-        "source": "MATRIMONIO 3/1 (7).jpg"
+        "path": "assets/stories/lake-como/07.jpg",
+        "sha256": "69ec27281bcff258c9fa76554c34fe1eaba8998280550409569b58995dfc1921",
+        "source": "LAKE COMO/NCF00395_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-03/08.jpg",
-        "sha256": "473d62fc6c29db131fd7c4e24170c1f9f7b2e4d69543144e798718ebf2feff13",
-        "source": "MATRIMONIO 3/1 (8).jpg"
+        "path": "assets/stories/lake-como/08.jpg",
+        "sha256": "f3e3cc84aea7cccf09bdbb579d9f88e7ed21a161b5cf0de4289ae8ea5cb93b3a",
+        "source": "LAKE COMO/NCF00513_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-03/09.jpg",
-        "sha256": "b1c667b7887f46076e5e204f200ac61025389d97d92e63b77c78532225aa4d0e",
-        "source": "MATRIMONIO 3/1 (9).jpg"
+        "path": "assets/stories/lake-como/09.jpg",
+        "sha256": "69c6f31b755ff56d87e900f1d15548867fd59b3a63761d107756de9a353c4aa7",
+        "source": "LAKE COMO/NCF00608_1.jpg.jpeg"
       },
       {
-        "path": "assets/stories/matrimonio-03/10.jpg",
-        "sha256": "20254c30c4f3bd302fcac77329bb30a5192841bbdae0550c084c10529e8fcbff",
-        "source": "MATRIMONIO 3/1 (10).jpg"
+        "path": "assets/stories/lake-como/10.jpg",
+        "sha256": "19e00d398ee5c143617a7b8d0d6c22cdc4605f4ffbb53d916500920ad2ba1707",
+        "source": "LAKE COMO/NCF00802_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-03/11.jpg",
-        "sha256": "b452b81f766a9cea102f5a43642adf2a45e61eadaced1ce031dc4c670b9dc00e",
-        "source": "MATRIMONIO 3/1 (11).jpg"
+        "path": "assets/stories/lake-como/11.jpg",
+        "sha256": "b0093d5a035a3af133c40213ca1a61135d8670d88c32532dd34d1b409ff871e9",
+        "source": "LAKE COMO/NCF00971_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-03/12.jpg",
-        "sha256": "568b943980ac9f6ce4614de9ecc29ee37062b70a0825ee373e11645b730434d0",
-        "source": "MATRIMONIO 3/1 (12).JPG"
+        "path": "assets/stories/lake-como/12.jpg",
+        "sha256": "79aa5ca42dad2c4315dd86bc8e5c8e41772b45298f6c1fd604644a15347b7248",
+        "source": "LAKE COMO/NCF01047_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-03/13.jpg",
-        "sha256": "fcc660bdba25762d071ed68442363337c39f4fd25184db530c74183ae2072ad5",
-        "source": "MATRIMONIO 3/1 (13).JPG"
+        "path": "assets/stories/lake-como/13.jpg",
+        "sha256": "fa0d43b115ad04d7e64f185508ee58ad6f6739f96b11b6c16c03e6ea1728df4b",
+        "source": "LAKE COMO/NCF01103_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-03/14.jpg",
-        "sha256": "51c1bdd0fea10fb123ea6007e41ecc8cc860915f72111e82c86c77ab71e143e3",
-        "source": "MATRIMONIO 3/1 (14).JPG"
+        "path": "assets/stories/lake-como/14.jpg",
+        "sha256": "2dd5f7322b1fc192d9e844c5dcc05231c255b8028cd719d7dc5f47cee4ad78e6",
+        "source": "LAKE COMO/NCF01262_1.jpg"
+      },
+      {
+        "path": "assets/stories/lake-como/15.jpg",
+        "sha256": "94ba526be83655ec4dde567ebf46e346c387cc5a673deeff2a97bdb61fe985b0",
+        "source": "LAKE COMO/NCF01327_1.jpg.jpeg"
+      },
+      {
+        "path": "assets/stories/lake-como/16.jpg",
+        "sha256": "9306f76751de2068b74f8d95cf6042f085ae7049aad580be287f4f71909469d3",
+        "source": "LAKE COMO/NCF01340_1.jpg"
+      },
+      {
+        "path": "assets/stories/lake-como/17.jpg",
+        "sha256": "487c0a3c09b68d3fad986f6064fe323d9abc65ad5ba7fb2cfc595dc7334383bf",
+        "source": "LAKE COMO/NCF01396_1.jpg"
+      },
+      {
+        "path": "assets/stories/lake-como/18.jpg",
+        "sha256": "3602a2992327880757db65d102be135e9a81fc9824148c06f45a9dc3a705f224",
+        "source": "LAKE COMO/NCF01490_1.jpg"
+      },
+      {
+        "path": "assets/stories/lake-como/19.jpg",
+        "sha256": "b8f0dcb9ffdd8333af8047fee3fb9a49d8927679f62cea2262d4fcab31512413",
+        "source": "LAKE COMO/NCF02099_1.jpg"
+      },
+      {
+        "path": "assets/stories/lake-como/20.jpg",
+        "sha256": "2c52b666a75e77fddfdd605a93112b9d65026fb0a5468e51a386d0c34a6c4d71",
+        "source": "LAKE COMO/NCF09977_1.jpg"
+      },
+      {
+        "path": "assets/stories/lake-como/21.jpg",
+        "sha256": "cfcba9c9786d7c061295ba62411a6798b8482b4f5b49ebfe25339470c1f8d8d7",
+        "source": "LAKE COMO/NCF09978_1.jpg"
       }
     ]
   },
   {
     "number": 4,
-    "folder": "matrimonio-04",
-    "title_it": "Una storia ad Amalfi",
-    "title_en": "An Amalfi Story",
-    "count": 10,
-    "cover": "01.jpg",
-    "cover_path": "assets/stories/matrimonio-04/01.jpg",
+    "folder": "POSITANO",
+    "title_it": "Positano",
+    "title_en": "Positano",
+    "count": 29,
+    "cover": "03.jpg",
+    "cover_path": "assets/stories/positano/03.jpg",
     "cover_position": "50% 50%",
     "photos": [
       {
-        "path": "assets/stories/matrimonio-04/01.jpg",
-        "sha256": "6ef8a5687dd63b63e00702d37c74db4d6bc00d756e946b37a6c349e3a8c50a0c",
-        "source": "MATRIMONIO 4/1 (1).jpg"
+        "path": "assets/stories/positano/01.jpg",
+        "sha256": "df2740469855e814244c75a6b181664732846d5dbacacf9089fdd9387a02c047",
+        "source": "POSITANO/2_1_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-04/02.jpg",
-        "sha256": "4735c81987dee6a85e415d55e32cb9fa1e7804a90c87268caafaa2d284839aa3",
-        "source": "MATRIMONIO 4/1 (2).jpg"
+        "path": "assets/stories/positano/02.jpg",
+        "sha256": "01a5bcdfb60951829cf2105ce0f9632160b8069c56eeef224e52442f712dc9dd",
+        "source": "POSITANO/5_1_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-04/03.jpg",
-        "sha256": "701c1bcaeab53a945177f1780875d9173b872f8a22399ec92ca4da3a014d5487",
-        "source": "MATRIMONIO 4/1 (3).jpg"
+        "path": "assets/stories/positano/03.jpg",
+        "sha256": "3fbd48c5acf979dc05527fad4bc14868a9f4264566cb4f4becc0fe548551725a",
+        "source": "POSITANO/coperina.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-04/04.jpg",
-        "sha256": "b17d7c47deee0ecea5bbb8877ee96f6d8f401da635dff4248f3c9bedb915a787",
-        "source": "MATRIMONIO 4/1 (4).jpg"
+        "path": "assets/stories/positano/04.jpg",
+        "sha256": "faff097eacb159760af0a40674ff1aa2a8ad61350362a31bbbaa6929f37c57af",
+        "source": "POSITANO/DSC09272_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-04/05.jpg",
-        "sha256": "679c7c376e3b9a605de1a52ed3e2337a8af15c8ab624d4beb57db8ba341fad61",
-        "source": "MATRIMONIO 4/1 (5).jpg"
+        "path": "assets/stories/positano/05.jpg",
+        "sha256": "8177e3ced0e759e4d4a82603db331dc9c68d88e6779097eda64d83c7992d13be",
+        "source": "POSITANO/DSC09498_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-04/06.jpg",
-        "sha256": "1ee2a6181ba0f8e1292c32f1845795729c50de7dee934bdd9c40a635c73f0efe",
-        "source": "MATRIMONIO 4/1 (6).jpg"
+        "path": "assets/stories/positano/06.jpg",
+        "sha256": "9ae386c188ae20d3961daf9bdb6dd420bf744c0012cd5b3f25e9dbe6e5a7b173",
+        "source": "POSITANO/DSC09545_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-04/07.jpg",
-        "sha256": "c72797326b2f4599d22ac198c6c3239963b4ed3d3e5584fbdc51c2401196032e",
-        "source": "MATRIMONIO 4/1 (7).jpg"
+        "path": "assets/stories/positano/07.jpg",
+        "sha256": "991786a8a2f7e6d4adeff64f61c2e4eb89c9e61102beb77d5513ed392f202ad8",
+        "source": "POSITANO/DSC09554_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-04/08.jpg",
-        "sha256": "1fd2d9236412ca27963508f5329eab188770d5a5a115c393dc0798daa02f41bb",
-        "source": "MATRIMONIO 4/1 (8).jpg"
+        "path": "assets/stories/positano/08.jpg",
+        "sha256": "5d9dc5a660bba31b3929ffa2b0801ae59f93799b4ad4da38599358d0f941556e",
+        "source": "POSITANO/DSC09556_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-04/09.jpg",
-        "sha256": "34db50707f1009e02ba8055fdfd3f3126f23d62bf73dda6142429d60306ad0b3",
-        "source": "MATRIMONIO 4/1 (9).jpg"
+        "path": "assets/stories/positano/09.jpg",
+        "sha256": "e5b22464855e3482a322ff90c49fbcf3c6e5a03a05a8089e1de3360af9b37f2f",
+        "source": "POSITANO/DSC09558_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-04/10.jpg",
-        "sha256": "03ee7a4ca1e8cc83cbdabcfe813a155cf145ee58d110daed6ff5b111e59ce48c",
-        "source": "MATRIMONIO 4/1 (10).jpg"
+        "path": "assets/stories/positano/10.jpg",
+        "sha256": "7e799e00d9d77fd7428187d87836fe22e7fad6c37a4347b4ca02965b49a50a5f",
+        "source": "POSITANO/DSC09566_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/11.jpg",
+        "sha256": "569a89f84a78b65e7ba0dfaf3b6ef5b8a38691aad1e35006e790930117003d73",
+        "source": "POSITANO/DSC09592_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/12.jpg",
+        "sha256": "591de6e8f5ca92554e7cffe463dcef888f68014ad8c26f59fd88b3c4255e5c55",
+        "source": "POSITANO/DSC09613_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/13.jpg",
+        "sha256": "98725d1fd0451e7bd5b63c27a20719180aa93c4fd00dd35eb9fbb302c2aae6d8",
+        "source": "POSITANO/NCF09006_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/14.jpg",
+        "sha256": "d0c9c181b13b8f381c0ff501b5de76d2f6e4fd0aa23fef341345c04fd1dd87a8",
+        "source": "POSITANO/NCF09567_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/15.jpg",
+        "sha256": "d15eec5124c25c7776d5b6650a7b924157d7c1af924a41d43118f5e9695e0941",
+        "source": "POSITANO/NCF09568_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/16.jpg",
+        "sha256": "d8e6109f252658a5bc433c992f4a35dc1b460684dd8e3529768248dd778841b7",
+        "source": "POSITANO/NCF09571_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/17.jpg",
+        "sha256": "8a9ec9a02378f80a9ad26691a33be7ea0f20a68aac7c6b9d4036a96a311a28c9",
+        "source": "POSITANO/NCF09580_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/18.jpg",
+        "sha256": "d2eb0de34bb0e302ab253a67c2c62d785e201fb9fddcd5b83a3fc5fa5df533b0",
+        "source": "POSITANO/NCF09636_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/19.jpg",
+        "sha256": "0d63d5277e4fcbed5c64149a1baa8948d014c58aebd14361c08f26058ff13a6c",
+        "source": "POSITANO/NCF09643_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/20.jpg",
+        "sha256": "8021be4184a04b38ae3cd828f26f519634a16c4cd22be4982a2d5e5444cffb8b",
+        "source": "POSITANO/NCF09757_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/21.jpg",
+        "sha256": "d52f607e05c447930390f2b271eb81d82b42cd71921d62bef43235e050d0ec0f",
+        "source": "POSITANO/NCF09812_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/22.jpg",
+        "sha256": "f4b34e180f81a4d7c9e32207941fbefbe975b36d57fbad2b833beadaa84a089c",
+        "source": "POSITANO/NCF09824_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/23.jpg",
+        "sha256": "09141c3033966244204a2897d2f0b61098bccd492b2f1090080375f22a7cf426",
+        "source": "POSITANO/NCF09825_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/24.jpg",
+        "sha256": "a6f5c3f0f9fab2ed5eb96d35747ac4cfde0a823646f065e50a1655ba536d34e4",
+        "source": "POSITANO/NCF09827_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/25.jpg",
+        "sha256": "41b802deffbeb52cff94fc9863a264ad2d07b143261a7f0b570d118d923c3e54",
+        "source": "POSITANO/NCF09832_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/26.jpg",
+        "sha256": "5aca5eff2594dc538fa0febd1117f3fd61a18a95dc97beb3b2f1f09d26975c9e",
+        "source": "POSITANO/NCF09919_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/27.jpg",
+        "sha256": "6f226e559afb1682e0eee37d2509cdf698fe54d9bc8c945472f72bc918657694",
+        "source": "POSITANO/NCF09928_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/28.jpg",
+        "sha256": "ba411c8fdcc52b87013a0b9a9653ec60fedfedb540beeb26a808c20c58eda733",
+        "source": "POSITANO/NCF09938_1.jpg"
+      },
+      {
+        "path": "assets/stories/positano/29.jpg",
+        "sha256": "4a0a3f9f562d7e85d570be7ec01d37f9e84d3d4b470b41b4f2d0359dc05d6e58",
+        "source": "POSITANO/NCF09964_1.jpg"
       }
     ]
   },
   {
     "number": 5,
-    "folder": "matrimonio-05",
-    "title_it": "Eleganza in rosso",
-    "title_en": "Elegance in Red",
-    "count": 16,
-    "cover": "10.jpg",
-    "cover_path": "assets/stories/matrimonio-05/10.jpg",
-    "cover_position": "50% 85%",
+    "folder": "SCALA",
+    "title_it": "Scala",
+    "title_en": "Scala",
+    "count": 12,
+    "cover": "01.jpg",
+    "cover_path": "assets/stories/scala/01.jpg",
+    "cover_position": "50% 50%",
     "photos": [
       {
-        "path": "assets/stories/matrimonio-05/01.jpg",
-        "sha256": "86f1d046647f32e6e4f413e5e5e8cfbe9dd073ad4098d6570cf500e4123cd329",
-        "source": "MATRIMONIO 5/1 (1).jpg"
+        "path": "assets/stories/scala/01.jpg",
+        "sha256": "af6652d31d48b6f47fc0cbd077216f14b08395c8f8456e3e11c84066638969bf",
+        "source": "SCALA/copertina.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-05/02.jpg",
-        "sha256": "72910a4c478d38697e8a46625aa8da708f6af547f7a28e70df1e9b0b370ae27a",
-        "source": "MATRIMONIO 5/1 (2).jpg"
+        "path": "assets/stories/scala/02.jpg",
+        "sha256": "fa2ccce1b7d3ad02af72db2920114af9caf1cc3bec3edd673fc92324ec9fb123",
+        "source": "SCALA/NCF02882_1_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-05/03.jpg",
-        "sha256": "6d78c206c8a694f13b339ab2d7244fd57c56dac6fe9ecf2489ad43f4e36d1202",
-        "source": "MATRIMONIO 5/1 (3).jpg"
+        "path": "assets/stories/scala/03.jpg",
+        "sha256": "6868c8658afed833eb93e8cbe728f78d36b6c96b9bd4aaab4b5ab0f399c8d06f",
+        "source": "SCALA/NCF03105_1_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-05/04.jpg",
-        "sha256": "95a94eb4a590c4fa6cf0c3c508e849a788333b83fae77fb4e39657e6a9a7c44b",
-        "source": "MATRIMONIO 5/1 (4).jpg"
+        "path": "assets/stories/scala/04.jpg",
+        "sha256": "2e0234dc742a9f4288390ad4f2d09a29e59929f39f34a395dfab9c73a655eea6",
+        "source": "SCALA/NCF03249_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-05/05.jpg",
-        "sha256": "a43b4bcf855551950f7ade2b5d39323cfd4c5e5165ae394df2c83468b8eddc26",
-        "source": "MATRIMONIO 5/1 (5).jpg"
+        "path": "assets/stories/scala/05.jpg",
+        "sha256": "85eda4b8a7197215ab6015b59224648fa717ca159938b60a20d2361d20f814db",
+        "source": "SCALA/NCF03392_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-05/06.jpg",
-        "sha256": "c30fb6fe75526b7e7ddcf41ff1582592876fc3f06a3140677bc83ad31aec8e66",
-        "source": "MATRIMONIO 5/1 (6).jpg"
+        "path": "assets/stories/scala/06.jpg",
+        "sha256": "7045dba0148a877911092029eafb11dc69aa96a8b1de8b05e7e4186e380aa73f",
+        "source": "SCALA/NCF03569_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-05/07.jpg",
-        "sha256": "1396ba40cd142f8b05dcfcdfcefa474ba3253571ebcb33d3d153fd4a2b891317",
-        "source": "MATRIMONIO 5/1 (7).jpg"
+        "path": "assets/stories/scala/07.jpg",
+        "sha256": "2a020caa8201a28f0e9f99528129142081ec4bda3e60c7167b0f85390d8179f4",
+        "source": "SCALA/NCF03586_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-05/08.jpg",
-        "sha256": "f6636e0e3290734510915ef3d34bb32da76bfe61c15c70ba801be2754efd26c0",
-        "source": "MATRIMONIO 5/1 (8).jpg"
+        "path": "assets/stories/scala/08.jpg",
+        "sha256": "cf803ebc5902b38a0e4462b8af70c32f6dccdb15ae4bf7b68636b7e30c628aaf",
+        "source": "SCALA/NCF03624_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-05/09.jpg",
-        "sha256": "fc82e372891aa3161bf1de80cd7cb6751557a0e8427507e9d2db3699ce8c00a7",
-        "source": "MATRIMONIO 5/1 (9).jpg"
+        "path": "assets/stories/scala/09.jpg",
+        "sha256": "99585258db280ef086a01ffb470325372db380ebca642b7f34f1779c9c1216cf",
+        "source": "SCALA/NCF03769_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-05/10.jpg",
-        "sha256": "01b4305a0a0bbb0992d2ee004e63b85e8746f3915f08165d23d033cd4858faa7",
-        "source": "MATRIMONIO 5/1 (10).jpg"
+        "path": "assets/stories/scala/10.jpg",
+        "sha256": "46d4b1cf22e82ba1d354fa02e7f5894b59453b4f22f6e4e3f968df4e6d67f935",
+        "source": "SCALA/NCF04546_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-05/11.jpg",
-        "sha256": "b07c22bec9713ff325296a000effc5e47c8337a14691e55b2eb9525fe1bba763",
-        "source": "MATRIMONIO 5/1 (11).jpg"
+        "path": "assets/stories/scala/11.jpg",
+        "sha256": "0d9c889e87147ee97a0b739af0cc1903b90e93c5e3e747de861426e87ad4d026",
+        "source": "SCALA/NCF05401_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-05/12.jpg",
-        "sha256": "0c9be5766d1b211e6615e2708a3eee0b4d79a75167966e453b3a244f62683fcf",
-        "source": "MATRIMONIO 5/1 (12).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-05/13.jpg",
-        "sha256": "8449a27e49d5af81cd429a598ed8ca8f908dda236865523209f6ea1ea9b75cd1",
-        "source": "MATRIMONIO 5/1 (13).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-05/14.jpg",
-        "sha256": "f632de302b0c744f761ad04a2b90119cf22c9fb683095579ca503f6cd991a248",
-        "source": "MATRIMONIO 5/1 (14).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-05/15.jpg",
-        "sha256": "bb534e6f47585e5446ff069479029292f178ebc95f3f527b51f8380d52c9eaa4",
-        "source": "MATRIMONIO 5/1 (15).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-05/16.jpg",
-        "sha256": "6367a68f871183def543ec4e36f38c8b3f4166efce85f12b47424a63aabca7d7",
-        "source": "MATRIMONIO 5/1 (16).jpg"
+        "path": "assets/stories/scala/12.jpg",
+        "sha256": "d37c5afadb93b6c4db0bfeb976411c9bb9d179f529ab43aa681d3e3441ea9649",
+        "source": "SCALA/PIE03398_1.jpg"
       }
     ]
   },
   {
     "number": 6,
-    "folder": "matrimonio-06",
-    "title_it": "Un giorno di dolce vita",
-    "title_en": "A Taste of La Dolce Vita",
-    "count": 13,
-    "cover": "07.jpg",
-    "cover_path": "assets/stories/matrimonio-06/07.jpg",
-    "cover_position": "50% 60%",
+    "folder": "SCALA 2",
+    "title_it": "Scala",
+    "title_en": "Scala",
+    "count": 18,
+    "cover": "01.jpg",
+    "cover_path": "assets/stories/scala-2/01.jpg",
+    "cover_position": "50% 50%",
     "photos": [
       {
-        "path": "assets/stories/matrimonio-06/01.jpg",
-        "sha256": "54986a3d29288f1c3cb81e23af231110db763bf0b75df9c7d53a090e74800a13",
-        "source": "MATRIMONIO 6/1 (1).jpg"
+        "path": "assets/stories/scala-2/01.jpg",
+        "sha256": "84211d5c1fda112a4e3ebf16566930b497bf9319068bea41a07a1f9d95f50a93",
+        "source": "SCALA 2/copertina.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/02.jpg",
-        "sha256": "78efd561f04fccafdce1037e5937b47206c16b180a1681a2c61c9c7bb2587c87",
-        "source": "MATRIMONIO 6/1 (2).jpg"
+        "path": "assets/stories/scala-2/02.jpg",
+        "sha256": "9041f9da88b3a5073de101d664ab0b00bc632dbce824729a4984d44163ca2940",
+        "source": "SCALA 2/NCF04745_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/03.jpg",
-        "sha256": "b240849ef5b174d3ffef59853c70b0c24d784cfda60085e4de42c802f1869d9d",
-        "source": "MATRIMONIO 6/1 (3).jpg"
+        "path": "assets/stories/scala-2/03.jpg",
+        "sha256": "8c031002689c39afd931f4c6d5e5770c7f833da4d8f046a1705193efb576cdc5",
+        "source": "SCALA 2/NCF04772_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/04.jpg",
-        "sha256": "8c03c5f2748b19dbb3db7c34ccc623c3574f6e4780b81e9e488f461bb1916913",
-        "source": "MATRIMONIO 6/1 (4).jpg"
+        "path": "assets/stories/scala-2/04.jpg",
+        "sha256": "1959f5fa6763b074b987f2852f9395e5a33cd72a9abfdd685c3366ddc8a27631",
+        "source": "SCALA 2/NCF04818_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/05.jpg",
-        "sha256": "63a3ebf922aa733fc4c142f24188d4a6a80738a67e806dff744277a71390606b",
-        "source": "MATRIMONIO 6/1 (5).jpg"
+        "path": "assets/stories/scala-2/05.jpg",
+        "sha256": "36eb2d668daf2a554b74f2547addbec9e4f7760277febe9eac7ad3804cc1c494",
+        "source": "SCALA 2/NCF04845_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/06.jpg",
-        "sha256": "03968c4925a8368d34c882da3cf7948cf4eb4bc5d26e76c030812d6821fab011",
-        "source": "MATRIMONIO 6/1 (6).jpg"
+        "path": "assets/stories/scala-2/06.jpg",
+        "sha256": "8937598e75bbdd3c3fa9b5ee6c83d1326639ee9535499a680fe141775532b7f3",
+        "source": "SCALA 2/NCF05107_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/07.jpg",
-        "sha256": "1434a01fd6c94a883ca1bcffe54fd20905b4dd8821de5fd15499b87c4963bba8",
-        "source": "MATRIMONIO 6/1 (7).jpg"
+        "path": "assets/stories/scala-2/07.jpg",
+        "sha256": "35fae0ffe6df22d517623b5ba394203d7e37deba83468706569e7b761ed1ea7b",
+        "source": "SCALA 2/NCF05156_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/08.jpg",
-        "sha256": "8fc5361df97539c59b978af07b8988de7051d3d61cc016656dab5702ec416983",
-        "source": "MATRIMONIO 6/1 (8).jpg"
+        "path": "assets/stories/scala-2/08.jpg",
+        "sha256": "8fd90502b0da10a40cc7ea2e10384de1e7ae58f35cfd433575aa77689778b7cd",
+        "source": "SCALA 2/NCF05180_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/09.jpg",
-        "sha256": "1cf4d5be566bacfdc2afa8c6d17f37ec79648697d54b64d1c8feab8a485c6858",
-        "source": "MATRIMONIO 6/1 (9).jpg"
+        "path": "assets/stories/scala-2/09.jpg",
+        "sha256": "6c176dc4c73adeb1a7a824f5987339704fd5cb2178d82a934030edc50a33375b",
+        "source": "SCALA 2/NCF05653_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/10.jpg",
-        "sha256": "b19c436b79837338242a40cd361b3f9c7e47b166a0913021a57589e57eb5ca23",
-        "source": "MATRIMONIO 6/1 (10).jpg"
+        "path": "assets/stories/scala-2/10.jpg",
+        "sha256": "93b7e8be272de308374d3405a8736c4c0d61cfe383ebe7f85865d44fa8941b4a",
+        "source": "SCALA 2/NCF06099_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/11.jpg",
-        "sha256": "be015ff87f2b0a8bba89f43b3c5b1db3a79f7c3477e7a9ef1262fa1a759891dd",
-        "source": "MATRIMONIO 6/1 (11).jpg"
+        "path": "assets/stories/scala-2/11.jpg",
+        "sha256": "cf6cf018728fd6eede295e47bd8ce38eac93d9d8e602e6c0a102e27c73648a78",
+        "source": "SCALA 2/NCF06167_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/12.jpg",
-        "sha256": "1b5582e7843aad5b7bd2400269427b8155e12d37408b07b2517be89051592f03",
-        "source": "MATRIMONIO 6/1 (12).jpg"
+        "path": "assets/stories/scala-2/12.jpg",
+        "sha256": "1a5be834efd9b4aee504f3f19f9599c9f8998561cd3aeb48dc29d452e61046e8",
+        "source": "SCALA 2/NCF06264_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-06/13.jpg",
-        "sha256": "b1fa35b13de5ef749d71bcc319f17a1882184196263d74f461ac88f948fb67f6",
-        "source": "MATRIMONIO 6/1 (13).jpg"
-      }
-    ]
-  },
-  {
-    "number": 7,
-    "folder": "matrimonio-07",
-    "title_it": "La bellezza di essere insieme",
-    "title_en": "The Beauty of Being Together",
-    "count": 20,
-    "cover": "06.jpg",
-    "cover_path": "assets/stories/matrimonio-07/06.jpg",
-    "cover_position": "50% 75%",
-    "photos": [
-      {
-        "path": "assets/stories/matrimonio-07/01.jpg",
-        "sha256": "4cb61f2949193c33ef89bec088a320b47ec7779d4eee365b5f61f8a4550ed9ae",
-        "source": "MATRIMONIO 7/1 (1).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/02.jpg",
-        "sha256": "6dc2f3e0d9dfb11f3738ccf1d92e9d7636d74472b6ab533ee32fcf821b5df4a0",
-        "source": "MATRIMONIO 7/1 (2).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/03.jpg",
-        "sha256": "0a0d23f41201eff52c10e65e1641e9263d99b79f381fb40034c336e4da1fe49d",
-        "source": "MATRIMONIO 7/1 (3).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/04.jpg",
-        "sha256": "5c40b3c2fb6028d25bb004ae7057ed2d5d91f8bef642138e4a9b3318864ddc82",
-        "source": "MATRIMONIO 7/1 (4).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/05.jpg",
-        "sha256": "a987878e852540aae0928bebaa4dfd2ebc2ca0541a9e2fb48514a15f17687c63",
-        "source": "MATRIMONIO 7/1 (5).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/06.jpg",
-        "sha256": "fcf0b327a83b1c79a9bee07978e7c2f763e822800ae89a05eb423a0325ebae96",
-        "source": "MATRIMONIO 7/1 (6).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/07.jpg",
-        "sha256": "65e28f3975f92c6070ccd27a7414965a608d0224c52ff12b5f929ad15629b01d",
-        "source": "MATRIMONIO 7/1 (7).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/08.jpg",
-        "sha256": "c70feeaaa4ee7a03f96ef06179a7a6a47365aeb554234f7cbbb78b855ddaf0d4",
-        "source": "MATRIMONIO 7/1 (8).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/09.jpg",
-        "sha256": "e03b301432167b9ce5181408e77b3252c4fb913b5e144ff6b9fdc950606f8072",
-        "source": "MATRIMONIO 7/1 (9).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/10.jpg",
-        "sha256": "9afb9bfa3f9bf88cf848ef28d4157dae811ef42b5b42a30f1681d0927f3ba29d",
-        "source": "MATRIMONIO 7/1 (10).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/11.jpg",
-        "sha256": "6991d14a3f187bb0152394b1d5119879285aa09c5acd3a6d23e4c60d42ec4ae4",
-        "source": "MATRIMONIO 7/1 (11).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/12.jpg",
-        "sha256": "44d2d9ff2ff3fe8d76b50e4ad2e9bf057d350d6f99112ed361e9924c8b7999b9",
-        "source": "MATRIMONIO 7/1 (12).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/13.jpg",
-        "sha256": "d154043a96649bd2ad7f75be7cfb4c1c2a9878cc1e4a509661dc78afddf3a123",
-        "source": "MATRIMONIO 7/1 (13).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/14.jpg",
-        "sha256": "4feb7e27fc5875422bd3658c5b8c67ff0d88fd49fcddd8066bb4471b1e3b6f26",
-        "source": "MATRIMONIO 7/1 (14).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/15.jpg",
-        "sha256": "d0ae4bddb431393fbaef2cacc958709957952110a23633176c77027e896a01c9",
-        "source": "MATRIMONIO 7/1 (15).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/16.jpg",
-        "sha256": "779a2c907b786d56ec64734f943550a45bc9caa5216e0d2f281af003467a592b",
-        "source": "MATRIMONIO 7/1 (16).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/17.jpg",
-        "sha256": "a2eae268be1ef76a69d036a350cb8d69daef594ebc137700cfa4e88127dd5270",
-        "source": "MATRIMONIO 7/1 (17).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/18.jpg",
-        "sha256": "1b16637917508305e00d5578225d10491df8aba70efa347848b94a5422a89bf8",
-        "source": "MATRIMONIO 7/1 (18).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/19.jpg",
-        "sha256": "6009f42b696f048e2e540acf9016468f294c41f775c68e5b38c58c43f22235e4",
-        "source": "MATRIMONIO 7/1 (19).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-07/20.jpg",
-        "sha256": "01c8af77a255df2f6e8f3f1b409c3c9bacf825b367f161a7e0386e8a1e34d6c8",
-        "source": "MATRIMONIO 7/1 (20).JPG"
-      }
-    ],
-    "cover_source": "MATRIMONIO 7/1 (6).JPG"
-  },
-  {
-    "number": 8,
-    "folder": "matrimonio-08",
-    "title_it": "Tra le vostre braccia",
-    "title_en": "In your arms",
-    "count": 21,
-    "cover": "02.jpg",
-    "cover_path": "assets/stories/matrimonio-08/02.jpg",
-    "cover_position": "50% 70%",
-    "photos": [
-      {
-        "path": "assets/stories/matrimonio-08/01.jpg",
-        "sha256": "5c5649fa9251b94c18b7aaed0f0c8ca5803c452de87e397e2cd5e5326dc1eeeb",
-        "source": "MATRIMONIO 8/1 (1).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/02.jpg",
-        "sha256": "d017fe11182c54af366f807e768c1670966235ac58f24f4b9d8b666674d5e853",
-        "source": "MATRIMONIO 8/1 (2).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/03.jpg",
-        "sha256": "a509150e670c60354ebf41636f8e2e2bbea3041e9abf12d6ce496057e32f3850",
-        "source": "MATRIMONIO 8/1 (3).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/04.jpg",
-        "sha256": "05e7ff72f3f98b463cd0a419e61a1859065e07da6b055af4eecf663ee1424702",
-        "source": "MATRIMONIO 8/1 (4).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/05.jpg",
-        "sha256": "e94a074f3ff49f956ac3ada12c7d35452c07858f1d282e7caf6acdc851c6f85f",
-        "source": "MATRIMONIO 8/1 (5).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/06.jpg",
-        "sha256": "bf4aaf95afc771609e803de2df8d8ef0b78a0e7621ae4dba93f51f7221c9726f",
-        "source": "MATRIMONIO 8/1 (6).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/07.jpg",
-        "sha256": "b184c22d463661a3839c7ddc08f02d964c9699a1f5beecdd84a045a98bf80f5e",
-        "source": "MATRIMONIO 8/1 (7).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/08.jpg",
-        "sha256": "4547e248aa04f5eb2cc167aeb1d82bdb111bbaa64b1f4f0ceee31e07e4bca6da",
-        "source": "MATRIMONIO 8/1 (8).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/09.jpg",
-        "sha256": "b4a6fbe6e718dd96689794e566e96277387e53eb1adf6a0ebda5b827a7978a1c",
-        "source": "MATRIMONIO 8/1 (9).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/10.jpg",
-        "sha256": "6fd27af1f83ab4ce8716fe0de28e56a00bb68a9aafb8edcb63e63ffde03d0300",
-        "source": "MATRIMONIO 8/1 (10).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/11.jpg",
-        "sha256": "08aa1e55cf9b81edc08668281cc8fc3cee8c862d333fe89f7ec6642b616d21f8",
-        "source": "MATRIMONIO 8/1 (11).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/12.jpg",
-        "sha256": "c51186e36026e920dee510af1ee6554e22c05228d7ec1e21db1eb184aad3f463",
-        "source": "MATRIMONIO 8/1 (12).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/13.jpg",
-        "sha256": "f4ae9be5bfff0a9befe317fd11ce3ff5ce5fd32904bc9b5904f1564bdaee4a3e",
-        "source": "MATRIMONIO 8/1 (13).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/14.jpg",
-        "sha256": "503faae1c409e4bbb25c55ce3e672e2f62fb8cb8fb5e63b72d217ca25916dbf6",
-        "source": "MATRIMONIO 8/1 (14).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/15.jpg",
-        "sha256": "8821b670a582b6124945ae105005caf0c41eae331768ae2e9be017a4f3551405",
-        "source": "MATRIMONIO 8/1 (15).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/16.jpg",
-        "sha256": "70ef0ab80f9545c9ec262c53fca378832029cabcd6def045896f18f9674097e0",
-        "source": "MATRIMONIO 8/1 (16).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/17.jpg",
-        "sha256": "0bf3e9e33095037535c62933edf6d42aa49e88de0a0548c900b682ea3dc4647b",
-        "source": "MATRIMONIO 8/1 (17).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/18.jpg",
-        "sha256": "6818ff0d52ab3dd3f287d1e15c174367520a093bd6d75e12aae87b20b9238a48",
-        "source": "MATRIMONIO 8/1 (18).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/19.jpg",
-        "sha256": "03c29bc591a6d09d482e8765ee18455063db2552410749b66d0e26410b5d3bb2",
-        "source": "MATRIMONIO 8/1 (19).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/20.jpg",
-        "sha256": "7064063471f3a5b676d6d7b482af7536dc80a651d8e162d46b294caed659e432",
-        "source": "MATRIMONIO 8/1 (20).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-08/21.jpg",
-        "sha256": "5d3fb8e9df7537f5bb364f810978d5e6b8a1170345db1fee870525f68572c311",
-        "source": "MATRIMONIO 8/1 (21).jpg"
-      }
-    ]
-  },
-  {
-    "number": 9,
-    "folder": "matrimonio-09",
-    "title_it": "La gioia di amarvi",
-    "title_en": "The joy of loving each other",
-    "count": 23,
-    "cover": "12.jpg",
-    "cover_path": "assets/stories/matrimonio-09/12.jpg",
-    "cover_position": "50% 64%",
-    "photos": [
-      {
-        "path": "assets/stories/matrimonio-09/01.jpg",
-        "sha256": "c3e7fa6844be35c2cb7113db93dce6c832a2d0bcf4beb5cd29910c840e4f4306",
-        "source": "MATRIMONIO 9/1 (1).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/02.jpg",
-        "sha256": "6316cea51b00d2a2feebaec31ec5b8b65a9b9f06ee4fda9650be00d3d2bb2275",
-        "source": "MATRIMONIO 9/1 (2).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/03.jpg",
-        "sha256": "61823121e2a03a453fa415225027ae71885ec638b085613bf9f392823106ecfd",
-        "source": "MATRIMONIO 9/1 (3).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/04.jpg",
-        "sha256": "4559d8818a0995575368a2af7791d514232ee10feeec154747b6f3d3576c417f",
-        "source": "MATRIMONIO 9/1 (4).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/05.jpg",
-        "sha256": "4bcb5a808767501a44c1d6f61ac6c1f48cc10224d33206941d37fba6160cabec",
-        "source": "MATRIMONIO 9/1 (5).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/06.jpg",
-        "sha256": "d901362ee7f1a7daf5cd72e7f900cd2e393c83600b92ee7532dd0912740a8454",
-        "source": "MATRIMONIO 9/1 (6).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/07.jpg",
-        "sha256": "099ab82c12917e8595d4f946557612ff6afe227f7be11652d1cf7537861e58d7",
-        "source": "MATRIMONIO 9/1 (7).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/08.jpg",
-        "sha256": "34919db6f8a226db5aa88cd94cba48dbf766a4c98ab9c7f42390b0e33440824d",
-        "source": "MATRIMONIO 9/1 (8).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/09.jpg",
-        "sha256": "7d061f90692f697aa60a118f1e381c4d9bafaef29b261b342efa81fd835087fd",
-        "source": "MATRIMONIO 9/1 (9).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/10.jpg",
-        "sha256": "0b34e426e9d0861af32e9b2ee943ba4659aa0d94e6b39ad9559196aa227f9f78",
-        "source": "MATRIMONIO 9/1 (10).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/11.jpg",
-        "sha256": "e247c9dbaddf8b7907e3bf6bfd25214417fce624f808682d64b94538ec071c5c",
-        "source": "MATRIMONIO 9/1 (11).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/12.jpg",
-        "sha256": "4caa4cd70485d435cbcc3d5391936dd948d62b22aadb99f6029dd1dc62d4beba",
-        "source": "MATRIMONIO 9/1 (12).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/13.jpg",
-        "sha256": "1841ccb819188576d93b7d520bd408ebd841c9966266ae76bf8dc495097579c1",
-        "source": "MATRIMONIO 9/1 (13).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/14.jpg",
-        "sha256": "78cde26e0cd77d7142c301fe01904f3e6b7ab9d7f506aa4d6ef295d7adc467be",
-        "source": "MATRIMONIO 9/1 (14).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/15.jpg",
-        "sha256": "7af004ce4f068ffe26b3fc1e565bd56cbd0d338ef5c541d9e1822cecb2e3d811",
-        "source": "MATRIMONIO 9/1 (15).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/16.jpg",
-        "sha256": "ff6ba897394f3907e986ed08b36d33dd8048a6226d5902dabedb6a79566303ae",
-        "source": "MATRIMONIO 9/1 (16).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/17.jpg",
-        "sha256": "448467acbb1919774e0309714387bfa202f132c5f52306dcd9ac666b25c028cb",
-        "source": "MATRIMONIO 9/1 (18).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/18.jpg",
-        "sha256": "81ea8a45ce80e1ead3c2173ea413086a0e229f54ee2baf85e97cb81b2eaa52fc",
-        "source": "MATRIMONIO 9/1 (19).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/19.jpg",
-        "sha256": "9e74b3cc5333612ef64df11a0ea74fc94566979f15becb2a2033541c2fd85e53",
-        "source": "MATRIMONIO 9/DSC05427.jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/20.jpg",
-        "sha256": "56b630528350eb0a3a71a7d39cfc446aa1ee14db559be9ce1d81aff3d07ce682",
-        "source": "MATRIMONIO 9/NCF05524.jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/21.jpg",
-        "sha256": "2111f1e7aebe363447f8395c30589a207356324f5ef14e01470e1223ff7317f2",
-        "source": "MATRIMONIO 9/NCF06848.jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/22.jpg",
-        "sha256": "89ca814be6ab2b7fe5af1958cdcd34e534190ecc829b5af117dd4c26316dba86",
-        "source": "MATRIMONIO 9/NCF06861.jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-09/23.jpg",
-        "sha256": "ca2bb578bdfc5c06c87572eaa5fd5369dd72f5c043897d19495bad451f2041d7",
-        "source": "MATRIMONIO 9/NCF07364.jpg"
-      }
-    ]
-  },
-  {
-    "number": 10,
-    "folder": "matrimonio-10",
-    "title_it": "Il vostro per sempre",
-    "title_en": "Your forever",
-    "count": 32,
-    "cover": "copertina.jpg",
-    "cover_path": "assets/stories/matrimonio-10/copertina.jpg",
-    "cover_position": "50% 91%",
-    "photos": [
-      {
-        "path": "assets/stories/matrimonio-10/01.jpg",
-        "sha256": "8db626be4245a2f170e139f25d60f8d4ba2991bffb96ed052e5437fa4547651b",
-        "source": "MATRIMONIO 10/1 (1).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/02.jpg",
-        "sha256": "69bf265a4648eab5a21d1a668d09397689352b88917ec9c5960e026a3a3069d9",
-        "source": "MATRIMONIO 10/1 (2).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/03.jpg",
-        "sha256": "baebf09aead257fb6b98538e31bec0178975c6cac9f3b37dbba71381c2e3c267",
-        "source": "MATRIMONIO 10/1 (3).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/04.jpg",
-        "sha256": "9e5c04ce68f7159644a974989a3b29d8fc617de488eb7590c67e6a048baecb7a",
-        "source": "MATRIMONIO 10/1 (4).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/05.jpg",
-        "sha256": "d9f1b2b497554c94dde407eadedf2130d79f4c9081205ee4e7419e51d06eaa87",
-        "source": "MATRIMONIO 10/1 (5).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/06.jpg",
-        "sha256": "f5807a8d0a3b3cd3ce0245e0072ae7c3d99864379e63850af58f3372c95914f0",
-        "source": "MATRIMONIO 10/1 (6).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/07.jpg",
-        "sha256": "1ac9f3b8b8cd62407429d4106c043dc5e0246baf1f1468867a5ec3ab2181fc32",
-        "source": "MATRIMONIO 10/1 (7).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/08.jpg",
-        "sha256": "8aeb428cf0e4028092012b76daac7f55c13ba81467814f3d8a4fc8cd26b4b108",
-        "source": "MATRIMONIO 10/1 (8).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/09.jpg",
-        "sha256": "c633bb068482fee7a544684dee1aad064b228f6e0a0064ceae21faebea762fef",
-        "source": "MATRIMONIO 10/1 (9).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/10.jpg",
-        "sha256": "6ea999ec49e41d00fc185cf1b8f8cf1228ec325c81d3348f5ca0acb754f89e7b",
-        "source": "MATRIMONIO 10/1 (10).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/11.jpg",
-        "sha256": "b6e24d5ef4651dca64deb52974c3ffd56963797c0b37ed36e614c0f4028608da",
-        "source": "MATRIMONIO 10/1 (11).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/12.jpg",
-        "sha256": "f989d8d3268920043a58948331fa228261d0ebc195a21aac3db45307205e0493",
-        "source": "MATRIMONIO 10/1 (12).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/13.jpg",
-        "sha256": "ddecd06d520f09c61a0145abc768508f7a97b845dc8bc8e45e66b85bf5c6550d",
-        "source": "MATRIMONIO 10/1 (13).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/14.jpg",
-        "sha256": "2606a2b3b73543f0646aa11af3c227999c694a23d77773f0c7a09e9888f53ec9",
-        "source": "MATRIMONIO 10/1 (14).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/15.jpg",
-        "sha256": "627c959b2df8ca6bd7c70ee6b16c21565c44facd0195a90cb778d73966722780",
-        "source": "MATRIMONIO 10/1 (15).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/16.jpg",
-        "sha256": "e9433b4b68ad7d166e1b6f8eb41c7f3b4fc43090405bdffd1edd0cfa6897dfd9",
-        "source": "MATRIMONIO 10/1 (16).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/17.jpg",
-        "sha256": "17c40f9d5ca653cb979aacb3c11343e461cddbd340262b1dcdea3374b9798221",
-        "source": "MATRIMONIO 10/1 (17).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/18.jpg",
-        "sha256": "3c44ce5e8e8e9e49e869c7f66c513de9a4bfc6deba3b0ff84c191eb0ce4fbda8",
-        "source": "MATRIMONIO 10/1 (18).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/19.jpg",
-        "sha256": "a358d773eaa53cd44276f887df5cac99f5cf3a2d00429a697a4eb20c682a3ffb",
-        "source": "MATRIMONIO 10/1 (19).JPG"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/20.jpg",
-        "sha256": "6d4d0ef99478b3d7a184ab649d96c2ed4951ae7b05c98ff615b7d5cd33a6d0c7",
-        "source": "MATRIMONIO 10/1 (20).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/21.jpg",
-        "sha256": "d7d9f8ff2802a3c532d236ef60c816ceb03d29863acf94377491ac8f132c8126",
-        "source": "MATRIMONIO 10/1 (21).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/22.jpg",
-        "sha256": "e92f70062fb7def78ff16219bf0d503bada8ecff6da32224d58df33c3d346f58",
-        "source": "MATRIMONIO 10/1 (22).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/23.jpg",
-        "sha256": "52cc2fcebec296dfe4efcb8e57a85b46110ae9fd36e1038926d430fb0b421449",
-        "source": "MATRIMONIO 10/1 (23).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/24.jpg",
-        "sha256": "3babbcbbaa0e497a17e1aca95f0762abd0c6a4babdb41063bf6623069c9dcb36",
-        "source": "MATRIMONIO 10/1 (24).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/25.jpg",
-        "sha256": "2fb04d295bd4dc5b578c4f65cf9b8409ad926a2ff5cabd5a9d0e0f1a7dd2b837",
-        "source": "MATRIMONIO 10/1 (25).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/26.jpg",
-        "sha256": "011b8751aa48c94a7ea9dc9a1507bdb67d13a1852e125aab16eb1c97838ad18b",
-        "source": "MATRIMONIO 10/1 (26).jpg"
-      },
-      {
-        "path": "assets/stories/matrimonio-10/27.jpg",
-        "sha256": "000c8cc4f1cd54de261dca4a3f9df4735c72062a466cbaafab1f3b59771bc014",
-        "source": "MATRIMONIO 10/1 (27).jpg"
+        "path": "assets/stories/scala-2/13.jpg",
+        "sha256": "127faa8cba231ed8d0df544ead51b4dedd7e3d2bfa622950d65e36a3635863ac",
+        "source": "SCALA 2/NCF06522_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-10/28.jpg",
-        "sha256": "006467d2469d114c5fbf1b34a693cdbb1bc3439a9048400eb0a91e98f2d77d2c",
-        "source": "MATRIMONIO 10/1 (28).jpg"
+        "path": "assets/stories/scala-2/14.jpg",
+        "sha256": "8f15538bcfb75c5f17ced6b879aa241bcc8351d29a13e7d4c80835a85f14c93d",
+        "source": "SCALA 2/NCF06571_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-10/29.jpg",
-        "sha256": "1a1eb55c590f37c042c52611823069b2a7374d30c71617fb8c3b424bc4ebca0d",
-        "source": "MATRIMONIO 10/1 (29).jpg"
+        "path": "assets/stories/scala-2/15.jpg",
+        "sha256": "3992a1ab4f3d4065dcb14a9688285056683e41d303ea88b184f331abb9526cd0",
+        "source": "SCALA 2/NCF06684_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-10/30.jpg",
-        "sha256": "9a19667c322c0892e517e9616766974b5eb6b6223d4169bf82d45d3319b88320",
-        "source": "MATRIMONIO 10/1 (30).jpg"
+        "path": "assets/stories/scala-2/16.jpg",
+        "sha256": "b5a94b8b877421986aefafa6e8c6e4c0783ec46457ead465b8be3f04303e2d30",
+        "source": "SCALA 2/NCF07393_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-10/31.jpg",
-        "sha256": "a63e74d74ca0366871e61df5a1cd41f969284f011e6592a9cadfb3ff996da4c4",
-        "source": "MATRIMONIO 10/1 (31).jpg"
+        "path": "assets/stories/scala-2/17.jpg",
+        "sha256": "3c852d736bdffd9a3eb28c6f56db462b2a26786ce77b9ee8c86a023fc36165b9",
+        "source": "SCALA 2/NCF07949_1.jpg"
       },
       {
-        "path": "assets/stories/matrimonio-10/32.jpg",
-        "sha256": "02edd2dfcd971004f0e4381bfe406fabd42e4d1c7c027429e4e6f37d5aaf28e4",
-        "source": "MATRIMONIO 10/1 (32).jpg"
+        "path": "assets/stories/scala-2/18.jpg",
+        "sha256": "166fb2d96ff3f67e127d611968a841fc675f24ec1bd19ffda4e96712f5ddb6b5",
+        "source": "SCALA 2/NCF08514_1.jpg"
       }
     ]
   }
