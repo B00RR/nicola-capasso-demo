@@ -42,6 +42,7 @@ for en in (False,True):
   for name,r in zip(names,rows):
    match=re.search(r'<a\b[^>]*href="'+re.escape(links+name)+r'"[^>]*>.*?</a>',s,re.S);assert match,(page,name)
    block=match[0]
-   assert "object-position:"+r["listing_position"] in block,(page,name)
+   position=r['home_position'] if page.name=='index.html' else r['listing_position']
+   assert f'style="object-position:{position}"' in block,(page,name)
    assert f'src="{pic+r["cover_path"]}"' in block and f'aria-label="{r["title_it"]}"' in block,(page,name)
 print('PASS: 6 approved IT/EN titles, 127 ordered photographs, exact covers on six indexes, reciprocal language routes and next-story cycle')
