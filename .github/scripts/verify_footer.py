@@ -75,7 +75,8 @@ with sync_playwright() as p:
                         copy: f.querySelector('.footer-copy').textContent.trim(),
                         social: social.map(a => a.getAttribute('href')),
                         legal: legal.map(a => a.textContent.trim()),
-                        legalRows: [...new Set(legal.map(a => Math.round(a.getBoundingClientRect().top)))].length,
+                        sameRow: boxes.every(b => Math.abs((b.top+b.bottom-copy.top-copy.bottom)/2)<1)
+                                 && copy.height < 2*parseFloat(getComputedStyle(f.querySelector('.footer-copy')).lineHeight),
                         minHeight: Math.min(...boxes.map(b => b.height)),
                         overflow: Math.max(document.documentElement.scrollWidth - innerWidth, band.scrollWidth - band.clientWidth),
                     };
@@ -86,7 +87,7 @@ with sync_playwright() as p:
             assert all(data[k] for k in ("centered","left","separate","noLine")), (label,data)
             assert not data["mailto"] and data["copy"] == "\u00a9 2026 Nicola Capasso", (label, data)
             assert data["social"] == ["https://instagram.com/nicolacapassofoto", "https://wa.me/393398563098"], (label, data)
-            assert len(data["legal"]) == 3 and data["legalRows"] == 1, (label, data)
+            assert len(data["legal"]) == 3 and data["sameRow"], (label, data)
             assert data["minHeight"] >= 44 and data["overflow"] <= 0, (label, data)
             assert not errors and not external, (label, errors, external)
             page.close()

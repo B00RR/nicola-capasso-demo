@@ -75,16 +75,21 @@
 /* Link legali nella fascia del footer. Spostati qui da legale.css: la fascia esiste su tutte
    le pagine, quindi il suo stile deve viaggiare con footer.css (prima i link restavano un
    elenco puntato verticale su ogni pagina che non caricava legale.css).
-   Desktop: una riga sola. Fino a 600px: seconda riga, per non comprimere le icone. */
+   I tre gruppi restano sulla stessa riga anche su telefono. */
 .footer-legal{grid-area:legal;list-style:none;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:4px 14px;margin:0;padding:0}
 .footer-legal a{display:inline-flex;align-items:center;min-height:44px;color:var(--footer-muted,#63635d);font-size:12px;letter-spacing:.04em;text-decoration:none}
 .footer-legal a:hover{color:var(--footer-ink,#191916)}
 @media(min-width:521px){.site-footer{padding:16px 6vw 18px}}
 @media(max-width:600px){
-  .site-footer{padding:8px 5vw 10px}
-  .footer-band{grid-template-areas:"copy social ." "legal legal legal";gap:2px 8px}
-  .footer-copy{font-size:10px;letter-spacing:.03em}
-  .footer-legal{justify-content:center}
+  .site-footer{padding:8px clamp(4px,calc(10vw - 28px),5vw) 10px}
+  .footer-band{column-gap:2px}
+  .footer-copy{font-size:10px;letter-spacing:.03em;white-space:nowrap}
+  .footer-social{gap:0}
+  .footer-social-link{display:flex;width:clamp(28px,calc(20vw - 36px),44px)}
+  .footer-social-link svg{transform:translateX(3px)}
+  .footer-social-link svg.wa{width:17px;height:17px;transform:translateX(-3px)}
+  .footer-legal{flex-wrap:nowrap;gap:clamp(3px,1vw,6px)}
+  .footer-legal a{font-size:clamp(11px,3vw,12px);letter-spacing:normal}
 }
 @media(prefers-reduced-motion:reduce){
   .footer-social-link{transition:none}
