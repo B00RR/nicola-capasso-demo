@@ -1,5 +1,5 @@
 /* Footer condiviso — rifacimento orizzontale (card t_b14eb94f).
-   Unica fascia compatta: solo icone social Instagram/WhatsApp + copyright discreto.
+   Fascia compatta con copyright e link legali; social sotto la CTA della Home.
    Nessuna mail, nessuna navigazione, nessun nome/marchio grande, nessuno slogan.
    Bianco/antracite, Italiana + Space Grotesk. Nessuna dipendenza da JavaScript. */
 :root{
@@ -20,15 +20,20 @@
 }
 .footer-band{
   display:grid;
-  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
-  grid-template-areas:"copy social legal";
+  grid-template-columns:1fr auto;
+  grid-template-areas:"copy legal";
   align-items:center;
   gap:4px 20px;
   max-width:1600px;
   margin:0 auto;
 }
-.footer-social{
-  grid-area:social;
+.cta-with-social{display:grid;width:fit-content;max-width:100%;justify-items:center;row-gap:4px}
+.bio-end .cta-with-social{margin-inline:auto}
+@media(max-width:700px),(max-width:1000px) and (pointer:coarse){
+  .cta-with-social{margin-inline:auto}
+  .cta-with-social #contatto{left:auto;transform:none}
+}
+.cta-social{
   list-style:none;
   margin:0;
   padding:0;
@@ -36,7 +41,7 @@
   align-items:center;
   gap:12px;
 }
-.footer-social-link{
+.cta-social-link{
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -47,7 +52,7 @@
   border-radius:50%;
   transition:color .2s ease;
 }
-.footer-social-link svg{
+.cta-social-link svg{
   width:28px;
   height:28px;
   display:block;
@@ -57,12 +62,12 @@
   stroke-linecap:round;
   stroke-linejoin:round;
 }
-.footer-social-link svg .solid{fill:currentColor;stroke:none}
+.cta-social-link svg .solid{fill:currentColor;stroke:none}
 /* Marchio ufficiale WhatsApp: disegno a tutta area, ridotto per pareggiare la dimensione ottica
    dell'icona Instagram (quadrato con margine interno nel proprio riquadro). */
-.footer-social-link svg.wa{width:22px;height:22px}
-.footer-social-link:hover{color:var(--footer-ink)}
-.site-footer a:focus-visible{outline:2px solid var(--footer-ink);outline-offset:2px;border-radius:50%}
+.cta-social-link svg.wa{width:22px;height:22px}
+.cta-social-link:hover{color:var(--footer-ink)}
+.site-footer a:focus-visible,.cta-social-link:focus-visible{outline:2px solid var(--footer-ink);outline-offset:2px;border-radius:50%}
 .footer-copy{
   margin:0;
   min-width:0;
@@ -75,7 +80,7 @@
 /* Link legali nella fascia del footer. Spostati qui da legale.css: la fascia esiste su tutte
    le pagine, quindi il suo stile deve viaggiare con footer.css (prima i link restavano un
    elenco puntato verticale su ogni pagina che non caricava legale.css).
-   I tre gruppi restano sulla stessa riga anche su telefono. */
+   Copyright e link legali restano sulla stessa riga anche su telefono. */
 .footer-legal{grid-area:legal;list-style:none;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:4px 14px;margin:0;padding:0}
 .footer-legal a{display:inline-flex;align-items:center;min-height:44px;color:var(--footer-muted,#63635d);font-size:12px;letter-spacing:.04em;text-decoration:none}
 .footer-legal a:hover{color:var(--footer-ink,#191916)}
@@ -84,14 +89,12 @@
   .site-footer{padding:8px clamp(4px,calc(10vw - 28px),5vw) 10px}
   .footer-band{column-gap:2px}
   .footer-copy{font-size:10px;letter-spacing:.03em;white-space:nowrap}
-  .footer-social{gap:0}
-  .footer-social-link{display:flex;width:clamp(28px,calc(20vw - 36px),44px)}
-  .footer-social-link svg{transform:translateX(1px)}
-  .footer-social-link svg.wa{transform:translateX(-1px)}
+  .cta-social{gap:0}
+  .cta-social-link{display:flex}
   .footer-legal{flex-wrap:nowrap;gap:clamp(3px,1vw,6px)}
   .footer-legal a{font-size:clamp(11px,3vw,12px);letter-spacing:normal}
 }
 @media(prefers-reduced-motion:reduce){
-  .footer-social-link{transition:none}
+  .cta-social-link{transition:none}
 }
 /* I link legali sono definiti sopra; nessun duplicato qui. */
