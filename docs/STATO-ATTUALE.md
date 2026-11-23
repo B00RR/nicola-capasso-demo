@@ -1,3 +1,7 @@
+## Demo statica: settima storia IT/EN
+
+Il terzo matrimonio di Amalfi apre `storia-07.html` in entrambe le lingue: 20 fotografie, inclusa `copertina.jpg`. Il visualizzatore parte dalla copertina e prosegue con le 19 foto interne. Questa versione è destinata alla demo GitHub Pages, non al sito WordPress.
+
 ## Demo statica: sei storie IT/EN — 18/11/2026
 
 Amalfi (20), Amalfi (27), Lake Como (21), Positano (29), Scala (12), Scala (18). I titoli omonimi aprono matrimoni distinti. Ogni conteggio include la copertina ufficiale, visibile soltanto in apertura. Negli album e nel visualizzatore restano rispettivamente 19, 26, 20, 28, 11 e 17 foto. `STORIE.json` conserva l’inventario delle sorgenti; `FOTO-DEFINITIVE.json` elenca separatamente copertina e foto dell’album. Nessun testo narrativo nelle storie. Animazione, foto condivise e WordPress non fanno parte della sostituzione.

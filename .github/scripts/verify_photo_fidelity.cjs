@@ -4,7 +4,7 @@ const {chromium}=require(process.argv[2]||'playwright');
 const ROOT=path.resolve(__dirname,'../..'),PUBLIC=path.join(ROOT,'public'),OUT=path.resolve(process.argv[3]||path.join(process.env.TMPDIR||process.env.RUNNER_TEMP||ROOT,'photo-fidelity-proof'));
 fs.mkdirSync(OUT,{recursive:true});const log=path.join(OUT,'measurements.jsonl');fs.writeFileSync(log,'');
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
-const pages=walk(PUBLIC).filter(p=>/\.html?$/.test(p)).map(p=>path.relative(PUBLIC,p).split(path.sep).join('/')).sort();assert.equal(pages.length,28);
+const pages=walk(PUBLIC).filter(p=>/\.html?$/.test(p)).map(p=>path.relative(PUBLIC,p).split(path.sep).join('/')).sort();assert.equal(pages.length,30);
 function motionCode(file,text){
   if(/\.html?$/.test(file))text=[...text.matchAll(/<(style|script)\b[^>]*>([\s\S]*?)<\/\1>/g)].map(m=>m[2]).join('\n');
   return text.replace(/(?<![\w-])filter:[^;{}]+;?/g,'').replace(/opacity:\.86(?=;|\})/g,'opacity:1')

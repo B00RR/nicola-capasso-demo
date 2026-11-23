@@ -22,7 +22,7 @@ for p in files:
     assert hashlib.sha256(p.read_bytes()).hexdigest() == manifest["files"][key], key
 
 pages = sorted(PUBLIC.rglob("*.html"))
-assert len(pages) == 26, len(pages)
+assert len(pages) == 28, len(pages)
 assert manifest["htmlPages"] == len(pages)
 LEGAL = {"privacy.html", "cookies.html", "termini.html", "terms.html"}
 assert len([p for p in pages if p.name == "404.html"]) == 2
@@ -68,5 +68,5 @@ with tempfile.TemporaryDirectory() as tmp:
 
 print(f"PASS: manifest {len(files)} file coerente; {len(pages)} pagine con riferimenti risolti, "
       "sintassi JS valida, lingua/hreflang corrette, pagine legali senza il numero del titolare e con "
-      "voce 'telefono (facoltativo)' tra i dati raccolti, footer su 24 pagine e assente dalle 2 404, "
+      "voce 'telefono (facoltativo)' tra i dati raccolti, footer su 26 pagine e assente dalle 2 404, "
       "nessun refuso 'Hompage', nessuna risorsa esterna")

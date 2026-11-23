@@ -717,5 +717,119 @@
     ],
     "listing_position": "50% 78%",
     "home_position": "50% 97%"
+  },
+  {
+    "number": 7,
+    "folder": "nuovo matrimonio",
+    "title_it": "Amalfi",
+    "title_en": "Amalfi",
+    "count": 20,
+    "cover": "01.jpg",
+    "cover_path": "assets/stories/amalfi-3/01.jpg",
+    "cover_position": "50% 50%",
+    "photos": [
+      {
+        "path": "assets/stories/amalfi-3/01.jpg",
+        "sha256": "5f6874a5eb359146b9ae59f298965ea702ced0ff1bad08b31366140355517231",
+        "source": "nuovo matrimonio/copertina.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/02.jpg",
+        "sha256": "a27b739399a78fa0d0285601ae19af6f62d913bce8e301b62d09676f6ff0ffa1",
+        "source": "nuovo matrimonio/DSC06700.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/03.jpg",
+        "sha256": "bb6e18e5141e4cd5af6ee3431d439ce101e9d2432fcbdec840237eb9ba5c2f5b",
+        "source": "nuovo matrimonio/NCF00880.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/04.jpg",
+        "sha256": "fa480a79054af3edcd01108a471824ef30926dda4e63ca3c5a27eb69add6ef53",
+        "source": "nuovo matrimonio/NCF01131.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/05.jpg",
+        "sha256": "11969c024c45a69101da85e08a93797297659db471411b588d5d78b4b1ea2fde",
+        "source": "nuovo matrimonio/NCF01292.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/06.jpg",
+        "sha256": "aa6aa5fc4700b97492bb4458f15ee0dc0089daddfdcb51662488dca38757b3cf",
+        "source": "nuovo matrimonio/NCF01733.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/07.jpg",
+        "sha256": "cbe5f1f34f1193e9c987b73c4ac594061e70cadc76a8decf21bc5fd19bfc589f",
+        "source": "nuovo matrimonio/NCF07026.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/08.jpg",
+        "sha256": "441ae47d8dec132658e9da617711a19f0b35652762e224b55a3e484afa8f817d",
+        "source": "nuovo matrimonio/NCF07124.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/09.jpg",
+        "sha256": "4ce5aaeeae24b10474d44b598dbed786aff3e917ffe9a3ba91ecb876331f71fb",
+        "source": "nuovo matrimonio/NCF07372.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/10.jpg",
+        "sha256": "e08b5bd4cc26fc54b2264a3e5209f5e0211d5555f0611ccfc7747288f8b4377e",
+        "source": "nuovo matrimonio/NCF07477.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/11.jpg",
+        "sha256": "1e5125687ddc60c8785ecd3f05de55b0dac44113c3fb53194c0e294ff33baf0b",
+        "source": "nuovo matrimonio/NCF08134.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/12.jpg",
+        "sha256": "a462c7cc43de30d6df8fda79e8423c11a7e78b72b4940adfead94f0d50fbf8bf",
+        "source": "nuovo matrimonio/NCF08592.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/13.jpg",
+        "sha256": "86c7fca4f20eef5f7f9a8d19f48a489f5b51c5980b7398222477423331d11a36",
+        "source": "nuovo matrimonio/NCF08696.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/14.jpg",
+        "sha256": "7f801286f5e8740d4353b9cfb32b691dd97d7882531ee8fd75b9986fd012203c",
+        "source": "nuovo matrimonio/NCF08743.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/15.jpg",
+        "sha256": "067caf66052a998c4c6fa796276f09d641e258d8ca98201757af77a55b087063",
+        "source": "nuovo matrimonio/NCF08845.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/16.jpg",
+        "sha256": "5eeb0604322475d56116243dd0e741a512303575d907ff6a463c662a2c298d7b",
+        "source": "nuovo matrimonio/NCF08958.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/17.jpg",
+        "sha256": "4d4249d9074e59e6924d2f1a57490f7e7c38973ea235acc16bded1b35283a17d",
+        "source": "nuovo matrimonio/NCF09119.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/18.jpg",
+        "sha256": "a7246f7445d73e12eaec3f67d6c61bc1eebc736a947aa4deb4b499e338ec9d2d",
+        "source": "nuovo matrimonio/NCF09251.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/19.jpg",
+        "sha256": "301111758d10b1dc3aaa73e88984e2588370a738f32c6652b7640df8419c63c7",
+        "source": "nuovo matrimonio/NCF09276_1.jpg"
+      },
+      {
+        "path": "assets/stories/amalfi-3/20.jpg",
+        "sha256": "e2a3b5e22283227b1bcbfb4573bd8aed4188d1272d82930dc05b1cd9f73cdbb1",
+        "source": "nuovo matrimonio/NCF09341.jpg"
+      }
+    ],
+    "listing_position": "50% 75%",
+    "home_position": "50% 75%"
   }
 ]

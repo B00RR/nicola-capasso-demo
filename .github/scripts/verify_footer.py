@@ -10,7 +10,7 @@ PUBLIC = ROOT / "public"
 not_found, pages = [], []
 for page in sorted(PUBLIC.rglob("*.html")):
     (not_found if page.name == "404.html" else pages).append(page)
-assert len(not_found) == 2 and len(pages) == 24, (len(not_found), len(pages))
+assert len(not_found) == 2 and len(pages) == 26, (len(not_found), len(pages))
 
 for page in not_found:
     text = page.read_text(encoding="utf-8")
@@ -92,5 +92,5 @@ with sync_playwright() as p:
             assert not errors and not external, (label, errors, external)
             page.close()
     browser.close()
-print("PASS: footer su 24 pagine e assente dalle 2 404; 2 icone, 3 link legali su una riga, "
+print("PASS: footer su 26 pagine e assente dalle 2 404; 2 icone, 3 link legali su una riga, "
       "nessuna email, nessun overflow, tocchi >=44px, 0 errori JS, 0 richieste esterne")
