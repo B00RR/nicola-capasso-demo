@@ -1,5 +1,5 @@
 {
-  "source": "consegne/demo-settima-storia-amalfi/public",
+  "source": "consegne/demo-icone-social-ingrandite/public",
   "importedAt": "2026-10-05T15:55:27.152983+02:00",
   "adaptation": "Asset flattened; 404 URLs project-root relative; LF publication normalization; pagine legali IT/EN (bozza non indicizzabile) e versione inglese incluse; PHP enabled only on loopback, static Pages never submits.",
   "htmlPages": 28,
@@ -91,7 +91,7 @@
     "public/en/storia-05.html": "8ed9881431c2019da67ec44ad936db3ea490d31b589bab57ceca3c3f79a431c1",
     "public/en/storia-06.html": "83aae77de55dbaf2c9e9f964206b4fddc462f304b867563af44a4a49e9382900",
     "public/en/terms.html": "022a2a3f79800755f0efed59a4f3c77385496dd5b2a67ef7a3ae7ffd2b235583",
-    "public/footer.css": "6120f0945686e4ccc302c3aeb1b182bd08732bf8678f23b904900345d803d87f",
+    "public/footer.css": "b8dfba886aeb8605366bd21de3e273e31abcfbd442493e2f06e04a2cd1601a44",
     "public/index.html": "67c939b8f455ea35839b0bdc8e4eab77a2a0709351ae82aec1d47d978ef8c23d",
     "public/legale.css": "5f9b258bbb3cb92ebc0bd9250755462c09f25a82dd65a1c8da1db0c1387f4ce0",
     "public/mobile.css": "794dca4b06ec4defb322f9f2a7f24bd4133dbe6f7bae31135a472001f18aeca8",
@@ -265,10 +265,10 @@
     "public/en/storia-07.html": "4203eb00fdfaeed0c5597b96fc3b6bac572b1b13f0c9d5bbdbc35907e0d32037",
     "public/storia-07.html": "514669a2120d34034aee0f8855ef03eb7042ca0a0cbea314ae3415481916f935"
   },
-  "updatedAt": "2026-11-23T14:48:27+01:00",
+  "updatedAt": "2026-11-23T15:21:13+01:00",
   "pageAdaptations": {
     "public/404.html": "Root-relative /nicola-capasso-demo/ URLs for assets and homepage/portfolio links; no base element, so #contenuto stays on the requested error URL; otherwise byte-identical to approved local source"
   },
   "note": "06/10: pagine legali ripulite — rimossi banner «Bozza non pubblicabile», marcatori di lavoro e commenti; CSS legale senza regole morte. 21/10: fotografia definitiva — 10 matrimoni, 187 foto in ordine numerico, 10 copertine centrate, 12 scelte di animazione dalla fonte; foto fuori selezione rimosse dal set pubblicato. 21/10: fotografia 12 della storia 01 sostituita con l'originale Instagram del brindisi (post 07/10/2026), su richiesta del cliente. 22/10: solo disposizione animazione; scambi 1-4, 3-5, 7-10, 8-5. Foto, ritagli, gallerie e codice invariati. 22/10: foto12 e copertina storia01 riallineate alle cartelle originali; brindisi separato come solo asset animazione, con bytes/focal/ordine invariati. 22/10: Lorenzo sceglie la foto6/20 come nuova copertina della storia07, in deroga alla precedente copertina della cartella; album, animazione e originali invariati. Viewer approvato: foto senza padding, Chiudi coerente con le azioni approvate e UI temporanea2000ms. Pubblicazione autorizzata da Lorenzo: «Ok va bene pusha su github». Ritocchi locali approvati: labelChiudi/Close senza× e sottotitoloPortfolio sottoH1solodesktopfine; mobile e contenuti invariati. Inclusi nella pubblicazione autorizzata. 27/10: demo per approvazione Nicola — entrambi i testi cliente EN/IT completi; biografia con ritratto attuale, esperienza sotto, unica CTA finale. Tema PHP e logo non aggiornati. Prova autorizzata: firma PNG del cliente sopra la foto di apertura, senza sovrapposizione, IT/EN; solo margini trasparenti rifilati. Foto invariata, spazio verticale adattato nelle finestre basse. Tema PHP e brochure esclusi. Copertina storia01 scelta da Lorenzo: fotografia16/20 originale già in album, Home/Portfolio/apertura IT/EN allineati; album, fotografie e altri usi invariati. Prima foto Home sotto il logo: originale cabriolet12.jpg già in album, a colori senza filtro; solo IT/EN e mirrorCSS, gallerie/copertine/animazione/ritrattoAbout invariati. 18/11: sei nuove storie, 127 foto; animazione e risorse condivise conservate. Album IT/EN in colonna singola, proporzioni naturali. Copertine solo in apertura; 121 foto negli album.",
-  "revision": "Settima storia Amalfi — GitHub Pages"
+  "revision": "Icone Instagram e WhatsApp ingrandite nel footer — GitHub Pages"
 }
