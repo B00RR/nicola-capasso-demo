@@ -70,7 +70,7 @@ with sync_playwright() as p:
                     const group=document.querySelector('.cta-social')?.getBoundingClientRect(), cta=document.querySelector('#contatto')?.getBoundingClientRect(), copy=f.querySelector('.footer-copy').getBoundingClientRect(), bandBox=band.getBoundingClientRect();
                     const overlap=(a,b)=>a.left<b.right && b.left<a.right && a.top<b.bottom && b.top<a.bottom;
                     return {
-                        centered: !group || (Math.abs(group.left+group.right-cta.left-cta.right)<2 && Math.abs(group.top-cta.bottom-4)<1),
+                        centered: !group || (Math.abs(group.left+group.right-cta.left-cta.right)<2 && Math.abs(group.top-cta.bottom-34)<1),
                         socialSizes: social.map(a=>a.querySelector('svg').getBoundingClientRect().width),
                         left: Math.abs(copy.left-bandBox.left)<1 && getComputedStyle(f.querySelector('.footer-copy')).textAlign==='left',
                         separate: [copy,...boxes].every((a,i,all)=>all.slice(i+1).every(b=>!overlap(a,b))),
@@ -96,7 +96,7 @@ with sync_playwright() as p:
             assert not data["mailto"] and data["copy"] == "\u00a9 2026 Nicola Capasso", (label, data)
             home = page_path.name == 'index.html'
             assert data["social"] == (["https://instagram.com/nicolacapassofoto", "https://wa.me/393398563098"] if home else []), (label, data)
-            assert data['socialSizes'] == ([28,22] if home else []), (label,data)
+            assert data['socialSizes'] == ([70,56] if home else []), (label,data)
             assert len(data["legal"]) == 3 and data["sameRow"], (label, data)
             assert data["minHeight"] >= 44 and data["overflow"] <= 0, (label, data)
             assert not errors and not external, (label, errors, external)
