@@ -25,5 +25,5 @@ for lang,rel in [('It','index.html'),('En','en/index.html')]:
     cta=re.search(r'<a class="cta luxury-link".*?</a>',section,re.S)
     assert cta and 'href="contatti.html"' in cta[0],rel
     assert plain(cta[0])==('Raccontatemi il vostro giorno' if lang=='It' else 'Tell me about your day'),rel
-    assert section.rstrip().endswith('</a></article>'),(rel,'CTA is not last')
+    assert section[cta.end():].startswith('<ul class="cta-social"') and section.rstrip().endswith('</ul></div></article>'),(rel,'social links must immediately follow the final CTA')
 print('PASS: complete approved copy IT/EN; biography -> experience -> single unchanged contact CTA; original portrait')

@@ -27,7 +27,14 @@ for page in pages + previews:
     footer = re.search(r'<footer class="site-footer".*?</footer>', text, re.S).group(0)
     assert "mailto:" not in footer and "Nicola Capasso Photo" not in footer, str(page)
     assert "<nav" not in footer and "<img" not in footer, str(page)
-    assert footer.count("<svg") == 2 and 'class="wa"' in footer, str(page)
+    assert '<svg' not in footer and 'instagram.com/' not in footer and 'wa.me/' not in footer, str(page)
+    has_cta = page.name in ('index.html','index.htm')
+    assert text.count('class="cta-social"') == int(has_cta), str(page)
+    if has_cta:
+        match = re.search(r'id="contatto"[^>]*>.*?</a>(<ul class="cta-social".*?</ul>)', text, re.S)
+        assert match, str(page)
+        group = match[1]
+        assert group.count('<svg') == 2 and 'class="wa"' in group and group.count('aria-label=') == 3, str(page)
     assert footer.count('class="footer-legal"') == 1, str(page)
     legal = footer.split('class="footer-legal"')[1].split("</ul>")[0]
     hrefs = re.findall(r'href="([^"]+)"', legal)
@@ -57,13 +64,14 @@ with sync_playwright() as p:
                 """() => {
                     const f = document.querySelector('footer.site-footer');
                     const band = f.querySelector('.footer-band');
-                    const social = [...f.querySelectorAll('.footer-social-link')];
+                    const social = [...document.querySelectorAll('#contatto + .cta-social a')];
                     const legal = [...f.querySelectorAll('.footer-legal a')];
-                    const boxes = [...social, ...legal].map(a => a.getBoundingClientRect());
-                    const group=f.querySelector('.footer-social').getBoundingClientRect(), copy=f.querySelector('.footer-copy').getBoundingClientRect(), bandBox=band.getBoundingClientRect();
+                    const boxes = legal.map(a => a.getBoundingClientRect());
+                    const group=document.querySelector('.cta-social')?.getBoundingClientRect(), cta=document.querySelector('#contatto')?.getBoundingClientRect(), copy=f.querySelector('.footer-copy').getBoundingClientRect(), bandBox=band.getBoundingClientRect();
                     const overlap=(a,b)=>a.left<b.right && b.left<a.right && a.top<b.bottom && b.top<a.bottom;
                     return {
-                        centered: Math.abs(group.left+group.right-document.documentElement.clientWidth)<1,
+                        centered: !group || (Math.abs(group.left+group.right-cta.left-cta.right)<2 && Math.abs(group.top-cta.bottom-4)<1),
+                        socialSizes: social.map(a=>a.querySelector('svg').getBoundingClientRect().width),
                         left: Math.abs(copy.left-bandBox.left)<1 && getComputedStyle(f.querySelector('.footer-copy')).textAlign==='left',
                         separate: [copy,...boxes].every((a,i,all)=>all.slice(i+1).every(b=>!overlap(a,b))),
                         noLine: getComputedStyle(f).borderTopWidth==='0px',
@@ -77,20 +85,22 @@ with sync_playwright() as p:
                         legal: legal.map(a => a.textContent.trim()),
                         sameRow: boxes.every(b => Math.abs((b.top+b.bottom-copy.top-copy.bottom)/2)<1)
                                  && copy.height < 2*parseFloat(getComputedStyle(f.querySelector('.footer-copy')).lineHeight),
-                        minHeight: Math.min(...boxes.map(b => b.height)),
+                        minHeight: Math.min(...boxes.map(b => b.height),...social.map(a=>a.getBoundingClientRect().height)),
                         overflow: Math.max(document.documentElement.scrollWidth - innerWidth, band.scrollWidth - band.clientWidth),
                     };
                 }"""
             )
             label = (str(page_path.relative_to(PUBLIC)), width)
-            assert data["footers"] == 1 and data["svgs"] == 2 and data["imgs"] == 0 and data["navs"] == 0, (label, data)
+            assert data["footers"] == 1 and data["svgs"] == 0 and data["imgs"] == 0 and data["navs"] == 0, (label, data)
             assert all(data[k] for k in ("centered","left","separate","noLine")), (label,data)
             assert not data["mailto"] and data["copy"] == "\u00a9 2026 Nicola Capasso", (label, data)
-            assert data["social"] == ["https://instagram.com/nicolacapassofoto", "https://wa.me/393398563098"], (label, data)
+            home = page_path.name == 'index.html'
+            assert data["social"] == (["https://instagram.com/nicolacapassofoto", "https://wa.me/393398563098"] if home else []), (label, data)
+            assert data['socialSizes'] == ([28,22] if home else []), (label,data)
             assert len(data["legal"]) == 3 and data["sameRow"], (label, data)
             assert data["minHeight"] >= 44 and data["overflow"] <= 0, (label, data)
             assert not errors and not external, (label, errors, external)
             page.close()
     browser.close()
-print("PASS: footer su 26 pagine e assente dalle 2 404; 2 icone, 3 link legali su una riga, "
+print("PASS: footer su 26 pagine e assente dalle 2 404; icone sotto la CTA, 3 link legali su una riga, "
       "nessuna email, nessun overflow, tocchi >=44px, 0 errori JS, 0 richieste esterne")
