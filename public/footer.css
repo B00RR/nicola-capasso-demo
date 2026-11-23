@@ -27,7 +27,7 @@
   max-width:1600px;
   margin:0 auto;
 }
-.cta-with-social{display:grid;width:fit-content;max-width:100%;justify-items:center;row-gap:4px}
+.cta-with-social{display:grid;width:fit-content;max-width:100%;justify-items:center;row-gap:34px}
 .bio-end .cta-with-social{margin-inline:auto}
 @media(max-width:700px),(max-width:1000px) and (pointer:coarse){
   .cta-with-social{margin-inline:auto}
@@ -42,19 +42,19 @@
   gap:12px;
 }
 .cta-social-link{
-  display:inline-flex;
+  display:flex;
   align-items:center;
   justify-content:center;
-  width:44px;
-  height:44px;
+  width:72px;
+  height:72px;
   color:#3c3c36;
   text-decoration:none;
   border-radius:50%;
   transition:color .2s ease;
 }
 .cta-social-link svg{
-  width:28px;
-  height:28px;
+  width:70px;
+  height:70px;
   display:block;
   fill:none;
   stroke:currentColor;
@@ -65,7 +65,7 @@
 .cta-social-link svg .solid{fill:currentColor;stroke:none}
 /* Marchio ufficiale WhatsApp: disegno a tutta area, ridotto per pareggiare la dimensione ottica
    dell'icona Instagram (quadrato con margine interno nel proprio riquadro). */
-.cta-social-link svg.wa{width:22px;height:22px}
+.cta-social-link svg.wa{width:56px;height:56px}
 .cta-social-link:hover{color:var(--footer-ink)}
 .site-footer a:focus-visible,.cta-social-link:focus-visible{outline:2px solid var(--footer-ink);outline-offset:2px;border-radius:50%}
 .footer-copy{
@@ -89,8 +89,8 @@
   .site-footer{padding:8px clamp(4px,calc(10vw - 28px),5vw) 10px}
   .footer-band{column-gap:2px}
   .footer-copy{font-size:10px;letter-spacing:.03em;white-space:nowrap}
-  .cta-social{gap:0}
-  .cta-social-link{display:flex}
+  .about:has(.cta-with-social){padding-bottom:12px}
+  .cta-social{gap:8px}
   .footer-legal{flex-wrap:nowrap;gap:clamp(3px,1vw,6px)}
   .footer-legal a{font-size:clamp(11px,3vw,12px);letter-spacing:normal}
 }
