@@ -162,6 +162,32 @@
         "assets/stories/scala-2/17.jpg",
         "assets/stories/scala-2/18.jpg"
       ]
+    },
+    {
+      "number": 7,
+      "cover": "assets/stories/amalfi-3/01.jpg",
+      "cover_source": "nuovo matrimonio/copertina.jpg",
+      "photos": [
+        "assets/stories/amalfi-3/02.jpg",
+        "assets/stories/amalfi-3/03.jpg",
+        "assets/stories/amalfi-3/04.jpg",
+        "assets/stories/amalfi-3/05.jpg",
+        "assets/stories/amalfi-3/06.jpg",
+        "assets/stories/amalfi-3/07.jpg",
+        "assets/stories/amalfi-3/08.jpg",
+        "assets/stories/amalfi-3/09.jpg",
+        "assets/stories/amalfi-3/10.jpg",
+        "assets/stories/amalfi-3/11.jpg",
+        "assets/stories/amalfi-3/12.jpg",
+        "assets/stories/amalfi-3/13.jpg",
+        "assets/stories/amalfi-3/14.jpg",
+        "assets/stories/amalfi-3/15.jpg",
+        "assets/stories/amalfi-3/16.jpg",
+        "assets/stories/amalfi-3/17.jpg",
+        "assets/stories/amalfi-3/18.jpg",
+        "assets/stories/amalfi-3/19.jpg",
+        "assets/stories/amalfi-3/20.jpg"
+      ]
     }
   ],
   "animation": [
@@ -528,10 +554,30 @@
     "assets/stories/scala-2/15.jpg": "3992a1ab4f3d4065dcb14a9688285056683e41d303ea88b184f331abb9526cd0",
     "assets/stories/scala-2/16.jpg": "b5a94b8b877421986aefafa6e8c6e4c0783ec46457ead465b8be3f04303e2d30",
     "assets/stories/scala-2/17.jpg": "3c852d736bdffd9a3eb28c6f56db462b2a26786ce77b9ee8c86a023fc36165b9",
-    "assets/stories/scala-2/18.jpg": "166fb2d96ff3f67e127d611968a841fc675f24ec1bd19ffda4e96712f5ddb6b5"
+    "assets/stories/scala-2/18.jpg": "166fb2d96ff3f67e127d611968a841fc675f24ec1bd19ffda4e96712f5ddb6b5",
+    "assets/stories/amalfi-3/01.jpg": "5f6874a5eb359146b9ae59f298965ea702ced0ff1bad08b31366140355517231",
+    "assets/stories/amalfi-3/02.jpg": "a27b739399a78fa0d0285601ae19af6f62d913bce8e301b62d09676f6ff0ffa1",
+    "assets/stories/amalfi-3/03.jpg": "bb6e18e5141e4cd5af6ee3431d439ce101e9d2432fcbdec840237eb9ba5c2f5b",
+    "assets/stories/amalfi-3/04.jpg": "fa480a79054af3edcd01108a471824ef30926dda4e63ca3c5a27eb69add6ef53",
+    "assets/stories/amalfi-3/05.jpg": "11969c024c45a69101da85e08a93797297659db471411b588d5d78b4b1ea2fde",
+    "assets/stories/amalfi-3/06.jpg": "aa6aa5fc4700b97492bb4458f15ee0dc0089daddfdcb51662488dca38757b3cf",
+    "assets/stories/amalfi-3/07.jpg": "cbe5f1f34f1193e9c987b73c4ac594061e70cadc76a8decf21bc5fd19bfc589f",
+    "assets/stories/amalfi-3/08.jpg": "441ae47d8dec132658e9da617711a19f0b35652762e224b55a3e484afa8f817d",
+    "assets/stories/amalfi-3/09.jpg": "4ce5aaeeae24b10474d44b598dbed786aff3e917ffe9a3ba91ecb876331f71fb",
+    "assets/stories/amalfi-3/10.jpg": "e08b5bd4cc26fc54b2264a3e5209f5e0211d5555f0611ccfc7747288f8b4377e",
+    "assets/stories/amalfi-3/11.jpg": "1e5125687ddc60c8785ecd3f05de55b0dac44113c3fb53194c0e294ff33baf0b",
+    "assets/stories/amalfi-3/12.jpg": "a462c7cc43de30d6df8fda79e8423c11a7e78b72b4940adfead94f0d50fbf8bf",
+    "assets/stories/amalfi-3/13.jpg": "86c7fca4f20eef5f7f9a8d19f48a489f5b51c5980b7398222477423331d11a36",
+    "assets/stories/amalfi-3/14.jpg": "7f801286f5e8740d4353b9cfb32b691dd97d7882531ee8fd75b9986fd012203c",
+    "assets/stories/amalfi-3/15.jpg": "067caf66052a998c4c6fa796276f09d641e258d8ca98201757af77a55b087063",
+    "assets/stories/amalfi-3/16.jpg": "5eeb0604322475d56116243dd0e741a512303575d907ff6a463c662a2c298d7b",
+    "assets/stories/amalfi-3/17.jpg": "4d4249d9074e59e6924d2f1a57490f7e7c38973ea235acc16bded1b35283a17d",
+    "assets/stories/amalfi-3/18.jpg": "a7246f7445d73e12eaec3f67d6c61bc1eebc736a947aa4deb4b499e338ec9d2d",
+    "assets/stories/amalfi-3/19.jpg": "301111758d10b1dc3aaa73e88984e2588370a738f32c6652b7640df8419c63c7",
+    "assets/stories/amalfi-3/20.jpg": "e2a3b5e22283227b1bcbfb4573bd8aed4188d1272d82930dc05b1cd9f73cdbb1"
   },
   "gallery_order": "Natural filename order within each supplied folder, cover included.",
-  "source": "Six website folders supplied 17/11/2026; web derivatives only.",
+  "source": "Six website folders supplied 17/11/2026; web derivatives only. Seventh story: nuovo matrimonio.",
   "hero": {
     "path": "assets/stories/matrimonio-01/12.jpg",
     "source": "MATRIMONIO 1/1 (12).jpg",

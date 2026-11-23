@@ -25,7 +25,7 @@ try:
      page.locator(selector).scroll_into_view_if_needed()
      expect(page.locator(selector)).to_have_css('opacity','1')
     fonts=page.evaluate('[...document.fonts].filter(f=>f.status==="loaded").map(f=>f.family.replace(/[\x22\x27]/g,""))');assert set(fonts)=={'Italiana','Space Grotesk'},fonts
-    for n in range(1,7):
+    for n in range(1,8):
      link=page.locator(f'a.project[href="storia-{n:02}.html"]');assert link.get_attribute('aria-label');assert link.locator('img').count()==1
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
     records.append({'language':prefix or 'it','javascript':enabled,'contents_visible':True,'local_fonts_loaded':fonts,'anonymous_story_links':0});page.close()
