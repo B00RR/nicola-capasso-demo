@@ -23,7 +23,8 @@ for page in pages + previews:
     if page in previews: prefix = '/nicola-capasso-demo/'
     text = page.read_text(encoding="utf-8")
     assert text.count('class="site-footer"') == 1, str(page)
-    assert f'<link rel="stylesheet" href="{prefix}footer.css">' in text, str(page)
+    version = '?v=centra-social' if page.name in ('index.html','index.htm') else ''
+    assert f'<link rel="stylesheet" href="{prefix}footer.css{version}">' in text, str(page)
     footer = re.search(r'<footer class="site-footer".*?</footer>', text, re.S).group(0)
     assert "mailto:" not in footer and "Nicola Capasso Photo" not in footer, str(page)
     assert "<nav" not in footer and "<img" not in footer, str(page)
