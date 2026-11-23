@@ -58,14 +58,18 @@
   display:block;
   fill:none;
   stroke:currentColor;
-  stroke-width:1.5;
+  stroke-width:.8;
   stroke-linecap:round;
   stroke-linejoin:round;
 }
 .cta-social-link svg .solid{fill:currentColor;stroke:none}
+.cta-social-link circle.solid{r:.8px}
 /* Marchio ufficiale WhatsApp: disegno a tutta area, ridotto per pareggiare la dimensione ottica
    dell'icona Instagram (quadrato con margine interno nel proprio riquadro). */
 .cta-social-link svg.wa{width:56px;height:56px}
+/* Il logo WhatsApp è pieno: un bordo del colore di fondo assottiglia sia il fumetto sia la cornetta. */
+.cta-social-link .wa path.solid{stroke:#fff;stroke-width:1}
+@media(forced-colors:active){.cta-social-link .wa path.solid{stroke:Canvas}}
 .cta-social-link:hover{color:var(--footer-ink)}
 .site-footer a:focus-visible,.cta-social-link:focus-visible{outline:2px solid var(--footer-ink);outline-offset:2px;border-radius:50%}
 .footer-copy{
