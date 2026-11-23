@@ -1,5 +1,5 @@
 {
-  "source": "consegne/demo-tratto-social-sottile/public",
+  "source": "consegne/demo-centra-cta-social/public",
   "importedAt": "2026-10-05T15:55:27.152983+02:00",
   "adaptation": "Asset flattened; 404 URLs project-root relative; LF publication normalization; pagine legali IT/EN (bozza non indicizzabile) e versione inglese incluse; PHP enabled only on loopback, static Pages never submits.",
   "htmlPages": 28,
@@ -7,8 +7,8 @@
     "public/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "public/404.html": "5fdc84b8440bfa977c43d59bed7e823d6a1381019972e12088969e4bb4611b06",
     "public/anteprima-testi/assets/nicola-capasso.jpg": "4fdb8d2ec390c5677991eb906f8358de6b4534ab504811bac4d283f565445b39",
-    "public/anteprima-testi/en/index.htm": "ab0a97851ccb946d568d950e9212ce828b2f403b8d8debb8ba74e550d1ba9366",
-    "public/anteprima-testi/index.htm": "14f779a658be39b3a63e119ab44829ed17807bfa26fb56c43c7ed7d80aec26eb",
+    "public/anteprima-testi/en/index.htm": "7b0946b69c21d81d8632da8ea2bcfbff05d5ebac999ba9dfe4e8073430053046",
+    "public/anteprima-testi/index.htm": "b7d892803d6cf56098f06df8faa246f474b306992dec421e76b244d2fc404846",
     "public/assets/animation/scelta-01-1152.webp": "3b4185fd8bd406724b36d2e56429aa02e4fb4cbf5d7c62baf9fb277696df8dc5",
     "public/assets/animation/scelta-01-384.webp": "a6ecf697bc112d7cfa79155c6963251f201d4372740cb14d6dcf7ba5e69b935d",
     "public/assets/animation/scelta-01-768.webp": "4df1b6c066f1a38c21f4856f0e8e44b807264fb7b4c2a8b2cf6688d7fd699ac8",
@@ -81,7 +81,7 @@
     "public/en/404.html": "bcef2a81dbc69bd6ad825de5e7d14bf53c6477da54bd9c4d9a9680c70935ab0d",
     "public/en/contatti.html": "3e618ea82316bf36ea9674aea07174d112092e717759d0be86ed52d519efcb47",
     "public/en/cookies.html": "36519b6670333f3b6acec39dc6d0c0fb919b6109793df535174bcdea08b42283",
-    "public/en/index.html": "070c2786ed889dbe08e91c1e3c06cee3449e007360dcb05e9a6ad0818e2076ae",
+    "public/en/index.html": "69c95f62128e020f7e87bf46fb85e3f39ec41102860270091d493b06bf2eb3b9",
     "public/en/portfolio.html": "752d151a369151d2504765d73aff426557b105679126be987d7bb710be193483",
     "public/en/privacy.html": "0d70c564dcc50e9cf503b83ed08b96913a824885ab0d7f8775b553c179f9d275",
     "public/en/storia-01.html": "44296c67fde21a778cf7e5fa4c71fe6ef6c33e79184aa400472449c729ad9097",
@@ -91,8 +91,8 @@
     "public/en/storia-05.html": "e6b1b660f3ba38d2e8e32d39b254dbd4800d82543317e6a1ec88a8d66fc87ece",
     "public/en/storia-06.html": "ec26d28005c9821db0a28eb7d146afacf318ca1fcb88e7a224f513ec529ae9b2",
     "public/en/terms.html": "fe1ecc131adb884e579655b2be7fca26eb5fd264bd44ff384e93865d234f5251",
-    "public/footer.css": "b2ee5439201bb8dc5b51168897f7a05b3591fa866cc58c56aeb56eb873cc40be",
-    "public/index.html": "b1477380bd7d464fa50324c87abd5845a10539ab09ee655ed31ce0bee20aac8e",
+    "public/footer.css": "3a744969cb943d0f447fabbf3c3fc9cf6aa999a152780f1d2df3bacaf2ca0fff",
+    "public/index.html": "43af9dad5867982f602110efc9d0847d939815f8f047f57c1a5d8d9bd8dd0db7",
     "public/legale.css": "5f9b258bbb3cb92ebc0bd9250755462c09f25a82dd65a1c8da1db0c1387f4ce0",
     "public/mobile.css": "794dca4b06ec4defb322f9f2a7f24bd4133dbe6f7bae31135a472001f18aeca8",
     "public/portfolio.css": "33c07a1dc529a0593fb867b7063f72d1b43673b390f0b327affb86ceb7758eb7",
@@ -265,10 +265,10 @@
     "public/en/storia-07.html": "d741151ec72126f0c39e1dd6f0c3c0f828c9c7684ee855aa6064f6a13dde0854",
     "public/storia-07.html": "8621e6ad603d4496480bd48404e66a472d54330f29b612edd7875f496ef15695"
   },
-  "updatedAt": "2026-11-23T18:14:54+01:00",
+  "updatedAt": "2026-11-23T18:31:56+01:00",
   "pageAdaptations": {
     "public/404.html": "Root-relative /nicola-capasso-demo/ URLs for assets and homepage/portfolio links; no base element, so #contenuto stays on the requested error URL; otherwise byte-identical to approved local source"
   },
   "note": "06/10: pagine legali ripulite — rimossi banner «Bozza non pubblicabile», marcatori di lavoro e commenti; CSS legale senza regole morte. 21/10: fotografia definitiva — 10 matrimoni, 187 foto in ordine numerico, 10 copertine centrate, 12 scelte di animazione dalla fonte; foto fuori selezione rimosse dal set pubblicato. 21/10: fotografia 12 della storia 01 sostituita con l'originale Instagram del brindisi (post 07/10/2026), su richiesta del cliente. 22/10: solo disposizione animazione; scambi 1-4, 3-5, 7-10, 8-5. Foto, ritagli, gallerie e codice invariati. 22/10: foto12 e copertina storia01 riallineate alle cartelle originali; brindisi separato come solo asset animazione, con bytes/focal/ordine invariati. 22/10: Lorenzo sceglie la foto6/20 come nuova copertina della storia07, in deroga alla precedente copertina della cartella; album, animazione e originali invariati. Viewer approvato: foto senza padding, Chiudi coerente con le azioni approvate e UI temporanea2000ms. Pubblicazione autorizzata da Lorenzo: «Ok va bene pusha su github». Ritocchi locali approvati: labelChiudi/Close senza× e sottotitoloPortfolio sottoH1solodesktopfine; mobile e contenuti invariati. Inclusi nella pubblicazione autorizzata. 27/10: demo per approvazione Nicola — entrambi i testi cliente EN/IT completi; biografia con ritratto attuale, esperienza sotto, unica CTA finale. Tema PHP e logo non aggiornati. Prova autorizzata: firma PNG del cliente sopra la foto di apertura, senza sovrapposizione, IT/EN; solo margini trasparenti rifilati. Foto invariata, spazio verticale adattato nelle finestre basse. Tema PHP e brochure esclusi. Copertina storia01 scelta da Lorenzo: fotografia16/20 originale già in album, Home/Portfolio/apertura IT/EN allineati; album, fotografie e altri usi invariati. Prima foto Home sotto il logo: originale cabriolet12.jpg già in album, a colori senza filtro; solo IT/EN e mirrorCSS, gallerie/copertine/animazione/ritrattoAbout invariati. 18/11: sei nuove storie, 127 foto; animazione e risorse condivise conservate. Album IT/EN in colonna singola, proporzioni naturali. Copertine solo in apertura; 121 foto negli album.",
-  "revision": "Tratto più sottile per Instagram e WhatsApp — GitHub Pages"
+  "revision": "CTA e social centrati sul testo su desktop e mobile — GitHub Pages"
 }

@@ -18,7 +18,9 @@ with sync_playwright() as pw:
    if width<=700:assert all(x['align']=='center' and x['offset']<1 for x in result),result
    else:assert page.locator('#sguardo > div').evaluate('e=>getComputedStyle(e).textAlign')!='center'
    assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+   axes=page.locator('.about-experience h2,.about-experience .about-lead,#contatto,.cta-social').evaluate_all('els=>els.map(e=>{const r=e.getBoundingClientRect();return (r.left+r.right)/2})')
+   assert len(axes)==4 and max(axes)-min(axes)<1,(prefix,width,axes)
    assert cta.evaluate('e=>getComputedStyle(e,"::before").content')=='""'
    page.goto((PUBLIC/(prefix+'portfolio.html')).as_uri());page.evaluate('document.fonts.ready');reference=page.locator('.portfolio-contact-link');reference.scroll_into_view_if_needed();expected=reference.evaluate(expression);assert styles==expected,(width,prefix,styles,expected);page.close()
  browser.close()
-print('PASS: moved CTA IT/EN, shared Portfolio button appearance, mobile-only centered heading/paragraphs/CTA at390/700; desktop701/1440 unchanged; no overflow')
+print('PASS: IT/EN experience text, CTA and social links share the same axis on mobile and desktop; Portfolio button appearance preserved; no overflow')

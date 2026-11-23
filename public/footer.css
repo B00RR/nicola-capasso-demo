@@ -27,10 +27,9 @@
   max-width:1600px;
   margin:0 auto;
 }
-.cta-with-social{display:grid;width:fit-content;max-width:100%;justify-items:center;row-gap:34px}
-.bio-end .cta-with-social{margin-inline:auto}
+.cta-with-social{display:grid;width:fit-content;max-width:100%;margin-inline:auto;justify-items:center;row-gap:34px}
 @media(max-width:700px),(max-width:1000px) and (pointer:coarse){
-  .cta-with-social{margin-inline:auto}
+
   .cta-with-social #contatto{left:auto;transform:none}
 }
 .cta-social{

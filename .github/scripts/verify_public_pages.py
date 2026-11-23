@@ -63,7 +63,8 @@ with tempfile.TemporaryDirectory() as tmp:
         elif page.name == "404.html":
             assert "site-footer" not in html, rel
         else:
-            assert f'<link rel="stylesheet" href="{prefix}footer.css">' in html, rel
+            version = '?v=centra-social' if page.name == 'index.html' else ''
+            assert f'<link rel="stylesheet" href="{prefix}footer.css{version}">' in html, rel
             assert 'class="footer-legal"' in html, rel
 
 print(f"PASS: manifest {len(files)} file coerente; {len(pages)} pagine con riferimenti risolti, "
